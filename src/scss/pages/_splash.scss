@@ -1,0 +1,196 @@
+// ========================================
+// Splash Page — The Warning Experience
+// ========================================
+
+.splash-body {
+  background: var(--splash-bg);
+  overflow: hidden;
+  cursor: none;
+}
+
+.splash-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+// Canvas for candle flame
+.splash-canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  z-index: var(--z-base);
+  opacity: 0;
+  animation: candle-appear 2s ease forwards;
+}
+
+// Typewriter text
+.splash-typewriter {
+  position: relative;
+  z-index: calc(var(--z-base) + 1);
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+}
+
+.splash-line {
+  font-family: var(--font-body);
+  font-size: var(--text-xl);
+  color: var(--splash-text-color);
+  opacity: 0;
+  letter-spacing: 0.03em;
+
+  &.line-1 {
+    animation: typewriter-fade 1.5s ease forwards;
+    animation-delay: 1s;
+  }
+
+  &.line-2 {
+    animation: typewriter-fade 1.5s ease forwards;
+    animation-delay: 3s;
+  }
+
+  &.line-3 {
+    animation: typewriter-fade 1.5s ease forwards;
+    animation-delay: 5s;
+    color: var(--color-accent);
+  }
+}
+
+// Warning box
+.splash-warning {
+  position: relative;
+  z-index: calc(var(--z-base) + 2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 0.8s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.warning-content {
+  background: var(--color-surface);
+  border: var(--border-glow);
+  padding: var(--space-2xl);
+  max-width: 550px;
+  text-align: center;
+  box-shadow: var(--shadow-glow);
+}
+
+.warning-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  color: var(--color-accent);
+  margin-bottom: var(--space-lg);
+}
+
+.warning-text {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-loose);
+  margin-bottom: var(--space-xl);
+
+  ul {
+    list-style: disc;
+    padding-left: var(--space-xl);
+    margin: var(--space-md) 0;
+    text-align: left;
+
+    li {
+      margin-bottom: var(--space-xs);
+    }
+  }
+}
+
+// Blood canvas
+.splash-blood-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: var(--z-splash);
+  pointer-events: none;
+
+  &.active {
+    animation: blood-surge 2s ease-in forwards;
+  }
+}
+
+// Transition overlay
+.splash-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--splash-bg);
+  z-index: calc(var(--z-splash) + 1);
+  opacity: 0;
+  transition: opacity 1.5s ease;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+// Animations
+@keyframes candle-appear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    scale: 0.8;
+  }
+  100% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%);
+    scale: 1;
+  }
+}
+
+@keyframes typewriter-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes blood-surge {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    clip-path: circle(150% at 50% 50%);
+    opacity: 0;
+  }
+}

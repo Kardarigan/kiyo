@@ -1,0 +1,163 @@
+// ========================================
+// Sister Page, The Memorial
+// ========================================
+
+.sister-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+
+  .heading-1 {
+    font-size: var(--text-4xl);
+    letter-spacing: 0.04em;
+  }
+}
+
+.sister-ornament {
+  width: 40px;
+  height: 2px;
+  margin: var(--space-lg) auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-accent),
+    transparent
+  );
+}
+
+.sister-layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+// Portrait
+.sister-portrait {
+  text-align: center;
+}
+
+.portrait-vignette {
+  position: relative;
+  display: inline-block;
+  border: 1px solid var(--color-accent-dim);
+  padding: var(--space-sm);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+
+  .sister-image {
+    display: block;
+    filter: sepia(0.6) brightness(0.75) contrast(1.1);
+    transition: filter var(--transition-slow);
+
+    &:hover {
+      filter: sepia(0.3) brightness(0.9);
+    }
+  }
+}
+
+.vignette-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  pointer-events: none;
+}
+
+// Poem
+.sister-poem {
+  text-align: center;
+}
+
+.poem-container {
+  display: inline-block;
+  max-width: 600px;
+  padding: var(--space-2xl);
+  border-top: var(--border-thin);
+  border-bottom: var(--border-thin);
+}
+
+.poem-text {
+  font-style: italic;
+  color: var(--color-text-secondary);
+  line-height: var(--leading-loose);
+  min-height: 3em;
+}
+
+.poem-signature {
+  margin-top: var(--space-lg);
+  text-align: right;
+  color: var(--color-accent-dim);
+}
+
+// Content
+.sister-content {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+
+  p {
+    line-height: var(--leading-loose);
+  }
+}
+
+// Hairpin — the unsettling artifact
+.sister-hairpin {
+  text-align: center;
+  margin-top: var(--space-xl);
+}
+
+.hairpin-container {
+  display: inline-block;
+  position: relative;
+
+  .hairpin-image {
+    max-width: 250px;
+    filter: brightness(1.1) saturate(0.9);
+    border: var(--border-thin);
+    transition: filter 0.8s ease;
+  }
+
+  .hairpin-caption {
+    margin-top: var(--space-sm);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    opacity: 0.8;
+    transition: opacity var(--transition-normal);
+  }
+}
+
+.hairpin-note {
+  margin-top: var(--space-md);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-style: italic;
+  color: var(--color-text-muted);
+  opacity: 0.6;
+  transition: opacity var(--transition-normal), color var(--transition-normal);
+
+  &:hover {
+    opacity: 1;
+    color: var(--color-accent);
+  }
+}
+
+// Whisper zone
+.sister-whisper-zone {
+  text-align: center;
+  margin-top: var(--space-3xl);
+  padding: var(--space-xl);
+  cursor: default;
+  opacity: 0.3;
+  transition: opacity var(--transition-slow);
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,60 @@
+// ========================================
+// Journal Page Styles
+// ========================================
+
+.journal-entries {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.journal-entry {
+  cursor: pointer;
+  transition: border-color var(--transition-normal),
+    box-shadow var(--transition-normal);
+
+  &:hover {
+    border-color: var(--color-accent-dim);
+    box-shadow: var(--shadow-md);
+  }
+
+  .entry-meta {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+    font-family: var(--font-accent);
+    font-size: var(--text-xs);
+    letter-spacing: 0.05em;
+  }
+
+  .entry-title {
+    margin-bottom: var(--space-sm);
+  }
+
+  .entry-preview {
+    margin-bottom: var(--space-md);
+  }
+}
+
+// Modal entry view
+.modal-entry-header {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+}
+
+.entry-full {
+  margin: var(--space-lg) 0;
+  line-height: var(--leading-loose);
+  white-space: pre-line;
+}
+
+.modal-entry-footer {
+  text-align: right;
+  margin-top: var(--space-xl);
+  color: var(--color-accent-dim);
+}

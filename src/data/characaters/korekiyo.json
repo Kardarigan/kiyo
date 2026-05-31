@@ -1,0 +1,200 @@
+{
+  "character": {
+    "id": "korekiyo-shinguji",
+    "name": "Korekiyo Shinguji",
+    "title": "The Ultimate Anthropologist",
+    "tagline": "Observing the beauty of humanity, in all its forms.",
+    "bio": {
+      "short": "Anthropologist and folklorist with a deep fascination for human customs, rituals, and the concept of beauty across cultures. My research knows no boundaries.",
+      "full": "From the sun-scorched burial mounds of ancient civilizations to the whispered folklore of remote villages, I have dedicated my life to understanding what makes humanity so breathtakingly beautiful. Every culture carries a unique thread in the tapestry of existence — some bright, some dark, all essential. I document the rituals that define us, the ceremonies that transcend us, and the quiet moments that reveal our truest selves."
+    },
+    "affiliation": "Independent Researcher & Folklorist",
+    "appearance": {
+      "uniform": "Military-style olive green uniform with high collar and gold buttons",
+      "mask": "Black zippered mask covering lower face",
+      "hair": "Long, dark teal hair tied back",
+      "build": "Tall, slender, androgynous",
+      "bandages": "Right hand wrapped in bandages"
+    }
+  },
+
+  "theme": {
+    "colors": {
+      "primary": "#1a2e1a",
+      "primaryLight": "#2a452a",
+      "secondary": "#1c1c1c",
+      "accent": "#c9a84c",
+      "accentDim": "#8a7030",
+      "blood": "#6b0f0f",
+      "textPrimary": "#e8dcc8",
+      "textSecondary": "#c4b99a",
+      "textMuted": "#8a8060",
+      "background": "#0d0d0d",
+      "surface": "#141414",
+      "parchment": "#efe3c3",
+      "parchmentDark": "#d4c5a0"
+    },
+    "fonts": {
+      "heading": "Garamond Rough Pro",
+      "body": "Cardo",
+      "accent": "Cinzel",
+      "handwritten": "Aldridgescript"
+    },
+    "ambient": {
+      "fogColor": "#0a1a0a",
+      "fogDensity": 0.03,
+      "candlelightColor": "#d4a843",
+      "shadowIntensity": 0.8
+    }
+  },
+
+  "pages": {
+    "home": {
+      "title": "Korekiyo Shinguji",
+      "subtitle": "Folklorist & Observer of Humanity",
+      "heroQuote": "Kehehe... Beauty is everywhere, if one simply knows where to look.",
+      "featuredImage": "portrait-main.webp",
+      "sections": [
+        {
+          "type": "quote",
+          "content": "To truly understand a people, one must embrace their rituals — both the celebrated and the forbidden."
+        }
+      ]
+    },
+    "about": {
+      "title": "On the Nature of My Research",
+      "content": "Humanity's beauty is not limited to its art or its music. It is in the way we mourn, the way we celebrate, the way we face the unknown. My work takes me to the edges of human experience, where customs become ritual, and ritual becomes the language of the soul.",
+      "image": "portrait-profile.webp"
+    },
+    "journal": {
+      "title": "Field Observations",
+      "description": "A collection of anthropological notes from my travels, documenting the beauty of human customs across cultures.",
+      "entries": [
+        {
+          "date": "Autumn, Year Unknown",
+          "title": "The Beauty of the Ainu Bear Ritual",
+          "content": "Among the Ainu, the bear is not merely an animal — it is a deity in mortal form. The Iomante ceremony returns the divine spirit to the heavens through what outsiders might call sacrifice. But to the Ainu, it is the ultimate act of reverence...",
+          "location": "Hokkaido, Japan"
+        },
+        {
+          "date": "Winter Study",
+          "title": "Victorian Mourning Customs",
+          "content": "The Victorians transformed grief into an art form. Mourning jewelry woven from the hair of the deceased, post-mortem photography that captured the final stillness... They understood that death and beauty are not opposites, but companions.",
+          "location": "London, England"
+        },
+        {
+          "date": "Ongoing Research",
+          "title": "Sisters in Folklore",
+          "content": "Across countless cultures, the bond between siblings — particularly sisters — carries profound symbolic weight. From the red thread of fate to twin goddesses, this connection transcends the mundane and touches the divine...",
+          "location": "Various Locations"
+        }
+      ]
+    },
+    "artifacts": {
+      "title": "Curated Collection",
+      "description": "A selection of items from my personal archive, each with its own story.",
+      "items": [
+        {
+          "id": "katana",
+          "name": "Shin-Gunto Replica",
+          "origin": "Japan, Early 20th Century",
+          "description": "A blade that carries the weight of tradition and the sharpness of finality. Crafted with the same techniques used for centuries.",
+          "image": "artifact-katana.webp",
+          "threed": true
+        },
+        {
+          "id": "mask",
+          "name": "Noh Mask Fragment",
+          "origin": "Japan, Edo Period",
+          "description": "A fragment of a Noh theatre mask, weathered by time. Even broken, it retains its unsettling expression — frozen between emotions.",
+          "image": "artifact-mask.webp",
+          "threed": true
+        },
+        {
+          "id": "rope",
+          "name": "Ceremonial Binding Rope",
+          "origin": "Unknown",
+          "description": "Hemp rope prepared in the traditional manner. The coil is perfect — a testament to the craftsman's devotion to form.",
+          "image": "artifact-rope.webp",
+          "threed": false
+        },
+        {
+          "id": "incense",
+          "name": "Temple Incense Burner",
+          "origin": "Kyoto, Japan",
+          "description": "Used in purification rituals, the smoke carries prayers to realms beyond our own. The scent lingers long after the ember dies.",
+          "image": "artifact-incense.webp",
+          "threed": false
+        }
+      ]
+    },
+    "sister": {
+      "title": "My Dearest Muse",
+      "subtitle": "In Loving Memory of Miyadera Shinguji",
+      "poem": "She was the moonlight that guided my study, the gentle hand that turned the pages of my curiosity. Without her, I would be a scholar without a soul.",
+      "content": "My sister Miyadera was the most beautiful soul I have ever known. Frail in body but immense in spirit, she taught me to see the beauty in everything — even in suffering. She remains my inspiration, my companion in every discovery. This page is dedicated to her memory, for she is present in every word I write and every artifact I preserve.",
+      "image": "sister-portrait.webp",
+      "hairpinImage": "sister-hairpin.webp"
+    }
+  },
+
+  "easterEggs": {
+    "secretPhrase": "Miyadera",
+    "secretResponse": "She approves of your curiosity.",
+    "whisperTexts": [
+      "Kehehe...",
+      "Beautiful, isn't it?",
+      "Humanity never ceases to amaze."
+    ],
+    "glitchOnHover": true,
+    "unmaskReveal": false
+  },
+
+  "threeD": {
+    "mainScene": "floating-mask",
+    "objects": [
+      {
+        "id": "floating-mask",
+        "type": "mask",
+        "position": { "x": 0, "y": 0.2, "z": 0 },
+        "rotation": { "x": 0, "y": 0.5, "z": 0 },
+        "scale": 1.0,
+        "animation": "slowFloat"
+      }
+    ],
+    "camera": {
+      "position": { "x": 0, "y": 0.3, "z": 3.5 },
+      "lookAt": { "x": 0, "y": 0.1, "z": 0 },
+      "fov": 45
+    },
+    "lighting": {
+      "ambient": { "color": "#1a2a1a", "intensity": 0.4 },
+      "key": {
+        "color": "#d4a843",
+        "intensity": 0.8,
+        "position": { "x": 2, "y": 1, "z": 2 }
+      },
+      "rim": {
+        "color": "#4a3a2a",
+        "intensity": 0.3,
+        "position": { "x": -1, "y": 0.5, "z": -1 }
+      }
+    }
+  },
+
+  "audio": {
+    "ambient": "whisper-soft.mp3",
+    "volume": 0.08,
+    "triggerOn": ["sister", "journal"]
+  },
+
+  "meta": {
+    "version": "1.0.0",
+    "lastModified": "2026-05-15",
+    "author": "Korekiyo Shinguji (Watsonian) / Fan Project (Doylist)",
+    "seo": {
+      "description": "The personal academic website of Korekiyo Shinguji, Ultimate Anthropologist. Exploring the beauty of humanity through ritual, folklore, and the bonds that define us.",
+      "keywords": "Korekiyo Shinguji, anthropology, folklore, ritual, beauty, humanity, Danganronpa"
+    }
+  }
+}

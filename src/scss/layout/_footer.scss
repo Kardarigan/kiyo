@@ -1,0 +1,20 @@
+// ========================================
+// Footer
+// ========================================
+
+.site-footer {
+  text-align: center;
+  padding: var(--space-xl);
+  border-top: var(--border-thin);
+
+  .footer-text {
+    font-family: var(--font-accent);
+    font-style: italic;
+    font-size: var(--text-sm);
+  }
+
+  .footer-copyright {
+    margin-top: var(--space-xs);
+    font-size: var(--text-xs);
+  }
+}

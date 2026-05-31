@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Enter the world of Korekiyo Shinguji — but be warned: beauty has its shadows."
+    />
+    <title>Korekiyo Shinguji — Proceed with Understanding</title>
+
+    <!-- Preload critical fonts -->
+    <link
+      rel="preload"
+      href="/fonts/Cinzel-Black.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Cardo-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="splash-body">
+    <main class="splash-container" aria-label="Content Warning">
+      <!-- Candle flame canvas (3D) -->
+      <canvas
+        id="candle-canvas"
+        class="splash-canvas"
+        aria-hidden="true"
+      ></canvas>
+
+      <!-- Typewriter text container -->
+      <div id="typewriter" class="splash-typewriter" aria-live="polite">
+        <p class="splash-line line-1">Humanity is beautiful...</p>
+        <p class="splash-line line-2">
+          Its customs... its rituals... its shadows...
+        </p>
+        <p class="splash-line line-3">But beauty requires understanding.</p>
+      </div>
+
+      <!-- Warning box -->
+      <div id="warning-box" class="splash-warning hidden">
+        <div class="warning-content">
+          <h2 class="warning-title">Before You Proceed</h2>
+          <div class="warning-text">
+            <p>
+              This website and the character it explores contain mature themes,
+              including:
+            </p>
+            <ul>
+              <li>Psychological complexity and dark subject matter</li>
+              <li>Exploration of death, ritual, and the macabre</li>
+              <li>Themes of obsession and the nature of beauty</li>
+            </ul>
+            <p>
+              It is presented as an artistic exploration of a fictional
+              character's worldview. Proceed with an open mind, but also with
+              caution.
+            </p>
+          </div>
+          <button id="understand-btn" class="btn btn-warning">
+            <span class="btn-text">I Understand</span>
+            <span class="btn-zipper">⏤</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Blood splash canvas (overlay) -->
+      <canvas
+        id="blood-canvas"
+        class="splash-blood-canvas hidden"
+        aria-hidden="true"
+      ></canvas>
+
+      <!-- Transition overlay -->
+      <div id="transition-overlay" class="splash-transition hidden"></div>
+    </main>
+
+    <!-- Scripts -->
+    <script type="module" src="/js/index.js"></script>
+  </body>
+</html>

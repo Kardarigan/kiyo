@@ -1,0 +1,58 @@
+// ========================================
+// Buttons
+// ========================================
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-xl);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all var(--transition-normal);
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.btn-warning {
+  background: var(--color-blood);
+  color: var(--color-text-primary);
+  border-color: var(--color-blood);
+
+  &:hover:not(:disabled) {
+    background: transparent;
+    color: var(--color-blood);
+    border-color: var(--color-blood);
+  }
+}
+
+.btn-accent {
+  background: var(--color-accent);
+  color: var(--color-background);
+
+  &:hover:not(:disabled) {
+    background: transparent;
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-text-secondary);
+  border-color: var(--color-text-muted);
+
+  &:hover:not(:disabled) {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+}

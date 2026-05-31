@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="The personal website of Korekiyo Shinguji, Ultimate Anthropologist."
+    />
+    <title>Korekiyo Shinguji — Folklorist & Observer of Humanity</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Preload critical fonts -->
+    <link
+      rel="preload"
+      href="/fonts/public/garamond-rough-pro-bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/public/garamond-rough-pro-regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+  </head>
+  <body>
+    <!-- Accessibility skip link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation (dynamically redered) -->
+    <header class="site-navigation"></header>
+
+    <!-- Main content area -->
+    <main id="main-content" class="app-main">
+      <div id="page-container" class="page-container">
+        <!-- Here is where page content will inject by router -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="site-footer" class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-text text-muted">"Humanity is beatiful."</p>
+        <p class="footer-copyright text-muted">&copy; 2026 - A Shrine</p>
+      </div>
+    </footer>
+
+    <!-- Three.js canvas (background ambient scene) -->
+    <canvas
+      id="ambient-canvas"
+      class="ambient-canvas"
+      aria-hidden="true"
+    ></canvas>
+
+    <!-- Audio element (hidden, contorlled by JS) -->
+    <audio id="ambient-audio" preload="none" loop>
+      <source src="/audio/korekiyo/whisper-soft.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Custom cursor element -->
+    <div id="custom-cursor" class="custom-cursor" aria-hidden="true">
+      <span class="cursor-zipper">♰</span>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="app-loader" class="app-loader">
+      <div class="loader-inner">
+        <span class="loader-symbol">∴</span>
+        <p class="loader-text text-muted">Loading...</p>
+      </div>
+    </div>
+
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>

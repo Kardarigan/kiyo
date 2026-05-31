@@ -1,0 +1,43 @@
+// ========================================
+// Content Containers
+// ========================================
+
+.card {
+  background: var(--color-surface);
+  border: var(--border-thin);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-normal),
+    border-color var(--transition-normal);
+
+  &:hover {
+    border-color: var(--color-accent-dim);
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.page-section {
+  margin-bottom: var(--space-section);
+}
+
+.accent-quote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: var(--space-lg);
+  margin: var(--space-xl) 0;
+  font-style: italic;
+}
+
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  color: var(--color-text-muted);
+
+  h2 {
+    font-family: var(--font-heading);
+    margin-bottom: var(--space-md);
+  }
+}

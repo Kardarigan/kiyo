@@ -1,0 +1,32 @@
+// ========================================
+// Accessibility
+// ========================================
+
+// Skip to content link
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-accent);
+  color: var(--color-background);
+  padding: var(--space-sm) var(--space-lg);
+  z-index: 1000;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  transition: top var(--transition-fast);
+
+  &:focus {
+    top: var(--space-sm);
+  }
+}
+
+// High contrast mode adjustments
+@media (forced-colors: active) {
+  .btn,
+  .card,
+  .artifact-item {
+    border: 1px solid ButtonText;
+  }
+}

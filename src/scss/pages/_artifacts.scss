@@ -1,0 +1,92 @@
+// ========================================
+// Artifacts Page Styles
+// ========================================
+
+.artifact-card {
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform var(--transition-normal),
+    box-shadow var(--transition-normal);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+
+    .artifact-image {
+      filter: brightness(1.1);
+    }
+  }
+}
+
+.artifact-image-container {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: var(--color-background);
+}
+
+.artifact-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8) sepia(0.2);
+  transition: filter var(--transition-normal);
+}
+
+.artifact-badge {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  padding: var(--space-xs) var(--shadow-sm);
+  background: rgba(0, 0, 0, 0.7);
+  border: var(--border-thin);
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+}
+
+.artifact-info {
+  padding: var(--space-md);
+}
+
+.artifact-origin {
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
+}
+
+.artifact-desc {
+  font-size: var(--text-xs);
+}
+
+// Artifact modal
+.modal-artifact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.modal-artifact-image {
+  img {
+    width: 100%;
+    border: var(--border-thin);
+  }
+}
+
+.modal-artifact-info {
+  span {
+    font-family: var(--font-accent);
+    font-size: var(--text-xs);
+    letter-spacing: 0.05em;
+  }
+
+  h2 {
+    margin: var(--space-sm) 0;
+  }
+}

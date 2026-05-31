@@ -1,0 +1,25 @@
+{
+  "name": "korekiyo-shinguji",
+  "version": "1.0.0",
+  "describetion": "A shrine to Korekiyo Shinguji - reusable character showcase engine",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "setup": "node scripts/setup.js",
+    "new-character": "node scripts/new-character.js"
+  },
+  "keywords": [
+    "danganronpa",
+    "korekiyo-shinguji",
+    "dark-academia",
+    "character-website"
+  ],
+  "author": "Dara",
+  "license": "MIT",
+  "engines": {
+    "node": ">=13.0.0"
+  },
+  "private": true
+}

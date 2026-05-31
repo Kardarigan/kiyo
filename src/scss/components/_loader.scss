@@ -1,0 +1,50 @@
+// ========================================
+// App Loader
+// ========================================
+
+.app-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-loader);
+  transition: opacity 0.3s ease;
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.loader-inner {
+  text-align: center;
+}
+
+.loader-symbol {
+  display: block;
+  font-size: 3rem;
+  color: var(--color-accent);
+  animation: pulse 2s infinite;
+  margin-bottom: var(--space-md);
+}
+
+.loader-text {
+  font-family: var(--font-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}

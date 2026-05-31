@@ -1,0 +1,111 @@
+// ========================================
+// About Page Styles
+// ========================================
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-3xl);
+  align-items: start;
+  margin: var(--space-2xl) 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-content {
+  .about-text {
+    margin-bottom: var(--space-2xl);
+
+    p {
+      margin-bottom: var(--space-md);
+    }
+  }
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+
+  .detail-label {
+    font-family: var(--font-accent);
+    font-size: var(--text-xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .detail-value {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    color: var(--color-text-primary);
+  }
+}
+
+.about-image {
+  .portrait-frame {
+    border: var(--border-thin);
+    padding: var(--space-sm);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .portrait-side {
+    width: 100%;
+    filter: sepia(0.3) brightness(0.85);
+    transition: filter var(--transition-slow);
+
+    &:hover {
+      filter: sepia(0.1) brightness(0.95);
+    }
+  }
+
+  .image-caption {
+    margin-top: var(--space-sm);
+    text-align: right;
+    font-size: var(--text-sm);
+    opacity: 0.7;
+  }
+}
+
+.about-appearance {
+  margin-top: var(--space-section);
+
+  h3 {
+    margin-bottom: var(--space-lg);
+  }
+}
+
+.appearance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+}
+
+.appearance-item {
+  padding: var(--space-md);
+  border: var(--border-thin);
+  background: var(--color-surface);
+
+  .appearance-key {
+    display: block;
+    font-family: var(--font-accent);
+    font-size: var(--text-xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-xs);
+  }
+
+  .appearance-desc {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+  }
+}

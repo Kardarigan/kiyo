@@ -1,0 +1,53 @@
+// ========================================
+// Card Components
+// ========================================
+
+.card {
+  background: var(--color-surface);
+  border: var(--border-thin);
+  padding: var(--space-xl);
+  transition: border-color var(--transition-normal),
+    box-shadow var(--transition-normal), transform var(--transition-normal);
+
+  &:hover {
+    border-color: var(--color-accent-dim);
+  }
+}
+
+.page-header {
+  margin-bottom: var(--space-3xl);
+
+  .heading-1 {
+    margin-bottom: var(--space-sm);
+  }
+
+  .body-large {
+    max-width: var(--content-width);
+  }
+}
+
+.header-ornament {
+  width: 60px;
+  height: 1px;
+  margin-top: var(--space-lg);
+  background: linear-gradient(to right, var(--color-accent), transparent);
+}
+
+.image-frame {
+  overflow: hidden;
+
+  img {
+    transition: transform var(--transition-slow), filter var(--transition-slow);
+  }
+
+  &:hover img {
+    transform: scale(1.02);
+  }
+}
+
+// Scroll animations
+.slide-up-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
