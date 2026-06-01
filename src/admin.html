@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMS - Content Management</title>
+
+    <link rel="stylesheet" href="/scss/main.css" />
+
+    <style>
+      .admin-body {
+        background: #0a0a0a;
+        font-family: "Cardo", serif;
+      }
+      .admin-login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .admin-panel {
+        display: none;
+      }
+      .admin-panel.active {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body class="admin-body">
+    <!-- Login Screen -->
+    <div id="admin-login" class="admin-login">
+      <form id="login-form" class="login-form card">
+        <h1
+          class="heading-2 text-accent"
+          style="text-align: center; margin-bottom: var(--space-xl)"
+        >
+          Content Management
+        </h1>
+        <div class="form-group">
+          <label for="username" class="form-label">Username</label>
+          <input
+            type="text"
+            id="username"
+            class="form-input"
+            autocomplete="username"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="form-input"
+            autocomplete="current-password"
+            required
+          />
+        </div>
+        <div id="login-error" class="form-error hidden"></div>
+        <button type="submit" class="btn btn-accent" style="width: 100%">
+          Authenticate
+        </button>
+        <p
+          class="text-muted"
+          style="
+            text-align: center;
+            margin-top: var(--space-md);
+            font-size: var(--text-xs);
+          "
+        >
+          Default credentials: kiyo / anthropology1933
+        </p>
+      </form>
+    </div>
+
+    <!-- Admin Panel (hidden until login) -->
+    <div id="admin-panel" class="admin-panel">
+      <!-- Sidebar -->
+      <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+          <span class="brand-icon">∴</span>
+          <span class="brand-text">CMS Panel</span>
+        </div>
+
+        <nav class="sidebar-nav">
+          <button class="sidebar-link active" data-panel="content">
+            <span class="sidebar-icon">📝</span>
+            Content Editor
+          </button>
+          <button class="sidebar-link" data-panel="theme">
+            <span class="sidebar-icon">🎨</span>
+            Theme Customizer
+          </button>
+          <button class="sidebar-link" data-panel="images">
+            <span class="sidebar-icon">🖼️</span>
+            Image Manager
+          </button>
+          <button class="sidebar-link" data-panel="meta">
+            <span class="sidebar-icon">⚙️</span>
+            Site Settings
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <button
+            id="save-all-btn"
+            class="btn btn-accent"
+            style="width: 100%; margin-bottom: var(--space-sm)"
+          >
+            Save All Changes
+          </button>
+          <button id="logout-btn" class="btn btn-ghost" style="width: 100%">
+            Logout
+          </button>
+          <div id="save-status" class="save-status text-muted"></div>
+        </div>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="admin-main">
+        <!-- Content Editor Panel -->
+        <section id="panel-content" class="admin-section active">
+          <h2 class="heading-2">Content Editor</h2>
+          <p class="text-muted">
+            Edit page content, journal entries, and artifacts.
+          </p>
+          <div class="header-ornament"></div>
+          <div id="content-editor-container"></div>
+        </section>
+
+        <!-- Theme Customizer Panel -->
+        <section id="panel-theme" class="admin-section">
+          <h2 class="heading-2">Theme Customizer</h2>
+          <p class="text-muted">Adjust colors, fonts, and ambient settings.</p>
+          <div class="header-ornament"></div>
+          <div id="theme-customizer-container"></div>
+        </section>
+
+        <!-- Image Manager Panel -->
+        <section id="panel-images" class="admin-section">
+          <h2 class="heading-2">Image Manager</h2>
+          <p class="text-muted">
+            Update image references for character assets.
+          </p>
+          <div class="header-ornament"></div>
+          <div id="image-manager-container"></div>
+        </section>
+
+        <!-- Site Settings Panel -->
+        <section id="panel-meta" class="admin-section">
+          <h2 class="heading-2">Site Settings</h2>
+          <p class="text-muted">
+            Global configuration and character switching.
+          </p>
+          <div class="header-ornament"></div>
+          <div id="meta-settings-container"></div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/js/admin.js"></script>
+  </body>
+</html>
