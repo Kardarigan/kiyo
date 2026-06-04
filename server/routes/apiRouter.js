@@ -40,6 +40,14 @@ export async function apiRouter(req, res, url) {
     }
   }
 
+  // Auth verification
+  if (path === "/api/v1/auth/verify") {
+    if (apiAuth(req, res)) {
+      sendJSON(res, { authenticated: true });
+    }
+    return;
+  }
+
   // Protected routes (require auth)
   if (!apiAuth(req, res)) return;
 

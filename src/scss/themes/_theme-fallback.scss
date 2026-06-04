@@ -1,0 +1,14 @@
+// ========================================
+// Theme Fallback
+// absolute minimum styles if everything fails
+// ========================================
+
+.theme-fallback {
+  background: #0d0d0d;
+  color: #e8dcc8;
+  font-family: "Cardo", "Georgia", serif;
+
+  a {
+    color: #c9a84c;
+  }
+}

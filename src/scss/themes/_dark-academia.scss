@@ -1,0 +1,24 @@
+// ========================================
+// Dark Academia Theme (Korekiyo Default)
+// applied via CSS custom properties from JSON
+// this file provides sensible fallbacks
+// ========================================
+
+// Only applies if custom properties are missing
+@supports not (--color-primary: #1a2e1a) {
+  :root {
+    --color-primary: #1a2e1a;
+    --color-primary-light: #2a452a;
+    --color-secondary: #1c1c1c;
+    --color-accent: #c9a84c;
+    --color-accent-dim: #8a7030;
+    --color-blood: #6b0f0f;
+    --color-text-primary: #e8dcc8;
+    --color-text-secondary: #c4b99a;
+    --color-text-muted: #8a8060;
+    --color-background: #0d0d0d;
+    --color-surface: #141414;
+    --color-parchment: #efe3c3;
+    --color-parchment-dark: #d4c5a0;
+  }
+}

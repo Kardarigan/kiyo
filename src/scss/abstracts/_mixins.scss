@@ -1,0 +1,43 @@
+// ========================================
+// SCSS Mixins
+// ========================================
+
+// Responsive breakpoint
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint == wide {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+}
+
+// Flexbox center
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Text truncation
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Smooth animation
+@mixin animate($property: all, $duration: 0.3s, $easing: ease) {
+  transition: $property $duration $easing;
+}

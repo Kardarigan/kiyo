@@ -1,0 +1,29 @@
+// ========================================
+// Tooltip Styles
+// ========================================
+
+[data-tooltip] {
+  position: relative;
+
+  &::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--color-surface);
+    border: var(--border-thin);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-fast);
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}

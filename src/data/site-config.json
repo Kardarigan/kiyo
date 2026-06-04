@@ -1,0 +1,12 @@
+{
+  "activeCharacter": "korekiyo",
+  "siteName": "Korekiyo Shinguji — Academic Portfolio",
+  "version": "1.0.0",
+  "features": {
+    "splashScreen": true,
+    "ambientAudio": true,
+    "threeBackground": true,
+    "customCursor": false,
+    "easterEggs": true
+  }
+}

@@ -5,64 +5,31 @@ korekiyo-shinguji/
 │   └── manifest.json
 │
 ├── src/                                 # Application source
-│   ├── scss/
-│   │   ├── abstracts/
-│   │   │   ├── _functions.scss          # SCSS functions
-│   │   │   ├── _mixins.scss             # SCSS mixins
-│   │   │   └── _placeholders.scss       # SCSS placeholders
-│   │   ├── components/
-│   │   │   ├── _buttons.scss            # All button styles
-│   │   │   ├── _loader.scss             # Loading states
-│   │   │   ├── _cursor.scss             # Custom cursor
-│   │   │   └── _tooltip.scss            # Tooltips
-│   │   ├── pages/
-│   │   │   └── _admin.scss              # CMS panel
-│   │   └── themes/
-│   │       ├── _dark-academia.scss      # Korekiyo's theme
-│   │       └── _theme-fallback.scss     # Default if JSON fails
-│   │
 │   ├── js/
-│   │   ├── pages/
-│   │   │   ├── SplashPage.js            # Splash controller
-│   │   │   └── AdminPage.js             # Admin panel controller
-│   │   │
-│   │   ├── components/
-│   │   │   ├── ContentCard.js           # Reusable card
-│   │   │   ├── Loader.js                # Loading indicator
-│   │   │   └── AudioPlayer.js           # Audio handler
-│   │   │
-│   │   ├── features/
-│   │   │   ├── CursorEffect.js          # Custom cursor
-│   │   │   ├── ParallaxController.js    # Subtle parallax
-│   │   │   ├── EasterEggs.js            # Hidden interactions
-│   │   │
-│   │   ├── three/
-│   │   │   ├── geometries/
-│   │   │   │   ├── KatanaGeometry.js    # Blade geometry
-│   │   │   │   ├── RopeGeometry.js      # Coiled rope
-│   │   │   │   └── CandleGeometry.js    # Splash page candle
-│   │   │   └── effects/
-│   │   │       ├── FogEffect.js         # Atmospheric fog
-│   │   │       ├── ParticleSystem.js    # Dust/embers
-│   │   │       └── PostProcess.js       # Simple post effects
-│   │   │
-│   │   ├── admin/
-│   │   │   ├── AuthManager.js           # Login/auth logic
-│   │   │   ├── ContentEditor.js         # JSON content editing
-│   │   │   ├── ImageManager.js          # Image reference management
-│   │   │   ├── ThemeCustomizer.js       # Color/font customization
-│   │   │   └── SaveManager.js           # API save operations
-│   │   │
-│   │   └── utils/
-│   │       ├── Sanitizer.js             # Input sanitization
-│   │       ├── Validator.js             # Data validation
-│   │
-│   └── data/
-│       ├── characters/
-│       │   ├── korekiyo.json            # Korekiyo's complete data
-│       │   ├── template.json            # Template for new characters
-│       │   └── index.json               # Character registry
-│       └── site-config.json             # Global configuration
+│       ├── pages/
+│       │   ├── SplashPage.js            # Splash controller
+│       │   └── AdminPage.js             # Admin panel controller
+│       │
+│       ├── components/
+│       │   ├── ContentCard.js           # Reusable card
+│       │   ├── Loader.js                # Loading indicator
+│       │   └── AudioPlayer.js           # Audio handler
+│       │
+│       ├── features/
+│       │   ├── CursorEffect.js          # Custom cursor
+│       │   ├── ParallaxController.js    # Subtle parallax
+│       │   ├── EasterEggs.js            # Hidden interactions
+│       │
+│       ├── three/
+│       │   ├── geometries/
+│       │   │   ├── KatanaGeometry.js    # Blade geometry
+│       │   │   ├── RopeGeometry.js      # Coiled rope
+│       │   │   └── CandleGeometry.js    # Splash page candle
+│       │   └── effects/
+│       │       └── PostProcess.js       # Simple post effects
+│       └── utils/
+│           ├── Sanitizer.js             # Input sanitization
+│           ├── Validator.js             # Data validation
 │
 ├── server/
 │   └── models/

@@ -1,0 +1,11 @@
+{
+  "characters": [
+    {
+      "id": "korekiyo",
+      "name": "Korekiyo Shinguji",
+      "title": "The Ultimate Anthropologist",
+      "file": "korekiyo.json",
+      "active": true
+    }
+  ]
+}

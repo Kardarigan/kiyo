@@ -1,0 +1,129 @@
+{
+  "character": {
+    "id": "new-character",
+    "name": "Character Name",
+    "title": "Title",
+    "tagline": "A memorable tagline.",
+    "bio": {
+      "short": "Short bio.",
+      "full": "Full biography text."
+    },
+    "affiliation": "Affiliation",
+    "appearance": {
+      "key_trait": "Description"
+    }
+  },
+  "theme": {
+    "colors": {
+      "primary": "#1a1a1a",
+      "primaryLight": "#2a2a2a",
+      "secondary": "#1c1c1c",
+      "accent": "#c9a84c",
+      "accentDim": "#8a7030",
+      "blood": "#6b0f0f",
+      "textPrimary": "#e8dcc8",
+      "textSecondary": "#c4b99a",
+      "textMuted": "#8a8060",
+      "background": "#0d0d0d",
+      "surface": "#141414",
+      "parchment": "#efe3c3",
+      "parchmentDark": "#d4c5a0"
+    },
+    "fonts": {
+      "heading": "Garamond Rough Pro",
+      "body": "Cardo",
+      "accent": "Cinzel",
+      "handwritten": "Aldridgescript"
+    },
+    "ambient": {
+      "fogColor": "#0a1a0a",
+      "fogDensity": 0.03,
+      "candlelightColor": "#d4a843",
+      "shadowIntensity": 0.8
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Character Name",
+      "subtitle": "Subtitle",
+      "heroQuote": "A memorable quote.",
+      "featuredImage": "portrait-main.webp",
+      "sections": []
+    },
+    "about": {
+      "title": "About",
+      "content": "About content.",
+      "image": "portrait-profile.webp"
+    },
+    "journal": {
+      "title": "Journal",
+      "description": "Journal description.",
+      "entries": []
+    },
+    "artifacts": {
+      "title": "Collection",
+      "description": "Collection description.",
+      "items": []
+    },
+    "sister": {
+      "title": "Muse",
+      "subtitle": "Subtitle",
+      "poem": "Poem text.",
+      "content": "Content.",
+      "image": "sister-portrait.webp",
+      "hairpinImage": "sister-hairpin.webp"
+    }
+  },
+  "easterEggs": {
+    "secretPhrase": "secret",
+    "secretResponse": "You found it.",
+    "whisperTexts": ["Whisper..."],
+    "glitchOnHover": true,
+    "unmaskReveal": false
+  },
+  "threeD": {
+    "mainScene": "floating-mask",
+    "objects": [
+      {
+        "id": "floating-mask",
+        "type": "mask",
+        "position": { "x": 0, "y": 0.2, "z": 0 },
+        "rotation": { "x": 0, "y": 0.5, "z": 0 },
+        "scale": 1.0,
+        "animation": "slowFloat"
+      }
+    ],
+    "camera": {
+      "position": { "x": 0, "y": 0.3, "z": 3.5 },
+      "lookAt": { "x": 0, "y": 0.1, "z": 0 },
+      "fov": 45
+    },
+    "lighting": {
+      "ambient": { "color": "#1a2a1a", "intensity": 0.4 },
+      "key": {
+        "color": "#d4a843",
+        "intensity": 0.8,
+        "position": { "x": 2, "y": 1, "z": 2 }
+      },
+      "rim": {
+        "color": "#4a3a2a",
+        "intensity": 0.3,
+        "position": { "x": -1, "y": 0.5, "z": -1 }
+      }
+    }
+  },
+  "audio": {
+    "ambient": "whisper-soft.mp3",
+    "volume": 0.08,
+    "triggerOn": []
+  },
+  "meta": {
+    "version": "1.0.0",
+    "lastModified": "2026-05-15",
+    "author": "",
+    "seo": {
+      "description": "",
+      "keywords": ""
+    }
+  }
+}

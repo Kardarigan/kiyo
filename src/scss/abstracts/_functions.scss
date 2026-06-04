@@ -1,0 +1,12 @@
+// ========================================
+// SCSS Functions
+// ========================================
+
+@function rem($px) {
+  @return calc($px / 16) * 1 rem;
+}
+
+// Lighten a CSS varibale color (utility only, not dynamic)
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}

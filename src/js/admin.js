@@ -123,12 +123,16 @@ class AdminController {
   switchPanel(panelName) {
     // Hide all panels
     document.querySelectorAll(".admin-section").forEach((section) => {
+      section.style.display = "none";
       section.classList.remove("active");
     });
 
     // Show selected panel
     const panel = document.getElementById(`panel-${panelName}`);
-    if (panel) panel.classList.add("active");
+    if (panel) {
+      panel.style.display = "block";
+      panel.classList.add("active");
+    }
 
     // Update sidebar
     document.querySelectorAll(".sidebar-link").forEach((link) => {
