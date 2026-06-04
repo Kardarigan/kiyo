@@ -16,6 +16,10 @@
   }
 }
 
+.page-container {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 .page-section {
   margin-bottom: var(--space-section);
 }

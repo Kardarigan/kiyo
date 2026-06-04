@@ -1,43 +1,44 @@
 // Abstracts
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
 
 // Base
-@import 'base/reset';
-@import 'base/typography';
-@import 'base/accessibility';
-@import 'base/base';
+@import "base/reset";
+@import "base/typography";
+@import "base/accessibility";
+@import "base/base";
 
 // Layout
-@import 'layout/grid';
-@import 'layout/navigation';
-@import 'layout/footer';
-@import 'layout/containers';
+@import "layout/grid";
+@import "layout/navigation";
+@import "layout/footer";
+@import "layout/containers";
 
 // Components
-@import 'components/buttons';
-@import 'components/cards';
-@import 'components/modal';
-@import 'components/loader';
-@import 'components/cursor';
-@import 'components/tooltip';
+@import "components/buttons";
+@import "components/cards";
+@import "components/modal";
+@import "components/loader";
+@import "components/cursor";
+@import "components/tooltip";
+@import "components/easter-eggs";
 
 // Pages
-@import 'pages/splash';
-@import 'pages/home';
-@import 'pages/about';
-@import 'pages/journal';
-@import 'pages/artifacts';
-@import 'pages/sister';
-@import 'pages/admin';
+@import "pages/splash";
+@import "pages/home";
+@import "pages/about";
+@import "pages/journal";
+@import "pages/artifacts";
+@import "pages/sister";
+@import "pages/admin";
 
 // Animations
-@import 'animations/keyframes';
-@import 'animations/transitions';
-@import 'animations/three-canvas';
+@import "animations/keyframes";
+@import "animations/transitions";
+@import "animations/three-canvas";
 
 // Themes
-@import 'themes/dark-academia';
-@import 'themes/theme-fallback';
+@import "themes/dark-academia";
+@import "themes/theme-fallback";

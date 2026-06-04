@@ -1,4 +1,4 @@
-korekiyo-shinguji/
+korekiyo-shinguji
 │
 ├── public/                              # Static files served directly
 │   ├── robots.txt
@@ -9,24 +9,11 @@ korekiyo-shinguji/
 │       ├── pages/
 │       │   ├── SplashPage.js            # Splash controller
 │       │   └── AdminPage.js             # Admin panel controller
-│       │
-│       ├── components/
-│       │   ├── ContentCard.js           # Reusable card
-│       │   ├── Loader.js                # Loading indicator
-│       │   └── AudioPlayer.js           # Audio handler
-│       │
-│       ├── features/
-│       │   ├── CursorEffect.js          # Custom cursor
-│       │   ├── ParallaxController.js    # Subtle parallax
-│       │   ├── EasterEggs.js            # Hidden interactions
-│       │
 │       ├── three/
 │       │   ├── geometries/
 │       │   │   ├── KatanaGeometry.js    # Blade geometry
 │       │   │   ├── RopeGeometry.js      # Coiled rope
 │       │   │   └── CandleGeometry.js    # Splash page candle
-│       │   └── effects/
-│       │       └── PostProcess.js       # Simple post effects
 │       └── utils/
 │           ├── Sanitizer.js             # Input sanitization
 │           ├── Validator.js             # Data validation

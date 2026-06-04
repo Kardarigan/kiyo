@@ -37,6 +37,15 @@ export class Router {
 
     this.eventBus.emit("page:loading");
 
+    // Fade out current page
+    if (this.container) {
+      this.container.style.opacity = "0";
+      this.container.style.transform = "translateY(10px)";
+    }
+
+    // Wait for transition
+    await new Promise((resolve) => setTimeout(resolve, 200));
+
     if (this.currentPage && typeof this.currentPage.destroy === "function") {
       this.currentPage.destroy();
     }
@@ -46,11 +55,13 @@ export class Router {
     const PageClass = this.pages[pageName];
     if (!PageClass) {
       this.container.innerHTML = `
-        <div class="error-state fade-enter">
-          <h2>Page Not Found</h2>
-          <p class="text-muted">The page you're looking for does not exist.</p>
-        </div>`;
+      <div class="error-state fade-enter">
+        <h2>Page Not Found</h2>
+        <p class="text-muted">The page you're looking for does not exist.</p>
+      </div>`;
       this.eventBus.emit("page:loaded");
+      this.container.style.opacity = "1";
+      this.container.style.transform = "translateY(0)";
       return;
     }
 
@@ -64,16 +75,19 @@ export class Router {
     } catch (error) {
       this.logger.error(`Failed to render "${pageName}"`, error);
       this.container.innerHTML = `
-        <div class="error-state fade-enter">
-          <h2>Error loading page</h2>
-          <p class="text-muted">Something went wrong. Please try again.</p>
-        </div>`;
+      <div class="error-state fade-enter">
+        <h2>Error loading page</h2>
+        <p class="text-muted">Something went wrong. Please try again.</p>
+      </div>`;
     }
 
     this.eventBus.emit("route:changed", pageName);
     this.eventBus.emit("page:loaded");
 
-    // Scroll to top on navigation
+    // Fade in new page
+    this.container.style.opacity = "1";
+    this.container.style.transform = "translateY(0)";
+
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
