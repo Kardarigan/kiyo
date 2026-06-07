@@ -1,0 +1,16 @@
+{
+  "name": "Korekiyo Shinguji - Kinda Portfolio",
+  "short_name": "Kiyo Shrine",
+  "description": "The personal website of Korekiyo Shinguji, Ultimate Anthropologist.",
+  "start_url": "/app",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#1a2e1a",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}
