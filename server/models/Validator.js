@@ -2,7 +2,7 @@
  * Server side validation for character data
  */
 
-export class Validator {
+class Validator {
   static validateCharacterUpdate(data) {
     const errors = [];
     if (!data) {
@@ -21,3 +21,5 @@ export class Validator {
     return { valid: errors.length === 0, errors };
   }
 }
+
+module.exports = { Validator };

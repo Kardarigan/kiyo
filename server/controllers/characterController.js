@@ -1,9 +1,13 @@
-import { join } from "path";
-import { readJSON, writeJSON } from "../utils/fileSystem.js";
-import { sendJSON, sendError, sendSuccess } from "../utils/responseHelper.js";
-import config from "../config.js";
+const { join } = require("path");
+const { readJSON, writeJSON } = require("../utils/fileSystem.js");
+const {
+  sendJSON,
+  sendError,
+  sendSuccess,
+} = require("../utils/responseHelper.js");
+const config = require("../config.js");
 
-export const characterController = {
+const characterController = {
   async getCharacter(req, res) {
     const activeCharacter = await readJSON(config.siteConfigPath);
     if (!activeCharacter?.activeCharacter) {
@@ -69,3 +73,5 @@ export const characterController = {
     sendSuccess(res, updated, "Character updated successfully");
   },
 };
+
+module.exports = { characterController };

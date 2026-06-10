@@ -1,12 +1,12 @@
-import { readJSON, writeJSON, fileExists } from "../utils/fileSystem.js";
-import { join } from "path";
-import config from "../config.js";
+const { readJSON, writeJSON, fileExists } = require("../utils/fileSystem.js");
+const { join } = require("path");
+const config = require("../config.js");
 
 /*
  * File based JSON store with validation
  */
 
-export class FileStore {
+class FileStore {
   constructor(collection) {
     this.collection = collection;
     this.basePath = config.dataDir;
@@ -38,3 +38,5 @@ export class FileStore {
     return await fileExists(path);
   }
 }
+
+module.exports = { FileStore };

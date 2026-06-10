@@ -2,7 +2,7 @@
  * Request logger middleware
  * logs timestamp, method, URL, status, and response time
  */
-export function logger(req, res) {
+function logger(req, res) {
   const start = Date.now();
   const { method, url } = req;
 
@@ -19,3 +19,5 @@ export function logger(req, res) {
     return originalEnd(...args);
   };
 }
+
+module.exports = { logger };

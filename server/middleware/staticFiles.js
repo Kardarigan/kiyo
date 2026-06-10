@@ -1,14 +1,14 @@
-import { join } from "path";
-import { readFile, access } from "fs/promises";
-import { createReadStream } from "fs";
-import config from "../config.js";
+const { join } = require("path");
+const { readFile, access } = require("fs/promises");
+const { createReadStream } = require("fs");
+const config = require("../config.js");
 
 /*
  * Static file serving middleware
  * Serves files from both /public/ and /src/ directories
  */
 
-export async function staticFiles(req, res, pathname) {
+async function staticFiles(req, res, pathname) {
   // Determine which directory the file lives in
   let filePath;
 
@@ -70,3 +70,5 @@ export async function staticFiles(req, res, pathname) {
     }
   }
 }
+
+module.exports = { staticFiles };

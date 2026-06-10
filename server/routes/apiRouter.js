@@ -1,14 +1,16 @@
-import { bodyParser } from "../middleware/bodyParser.js";
-import { apiAuth } from "../middleware/apiAuth.js";
-import { characterController } from "../controllers/characterController.js";
-import { configController } from "../controllers/configController.js";
-import { sendError } from "../utils/responseHelper.js";
+const { bodyParser } = require("../middleware/bodyParser.js");
+const { apiAuth } = require("../middleware/apiAuth.js");
+const {
+  characterController,
+} = require("../controllers/characterChontorller.js");
+const { configController } = require("../controllers/configController.js");
+const { sendError } = require("../utils/responseHelper.js");
 
 /*
  * API Router
- * Handles all /api/v1/* requests
+ * handles all /api/v1/* requests
  */
-export async function apiRouter(req, res, url) {
+async function apiRouter(req, res, url) {
   const path = url.pathname;
   const method = req.method;
 
@@ -76,3 +78,5 @@ export async function apiRouter(req, res, url) {
   // Fallback
   sendError(res, "API endpoint not found", 404);
 }
+
+module.exports = { apiRouter };

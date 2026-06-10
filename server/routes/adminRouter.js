@@ -1,12 +1,13 @@
-import { join } from "path";
-import { readFile } from "fs/promises";
-import config from "../config.js";
+const { join } = require("path");
+const { readFile } = require("fs/promises");
+const config = require("../config.js");
 
 /*
  * Admin Router
- * Serves the admin panel and handles admin API calls
+ * serves the admin panel and handles admin API calls
  */
-export async function adminRouter(req, res, url) {
+
+async function adminRouter(req, res, url) {
   const pathname = url.pathname;
 
   // Serve admin.html
@@ -27,3 +28,5 @@ export async function adminRouter(req, res, url) {
   res.writeHead(404);
   res.end("Admin route not found");
 }
+
+module.exports = { adminRouter };

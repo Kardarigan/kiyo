@@ -1,11 +1,11 @@
-import config from "../config.js";
+const config = require("../config.js");
 
 /*
  * Simple API authentication middleware
  * Uses Basic Auth for admin endpoints
  */
 
-export function apiAuth(req, res) {
+function apiAuth(req, res) {
   const authHeader = req.headers["authorization"];
 
   if (!authHeader || !authHeader.startsWith("Basic ")) {
@@ -29,3 +29,5 @@ export function apiAuth(req, res) {
 
   return true;
 }
+
+module.exports = { apiAuth };

@@ -1,12 +1,12 @@
-import { join } from "path";
-import { readFile } from "fs/promises";
-import config from "../config.js";
+const { join } = require("path");
+const { readFile } = require("fs/promises");
+const config = require("../config.js");
 
 /*
  * Page router
  * Serves HTML pages. The main app uses app.html as shell.
  */
-export async function pageRouter(req, res, pathname) {
+async function pageRouter(req, res, pathname) {
   let pagePath;
 
   // Route to correct HTML file
@@ -67,3 +67,5 @@ export async function pageRouter(req, res, pathname) {
     }
   }
 }
+
+module.exports = { pageRouter };

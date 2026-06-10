@@ -1,7 +1,7 @@
-import config from "../config.js";
-import { sendJSON, sendError } from "../utils/responseHelper.js";
+const config = require("../config.js");
+const { sendJSON, sendError } = require("../utils/responseHelper.js");
 
-export const authController = {
+const authController = {
   verify(req, res) {
     sendJSON(res, { authenticated: true, user: config.adminUser });
   },
@@ -10,3 +10,5 @@ export const authController = {
     sendJSON(res, { success: true, message: "Logged out successfully" });
   },
 };
+
+module.exports = { authController };

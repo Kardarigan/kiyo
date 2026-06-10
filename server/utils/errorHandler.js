@@ -2,7 +2,7 @@
  * Centralized error handler
  */
 
-export function errorHandler(res, error) {
+function errorHandler(res, error) {
   console.error("\x1b[31m[ERROR]\x1b[0m", error.message);
   console.error(error.stack);
 
@@ -19,3 +19,5 @@ export function errorHandler(res, error) {
     })
   );
 }
+
+module.exports = { errorHandler };

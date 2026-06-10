@@ -1,8 +1,12 @@
-import { readJSON, writeJSON } from "../utils/fileSystem.js";
-import { sendJSON, sendError, sendSuccess } from "../utils/responseHelper.js";
-import config from "../config.js";
+const { readJSON, writeJSON } = require("../utils/fileSystem.js");
+const {
+  sendJSON,
+  sendError,
+  sendSuccess,
+} = require("../utils/responseHelper.js");
+const config = require("../config.js");
 
-export const configController = {
+const configController = {
   async getConfig(req, res) {
     const siteConfig = await readJSON(config.siteConfigPath);
     sendJSON(res, siteConfig || { activeCharacter: "korekiyo" });
@@ -23,3 +27,5 @@ export const configController = {
     sendSuccess(res, updated, "Config updated successfully");
   },
 };
+
+module.exports = { configController };

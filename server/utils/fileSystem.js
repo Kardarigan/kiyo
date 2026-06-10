@@ -1,11 +1,10 @@
-import { readFile, writeFile, access, mkdir } from "fs/promises";
-import { dirname } from "path";
-
+const { readFile, writeFile, access, mkdir } = require("fs/promises");
+const { dirname } = require("path");
 /*
  * Safe file read with JSON parsing
  */
 
-export async function readJSON(filePath) {
+async function readJSON(filePath) {
   try {
     const content = await readFile(filePath, "utf-8");
     return JSON.parse(content);
@@ -18,7 +17,7 @@ export async function readJSON(filePath) {
 /*
  * Safe file write with directory creation and formatting
  */
-export async function writeJSON(filePath, data) {
+async function writeJSON(filePath, data) {
   await mkdir(dirname(filePath), { recursive: true });
   await writeFile(filePath, JSON.stringify(data, null, 2), "utf-8");
   return true;
@@ -27,7 +26,7 @@ export async function writeJSON(filePath, data) {
 /*
  * Check if file exists
  */
-export async function fileExists(filePath) {
+async function fileExists(filePath) {
   try {
     await access(filePath);
     return true;
@@ -35,3 +34,5 @@ export async function fileExists(filePath) {
     return false;
   }
 }
+
+module.exports = { readJSON, writeJSON, fileExists };

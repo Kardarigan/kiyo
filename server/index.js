@@ -1,13 +1,11 @@
-import http from "http";
-import { join, extname } from "path";
-import { readFile, access } from "fs/promises";
-import config from "./config.js";
-import { pageRouter } from "./routes/pageRouter.js";
-import { apiRouter } from "./routes/apiRouter.js";
-import { adminRouter } from "./routes/adminRouter.js";
-import { logger } from "./middleware/logger.js";
-import { staticFiles } from "./middleware/staticFiles.js";
-import { errorHandler } from "./utils/errorHandler.js";
+const http = require("http");
+const config = require("./config.js");
+const { pageRouter } = require("./routes/pageRouter.js");
+const { apiRouter } = require("./routes/apiRouter.js");
+const { adminRouter } = require("./routes/adminRouter.js");
+const { logger } = require("./middleware/logger.js");
+const { staticFiles } = require("./middleware/staticFiles.js");
+const { errorHandler } = require("./utils/errorHandler.js");
 
 const server = http.createServer(async (req, res) => {
   try {

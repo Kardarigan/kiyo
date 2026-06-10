@@ -1,8 +1,4 @@
-import { fileURLToPath } from "url";
-import { dirname, join } from "path";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const { join } = require("path");
 
 const rootDir = join(__dirname, "..");
 
@@ -11,7 +7,7 @@ if (!process.env.ADMIN_USER || !process.env.ADMIN_PASS) {
   process.exit(1);
 }
 
-export default {
+module.exports = {
   port: process.env.PORT || 3000,
   host: process.env.HOST || "localhost",
   rootDir,
