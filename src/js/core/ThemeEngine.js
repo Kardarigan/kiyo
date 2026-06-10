@@ -1,4 +1,4 @@
-export class ThemeEngine {
+class ThemeEngine {
   constructor() {
     this.root = document.documentElement;
   }
@@ -44,3 +44,5 @@ export class ThemeEngine {
     this.root.style = "";
   }
 }
+
+module.exports = { ThemeEngine };

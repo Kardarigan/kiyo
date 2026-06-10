@@ -5,7 +5,7 @@ import { JournalPage } from "../pages/JournalPage.js";
 import { ArtifactsPage } from "../pages/ArtifactsPage.js";
 import { SisterPage } from "../pages/SisterPage.js";
 
-export class Router {
+class Router {
   constructor(stateManager, eventBus) {
     this.stateManager = stateManager;
     this.eventBus = eventBus;
@@ -99,3 +99,5 @@ export class Router {
     return page || "home";
   }
 }
+
+module.exports = { Router };

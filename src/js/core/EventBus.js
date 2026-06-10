@@ -1,4 +1,4 @@
-export class EventBus {
+class EventBus {
   constructor() {
     this.listeners = new Map();
   }
@@ -43,3 +43,5 @@ export class EventBus {
     return unsubscribe;
   }
 }
+
+module.exports = { EventBus };

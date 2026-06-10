@@ -2,7 +2,8 @@
  * Input Sanitizer
  * escapes HTML and prevents XSS
  */
-export class Sanitizer {
+
+class Sanitizer {
   static escapeHtml(str) {
     if (!str) return "";
     const map = {
@@ -34,3 +35,5 @@ export class Sanitizer {
     return obj;
   }
 }
+
+module.exports = { Sanitizer };

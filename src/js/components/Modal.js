@@ -2,7 +2,7 @@
  * Reusable modal component
  */
 
-export class Modal {
+class Modal {
   constructor() {
     this.isOpen = false;
     this.onClose = null;
@@ -64,3 +64,5 @@ export class Modal {
     if (e.key === "Escape") this.close();
   }
 }
+
+module.exports = { Modal };

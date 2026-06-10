@@ -3,7 +3,7 @@
  * adds depth to the page by moving certain elements at different rates on scroll.
  */
 
-export class ParallaxController {
+class ParallaxController {
   constructor() {
     this.elements = [];
     this.ticking = false;
@@ -68,3 +68,5 @@ export class ParallaxController {
     if (this.observer) this.observer.disconnect();
   }
 }
+
+module.exports = { ParallaxController };

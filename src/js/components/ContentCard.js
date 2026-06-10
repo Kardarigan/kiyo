@@ -5,7 +5,7 @@ import { DomHelper } from "../utils/DomHelper.js";
  * creates a styled card with optional image, title, text, and action
  */
 
-export class ContentCard {
+class ContentCard {
   static render({ image, title, subtitle, text, action, classes = "" }) {
     return `
     <article class="card content-card ${classes}">
@@ -44,3 +44,5 @@ export class ContentCard {
   `;
   }
 }
+
+module.exports = { ContentCard };

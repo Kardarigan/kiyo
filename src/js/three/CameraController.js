@@ -3,7 +3,7 @@
  * manages view and projection matrices with subtle floating animation.
  */
 
-export class CameraController {
+class CameraController {
   constructor(gl, config = {}) {
     this.gl = gl;
 
@@ -142,3 +142,5 @@ export class CameraController {
     out[15] = 1;
   }
 }
+
+module.exports = { CameraController };

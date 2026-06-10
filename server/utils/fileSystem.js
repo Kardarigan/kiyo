@@ -1,5 +1,11 @@
-const { readFile, writeFile, access, mkdir } = require("fs/promises");
+const { promisify } = require("util");
+const fs = require("fs");
+const readFile = promisify(fs.readFile);
+const writeFile = promisify(fs.writeFile);
+const access = promisify(fs.access);
+const mkdir = promisify(fs.mkdir);
 const { dirname } = require("path");
+
 /*
  * Safe file read with JSON parsing
  */

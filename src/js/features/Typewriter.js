@@ -3,7 +3,7 @@
  * Used on splash page and somewhere else
  */
 
-export class Typewriter {
+class Typewriter {
   constructor(element, options = {}) {
     this.element = element;
     this.text = options.text || element.textContent;
@@ -64,3 +64,5 @@ export class Typewriter {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }
+
+module.exports = { Typewriter };

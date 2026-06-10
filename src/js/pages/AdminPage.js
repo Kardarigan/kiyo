@@ -10,7 +10,7 @@ import { Logger } from "../utils/Logger.js";
  * Admin Page Controller
  */
 
-export class AdminPage {
+class AdminPage {
   constructor(container) {
     this.container = container;
     this.logger = new Logger("AdminPage");
@@ -173,3 +173,5 @@ export class AdminPage {
 
   destroy() {}
 }
+
+module.exports = { AdminPage };

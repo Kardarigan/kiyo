@@ -1,6 +1,6 @@
 import { EventBus } from "./EventBus";
 
-export class StateManger {
+class StateManger {
   constructor(eventBus) {
     this.state = {};
     this.eventBus = this.eventBus;
@@ -22,3 +22,5 @@ export class StateManger {
     return this.eventBus.on(`state:${key}`, callback);
   }
 }
+
+module.exports = { StateManger };

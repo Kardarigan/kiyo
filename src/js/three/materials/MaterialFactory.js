@@ -4,7 +4,7 @@ import { Shaders } from "./Shaders.js";
  * creates and manages WebGL shader programs with uniform locations
  */
 
-export class MaterialFactory {
+class MaterialFactory {
   constructor(gl) {
     this.gl = gl;
     this.programs = new Map();
@@ -110,3 +110,5 @@ export class MaterialFactory {
     this.programs.clear();
   }
 }
+
+module.exports = { MaterialFactory };

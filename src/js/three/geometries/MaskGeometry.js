@@ -4,7 +4,7 @@
  * a smooth, face-shaped surface with a subtle zipper line down the center
  * returns raw Float32Arrays for WebGL buffers
  */
-export class MaskGeometry {
+class MaskGeometry {
   // generate mask geometry
   static generate(resolution = 40) {
     const positions = [];
@@ -132,3 +132,5 @@ export class MaskGeometry {
     }
   }
 }
+
+module.exports = { MaskGeometry };

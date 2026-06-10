@@ -1,6 +1,6 @@
 import { Logger } from "../utils/Logger.js";
 
-export class WhisperController {
+class WhisperController {
   constructor(audioData) {
     this.logger = new Logger("Whisper");
     this.audioData = audioData;
@@ -50,3 +50,5 @@ export class WhisperController {
     this.isPlaying = false;
   }
 }
+
+module.exports = { WhisperController };

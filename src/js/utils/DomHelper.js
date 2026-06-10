@@ -1,4 +1,4 @@
-export class DomHelper {
+class DomHelper {
   // Escape HTML to prent XSS
   static escapeHtml(str) {
     if (!str) return "";
@@ -51,3 +51,5 @@ export class DomHelper {
     };
   }
 }
+
+module.exports = { DomHelper };

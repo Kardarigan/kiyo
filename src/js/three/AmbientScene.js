@@ -9,7 +9,7 @@ import { FogEffect } from "./effects/FogEffect.js";
  * sets up the floating mask scene with lighting, fog, and particles.
  * designed to be dropped into the app as the background.
  */
-export class AmbientScene {
+class AmbientScene {
   constructor(canvas, characterData) {
     this.canvas = canvas;
     this.characterData = characterData;
@@ -104,3 +104,5 @@ export class AmbientScene {
     if (this.materialFactory) this.materialFactory.destroy();
   }
 }
+
+module.exports = { AmbientScene };

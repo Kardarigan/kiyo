@@ -3,7 +3,7 @@
  * Holds geometry buffers, material reference, and renders itself.
  */
 
-export class MeshObject {
+class MeshObject {
   constructor(geometry, materialKey, options = {}) {
     this.geometry = geometry;
     this.materialKey = materialKey;
@@ -214,3 +214,5 @@ export class MeshObject {
     if (this.buffers.index) gl.deleteBuffer(this.buffers.index);
   }
 }
+
+module.exports = { MeshObject };

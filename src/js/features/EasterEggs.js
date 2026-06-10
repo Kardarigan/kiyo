@@ -8,7 +8,7 @@ import { WhisperController } from "./WhisperController.js";
  *     3- Glitch effect on certain images
  *     4- Hidden page conrer click
  */
-export class EasterEggs {
+class EasterEggs {
   constructor(stateManager) {
     this.stateManager = stateManager;
     this.easterEggsData = stateManager.getState("easterEggs");
@@ -148,3 +148,5 @@ export class EasterEggs {
     if (this.whisperController) this.whisperController.stop();
   }
 }
+
+module.exports = { EasterEggs };

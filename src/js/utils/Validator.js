@@ -2,7 +2,7 @@
  * Client side Validator
  * checks data integrity before saving
  */
-export class Validator {
+class Validator {
   static isNonEmptyString(value) {
     return typeof value === "string" && value.trim().length > 0;
   }
@@ -27,3 +27,5 @@ export class Validator {
     return { valid: errors.length === 0, errors };
   }
 }
+
+module.exports = { Validator };

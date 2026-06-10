@@ -2,7 +2,7 @@ const { bodyParser } = require("../middleware/bodyParser.js");
 const { apiAuth } = require("../middleware/apiAuth.js");
 const {
   characterController,
-} = require("../controllers/characterChontorller.js");
+} = require("../controllers/characterController.js");
 const { configController } = require("../controllers/configController.js");
 const { sendError } = require("../utils/responseHelper.js");
 

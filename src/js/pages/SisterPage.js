@@ -3,7 +3,7 @@ import { DomHelper } from "../utils/DomHelper.js";
 import { Typewriter } from "../features/Typewriter.js";
 import { WhisperController } from "../features/WhisperController.js";
 
-export class SisterPage {
+class SisterPage {
   constructor(container, stateManager, eventBus) {
     this.container = container;
     this.stateManager = stateManager;
@@ -181,3 +181,5 @@ export class SisterPage {
     this.whisperController?.stop();
   }
 }
+
+module.exports = { SisterPage };

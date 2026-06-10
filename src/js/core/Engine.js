@@ -6,7 +6,7 @@ import { EventBus } from "./EventBus.js";
 import { Navigation } from "../components/Navigation.js";
 import { Logger } from "../utils/Logger.js";
 
-export class Engine {
+class Engine {
   constructor() {
     this.logger = new Logger("Engine");
     this.eventBus = new EventBus();
@@ -72,3 +72,5 @@ export class Engine {
     }
   }
 }
+
+module.exports = { Engine };

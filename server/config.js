@@ -1,4 +1,15 @@
 const { join } = require("path");
+require("fs")
+  .readFileSync(".env", "utf-8")
+  .split("\n")
+  .forEach((line) => {
+    const [key, ...rest] = line.trim().split("=");
+    if (key && !key.startsWith("#"))
+      process.env[key.trim()] = rest
+        .join("=")
+        .trim()
+        .replace(/^['"]|['"]$/g, "");
+  });
 
 const rootDir = join(__dirname, "..");
 

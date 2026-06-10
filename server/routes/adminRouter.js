@@ -1,5 +1,7 @@
 const { join } = require("path");
-const { readFile } = require("fs/promises");
+const { promisify } = require("util");
+const fs = require("fs");
+const readFile = promisify(fs.readFile);
 const config = require("../config.js");
 
 /*

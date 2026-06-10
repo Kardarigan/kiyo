@@ -3,7 +3,7 @@
  * generates a spiral coil of rope segments, like a ceremonial binding.
  */
 
-export class RopeGeometry {
+class RopeGeometry {
   static generate(
     coils = 5,
     segmentsPerCoil = 60,
@@ -38,3 +38,5 @@ export class RopeGeometry {
     };
   }
 }
+
+module.exports = { RopeGeometry };

@@ -4,7 +4,7 @@
  * pure WebGL 1.0 for maximum compatibility.
  */
 
-export class ThreeEngine {
+class ThreeEngine {
   constructor(canvas) {
     this.canvas = canvas;
     this.gl = null;
@@ -133,3 +133,5 @@ export class ThreeEngine {
     this.onFrameCallbacks = [];
   }
 }
+
+module.exports = { ThreeEngine };

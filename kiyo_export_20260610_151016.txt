@@ -1,6 +1,6 @@
 ================================================================================
 ADVANCED PROJECT CODE EXPORT
-Generated: 2026-06-07 09:59:38
+Generated: 2026-06-10 15:10:16
 Project: kiyo
 Path: C:\Users\D\Desktop\D\kiyo
 ================================================================================
@@ -17,8 +17,8 @@ TABLE OF CONTENTS
 kiyo/
 ├── .gitignore (30.0 B)
 ├── export_project.py.py (17.7 KB)
-├── kiyo_export_20260607_095938.txt (0.0 B)
-├── package.json (621.0 B)
+├── kiyo_export_20260610_151016.txt (0.0 B)
+├── package.json (600.0 B)
 ├── public/
 │   ├── audio/
 │   │   └── korekiyo/
@@ -28,35 +28,34 @@ kiyo/
 │   ├── manifest.json (410.0 B)
 │   └── robots.txt (80.0 B)
 ├── README.md (1.3 KB)
-├── remaining.txt (169.0 B)
 ├── scripts/
 │   ├── new-character.js (1.5 KB)
 │   └── setup.js (1.7 KB)
 ├── server/
-│   ├── config.js (1.3 KB)
+│   ├── config.js (1.5 KB)
 │   ├── controllers/
-│   │   ├── authController.js (344.0 B)
-│   │   ├── characterChontorller.js (1.9 KB)
-│   │   └── configController.js (792.0 B)
+│   │   ├── authController.js (387.0 B)
+│   │   ├── characterController.js (2.0 KB)
+│   │   └── configController.js (856.0 B)
 │   ├── index.js (2.0 KB)
 │   ├── middleware/
-│   │   ├── apiAuth.js (913.0 B)
-│   │   ├── bodyParser.js (1020.0 B)
-│   │   ├── logger.js (692.0 B)
-│   │   └── staticFiles.js (2.1 KB)
+│   │   ├── apiAuth.js (944.0 B)
+│   │   ├── bodyParser.js (1.0 KB)
+│   │   ├── logger.js (694.0 B)
+│   │   └── staticFiles.js (2.2 KB)
 │   ├── models/
-│   │   ├── FileStore.js (938.0 B)
-│   │   └── Validator.js (627.0 B)
+│   │   ├── FileStore.js (981.0 B)
+│   │   └── Validator.js (655.0 B)
 │   ├── routes/
-│   │   ├── adminRouter.js (810.0 B)
-│   │   ├── apiRouter.js (2.0 KB)
-│   │   └── pageRouter.js (1.6 KB)
+│   │   ├── adminRouter.js (920.0 B)
+│   │   ├── apiRouter.js (2.1 KB)
+│   │   └── pageRouter.js (1.7 KB)
 │   └── utils/
-│       ├── errorHandler.js (467.0 B)
-│       ├── fileSystem.js (830.0 B)
-│       └── responseHelper.js (497.0 B)
+│       ├── errorHandler.js (498.0 B)
+│       ├── fileSystem.js (1.0 KB)
+│       └── responseHelper.js (534.0 B)
 ├── src/
-│   ├── admin.html (5.3 KB)
+│   ├── admin.html (5.0 KB)
 │   ├── app.html (2.4 KB)
 │   ├── data/
 │   │   ├── characters/
@@ -71,47 +70,47 @@ kiyo/
 │   │   │   ├── ContentEditor.js (6.6 KB)
 │   │   │   ├── ImageManager.js (3.0 KB)
 │   │   │   ├── SaveManager.js (1.6 KB)
-│   │   │   └── ThemeCustomizer.js (6.6 KB)
+│   │   │   └── ThemeCustomizer.js (6.7 KB)
 │   │   ├── admin.js (6.6 KB)
 │   │   ├── app.js (2.6 KB)
 │   │   ├── components/
 │   │   │   ├── AudioPlayer.js (1.0 KB)
 │   │   │   ├── ContentCard.js (1.2 KB)
-│   │   │   ├── Loader.js (466.0 B)
+│   │   │   ├── Loader.js (491.0 B)
 │   │   │   ├── Modal.js (1.7 KB)
-│   │   │   └── Navigation.js (2.5 KB)
+│   │   │   └── Navigation.js (2.6 KB)
 │   │   ├── core/
 │   │   │   ├── DataLoader.js (1.5 KB)
-│   │   │   ├── Engine.js (2.3 KB)
-│   │   │   ├── EventBus.js (1005.0 B)
+│   │   │   ├── Engine.js (2.4 KB)
+│   │   │   ├── EventBus.js (1.0 KB)
 │   │   │   ├── Router.js (3.0 KB)
-│   │   │   ├── StateManager.js (625.0 B)
-│   │   │   └── ThemeEngine.js (1.1 KB)
+│   │   │   ├── StateManager.js (655.0 B)
+│   │   │   └── ThemeEngine.js (1.2 KB)
 │   │   ├── features/
 │   │   │   ├── CursorEffect.js (4.0 KB)
-│   │   │   ├── EasterEggs.js (4.2 KB)
+│   │   │   ├── EasterEggs.js (4.3 KB)
 │   │   │   ├── ParallaxController.js (1.9 KB)
 │   │   │   ├── SplashBlood.js (3.0 KB)
-│   │   │   ├── Typewriter.js (1.6 KB)
-│   │   │   └── WhisperController.js (1.2 KB)
+│   │   │   ├── Typewriter.js (1.7 KB)
+│   │   │   └── WhisperController.js (1.3 KB)
 │   │   ├── index.js (2.4 KB)
 │   │   ├── pages/
 │   │   │   ├── AboutPage.js (4.4 KB)
-│   │   │   ├── AdminPage.js (5.7 KB)
-│   │   │   ├── ArtifactsPage.js (5.5 KB)
+│   │   │   ├── AdminPage.js (5.8 KB)
+│   │   │   ├── ArtifactsPage.js (5.6 KB)
 │   │   │   ├── HomePage.js (2.7 KB)
 │   │   │   ├── JournalPage.js (5.5 KB)
 │   │   │   ├── SisterPage.js (5.4 KB)
-│   │   │   └── SplashPage.js (6.5 KB)
+│   │   │   └── SplashPage.js (6.6 KB)
 │   │   ├── three/
 │   │   │   ├── AmbientScene.js (3.2 KB)
 │   │   │   ├── CameraController.js (3.2 KB)
 │   │   │   ├── effects/
-│   │   │   │   ├── FogEffect.js (1.2 KB)
+│   │   │   │   ├── FogEffect.js (1.3 KB)
 │   │   │   │   ├── ParticleSystem.js (3.3 KB)
-│   │   │   │   └── PostProcess.js (833.0 B)
+│   │   │   │   └── PostProcess.js (863.0 B)
 │   │   │   ├── geometries/
-│   │   │   │   ├── CandleGeometry.js (643.0 B)
+│   │   │   │   ├── CandleGeometry.js (676.0 B)
 │   │   │   │   ├── KatanaGeometry.js (2.5 KB)
 │   │   │   │   ├── MaskGeometry.js (4.0 KB)
 │   │   │   │   ├── MeshObject.js (6.7 KB)
@@ -119,15 +118,16 @@ kiyo/
 │   │   │   ├── Lighting.js (1.6 KB)
 │   │   │   ├── materials/
 │   │   │   │   ├── MaterialFactory.js (3.7 KB)
-│   │   │   │   └── Shaders.js (6.3 KB)
+│   │   │   │   └── Shaders.js (6.4 KB)
 │   │   │   ├── SceneManager.js (2.4 KB)
 │   │   │   └── ThreeEngine.js (3.4 KB)
 │   │   └── utils/
 │   │       ├── Constants.js (352.0 B)
-│   │       ├── DomHelper.js (1.3 KB)
-│   │       ├── Logger.js (448.0 B)
-│   │       ├── Sanitizer.js (892.0 B)
-│   │       └── Validator.js (852.0 B)
+│   │       ├── DomHelper.js (1.4 KB)
+│   │       ├── Logger.js (473.0 B)
+│   │       ├── Sanitizer.js (922.0 B)
+│   │       └── Validator.js (880.0 B)
+│   ├── main.css (38.6 KB)
 │   └── scss/
 │       ├── abstracts/
 │       │   ├── _functions.scss (320.0 B)
@@ -168,7 +168,6 @@ kiyo/
 │       └── themes/
 │           ├── _dark-academia.scss (776.0 B)
 │           └── _theme-fallback.scss (302.0 B)
-├── structure.txt (10.8 KB)
 └── tests/
     ├── data-validation.test.js (987.0 B)
     └── server.test.js (1.4 KB)
@@ -180,20 +179,21 @@ kiyo/
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 1/122: .env
-Language: plaintext | Size: 44 bytes
-Lines: 3 total | 3 code | 0 comments | 0 blank
+FILE 1/121: .env
+Language: plaintext | Size: 68 bytes
+Lines: 4 total | 4 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```plaintext
 PORT=8800
-HOST='localhost'
-ADMIN_USER='kiyo'
+HOST=localhost
+ADMIN_USER=kiyo
+ADMIN_PASS=anthropology1933
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 2/122: .gitignore
+FILE 2/121: .gitignore
 Language: plaintext | Size: 28 bytes
 Lines: 3 total | 3 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -206,7 +206,7 @@ Lines: 3 total | 3 code | 0 comments | 0 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 3/122: export_project.py.py
+FILE 3/121: export_project.py.py
 Language: python | Size: 17,637 bytes
 Lines: 440 total | 346 code | 19 comments | 75 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -655,15 +655,15 @@ if __name__ == "__main__":
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 4/122: kiyo_export_20260607_095938.txt
-Language: plaintext | Size: 24,590 bytes
+FILE 4/121: kiyo_export_20260610_151016.txt
+Language: plaintext | Size: 24,578 bytes
 Lines: 654 total | 546 code | 19 comments | 89 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```plaintext
 ================================================================================
 ADVANCED PROJECT CODE EXPORT
-Generated: 2026-06-07 09:59:38
+Generated: 2026-06-10 15:10:16
 Project: kiyo
 Path: C:\Users\D\Desktop\D\kiyo
 ================================================================================
@@ -680,8 +680,8 @@ TABLE OF CONTENTS
 kiyo/
 ├── .gitignore (30.0 B)
 ├── export_project.py.py (17.7 KB)
-├── kiyo_export_20260607_095938.txt (0.0 B)
-├── package.json (621.0 B)
+├── kiyo_export_20260610_151016.txt (0.0 B)
+├── package.json (600.0 B)
 ├── public/
 │   ├── audio/
 │   │   └── korekiyo/
@@ -691,35 +691,34 @@ kiyo/
 │   ├── manifest.json (410.0 B)
 │   └── robots.txt (80.0 B)
 ├── README.md (1.3 KB)
-├── remaining.txt (169.0 B)
 ├── scripts/
 │   ├── new-character.js (1.5 KB)
 │   └── setup.js (1.7 KB)
 ├── server/
-│   ├── config.js (1.3 KB)
+│   ├── config.js (1.5 KB)
 │   ├── controllers/
-│   │   ├── authController.js (344.0 B)
-│   │   ├── characterChontorller.js (1.9 KB)
-│   │   └── configController.js (792.0 B)
+│   │   ├── authController.js (387.0 B)
+│   │   ├── characterController.js (2.0 KB)
+│   │   └── configController.js (856.0 B)
 │   ├── index.js (2.0 KB)
 │   ├── middleware/
-│   │   ├── apiAuth.js (913.0 B)
-│   │   ├── bodyParser.js (1020.0 B)
-│   │   ├── logger.js (692.0 B)
-│   │   └── staticFiles.js (2.1 KB)
+│   │   ├── apiAuth.js (944.0 B)
+│   │   ├── bodyParser.js (1.0 KB)
+│   │   ├── logger.js (694.0 B)
+│   │   └── staticFiles.js (2.2 KB)
 │   ├── models/
-│   │   ├── FileStore.js (938.0 B)
-│   │   └── Validator.js (627.0 B)
+│   │   ├── FileStore.js (981.0 B)
+│   │   └── Validator.js (655.0 B)
 │   ├── routes/
-│   │   ├── adminRouter.js (810.0 B)
-│   │   ├── apiRouter.js (2.0 KB)
-│   │   └── pageRouter.js (1.6 KB)
+│   │   ├── adminRouter.js (920.0 B)
+│   │   ├── apiRouter.js (2.1 KB)
+│   │   └── pageRouter.js (1.7 KB)
 │   └── utils/
-│       ├── errorHandler.js (467.0 B)
-│       ├── fileSystem.js (830.0 B)
-│       └── responseHelper.js (497.0 B)
+│       ├── errorHandler.js (498.0 B)
+│       ├── fileSystem.js (1.0 KB)
+│       └── responseHelper.js (534.0 B)
 ├── src/
-│   ├── admin.html (5.3 KB)
+│   ├── admin.html (5.0 KB)
 │   ├── app.html (2.4 KB)
 │   ├── data/
 │   │   ├── characters/
@@ -734,47 +733,47 @@ kiyo/
 │   │   │   ├── ContentEditor.js (6.6 KB)
 │   │   │   ├── ImageManager.js (3.0 KB)
 │   │   │   ├── SaveManager.js (1.6 KB)
-│   │   │   └── ThemeCustomizer.js (6.6 KB)
+│   │   │   └── ThemeCustomizer.js (6.7 KB)
 │   │   ├── admin.js (6.6 KB)
 │   │   ├── app.js (2.6 KB)
 │   │   ├── components/
 │   │   │   ├── AudioPlayer.js (1.0 KB)
 │   │   │   ├── ContentCard.js (1.2 KB)
-│   │   │   ├── Loader.js (466.0 B)
+│   │   │   ├── Loader.js (491.0 B)
 │   │   │   ├── Modal.js (1.7 KB)
-│   │   │   └── Navigation.js (2.5 KB)
+│   │   │   └── Navigation.js (2.6 KB)
 │   │   ├── core/
 │   │   │   ├── DataLoader.js (1.5 KB)
-│   │   │   ├── Engine.js (2.3 KB)
-│   │   │   ├── EventBus.js (1005.0 B)
+│   │   │   ├── Engine.js (2.4 KB)
+│   │   │   ├── EventBus.js (1.0 KB)
 │   │   │   ├── Router.js (3.0 KB)
-│   │   │   ├── StateManager.js (625.0 B)
-│   │   │   └── ThemeEngine.js (1.1 KB)
+│   │   │   ├── StateManager.js (655.0 B)
+│   │   │   └── ThemeEngine.js (1.2 KB)
 │   │   ├── features/
 │   │   │   ├── CursorEffect.js (4.0 KB)
-│   │   │   ├── EasterEggs.js (4.2 KB)
+│   │   │   ├── EasterEggs.js (4.3 KB)
 │   │   │   ├── ParallaxController.js (1.9 KB)
 │   │   │   ├── SplashBlood.js (3.0 KB)
-│   │   │   ├── Typewriter.js (1.6 KB)
-│   │   │   └── WhisperController.js (1.2 KB)
+│   │   │   ├── Typewriter.js (1.7 KB)
+│   │   │   └── WhisperController.js (1.3 KB)
 │   │   ├── index.js (2.4 KB)
 │   │   ├── pages/
 │   │   │   ├── AboutPage.js (4.4 KB)
-│   │   │   ├── AdminPage.js (5.7 KB)
-│   │   │   ├── ArtifactsPage.js (5.5 KB)
+│   │   │   ├── AdminPage.js (5.8 KB)
+│   │   │   ├── ArtifactsPage.js (5.6 KB)
 │   │   │   ├── HomePage.js (2.7 KB)
 │   │   │   ├── JournalPage.js (5.5 KB)
 │   │   │   ├── SisterPage.js (5.4 KB)
-│   │   │   └── SplashPage.js (6.5 KB)
+│   │   │   └── SplashPage.js (6.6 KB)
 │   │   ├── three/
 │   │   │   ├── AmbientScene.js (3.2 KB)
 │   │   │   ├── CameraController.js (3.2 KB)
 │   │   │   ├── effects/
-│   │   │   │   ├── FogEffect.js (1.2 KB)
+│   │   │   │   ├── FogEffect.js (1.3 KB)
 │   │   │   │   ├── ParticleSystem.js (3.3 KB)
-│   │   │   │   └── PostProcess.js (833.0 B)
+│   │   │   │   └── PostProcess.js (863.0 B)
 │   │   │   ├── geometries/
-│   │   │   │   ├── CandleGeometry.js (643.0 B)
+│   │   │   │   ├── CandleGeometry.js (676.0 B)
 │   │   │   │   ├── KatanaGeometry.js (2.5 KB)
 │   │   │   │   ├── MaskGeometry.js (4.0 KB)
 │   │   │   │   ├── MeshObject.js (6.7 KB)
@@ -782,15 +781,16 @@ kiyo/
 │   │   │   ├── Lighting.js (1.6 KB)
 │   │   │   ├── materials/
 │   │   │   │   ├── MaterialFactory.js (3.7 KB)
-│   │   │   │   └── Shaders.js (6.3 KB)
+│   │   │   │   └── Shaders.js (6.4 KB)
 │   │   │   ├── SceneManager.js (2.4 KB)
 │   │   │   └── ThreeEngine.js (3.4 KB)
 │   │   └── utils/
 │   │       ├── Constants.js (352.0 B)
-│   │       ├── DomHelper.js (1.3 KB)
-│   │       ├── Logger.js (448.0 B)
-│   │       ├── Sanitizer.js (892.0 B)
-│   │       └── Validator.js (852.0 B)
+│   │       ├── DomHelper.js (1.4 KB)
+│   │       ├── Logger.js (473.0 B)
+│   │       ├── Sanitizer.js (922.0 B)
+│   │       └── Validator.js (880.0 B)
+│   ├── main.css (38.6 KB)
 │   └── scss/
 │       ├── abstracts/
 │       │   ├── _functions.scss (320.0 B)
@@ -831,7 +831,6 @@ kiyo/
 │       └── themes/
 │           ├── _dark-academia.scss (776.0 B)
 │           └── _theme-fallback.scss (302.0 B)
-├── structure.txt (10.8 KB)
 └── tests/
     ├── data-validation.test.js (987.0 B)
     └── server.test.js (1.4 KB)
@@ -843,20 +842,21 @@ kiyo/
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 1/122: .env
-Language: plaintext | Size: 44 bytes
-Lines: 3 total | 3 code | 0 comments | 0 blank
+FILE 1/121: .env
+Language: plaintext | Size: 68 bytes
+Lines: 4 total | 4 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```plaintext
 PORT=8800
-HOST='localhost'
-ADMIN_USER='kiyo'
+HOST=localhost
+ADMIN_USER=kiyo
+ADMIN_PASS=anthropology1933
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 2/122: .gitignore
+FILE 2/121: .gitignore
 Language: plaintext | Size: 28 bytes
 Lines: 3 total | 3 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -869,7 +869,7 @@ Lines: 3 total | 3 code | 0 comments | 0 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 3/122: export_project.py.py
+FILE 3/121: export_project.py.py
 Language: python | Size: 17,637 bytes
 Lines: 440 total | 346 code | 19 comments | 75 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1318,9 +1318,9 @@ if __name__ == "__main__":
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 5/122: package.json
-Language: json | Size: 596 bytes
-Lines: 26 total | 25 code | 0 comments | 1 blank
+FILE 5/121: package.json
+Language: json | Size: 576 bytes
+Lines: 25 total | 24 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```json
@@ -1329,7 +1329,6 @@ Lines: 26 total | 25 code | 0 comments | 1 blank
   "version": "1.0.0",
   "describetion": "A shrine to Korekiyo Shinguji - reusable character showcase engine",
   "main": "server/index.js",
-  "type": "module",
   "scripts": {
     "start": "node server/index.js",
     "dev": "node --watch server/index.js",
@@ -1353,7 +1352,7 @@ Lines: 26 total | 25 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 6/122: public\manifest.json
+FILE 6/121: public\manifest.json
 Language: json | Size: 394 bytes
 Lines: 17 total | 16 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1379,7 +1378,7 @@ Lines: 17 total | 16 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 7/122: public\robots.txt
+FILE 7/121: public\robots.txt
 Language: plaintext | Size: 76 bytes
 Lines: 5 total | 5 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1394,7 +1393,7 @@ Sitemap: /sitemap.xml
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 8/122: README.md
+FILE 8/121: README.md
 Language: markdown | Size: 1,289 bytes
 Lines: 41 total | 20 code | 7 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1444,22 +1443,7 @@ MIT
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 9/122: remaining.txt
-Language: plaintext | Size: 145 bytes
-Lines: 5 total | 5 code | 0 comments | 0 blank
-────────────────────────────────────────────────────────────────────────────────
-
-```plaintext
-korekiyo-shinguji
-│
-└── tests/                               # (Optional but professional)
-    ├── server.test.js
-    └── data-validation.test.js
-```
-
-
-────────────────────────────────────────────────────────────────────────────────
-FILE 10/122: scripts\new-character.js
+FILE 9/121: scripts\new-character.js
 Language: javascript | Size: 1,523 bytes
 Lines: 47 total | 37 code | 1 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1515,9 +1499,9 @@ main().catch(console.error);
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 11/122: scripts\setup.js
-Language: javascript | Size: 1,629 bytes
-Lines: 73 total | 67 code | 0 comments | 6 blank
+FILE 10/121: scripts\setup.js
+Language: javascript | Size: 1,639 bytes
+Lines: 74 total | 68 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -1560,7 +1544,8 @@ const dirs = [
 
 const files = {
   ".gitignore": "node_modules/\n.env\n",
-  ".env.example": "PORT=3000\nADMIN_USER=kiyo\nADMIN_PASS=anthropology1933\n",
+  ".env.example":
+    "PORT=3000\nADMIN_USER=your_username\nADMIN_PASS=your_password\n",
   "src/data/site-config.json": JSON.stringify(
     { activeCharacter: "korekiyo" },
     null,
@@ -1597,21 +1582,33 @@ setup().catch(console.error);
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 12/122: server\config.js
-Language: javascript | Size: 1,240 bytes
-Lines: 44 total | 34 code | 3 comments | 7 blank
+FILE 11/121: server\config.js
+Language: javascript | Size: 1,521 bytes
+Lines: 56 total | 46 code | 3 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { fileURLTopath } from "url";
-import { dirname, join } from "path";
-
-const __filename = fileURLTopath(import.meta.url);
-const __dirname = dirname(__filename);
+const { join } = require("path");
+require("fs")
+  .readFileSync(".env", "utf-8")
+  .split("\n")
+  .forEach((line) => {
+    const [key, ...rest] = line.trim().split("=");
+    if (key && !key.startsWith("#"))
+      process.env[key.trim()] = rest
+        .join("=")
+        .trim()
+        .replace(/^['"]|['"]$/g, "");
+  });
 
 const rootDir = join(__dirname, "..");
 
-export default {
+if (!process.env.ADMIN_USER || !process.env.ADMIN_PASS) {
+  console.error("[FATAL] ADMIN_USER and ADMIN_PASS must be set in .env");
+  process.exit(1);
+}
+
+module.exports = {
   port: process.env.PORT || 3000,
   host: process.env.HOST || "localhost",
   rootDir,
@@ -1622,8 +1619,8 @@ export default {
   siteConfigPath: join(rootDir, "src", "data", "site-config.json"),
 
   // CMS credentials (change in production)
-  adminUser: process.env.ADMIN_USER || "kiyo",
-  adminPass: process.env.ADMIN_PASS || "anthropology1933",
+  adminUser: process.env.ADMIN_USER,
+  adminPass: process.env.ADMIN_PASS,
 
   // API settings
   apiBase: "/api/v1",
@@ -1650,16 +1647,16 @@ export default {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 13/122: server\controllers\authController.js
-Language: javascript | Size: 332 bytes
-Lines: 13 total | 10 code | 0 comments | 3 blank
+FILE 12/121: server\controllers\authController.js
+Language: javascript | Size: 373 bytes
+Lines: 15 total | 11 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import config from "../config.js";
-import { sendJSON, sendError } from "../utils/responseHelper.js";
+const config = require("../config.js");
+const { sendJSON, sendError } = require("../utils/responseHelper.js");
 
-export const authController = {
+const authController = {
   verify(req, res) {
     sendJSON(res, { authenticated: true, user: config.adminUser });
   },
@@ -1668,31 +1665,37 @@ export const authController = {
     sendJSON(res, { success: true, message: "Logged out successfully" });
   },
 };
+
+module.exports = { authController };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 14/122: server\controllers\characterChontorller.js
-Language: javascript | Size: 1,897 bytes
-Lines: 72 total | 56 code | 1 comments | 15 blank
+FILE 13/121: server\controllers\characterController.js
+Language: javascript | Size: 1,975 bytes
+Lines: 78 total | 61 code | 1 comments | 16 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { join } from "path";
-import { readJSON, writeJSON } from "../utils/fileSystem.js";
-import { sendJSON, sendError, sendSuccess } from "../utils/responseHelper.js";
-import config from "../config.js";
+const { join } = require("path");
+const { readJSON, writeJSON } = require("../utils/fileSystem.js");
+const {
+  sendJSON,
+  sendError,
+  sendSuccess,
+} = require("../utils/responseHelper.js");
+const config = require("../config.js");
 
-export const characterController = {
+const characterController = {
   async getCharacter(req, res) {
     const activeCharacter = await readJSON(config.siteConfigPath);
-    if (!activeCharacter?.activeCharacter) {
+    if (!activeCharacter || !activeCharacter.activeCharacter) {
       sendError(res, "No active character configured", 404);
       return;
     }
 
     const charPath = join(
-      config.charactersDir,
+      config.characterDir,
       `${activeCharacter.activeCharacter}.json`
     );
     const data = await readJSON(charPath);
@@ -1706,7 +1709,7 @@ export const characterController = {
   },
 
   async getCharacterById(req, res, id) {
-    const charPath = join(config.charactersDir, `${id}.json`);
+    const charPath = join(config.characterDir, `${id}.json`);
     const data = await readJSON(charPath);
 
     if (!data) {
@@ -1718,7 +1721,7 @@ export const characterController = {
   },
 
   async listCharacters(req, res) {
-    const indexData = await readJSON(join(config.charactersDir, "index.json"));
+    const indexData = await readJSON(join(config.characterDir, "index.json"));
     sendJSON(res, indexData || { characters: [] });
   },
 
@@ -1730,7 +1733,7 @@ export const characterController = {
       return;
     }
 
-    const charPath = join(config.charactersDir, `${characterId}.json`);
+    const charPath = join(config.characterDir, `${characterId}.json`);
     const existing = await readJSON(charPath);
 
     if (!existing) {
@@ -1749,21 +1752,27 @@ export const characterController = {
     sendSuccess(res, updated, "Character updated successfully");
   },
 };
+
+module.exports = { characterController };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 15/122: server\controllers\configController.js
-Language: javascript | Size: 767 bytes
-Lines: 26 total | 20 code | 0 comments | 6 blank
+FILE 14/121: server\controllers\configController.js
+Language: javascript | Size: 825 bytes
+Lines: 32 total | 25 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { readJSON, writeJSON } from "../utils/fileSystem.js";
-import { sendJSON, sendError, sendSuccess } from "../utils/responseHelper.js";
-import config from "../config.js";
+const { readJSON, writeJSON } = require("../utils/fileSystem.js");
+const {
+  sendJSON,
+  sendError,
+  sendSuccess,
+} = require("../utils/responseHelper.js");
+const config = require("../config.js");
 
-export const configController = {
+const configController = {
   async getConfig(req, res) {
     const siteConfig = await readJSON(config.siteConfigPath);
     sendJSON(res, siteConfig || { activeCharacter: "korekiyo" });
@@ -1773,42 +1782,42 @@ export const configController = {
     const { data } = req.body;
 
     if (!data) {
-      sendError(res, "Config data is reuired", 400);
+      sendError(res, "Config data is required", 400);
       return;
     }
 
-    const existing = await readJSON(config.siteConfigPath || {});
+    const existing = (await readJSON(config.siteConfigPath)) || {};
     const updated = { ...existing, ...data };
 
     await writeJSON(config.siteConfigPath, updated);
     sendSuccess(res, updated, "Config updated successfully");
   },
 };
+
+module.exports = { configController };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 16/122: server\index.js
-Language: javascript | Size: 1,818 bytes
-Lines: 66 total | 50 code | 7 comments | 9 blank
+FILE 15/121: server\index.js
+Language: javascript | Size: 1,777 bytes
+Lines: 64 total | 48 code | 7 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import http from "http";
-import { join, extname } from "path";
-import { readFile, access } from "fs/promises";
-import config from "./config.js";
-import { pageRouter } from "./routes/pageRouter.js";
-import { apiRouter } from "./routes/apiRouter.js";
-import { adminRouter } from "./routes/adminRouter.js";
-import { logger } from "./middleware/logger.js";
-import { staticFiles } from "./middleware/staticFiles.js";
-import { errorHandler } from "./utils/errorHandler.js";
+const http = require("http");
+const config = require("./config.js");
+const { pageRouter } = require("./routes/pageRouter.js");
+const { apiRouter } = require("./routes/apiRouter.js");
+const { adminRouter } = require("./routes/adminRouter.js");
+const { logger } = require("./middleware/logger.js");
+const { staticFiles } = require("./middleware/staticFiles.js");
+const { errorHandler } = require("./utils/errorHandler.js");
 
 const server = http.createServer(async (req, res) => {
   try {
     // Log request
-    logger(req);
+    logger(req, res);
 
     // Parse URL
     const url = new URL(req.url, `http://${req.headers.host}`);
@@ -1863,20 +1872,20 @@ process.on("SIGTERM", () => {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 17/122: server\middleware\apiAuth.js
-Language: javascript | Size: 882 bytes
-Lines: 32 total | 25 code | 0 comments | 7 blank
+FILE 16/121: server\middleware\apiAuth.js
+Language: javascript | Size: 911 bytes
+Lines: 34 total | 26 code | 0 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import config from "../config.js";
+const config = require("../config.js");
 
 /*
  * Simple API authentication middleware
  * Uses Basic Auth for admin endpoints
  */
 
-export function apiAuth(req, res) {
+function apiAuth(req, res) {
   const authHeader = req.headers["authorization"];
 
   if (!authHeader || !authHeader.startsWith("Basic ")) {
@@ -1900,22 +1909,24 @@ export function apiAuth(req, res) {
 
   return true;
 }
+
+module.exports = { apiAuth };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 18/122: server\middleware\bodyParser.js
-Language: javascript | Size: 978 bytes
-Lines: 43 total | 34 code | 1 comments | 8 blank
+FILE 17/121: server\middleware\bodyParser.js
+Language: javascript | Size: 1,005 bytes
+Lines: 45 total | 35 code | 1 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 /*
  * Body parser middleware
- * Parses JSON and URL-encoded request bodies
+ * parses JSON and URL-encoded request bodies
  */
 
-export async function bodyParser(req) {
+async function bodyParser(req) {
   return new Promise((resolve, reject) => {
     const chunks = [];
 
@@ -1952,59 +1963,64 @@ export async function bodyParser(req) {
     req.on("error", reject);
   });
 }
+
+module.exports = { bodyParser };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 19/122: server\middleware\logger.js
-Language: javascript | Size: 666 bytes
-Lines: 23 total | 18 code | 2 comments | 3 blank
+FILE 18/121: server\middleware\logger.js
+Language: javascript | Size: 667 bytes
+Lines: 24 total | 20 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 /*
  * Request logger middleware
- * Logs timestamp, method, URL, status, and response time
+ * logs timestamp, method, URL, status, and response time
  */
-export function logger(req) {
+function logger(req, res) {
   const start = Date.now();
   const { method, url } = req;
 
-  // Log request start
   console.log(`[${new Date().toISOString()}] → ${method} ${url}`);
 
-  // Hook into repsonse finish to log status
-  const originalEnd = req.socket?.end;
-  req.on("end", () => {
+  const originalEnd = res.end.bind(res);
+  res.end = function (...args) {
     const duration = Date.now() - start;
-    const status = req.res?.status || 200;
+    const status = res.statusCode || 200;
     const statusColor = status < 400 ? "\x1b[32m" : "\x1b[31m";
     console.log(
-      `${statusColor}[${new Date().toISOString()}] ← ${method} ${url} ${status} ${duration}ms\x1b[0m]`
+      `${statusColor}[${new Date().toISOString()}] ← ${method} ${url} ${status} ${duration}ms\x1b[0m`
     );
-  });
+    return originalEnd(...args);
+  };
 }
+
+module.exports = { logger };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 20/122: server\middleware\staticFiles.js
-Language: javascript | Size: 2,032 bytes
-Lines: 73 total | 55 code | 7 comments | 11 blank
+FILE 19/121: server\middleware\staticFiles.js
+Language: javascript | Size: 2,126 bytes
+Lines: 77 total | 58 code | 7 comments | 12 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { join } from "path";
-import { readFile, access } from "fs/promises";
-import { createReadStream } from "fs";
-import config from "../config.js";
+const { join } = require("path");
+const { promisify } = require("util");
+const fs = require("fs");
+const readFile = promisify(fs.readFile);
+const access = promisify(fs.access);
+const config = require("../config.js");
 
 /*
  * Static file serving middleware
  * Serves files from both /public/ and /src/ directories
  */
 
-export async function staticFiles(req, res, pathname) {
+async function staticFiles(req, res, pathname) {
   // Determine which directory the file lives in
   let filePath;
 
@@ -2066,25 +2082,27 @@ export async function staticFiles(req, res, pathname) {
     }
   }
 }
+
+module.exports = { staticFiles };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 21/122: server\models\FileStore.js
-Language: javascript | Size: 898 bytes
-Lines: 41 total | 33 code | 0 comments | 8 blank
+FILE 20/121: server\models\FileStore.js
+Language: javascript | Size: 939 bytes
+Lines: 43 total | 34 code | 0 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { readJSON, writeJSON, fileExists } from "../utils/fileSystem.js";
-import { join } from "path";
-import config from "../config.js";
+const { readJSON, writeJSON, fileExists } = require("../utils/fileSystem.js");
+const { join } = require("path");
+const config = require("../config.js");
 
 /*
  * File based JSON store with validation
  */
 
-export class FileStore {
+class FileStore {
   constructor(collection) {
     this.collection = collection;
     this.basePath = config.dataDir;
@@ -2116,13 +2134,15 @@ export class FileStore {
     return await fileExists(path);
   }
 }
+
+module.exports = { FileStore };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 22/122: server\models\Validator.js
-Language: javascript | Size: 604 bytes
-Lines: 24 total | 20 code | 1 comments | 3 blank
+FILE 21/121: server\models\Validator.js
+Language: javascript | Size: 630 bytes
+Lines: 26 total | 21 code | 1 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -2130,8 +2150,8 @@ Lines: 24 total | 20 code | 1 comments | 3 blank
  * Server side validation for character data
  */
 
-export class Validator {
-  static validateCharacterUpdaet(data) {
+class Validator {
+  static validateCharacterUpdate(data) {
     const errors = [];
     if (!data) {
       errors.push("No data provided.");
@@ -2149,31 +2169,36 @@ export class Validator {
     return { valid: errors.length === 0, errors };
   }
 }
+
+module.exports = { Validator };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 23/122: server\routes\adminRouter.js
-Language: javascript | Size: 781 bytes
-Lines: 30 total | 23 code | 3 comments | 4 blank
+FILE 22/121: server\routes\adminRouter.js
+Language: javascript | Size: 886 bytes
+Lines: 35 total | 26 code | 3 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { join } from "path";
-import { readFile } from "fs/promises";
-import config from "../config.js";
+const { join } = require("path");
+const { promisify } = require("util");
+const fs = require("fs");
+const readFile = promisify(fs.readFile);
+const config = require("../config.js");
 
 /*
  * Admin Router
- * Serves the admin panel and handles admin API calls
+ * serves the admin panel and handles admin API calls
  */
-export async function adminRouter(req, res, url) {
+
+async function adminRouter(req, res, url) {
   const pathname = url.pathname;
 
   // Serve admin.html
   if (pathname === "/admin" || pathname === "/admin/") {
     try {
-      const html = await readFile(json(config.srcDir, "admin.html"), "utf-8");
+      const html = await readFile(join(config.srcDir, "admin.html"), "utf-8");
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
       res.end(html);
     } catch (error) {
@@ -2188,27 +2213,31 @@ export async function adminRouter(req, res, url) {
   res.writeHead(404);
   res.end("Admin route not found");
 }
+
+module.exports = { adminRouter };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 24/122: server\routes\apiRouter.js
-Language: javascript | Size: 2,010 bytes
-Lines: 79 total | 56 code | 11 comments | 12 blank
+FILE 23/121: server\routes\apiRouter.js
+Language: javascript | Size: 2,064 bytes
+Lines: 83 total | 59 code | 11 comments | 13 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { bodyParser } from "../middleware/bodyParser.js";
-import { apiAuth } from "../middleware/apiAuth.js";
-import { characterController } from "../controllers/characterController.js";
-import { configController } from "../controllers/configController.js";
-import { sendError } from "../utils/responseHelper.js";
+const { bodyParser } = require("../middleware/bodyParser.js");
+const { apiAuth } = require("../middleware/apiAuth.js");
+const {
+  characterController,
+} = require("../controllers/characterController.js");
+const { configController } = require("../controllers/configController.js");
+const { sendError } = require("../utils/responseHelper.js");
 
 /*
  * API Router
- * Handles all /api/v1/* requests
+ * handles all /api/v1/* requests
  */
-export async function apiRouter(req, res, url) {
+async function apiRouter(req, res, url) {
   const path = url.pathname;
   const method = req.method;
 
@@ -2262,7 +2291,7 @@ export async function apiRouter(req, res, url) {
   }
 
   // Character CRUD
-  if (paht === "/api/v1/character" && method === "PUT") {
+  if (path === "/api/v1/character" && method === "PUT") {
     await characterController.updateCharacter(req, res);
     return;
   }
@@ -2276,25 +2305,29 @@ export async function apiRouter(req, res, url) {
   // Fallback
   sendError(res, "API endpoint not found", 404);
 }
+
+module.exports = { apiRouter };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 25/122: server\routes\pageRouter.js
-Language: javascript | Size: 1,609 bytes
-Lines: 70 total | 57 code | 5 comments | 8 blank
+FILE 24/121: server\routes\pageRouter.js
+Language: javascript | Size: 1,712 bytes
+Lines: 74 total | 60 code | 5 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { join } from "path";
-import { readFile } from "fs/promises";
-import config from "../config.js";
+const { join } = require("path");
+const { promisify } = require("util");
+const fs = require("fs");
+const readFile = promisify(fs.readFile);
+const config = require("../config.js");
 
 /*
  * Page router
  * Serves HTML pages. The main app uses app.html as shell.
  */
-export async function pageRouter(req, res, pathname) {
+async function pageRouter(req, res, pathname) {
   let pagePath;
 
   // Route to correct HTML file
@@ -2338,7 +2371,7 @@ export async function pageRouter(req, res, pathname) {
       // Fallback to app shell for SPA routing
       try {
         const fallback = await readFile(
-          json(config.srcDir, "app.html"),
+          join(config.srcDir, "app.html"),
           "utf-8"
         );
         res.writeHead(200, {
@@ -2355,13 +2388,15 @@ export async function pageRouter(req, res, pathname) {
     }
   }
 }
+
+module.exports = { pageRouter };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 26/122: server\utils\errorHandler.js
-Language: javascript | Size: 446 bytes
-Lines: 22 total | 18 code | 0 comments | 4 blank
+FILE 25/121: server\utils\errorHandler.js
+Language: javascript | Size: 475 bytes
+Lines: 24 total | 19 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -2369,7 +2404,7 @@ Lines: 22 total | 18 code | 0 comments | 4 blank
  * Centralized error handler
  */
 
-export function errorHandler(res, error) {
+function errorHandler(res, error) {
   console.error("\x1b[31m[ERROR]\x1b[0m", error.message);
   console.error(error.stack);
 
@@ -2386,24 +2421,31 @@ export function errorHandler(res, error) {
     })
   );
 }
+
+module.exports = { errorHandler };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 27/122: server\utils\fileSystem.js
-Language: javascript | Size: 793 bytes
-Lines: 38 total | 33 code | 0 comments | 5 blank
+FILE 26/121: server\utils\fileSystem.js
+Language: javascript | Size: 987 bytes
+Lines: 45 total | 39 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { readFile, writeFile, access, mkdir } from "fs/promises";
-import { dirname } from "path";
+const { promisify } = require("util");
+const fs = require("fs");
+const readFile = promisify(fs.readFile);
+const writeFile = promisify(fs.writeFile);
+const access = promisify(fs.access);
+const mkdir = promisify(fs.mkdir);
+const { dirname } = require("path");
 
 /*
  * Safe file read with JSON parsing
  */
 
-export async function readJSON(filePath) {
+async function readJSON(filePath) {
   try {
     const content = await readFile(filePath, "utf-8");
     return JSON.parse(content);
@@ -2416,7 +2458,7 @@ export async function readJSON(filePath) {
 /*
  * Safe file write with directory creation and formatting
  */
-export async function writeJSON(filePath, data) {
+async function writeJSON(filePath, data) {
   await mkdir(dirname(filePath), { recursive: true });
   await writeFile(filePath, JSON.stringify(data, null, 2), "utf-8");
   return true;
@@ -2425,7 +2467,7 @@ export async function writeJSON(filePath, data) {
 /*
  * Check if file exists
  */
-export async function fileExists(filePath) {
+async function fileExists(filePath) {
   try {
     await access(filePath);
     return true;
@@ -2433,13 +2475,15 @@ export async function fileExists(filePath) {
     return false;
   }
 }
+
+module.exports = { readJSON, writeJSON, fileExists };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 28/122: server\utils\responseHelper.js
-Language: javascript | Size: 479 bytes
-Lines: 19 total | 15 code | 0 comments | 4 blank
+FILE 27/121: server\utils\responseHelper.js
+Language: javascript | Size: 514 bytes
+Lines: 21 total | 16 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -2447,27 +2491,29 @@ Lines: 19 total | 15 code | 0 comments | 4 blank
  * Standardized API response helpers
  */
 
-export function sendJSON(res, data, statusCode = 200) {
+function sendJSON(res, data, statusCode = 200) {
   res.writeHead(statusCode, {
     "Content-Type": "application/json; charset=utf-8",
   });
   res.end(JSON.stringify(data, null, 2));
 }
 
-export function sendError(res, message, statusCode = 400) {
+function sendError(res, message, statusCode = 400) {
   sendJSON(res, { error: message, status: statusCode }, statusCode);
 }
 
-export function sendSuccess(res, data, message = "OK") {
+function sendSuccess(res, data, message = "OK") {
   sendJSON(res, { success: true, message, data });
 }
+
+module.exports = { sendJSON, sendError, sendSuccess };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 29/122: src\admin.html
-Language: html | Size: 5,202 bytes
-Lines: 167 total | 148 code | 8 comments | 11 blank
+FILE 28/121: src\admin.html
+Language: html | Size: 4,942 bytes
+Lines: 157 total | 138 code | 8 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```html
@@ -2536,16 +2582,6 @@ Lines: 167 total | 148 code | 8 comments | 11 blank
         <button type="submit" class="btn btn-accent" style="width: 100%">
           Authenticate
         </button>
-        <p
-          class="text-muted"
-          style="
-            text-align: center;
-            margin-top: var(--space-md);
-            font-size: var(--text-xs);
-          "
-        >
-          Default credentials: kiyo / anthropology1933
-        </p>
       </form>
     </div>
 
@@ -2641,9 +2677,9 @@ Lines: 167 total | 148 code | 8 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 30/122: src\app.html
-Language: html | Size: 2,330 bytes
-Lines: 81 total | 60 code | 10 comments | 11 blank
+FILE 29/121: src\app.html
+Language: html | Size: 2,411 bytes
+Lines: 82 total | 61 code | 10 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```html
@@ -2652,11 +2688,12 @@ Lines: 81 total | 60 code | 10 comments | 11 blank
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="viewport"
+      name="description"
       content="The personal website of Korekiyo Shinguji, Ultimate Anthropologist."
     />
-    <title>Korekiyo Shinguji — Folklorist & Observer of Humanity</title>
+    <title>Korekiyo Shinguji - Folklorist & Observer of Humanity</title>
 
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -2694,7 +2731,7 @@ Lines: 81 total | 60 code | 10 comments | 11 blank
     <!-- Footer -->
     <footer id="site-footer" class="site-footer">
       <div class="footer-inner">
-        <p class="footer-text text-muted">"Humanity is beatiful."</p>
+        <p class="footer-text text-muted">"Humanity is beautiful."</p>
         <p class="footer-copyright text-muted">&copy; 2026 - A Shrine</p>
       </div>
     </footer>
@@ -2731,7 +2768,7 @@ Lines: 81 total | 60 code | 10 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 31/122: src\data\characters\index.json
+FILE 30/121: src\data\characters\index.json
 Language: json | Size: 195 bytes
 Lines: 12 total | 11 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2752,7 +2789,7 @@ Lines: 12 total | 11 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 32/122: src\data\characters\korekiyo.json
+FILE 31/121: src\data\characters\korekiyo.json
 Language: json | Size: 8,182 bytes
 Lines: 201 total | 194 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2962,7 +2999,7 @@ Lines: 201 total | 194 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 33/122: src\data\characters\template.json
+FILE 32/121: src\data\characters\template.json
 Language: json | Size: 3,033 bytes
 Lines: 130 total | 129 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -3101,7 +3138,7 @@ Lines: 130 total | 129 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 34/122: src\data\site-config.json
+FILE 33/121: src\data\site-config.json
 Language: json | Size: 266 bytes
 Lines: 13 total | 12 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -3123,7 +3160,7 @@ Lines: 13 total | 12 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 35/122: src\index.html
+FILE 34/121: src\index.html
 Language: html | Size: 2,873 bytes
 Lines: 94 total | 76 code | 9 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -3226,9 +3263,9 @@ Lines: 94 total | 76 code | 9 comments | 9 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 36/122: src\js\admin\AuthManager.js
-Language: javascript | Size: 1,136 bytes
-Lines: 55 total | 43 code | 2 comments | 10 blank
+FILE 35/121: src\js\admin\AuthManager.js
+Language: javascript | Size: 1,164 bytes
+Lines: 57 total | 44 code | 2 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -3238,7 +3275,7 @@ Lines: 55 total | 43 code | 2 comments | 10 blank
  * stores auth token in sessionStorage for the session
  */
 
-export class AuthManager {
+class AuthManager {
   constructor() {
     this.storageKey = "kiyo_cms_auth";
   }
@@ -3286,13 +3323,15 @@ export class AuthManager {
     };
   }
 }
+
+module.exports = { AuthManager };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 37/122: src\js\admin\ContentEditor.js
-Language: javascript | Size: 6,548 bytes
-Lines: 200 total | 185 code | 1 comments | 14 blank
+FILE 36/121: src\js\admin\ContentEditor.js
+Language: javascript | Size: 6,578 bytes
+Lines: 202 total | 186 code | 1 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -3303,7 +3342,7 @@ import { DomHelper } from "../utils/DomHelper.js";
  * editable fields for all page content sections
  */
 
-export class ContentEditor {
+class ContentEditor {
   constructor(container, characterData, controller) {
     this.container = container;
     this.data = characterData;
@@ -3495,13 +3534,15 @@ export class ContentEditor {
     return this.changes;
   }
 }
+
+module.exports = { ContentEditor };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 38/122: src\js\admin\ImageManager.js
-Language: javascript | Size: 2,922 bytes
-Lines: 112 total | 98 code | 3 comments | 11 blank
+FILE 37/121: src\js\admin\ImageManager.js
+Language: javascript | Size: 2,951 bytes
+Lines: 114 total | 99 code | 3 comments | 12 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -3512,7 +3553,7 @@ import { DomHelper } from "../utils/DomHelper.js";
  * update image references for all character assets.
  */
 
-export class ImageManager {
+class ImageManager {
   constructor(container, characterData, controller) {
     this.container = container;
     this.data = characterData;
@@ -3616,13 +3657,15 @@ export class ImageManager {
     return this.changes;
   }
 }
+
+module.exports = { ImageManager };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 39/122: src\js\admin\SaveManager.js
-Language: javascript | Size: 1,535 bytes
-Lines: 63 total | 54 code | 1 comments | 8 blank
+FILE 38/121: src\js\admin\SaveManager.js
+Language: javascript | Size: 1,563 bytes
+Lines: 65 total | 55 code | 1 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -3631,7 +3674,7 @@ Lines: 63 total | 54 code | 1 comments | 8 blank
  * sends updated data to the server API for persistence
  */
 
-export class SaveManager {
+class SaveManager {
   constructor() {
     this.baseUrl = "/api/v1";
   }
@@ -3688,13 +3731,15 @@ export class SaveManager {
     }
   }
 }
+
+module.exports = { SaveManager };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 40/122: src\js\admin\ThemeCustomizer.js
-Language: javascript | Size: 6,593 bytes
-Lines: 201 total | 179 code | 4 comments | 18 blank
+FILE 39/121: src\js\admin\ThemeCustomizer.js
+Language: javascript | Size: 6,625 bytes
+Lines: 203 total | 180 code | 4 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -3703,7 +3748,7 @@ Lines: 201 total | 179 code | 4 comments | 18 blank
  * live color picker and font selector for the dark academia theme.
  */
 
-export class ThemeCustomizer {
+class ThemeCustomizer {
   constructor(container, characterData, controller) {
     this.container = container;
     this.data = characterData;
@@ -3898,11 +3943,13 @@ export class ThemeCustomizer {
     return this.changes;
   }
 }
+
+module.exports = { ThemeCustomizer };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 41/122: src\js\admin.js
+FILE 40/121: src\js\admin.js
 Language: javascript | Size: 6,486 bytes
 Lines: 225 total | 173 code | 16 comments | 36 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -4136,7 +4183,7 @@ class AdminController {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 42/122: src\js\app.js
+FILE 41/121: src\js\app.js
 Language: javascript | Size: 2,606 bytes
 Lines: 78 total | 58 code | 6 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -4223,9 +4270,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 43/122: src\js\components\AudioPlayer.js
-Language: javascript | Size: 995 bytes
-Lines: 47 total | 38 code | 1 comments | 8 blank
+FILE 42/121: src\js\components\AudioPlayer.js
+Language: javascript | Size: 1,023 bytes
+Lines: 49 total | 39 code | 1 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -4234,7 +4281,7 @@ Lines: 47 total | 38 code | 1 comments | 8 blank
  * handles playing one shot sounds (zipper, whispers)
  */
 
-export class AudioPlayer {
+class AudioPlayer {
   constructor() {
     this.sounds = {};
     this.enabled = true;
@@ -4275,13 +4322,15 @@ export class AudioPlayer {
     this.enabled = state;
   }
 }
+
+module.exports = { AudioPlayer };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 44/122: src\js\components\ContentCard.js
-Language: javascript | Size: 1,169 bytes
-Lines: 47 total | 44 code | 0 comments | 3 blank
+FILE 43/121: src\js\components\ContentCard.js
+Language: javascript | Size: 1,197 bytes
+Lines: 49 total | 45 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -4292,7 +4341,7 @@ import { DomHelper } from "../utils/DomHelper.js";
  * creates a styled card with optional image, title, text, and action
  */
 
-export class ContentCard {
+class ContentCard {
   static render({ image, title, subtitle, text, action, classes = "" }) {
     return `
     <article class="card content-card ${classes}">
@@ -4331,13 +4380,15 @@ export class ContentCard {
   `;
   }
 }
+
+module.exports = { ContentCard };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 45/122: src\js\components\Loader.js
-Language: javascript | Size: 439 bytes
-Lines: 28 total | 23 code | 0 comments | 5 blank
+FILE 44/121: src\js\components\Loader.js
+Language: javascript | Size: 462 bytes
+Lines: 30 total | 24 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -4346,7 +4397,7 @@ Lines: 28 total | 23 code | 0 comments | 5 blank
  * controls the loading overlay visibility
  */
 
-export class Loader {
+class Loader {
   constructor() {
     this.element = document.getElementById("app-loader");
   }
@@ -4368,13 +4419,15 @@ export class Loader {
     else this.hide();
   }
 }
+
+module.exports = { Loader };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 46/122: src\js\components\Modal.js
-Language: javascript | Size: 1,694 bytes
-Lines: 67 total | 52 code | 2 comments | 13 blank
+FILE 45/121: src\js\components\Modal.js
+Language: javascript | Size: 1,716 bytes
+Lines: 69 total | 53 code | 2 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -4382,7 +4435,7 @@ Lines: 67 total | 52 code | 2 comments | 13 blank
  * Reusable modal component
  */
 
-export class Modal {
+class Modal {
   constructor() {
     this.isOpen = false;
     this.onClose = null;
@@ -4444,19 +4497,21 @@ export class Modal {
     if (e.key === "Escape") this.close();
   }
 }
+
+module.exports = { Modal };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 47/122: src\js\components\Navigation.js
-Language: javascript | Size: 2,524 bytes
-Lines: 80 total | 68 code | 3 comments | 9 blank
+FILE 46/121: src\js\components\Navigation.js
+Language: javascript | Size: 2,551 bytes
+Lines: 82 total | 69 code | 3 comments | 10 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 import { Logger } from "../utils/Logger.js";
 
-export class Navigation {
+class Navigation {
   constructor(container, router, stateManager, eventBus) {
     this.container = container;
     this.router = router;
@@ -4533,17 +4588,19 @@ export class Navigation {
     });
   }
 }
+
+module.exports = { Navigation };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 48/122: src\js\core\DataLoader.js
-Language: javascript | Size: 1,476 bytes
-Lines: 58 total | 48 code | 2 comments | 8 blank
+FILE 47/121: src\js\core\DataLoader.js
+Language: javascript | Size: 1,503 bytes
+Lines: 60 total | 49 code | 2 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-export class DataLoader {
+class DataLoader {
   constructor(baseUrl = "/api/v1") {
     this.baseUrl = baseUrl;
     this.cache = new Map();
@@ -4600,13 +4657,15 @@ export class DataLoader {
     }
   }
 }
+
+module.exports = { DataLoader };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 49/122: src\js\core\Engine.js
-Language: javascript | Size: 2,310 bytes
-Lines: 75 total | 52 code | 10 comments | 13 blank
+FILE 48/121: src\js\core\Engine.js
+Language: javascript | Size: 2,333 bytes
+Lines: 77 total | 53 code | 10 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -4618,7 +4677,7 @@ import { EventBus } from "./EventBus.js";
 import { Navigation } from "../components/Navigation.js";
 import { Logger } from "../utils/Logger.js";
 
-export class Engine {
+class Engine {
   constructor() {
     this.logger = new Logger("Engine");
     this.eventBus = new EventBus();
@@ -4684,17 +4743,19 @@ export class Engine {
     }
   }
 }
+
+module.exports = { Engine };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 50/122: src\js\core\EventBus.js
-Language: javascript | Size: 960 bytes
-Lines: 46 total | 38 code | 2 comments | 6 blank
+FILE 49/121: src\js\core\EventBus.js
+Language: javascript | Size: 985 bytes
+Lines: 48 total | 39 code | 2 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-export class EventBus {
+class EventBus {
   constructor() {
     this.listeners = new Map();
   }
@@ -4739,13 +4800,15 @@ export class EventBus {
     return unsubscribe;
   }
 }
+
+module.exports = { EventBus };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 51/122: src\js\core\Router.js
-Language: javascript | Size: 2,982 bytes
-Lines: 102 total | 82 code | 3 comments | 17 blank
+FILE 50/121: src\js\core\Router.js
+Language: javascript | Size: 3,005 bytes
+Lines: 104 total | 83 code | 3 comments | 18 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -4756,7 +4819,7 @@ import { JournalPage } from "../pages/JournalPage.js";
 import { ArtifactsPage } from "../pages/ArtifactsPage.js";
 import { SisterPage } from "../pages/SisterPage.js";
 
-export class Router {
+class Router {
   constructor(stateManager, eventBus) {
     this.stateManager = stateManager;
     this.eventBus = eventBus;
@@ -4850,19 +4913,21 @@ export class Router {
     return page || "home";
   }
 }
+
+module.exports = { Router };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 52/122: src\js\core\StateManager.js
-Language: javascript | Size: 601 bytes
-Lines: 25 total | 19 code | 1 comments | 5 blank
+FILE 51/121: src\js\core\StateManager.js
+Language: javascript | Size: 629 bytes
+Lines: 27 total | 20 code | 1 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 import { EventBus } from "./EventBus";
 
-export class StateManger {
+class StateManger {
   constructor(eventBus) {
     this.state = {};
     this.eventBus = this.eventBus;
@@ -4884,17 +4949,19 @@ export class StateManger {
     return this.eventBus.on(`state:${key}`, callback);
   }
 }
+
+module.exports = { StateManger };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 53/122: src\js\core\ThemeEngine.js
-Language: javascript | Size: 1,126 bytes
-Lines: 47 total | 33 code | 6 comments | 8 blank
+FILE 52/121: src\js\core\ThemeEngine.js
+Language: javascript | Size: 1,154 bytes
+Lines: 49 total | 34 code | 6 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-export class ThemeEngine {
+class ThemeEngine {
   constructor() {
     this.root = document.documentElement;
   }
@@ -4940,13 +5007,15 @@ export class ThemeEngine {
     this.root.style = "";
   }
 }
+
+module.exports = { ThemeEngine };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 54/122: src\js\features\CursorEffect.js
-Language: javascript | Size: 3,940 bytes
-Lines: 135 total | 108 code | 8 comments | 19 blank
+FILE 53/121: src\js\features\CursorEffect.js
+Language: javascript | Size: 3,969 bytes
+Lines: 137 total | 109 code | 8 comments | 20 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -4956,7 +5025,7 @@ Lines: 135 total | 108 code | 8 comments | 19 blank
  * plays a subtle zipper sound on click btw
  */
 
-export class CursorEffect {
+class CursorEffect {
   constructor() {
     this.cursorElement = null;
     this.isVisible = false;
@@ -5084,13 +5153,15 @@ export class CursorEffect {
     if (this.cursorElement) this.cursorElement.remove();
   }
 }
+
+module.exports = { CursorEffect };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 55/122: src\js\features\EasterEggs.js
-Language: javascript | Size: 4,176 bytes
-Lines: 151 total | 121 code | 10 comments | 20 blank
+FILE 54/121: src\js\features\EasterEggs.js
+Language: javascript | Size: 4,203 bytes
+Lines: 153 total | 122 code | 10 comments | 21 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -5104,7 +5175,7 @@ import { WhisperController } from "./WhisperController.js";
  *     3- Glitch effect on certain images
  *     4- Hidden page conrer click
  */
-export class EasterEggs {
+class EasterEggs {
   constructor(stateManager) {
     this.stateManager = stateManager;
     this.easterEggsData = stateManager.getState("easterEggs");
@@ -5244,13 +5315,15 @@ export class EasterEggs {
     if (this.whisperController) this.whisperController.stop();
   }
 }
+
+module.exports = { EasterEggs };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 56/122: src\js\features\ParallaxController.js
-Language: javascript | Size: 1,860 bytes
-Lines: 71 total | 56 code | 4 comments | 11 blank
+FILE 55/121: src\js\features\ParallaxController.js
+Language: javascript | Size: 1,895 bytes
+Lines: 73 total | 57 code | 4 comments | 12 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -5259,7 +5332,7 @@ Lines: 71 total | 56 code | 4 comments | 11 blank
  * adds depth to the page by moving certain elements at different rates on scroll.
  */
 
-export class ParallaxController {
+class ParallaxController {
   constructor() {
     this.elements = [];
     this.ticking = false;
@@ -5324,13 +5397,15 @@ export class ParallaxController {
     if (this.observer) this.observer.disconnect();
   }
 }
+
+module.exports = { ParallaxController };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 57/122: src\js\features\SplashBlood.js
-Language: javascript | Size: 2,950 bytes
-Lines: 117 total | 94 code | 3 comments | 20 blank
+FILE 56/121: src\js\features\SplashBlood.js
+Language: javascript | Size: 2,978 bytes
+Lines: 119 total | 95 code | 3 comments | 21 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -5340,7 +5415,7 @@ Lines: 117 total | 94 code | 3 comments | 20 blank
  * No images required — pure canvas rendering
  */
 
-export class SplashBlood {
+class SplashBlood {
   constructor(canvas) {
     this.canvas = canvas;
     this.ctx = canvas.getContext("2d");
@@ -5450,13 +5525,15 @@ export class SplashBlood {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
   }
 }
+
+module.exports = { SplashBlood };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 58/122: src\js\features\Typewriter.js
-Language: javascript | Size: 1,603 bytes
-Lines: 67 total | 53 code | 2 comments | 12 blank
+FILE 57/121: src\js\features\Typewriter.js
+Language: javascript | Size: 1,630 bytes
+Lines: 69 total | 54 code | 2 comments | 13 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -5465,7 +5542,7 @@ Lines: 67 total | 53 code | 2 comments | 12 blank
  * Used on splash page and somewhere else
  */
 
-export class Typewriter {
+class Typewriter {
   constructor(element, options = {}) {
     this.element = element;
     this.text = options.text || element.textContent;
@@ -5526,19 +5603,21 @@ export class Typewriter {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }
+
+module.exports = { Typewriter };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 59/122: src\js\features\WhisperController.js
-Language: javascript | Size: 1,227 bytes
-Lines: 53 total | 43 code | 1 comments | 9 blank
+FILE 58/121: src\js\features\WhisperController.js
+Language: javascript | Size: 1,261 bytes
+Lines: 55 total | 44 code | 1 comments | 10 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 import { Logger } from "../utils/Logger.js";
 
-export class WhisperController {
+class WhisperController {
   constructor(audioData) {
     this.logger = new Logger("Whisper");
     this.audioData = audioData;
@@ -5588,11 +5667,13 @@ export class WhisperController {
     this.isPlaying = false;
   }
 }
+
+module.exports = { WhisperController };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 60/122: src\js\index.js
+FILE 59/121: src\js\index.js
 Language: javascript | Size: 2,397 bytes
 Lines: 87 total | 52 code | 14 comments | 21 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5688,16 +5769,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 61/122: src\js\pages\AboutPage.js
-Language: javascript | Size: 4,371 bytes
-Lines: 133 total | 117 code | 1 comments | 15 blank
+FILE 60/121: src\js\pages\AboutPage.js
+Language: javascript | Size: 4,397 bytes
+Lines: 135 total | 118 code | 1 comments | 16 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 import { Logger } from "../utils/Logger.js";
 import { DomHelper } from "../utils/DomHelper.js";
 
-export class AboutPage {
+class AboutPage {
   constructor(container, stateManager, eventBus) {
     this.container = container;
     this.stateManager = stateManager;
@@ -5826,13 +5907,15 @@ export class AboutPage {
     this.pages = null;
   }
 }
+
+module.exports = { AboutPage };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 62/122: src\js\pages\AdminPage.js
-Language: javascript | Size: 5,712 bytes
-Lines: 176 total | 162 code | 1 comments | 13 blank
+FILE 61/121: src\js\pages\AdminPage.js
+Language: javascript | Size: 5,738 bytes
+Lines: 178 total | 163 code | 1 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -5848,7 +5931,7 @@ import { Logger } from "../utils/Logger.js";
  * Admin Page Controller
  */
 
-export class AdminPage {
+class AdminPage {
   constructor(container) {
     this.container = container;
     this.logger = new Logger("AdminPage");
@@ -6011,20 +6094,22 @@ export class AdminPage {
 
   destroy() {}
 }
+
+module.exports = { AdminPage };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 63/122: src\js\pages\ArtifactsPage.js
-Language: javascript | Size: 5,498 bytes
-Lines: 176 total | 153 code | 2 comments | 21 blank
+FILE 62/121: src\js\pages\ArtifactsPage.js
+Language: javascript | Size: 5,528 bytes
+Lines: 178 total | 154 code | 2 comments | 22 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 import { Logger } from "../utils/Logger.js";
 import { DomHelper } from "../utils/DomHelper.js";
 
-export class ArtifactsPage {
+class ArtifactsPage {
   constructor(container, stateManager, eventBus) {
     this.container = container;
     this.stateManager = stateManager;
@@ -6196,20 +6281,22 @@ export class ArtifactsPage {
     document.body.style.overflow = "";
   }
 }
+
+module.exports = { ArtifactsPage };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 64/122: src\js\pages\HomePage.js
-Language: javascript | Size: 2,681 bytes
-Lines: 93 total | 81 code | 2 comments | 10 blank
+FILE 63/121: src\js\pages\HomePage.js
+Language: javascript | Size: 2,706 bytes
+Lines: 95 total | 82 code | 2 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 import { Logger } from "../utils/Logger.js";
 import { DomHelper } from "../utils/DomHelper.js";
 
-export class HomePage {
+class HomePage {
   constructor(container, stateManager, eventBus) {
     this.container = container;
     this.stateManager = stateManager;
@@ -6298,20 +6385,22 @@ export class HomePage {
     this.pages = null;
   }
 }
+
+module.exports = { HomePage };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 65/122: src\js\pages\JournalPage.js
-Language: javascript | Size: 5,458 bytes
-Lines: 175 total | 151 code | 4 comments | 20 blank
+FILE 64/121: src\js\pages\JournalPage.js
+Language: javascript | Size: 5,486 bytes
+Lines: 177 total | 152 code | 4 comments | 21 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 import { Logger } from "../utils/Logger.js";
 import { DomHelper } from "../utils/DomHelper.js";
 
-export class JournalPage {
+class JournalPage {
   constructor(container, stateManager, eventBus) {
     this.container = container;
     this.stateManager = stateManager;
@@ -6482,13 +6571,15 @@ export class JournalPage {
     document.body.style.overflow = "";
   }
 }
+
+module.exports = { JournalPage };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 66/122: src\js\pages\SisterPage.js
-Language: javascript | Size: 5,339 bytes
-Lines: 184 total | 148 code | 6 comments | 30 blank
+FILE 65/121: src\js\pages\SisterPage.js
+Language: javascript | Size: 5,366 bytes
+Lines: 186 total | 149 code | 6 comments | 31 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -6497,7 +6588,7 @@ import { DomHelper } from "../utils/DomHelper.js";
 import { Typewriter } from "../features/Typewriter.js";
 import { WhisperController } from "../features/WhisperController.js";
 
-export class SisterPage {
+class SisterPage {
   constructor(container, stateManager, eventBus) {
     this.container = container;
     this.stateManager = stateManager;
@@ -6675,13 +6766,15 @@ export class SisterPage {
     this.whisperController?.stop();
   }
 }
+
+module.exports = { SisterPage };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 67/122: src\js\pages\SplashPage.js
-Language: javascript | Size: 6,459 bytes
-Lines: 217 total | 189 code | 3 comments | 25 blank
+FILE 66/121: src\js\pages\SplashPage.js
+Language: javascript | Size: 6,499 bytes
+Lines: 219 total | 190 code | 3 comments | 26 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -6696,7 +6789,7 @@ import { Logger } from "../utils/Logger.js";
  * and blood transition. can be used as a standalone page or entry point.
  */
 
-export class SplashPage {
+class SplashPage {
   constructor(container) {
     this.container = container;
     this.logger = new Logger("SplashPage");
@@ -6901,13 +6994,15 @@ class CandleScene {
     cancelAnimationFrame(this.animationId);
   }
 }
+
+module.exports = { SplashPage, candleScene };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 68/122: src\js\three\AmbientScene.js
-Language: javascript | Size: 3,120 bytes
-Lines: 107 total | 80 code | 9 comments | 18 blank
+FILE 67/121: src\js\three\AmbientScene.js
+Language: javascript | Size: 3,149 bytes
+Lines: 109 total | 81 code | 9 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -6922,7 +7017,7 @@ import { FogEffect } from "./effects/FogEffect.js";
  * sets up the floating mask scene with lighting, fog, and particles.
  * designed to be dropped into the app as the background.
  */
-export class AmbientScene {
+class AmbientScene {
   constructor(canvas, characterData) {
     this.canvas = canvas;
     this.characterData = characterData;
@@ -7017,13 +7112,15 @@ export class AmbientScene {
     if (this.materialFactory) this.materialFactory.destroy();
   }
 }
+
+module.exports = { AmbientScene };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 69/122: src\js\three\CameraController.js
-Language: javascript | Size: 3,098 bytes
-Lines: 145 total | 107 code | 9 comments | 29 blank
+FILE 68/121: src\js\three\CameraController.js
+Language: javascript | Size: 3,131 bytes
+Lines: 147 total | 108 code | 9 comments | 30 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -7032,7 +7129,7 @@ Lines: 145 total | 107 code | 9 comments | 29 blank
  * manages view and projection matrices with subtle floating animation.
  */
 
-export class CameraController {
+class CameraController {
   constructor(gl, config = {}) {
     this.gl = gl;
 
@@ -7171,13 +7268,15 @@ export class CameraController {
     out[15] = 1;
   }
 }
+
+module.exports = { CameraController };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 70/122: src\js\three\effects\FogEffect.js
-Language: javascript | Size: 1,225 bytes
-Lines: 53 total | 41 code | 3 comments | 9 blank
+FILE 69/121: src\js\three\effects\FogEffect.js
+Language: javascript | Size: 1,251 bytes
+Lines: 55 total | 42 code | 3 comments | 10 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -7185,7 +7284,7 @@ Lines: 53 total | 41 code | 3 comments | 9 blank
  * Atmospheric Fog Controller
  * provides fog color and density to all shaders in the scene
  */
-export class FogEffect {
+class FogEffect {
   constructor(gl, config = {}) {
     this.gl = gl;
 
@@ -7233,13 +7332,15 @@ export class FogEffect {
     this.gl.clearColor(this.color[0], this.color[1], this.color[2], 1.0);
   }
 }
+
+module.exports = { FogEffect };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 71/122: src\js\three\effects\ParticleSystem.js
-Language: javascript | Size: 3,230 bytes
-Lines: 114 total | 87 code | 6 comments | 21 blank
+FILE 70/121: src\js\three\effects\ParticleSystem.js
+Language: javascript | Size: 3,261 bytes
+Lines: 116 total | 88 code | 6 comments | 22 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -7250,7 +7351,7 @@ import { MaterialFactory } from "../materials/MaterialFactory.js";
  * renders atmospheric dust motes drifting through the scene.
  */
 
-export class ParticleSystem {
+class ParticleSystem {
   constructor(gl, count = 100) {
     this.gl = gl;
     this.count = count;
@@ -7356,13 +7457,15 @@ export class ParticleSystem {
     }
   }
 }
+
+module.exports = { ParticleSystem };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 72/122: src\js\three\effects\PostProcess.js
-Language: javascript | Size: 799 bytes
-Lines: 35 total | 30 code | 1 comments | 4 blank
+FILE 71/121: src\js\three\effects\PostProcess.js
+Language: javascript | Size: 827 bytes
+Lines: 37 total | 31 code | 1 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -7371,7 +7474,7 @@ Lines: 35 total | 30 code | 1 comments | 4 blank
  * applies a simple vignette via CSS
  */
 
-export class PostProcess {
+class PostProcess {
   constructor() {
     this.vignetteElement = null;
     this.init();
@@ -7400,13 +7503,15 @@ export class PostProcess {
     }
   }
 }
+
+module.exports = { PostProcess };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 73/122: src\js\three\geometries\CandleGeometry.js
-Language: javascript | Size: 619 bytes
-Lines: 25 total | 23 code | 0 comments | 2 blank
+FILE 72/121: src\js\three\geometries\CandleGeometry.js
+Language: javascript | Size: 650 bytes
+Lines: 27 total | 24 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -7415,7 +7520,7 @@ Lines: 25 total | 23 code | 0 comments | 2 blank
  * returns an array of points for a particle-based flame (teardrop shape)
  */
 
-export class CandleGeometry {
+class CandleGeometry {
   static generate(count = 200) {
     const vertices = [];
     for (let i = 0; i < count; i++) {
@@ -7434,13 +7539,15 @@ export class CandleGeometry {
     return { vertices };
   }
 }
+
+module.exports = { CandleGeometry };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 74/122: src\js\three\geometries\KatanaGeometry.js
-Language: javascript | Size: 2,478 bytes
-Lines: 94 total | 74 code | 9 comments | 11 blank
+FILE 73/121: src\js\three\geometries\KatanaGeometry.js
+Language: javascript | Size: 2,509 bytes
+Lines: 96 total | 75 code | 9 comments | 12 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -7449,7 +7556,7 @@ Lines: 94 total | 74 code | 9 comments | 11 blank
  * procedurally generates a simplified curved blade with handle
  */
 
-export class KatanaGeometry {
+class KatanaGeometry {
   static generate() {
     const positions = [];
     const normals = [];
@@ -7537,13 +7644,15 @@ export class KatanaGeometry {
     }
   }
 }
+
+module.exports = { KatanaGeometry };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 75/122: src\js\three\geometries\MaskGeometry.js
-Language: javascript | Size: 3,954 bytes
-Lines: 135 total | 92 code | 20 comments | 23 blank
+FILE 74/121: src\js\three\geometries\MaskGeometry.js
+Language: javascript | Size: 3,983 bytes
+Lines: 137 total | 93 code | 20 comments | 24 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -7553,7 +7662,7 @@ Lines: 135 total | 92 code | 20 comments | 23 blank
  * a smooth, face-shaped surface with a subtle zipper line down the center
  * returns raw Float32Arrays for WebGL buffers
  */
-export class MaskGeometry {
+class MaskGeometry {
   // generate mask geometry
   static generate(resolution = 40) {
     const positions = [];
@@ -7681,13 +7790,15 @@ export class MaskGeometry {
     }
   }
 }
+
+module.exports = { MaskGeometry };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 76/122: src\js\three\geometries\MeshObject.js
-Language: javascript | Size: 6,632 bytes
-Lines: 217 total | 157 code | 23 comments | 37 blank
+FILE 75/121: src\js\three\geometries\MeshObject.js
+Language: javascript | Size: 6,659 bytes
+Lines: 219 total | 158 code | 23 comments | 38 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -7696,7 +7807,7 @@ Lines: 217 total | 157 code | 23 comments | 37 blank
  * Holds geometry buffers, material reference, and renders itself.
  */
 
-export class MeshObject {
+class MeshObject {
   constructor(geometry, materialKey, options = {}) {
     this.geometry = geometry;
     this.materialKey = materialKey;
@@ -7907,13 +8018,15 @@ export class MeshObject {
     if (this.buffers.index) gl.deleteBuffer(this.buffers.index);
   }
 }
+
+module.exports = { MeshObject };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 77/122: src\js\three\geometries\RopeGeometry.js
-Language: javascript | Size: 1,050 bytes
-Lines: 41 total | 37 code | 0 comments | 4 blank
+FILE 76/121: src\js\three\geometries\RopeGeometry.js
+Language: javascript | Size: 1,079 bytes
+Lines: 43 total | 38 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -7922,7 +8035,7 @@ Lines: 41 total | 37 code | 0 comments | 4 blank
  * generates a spiral coil of rope segments, like a ceremonial binding.
  */
 
-export class RopeGeometry {
+class RopeGeometry {
   static generate(
     coils = 5,
     segmentsPerCoil = 60,
@@ -7957,13 +8070,15 @@ export class RopeGeometry {
     };
   }
 }
+
+module.exports = { RopeGeometry };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 78/122: src\js\three\Lighting.js
-Language: javascript | Size: 1,541 bytes
-Lines: 57 total | 49 code | 1 comments | 7 blank
+FILE 77/121: src\js\three\Lighting.js
+Language: javascript | Size: 1,566 bytes
+Lines: 59 total | 50 code | 1 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -7972,7 +8087,7 @@ Lines: 57 total | 49 code | 1 comments | 7 blank
  * provides ambient, key, and rim light data to shaders
  */
 
-export class Lighting {
+class Lighting {
   constructor(gl, config = {}) {
     this.gl = gl;
 
@@ -8023,13 +8138,15 @@ export class Lighting {
     };
   }
 }
+
+module.exports = { Lighting };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 79/122: src\js\three\materials\MaterialFactory.js
-Language: javascript | Size: 3,661 bytes
-Lines: 113 total | 99 code | 0 comments | 14 blank
+FILE 78/121: src\js\three\materials\MaterialFactory.js
+Language: javascript | Size: 3,693 bytes
+Lines: 115 total | 100 code | 0 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -8039,7 +8156,7 @@ import { Shaders } from "./Shaders.js";
  * creates and manages WebGL shader programs with uniform locations
  */
 
-export class MaterialFactory {
+class MaterialFactory {
   constructor(gl) {
     this.gl = gl;
     this.programs = new Map();
@@ -8145,13 +8262,15 @@ export class MaterialFactory {
     this.programs.clear();
   }
 }
+
+module.exports = { MaterialFactory };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 80/122: src\js\three\materials\Shaders.js
-Language: javascript | Size: 6,302 bytes
-Lines: 194 total | 147 code | 12 comments | 35 blank
+FILE 79/121: src\js\three\materials\Shaders.js
+Language: javascript | Size: 6,326 bytes
+Lines: 196 total | 148 code | 12 comments | 36 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -8160,7 +8279,7 @@ Lines: 194 total | 147 code | 12 comments | 35 blank
  * of course handwritten. vertex and fragment shaders for the dark academia aesthetic
  */
 
-export class Shaders {
+class Shaders {
   // standard lit shader with fog support
   static getLitShader() {
     return {
@@ -8348,13 +8467,15 @@ export class Shaders {
     return shader;
   }
 }
+
+module.exports = { Shaders };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 81/122: src\js\three\SceneManager.js
-Language: javascript | Size: 2,321 bytes
-Lines: 90 total | 62 code | 10 comments | 18 blank
+FILE 80/121: src\js\three\SceneManager.js
+Language: javascript | Size: 2,350 bytes
+Lines: 92 total | 63 code | 10 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -8369,7 +8490,7 @@ import { Shaders } from "./materials/Shaders.js";
  * Manages a single 3D scene: objects, camera, lights, effects.
  */
 
-export class SceneManager {
+class SceneManager {
   constructor(config = {}) {
     this.config = config;
     this.objects = [];
@@ -8447,13 +8568,15 @@ export class SceneManager {
     if (this.particles) this.particles.destroy(this.gl);
   }
 }
+
+module.exports = { SceneManager };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 82/122: src\js\three\ThreeEngine.js
-Language: javascript | Size: 3,313 bytes
-Lines: 136 total | 108 code | 6 comments | 22 blank
+FILE 81/121: src\js\three\ThreeEngine.js
+Language: javascript | Size: 3,341 bytes
+Lines: 138 total | 109 code | 6 comments | 23 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -8463,7 +8586,7 @@ Lines: 136 total | 108 code | 6 comments | 22 blank
  * pure WebGL 1.0 for maximum compatibility.
  */
 
-export class ThreeEngine {
+class ThreeEngine {
   constructor(canvas) {
     this.canvas = canvas;
     this.gl = null;
@@ -8592,11 +8715,13 @@ export class ThreeEngine {
     this.onFrameCallbacks = [];
   }
 }
+
+module.exports = { ThreeEngine };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 83/122: src\js\utils\Constants.js
+FILE 82/121: src\js\utils\Constants.js
 Language: javascript | Size: 336 bytes
 Lines: 17 total | 15 code | 0 comments | 2 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8622,13 +8747,13 @@ export const PAGE_NAMES = {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 84/122: src\js\utils\DomHelper.js
-Language: javascript | Size: 1,310 bytes
-Lines: 54 total | 43 code | 3 comments | 8 blank
+FILE 83/121: src\js\utils\DomHelper.js
+Language: javascript | Size: 1,336 bytes
+Lines: 56 total | 44 code | 3 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-export class DomHelper {
+class DomHelper {
   // Escape HTML to prent XSS
   static escapeHtml(str) {
     if (!str) return "";
@@ -8681,17 +8806,19 @@ export class DomHelper {
     };
   }
 }
+
+module.exports = { DomHelper };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 85/122: src\js\utils\Logger.js
-Language: javascript | Size: 425 bytes
-Lines: 24 total | 19 code | 0 comments | 5 blank
+FILE 84/121: src\js\utils\Logger.js
+Language: javascript | Size: 448 bytes
+Lines: 26 total | 20 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-export class Logger {
+class Logger {
   constructor(module) {
     this.module = module;
   }
@@ -8714,13 +8841,15 @@ export class Logger {
     }
   }
 }
+
+module.exports = { Logger };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 86/122: src\js\utils\Sanitizer.js
-Language: javascript | Size: 856 bytes
-Lines: 37 total | 34 code | 0 comments | 3 blank
+FILE 85/121: src\js\utils\Sanitizer.js
+Language: javascript | Size: 883 bytes
+Lines: 40 total | 35 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -8728,7 +8857,8 @@ Lines: 37 total | 34 code | 0 comments | 3 blank
  * Input Sanitizer
  * escapes HTML and prevents XSS
  */
-export class Sanitizer {
+
+class Sanitizer {
   static escapeHtml(str) {
     if (!str) return "";
     const map = {
@@ -8760,13 +8890,15 @@ export class Sanitizer {
     return obj;
   }
 }
+
+module.exports = { Sanitizer };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 87/122: src\js\utils\Validator.js
-Language: javascript | Size: 823 bytes
-Lines: 30 total | 26 code | 0 comments | 4 blank
+FILE 86/121: src\js\utils\Validator.js
+Language: javascript | Size: 849 bytes
+Lines: 32 total | 27 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -8774,7 +8906,7 @@ Lines: 30 total | 26 code | 0 comments | 4 blank
  * Client side Validator
  * checks data integrity before saving
  */
-export class Validator {
+class Validator {
   static isNonEmptyString(value) {
     return typeof value === "string" && value.trim().length > 0;
   }
@@ -8799,11 +8931,1980 @@ export class Validator {
     return { valid: errors.length === 0, errors };
   }
 }
+
+module.exports = { Validator };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 88/122: src\scss\abstracts\_functions.scss
+FILE 87/121: src\main.css
+Language: css | Size: 39,479 bytes
+Lines: 1957 total | 1807 code | 0 comments | 150 blank
+────────────────────────────────────────────────────────────────────────────────
+
+```css
+:root {
+  --color-primary: #1a2e1a;
+  --color-primary-light: #2a452a;
+  --color-secondary: #1c1c1c;
+  --color-accent: #c9a84c;
+  --color-accent-dim: #8a7030;
+  --color-blood: #6b0f0f;
+  --color-text-primary: #e8dcc8;
+  --color-text-secondary: #c4b99a;
+  --color-text-muted: #8a8060;
+  --color-background: #0d0d0d;
+  --color-surface: #141414;
+  --color-parchment: #efe3c3;
+  --color-parchment-dark: #d4c5a0;
+  --font-heading: "Garamond Rough Pro", "Times New Roman", serif;
+  --font-body: "Cardo", "Georgia", serif;
+  --font-accent: "Cinzel", "Times New Roman", serif;
+  --font-handwritten: "Aldridgescript", "Brush Script MT", cursive;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 3rem;
+  --leading-tight: 1.2;
+  --leading-normal: 1.6;
+  --leading-loose: 1.8;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-section: 6rem;
+  --max-width: 1200px;
+  --content-width: 800px;
+  --nav-height: 70px;
+  --border-thin: 1px solid var(--color-accent-dim);
+  --border-glow: 1px solid var(--color-accent);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.5);
+  --shadow-md: 0 4px 8px rgba(0,0,0,0.6);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.8);
+  --shadow-glow: 0 0 15px rgba(201, 168, 76, 0.3);
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 600ms cubic-bezier(0.16, 1, 0.3, 1);
+  --z-base: 1;
+  --z-nav: 100;
+  --z-modal: 200;
+  --z-cursor: 300;
+  --z-loader: 400;
+  --z-splash: 500;
+  --canvas-opacity: 0.15;
+  --splash-bg: #000000;
+  --splash-text-color: var(--color-text-primary);
+  --splash-candle-color: #d4a843;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+  font-family: "Garamond Rough Pro";
+  src: url("/fonts/garamond-rough-pro-regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Garamond Rough Pro";
+  src: url("/fonts/garamond-rough-pro-bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cardo";
+  src: url("/fonts/Cardo-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cardo";
+  src: url("/fonts/Cardo-Italic.ttf") format("ttf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cardo";
+  src: url("/fonts/Cardo-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/Cinzel-Regular.otf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/Cinzel-Black.otf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ariel Script";
+  src: url("/fonts/Ariel Script.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.heading-1 {
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: 0.02em;
+}
+
+.heading-2 {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: 0.01em;
+}
+
+.heading-3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  line-height: var(--leading-tight);
+}
+
+.heading-4 {
+  font-family: var(--font-accent);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.body-text {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-loose);
+  color: var(--color-text-primary);
+}
+
+.body-large {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  line-height: var(--leading-loose);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-accent {
+  font-family: var(--font-accent);
+  color: var(--color-accent);
+  letter-spacing: 0.03em;
+}
+
+.handwritten {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-lg);
+  line-height: var(--leading-loose);
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-accent);
+  color: var(--color-background);
+  padding: var(--space-sm) var(--space-lg);
+  z-index: 1000;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  transition: top var(--transition-fast);
+}
+.skip-link:focus {
+  top: var(--space-sm);
+}
+
+@media (forced-colors: active) {
+  .btn,
+.card,
+.artifact-item {
+    border: 1px solid ButtonText;
+  }
+}
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  background-color: var(--color-accent-dim);
+  color: var(--color-background);
+}
+
+::selection {
+  background-color: var(--color-accent-dim);
+  color: var(--color-background);
+}
+
+::-moz-selection {
+  background-color: var(--color-accent-dim);
+  color: var(--color-background);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent-dim);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.app-main {
+  display: grid;
+  grid-template-rows: 1fr;
+  min-height: calc(100vh - var(--nav-height) - 80px);
+}
+
+.page-container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.home-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+  margin-bottom: var(--space-section);
+}
+@media (max-width: 768px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.artifacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-xl);
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-xl);
+  background: rgba(13, 13, 13, 0.85);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-bottom: var(--border-thin);
+  z-index: var(--z-nav);
+}
+.main-nav .nav-brand {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+}
+.main-nav .brand-name {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+.main-nav .brand-divider {
+  color: var(--color-accent-dim);
+  font-family: var(--font-accent);
+}
+.main-nav .brand-title {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+}
+.main-nav .nav-links {
+  display: flex;
+  gap: var(--space-lg);
+}
+.main-nav .nav-link {
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding: var(--space-xs) var(--space-sm);
+  transition: color var(--transition-normal), border-color var(--transition-normal);
+  border-bottom: 2px solid transparent;
+}
+.main-nav .nav-link:hover {
+  color: var(--color-text-primary);
+}
+.main-nav .nav-link.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+.main-nav .nav-link[aria-current=page] {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.site-footer {
+  text-align: center;
+  padding: var(--space-xl);
+  border-top: var(--border-thin);
+}
+.site-footer .footer-text {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: var(--text-sm);
+}
+.site-footer .footer-copyright {
+  margin-top: var(--space-xs);
+  font-size: var(--text-xs);
+}
+
+.card {
+  background: var(--color-surface);
+  border: var(--border-thin);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+.card:hover {
+  border-color: var(--color-accent-dim);
+  box-shadow: var(--shadow-md);
+}
+
+.page-container {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page-section {
+  margin-bottom: var(--space-section);
+}
+
+.accent-quote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: var(--space-lg);
+  margin: var(--space-xl) 0;
+  font-style: italic;
+}
+
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+.error-state h2 {
+  font-family: var(--font-heading);
+  margin-bottom: var(--space-md);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-xl);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all var(--transition-normal);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-warning {
+  background: var(--color-blood);
+  color: var(--color-text-primary);
+  border-color: var(--color-blood);
+}
+.btn-warning:hover:not(:disabled) {
+  background: transparent;
+  color: var(--color-blood);
+  border-color: var(--color-blood);
+}
+
+.btn-accent {
+  background: var(--color-accent);
+  color: var(--color-background);
+}
+.btn-accent:hover:not(:disabled) {
+  background: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-text-secondary);
+  border-color: var(--color-text-muted);
+}
+.btn-ghost:hover:not(:disabled) {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.card {
+  background: var(--color-surface);
+  border: var(--border-thin);
+  padding: var(--space-xl);
+  transition: border-color var(--transition-normal), box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+.card:hover {
+  border-color: var(--color-accent-dim);
+}
+
+.page-header {
+  margin-bottom: var(--space-3xl);
+}
+.page-header .heading-1 {
+  margin-bottom: var(--space-sm);
+}
+.page-header .body-large {
+  max-width: var(--content-width);
+}
+
+.header-ornament {
+  width: 60px;
+  height: 1px;
+  margin-top: var(--space-lg);
+  background: linear-gradient(to right, var(--color-accent), transparent);
+}
+
+.image-frame {
+  overflow: hidden;
+}
+.image-frame img {
+  transition: transform var(--transition-slow), filter var(--transition-slow);
+}
+.image-frame:hover img {
+  transform: scale(1.02);
+}
+
+.slide-up-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal.hidden {
+  display: none;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  position: relative;
+  background: var(--color-surface);
+  border: var(--border-thin);
+  padding: var(--space-2xl);
+  max-width: 800px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  -webkit-animation: slideUp 0.3s ease;
+          animation: slideUp 0.3s ease;
+}
+.modal-content.modal-artifact {
+  max-width: 900px;
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  font-size: var(--text-xl);
+  padding: var(--space-xs) var(--space-sm);
+  z-index: 1;
+}
+
+.app-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-loader);
+  transition: opacity 0.3s ease;
+}
+.app-loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-inner {
+  text-align: center;
+}
+
+.loader-symbol {
+  display: block;
+  font-size: 3rem;
+  color: var(--color-accent);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+  margin-bottom: var(--space-md);
+}
+
+.loader-text {
+  font-family: var(--font-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.08s ease-out;
+  will-change: transform;
+}
+.custom-cursor .cursor-zipper {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  display: block;
+  text-shadow: 0 0 6px var(--color-accent-dim);
+  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.custom-cursor.cursor-interactive .cursor-zipper {
+  transform: rotate(15deg) scale(1.3);
+  color: var(--color-blood);
+  text-shadow: 0 0 8px var(--color-blood);
+}
+
+body.custom-cursor-active {
+  cursor: none;
+}
+body.custom-cursor-active a,
+body.custom-cursor-active button,
+body.custom-cursor-active input,
+body.custom-cursor-active textarea,
+body.custom-cursor-active [role=button] {
+  cursor: none;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-surface);
+  border: var(--border-thin);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+[data-tooltip]:hover::after {
+  opacity: 1;
+}
+
+.secret-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-surface);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.vignette-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.35) 100%);
+}
+
+.splash-body {
+  background: var(--splash-bg);
+  overflow: hidden;
+  cursor: none;
+}
+
+.splash-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.splash-canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  z-index: var(--z-base);
+  opacity: 0;
+  -webkit-animation: candle-appear 2s ease forwards;
+          animation: candle-appear 2s ease forwards;
+}
+
+.splash-typewriter {
+  position: relative;
+  z-index: calc(var(--z-base) + 1);
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+}
+
+.splash-line {
+  font-family: var(--font-body);
+  font-size: var(--text-xl);
+  color: var(--splash-text-color);
+  opacity: 0;
+  letter-spacing: 0.03em;
+}
+.splash-line.line-1 {
+  -webkit-animation: typewriter-fade 1.5s ease forwards;
+          animation: typewriter-fade 1.5s ease forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.splash-line.line-2 {
+  -webkit-animation: typewriter-fade 1.5s ease forwards;
+          animation: typewriter-fade 1.5s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.splash-line.line-3 {
+  -webkit-animation: typewriter-fade 1.5s ease forwards;
+          animation: typewriter-fade 1.5s ease forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  color: var(--color-accent);
+}
+
+.splash-warning {
+  position: relative;
+  z-index: calc(var(--z-base) + 2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 0.8s ease;
+}
+.splash-warning.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.warning-content {
+  background: var(--color-surface);
+  border: var(--border-glow);
+  padding: var(--space-2xl);
+  max-width: 550px;
+  text-align: center;
+  box-shadow: var(--shadow-glow);
+}
+
+.warning-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  color: var(--color-accent);
+  margin-bottom: var(--space-lg);
+}
+
+.warning-text {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-loose);
+  margin-bottom: var(--space-xl);
+}
+.warning-text ul {
+  list-style: disc;
+  padding-left: var(--space-xl);
+  margin: var(--space-md) 0;
+  text-align: left;
+}
+.warning-text ul li {
+  margin-bottom: var(--space-xs);
+}
+
+.splash-blood-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: var(--z-splash);
+  pointer-events: none;
+}
+.splash-blood-canvas.active {
+  -webkit-animation: blood-surge 2s ease-in forwards;
+          animation: blood-surge 2s ease-in forwards;
+}
+
+.splash-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--splash-bg);
+  z-index: calc(var(--z-splash) + 1);
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+.splash-transition.active {
+  opacity: 1;
+}
+
+@-webkit-keyframes candle-appear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    scale: 0.8;
+  }
+  100% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%);
+    scale: 1;
+  }
+}
+
+@keyframes candle-appear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    scale: 0.8;
+  }
+  100% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%);
+    scale: 1;
+  }
+}
+@-webkit-keyframes typewriter-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+@keyframes typewriter-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+@-webkit-keyframes blood-surge {
+  0% {
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-clip-path: circle(150% at 50% 50%);
+            clip-path: circle(150% at 50% 50%);
+    opacity: 0;
+  }
+}
+@keyframes blood-surge {
+  0% {
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-clip-path: circle(150% at 50% 50%);
+            clip-path: circle(150% at 50% 50%);
+    opacity: 0;
+  }
+}
+.hero-content .hero-name {
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+}
+.hero-content .hero-subtitle {
+  margin-bottom: var(--space-lg);
+}
+.hero-content .hero-quote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: var(--space-lg);
+  font-style: italic;
+}
+
+.hero-image .image-frame {
+  position: relative;
+  border: var(--border-thin);
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  box-shadow: var(--shadow-lg);
+}
+.hero-image .image-frame::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 60%, var(--color-background) 100%);
+}
+.hero-image .portrait-main {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: saturate(0.8) brightness(0.9);
+  transition: filter 0.5s ease;
+}
+.hero-image .portrait-main:hover {
+  filter: saturate(1) brightness(1);
+}
+
+.home-intro {
+  margin: var(--space-section) 0;
+}
+
+.home-quote-section {
+  margin: var(--space-section) 0;
+  text-align: center;
+}
+.home-quote-section .accent-quote {
+  display: inline-block;
+  border-left: none;
+  border-top: 1px solid var(--color-accent-dim);
+  border-bottom: 1px solid var(--color-accent-dim);
+  padding: var(--space-xl);
+  font-size: var(--text-lg);
+  max-width: var(--content-width);
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-3xl);
+  align-items: start;
+  margin: var(--space-2xl) 0;
+}
+@media (max-width: 768px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-content .about-text {
+  margin-bottom: var(--space-2xl);
+}
+.about-content .about-text p {
+  margin-bottom: var(--space-md);
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+.detail-item .detail-label {
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.detail-item .detail-value {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+}
+
+.about-image .portrait-frame {
+  border: var(--border-thin);
+  padding: var(--space-sm);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+}
+.about-image .portrait-side {
+  width: 100%;
+  filter: sepia(0.3) brightness(0.85);
+  transition: filter var(--transition-slow);
+}
+.about-image .portrait-side:hover {
+  filter: sepia(0.1) brightness(0.95);
+}
+.about-image .image-caption {
+  margin-top: var(--space-sm);
+  text-align: right;
+  font-size: var(--text-sm);
+  opacity: 0.7;
+}
+
+.about-appearance {
+  margin-top: var(--space-section);
+}
+.about-appearance h3 {
+  margin-bottom: var(--space-lg);
+}
+
+.appearance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+}
+
+.appearance-item {
+  padding: var(--space-md);
+  border: var(--border-thin);
+  background: var(--color-surface);
+}
+.appearance-item .appearance-key {
+  display: block;
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+}
+.appearance-item .appearance-desc {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.journal-entries {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.journal-entry {
+  cursor: pointer;
+  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+.journal-entry:hover {
+  border-color: var(--color-accent-dim);
+  box-shadow: var(--shadow-md);
+}
+.journal-entry .entry-meta {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+}
+.journal-entry .entry-title {
+  margin-bottom: var(--space-sm);
+}
+.journal-entry .entry-preview {
+  margin-bottom: var(--space-md);
+}
+
+.modal-entry-header {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+}
+
+.entry-full {
+  margin: var(--space-lg) 0;
+  line-height: var(--leading-loose);
+  white-space: pre-line;
+}
+
+.modal-entry-footer {
+  text-align: right;
+  margin-top: var(--space-xl);
+  color: var(--color-accent-dim);
+}
+
+.artifact-card {
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+.artifact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.artifact-card:hover .artifact-image {
+  filter: brightness(1.1);
+}
+
+.artifact-image-container {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: var(--color-background);
+}
+
+.artifact-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.8) sepia(0.2);
+  transition: filter var(--transition-normal);
+}
+
+.artifact-badge {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  padding: var(--space-xs) var(--shadow-sm);
+  background: rgba(0, 0, 0, 0.7);
+  border: var(--border-thin);
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+}
+
+.artifact-info {
+  padding: var(--space-md);
+}
+
+.artifact-origin {
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
+}
+
+.artifact-desc {
+  font-size: var(--text-xs);
+}
+
+.modal-artifact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .modal-artifact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.modal-artifact-image img {
+  width: 100%;
+  border: var(--border-thin);
+}
+
+.modal-artifact-info span {
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+}
+.modal-artifact-info h2 {
+  margin: var(--space-sm) 0;
+}
+
+.sister-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+.sister-header .heading-1 {
+  font-size: var(--text-4xl);
+  letter-spacing: 0.04em;
+}
+
+.sister-ornament {
+  width: 40px;
+  height: 2px;
+  margin: var(--space-lg) auto;
+  background: linear-gradient(to right, transparent, var(--color-accent), transparent);
+}
+
+.sister-layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.sister-portrait {
+  text-align: center;
+}
+
+.portrait-vignette {
+  position: relative;
+  display: inline-block;
+  border: 1px solid var(--color-accent-dim);
+  padding: var(--space-sm);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+}
+.portrait-vignette .sister-image {
+  display: block;
+  filter: sepia(0.6) brightness(0.75) contrast(1.1);
+  transition: filter var(--transition-slow);
+}
+.portrait-vignette .sister-image:hover {
+  filter: sepia(0.3) brightness(0.9);
+}
+
+.vignette-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+}
+
+.sister-poem {
+  text-align: center;
+}
+
+.poem-container {
+  display: inline-block;
+  max-width: 600px;
+  padding: var(--space-2xl);
+  border-top: var(--border-thin);
+  border-bottom: var(--border-thin);
+}
+
+.poem-text {
+  font-style: italic;
+  color: var(--color-text-secondary);
+  line-height: var(--leading-loose);
+  min-height: 3em;
+}
+
+.poem-signature {
+  margin-top: var(--space-lg);
+  text-align: right;
+  color: var(--color-accent-dim);
+}
+
+.sister-content {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.sister-content p {
+  line-height: var(--leading-loose);
+}
+
+.sister-hairpin {
+  text-align: center;
+  margin-top: var(--space-xl);
+}
+
+.hairpin-container {
+  display: inline-block;
+  position: relative;
+}
+.hairpin-container .hairpin-image {
+  max-width: 250px;
+  filter: brightness(1.1) saturate(0.9);
+  border: var(--border-thin);
+  transition: filter 0.8s ease;
+}
+.hairpin-container .hairpin-caption {
+  margin-top: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  opacity: 0.8;
+  transition: opacity var(--transition-normal);
+}
+
+.hairpin-note {
+  margin-top: var(--space-md);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-style: italic;
+  color: var(--color-text-muted);
+  opacity: 0.6;
+  transition: opacity var(--transition-normal), color var(--transition-normal);
+}
+.hairpin-note:hover {
+  opacity: 1;
+  color: var(--color-accent);
+}
+
+.sister-whisper-zone {
+  text-align: center;
+  margin-top: var(--space-3xl);
+  padding: var(--space-xl);
+  cursor: default;
+  opacity: 0.3;
+  transition: opacity var(--transition-slow);
+}
+.sister-whisper-zone:hover {
+  opacity: 0.6;
+}
+
+.admin-body {
+  background: #0a0a0a;
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+}
+
+.admin-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--space-x1);
+}
+
+.login-form {
+  width: 100%;
+  max-width: 420px;
+  padding: var(--space-3xl);
+}
+
+.admin-panel {
+  display: none;
+}
+.admin-panel.active {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  background: var(--color-surface);
+  border-right: var(--border-thin);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-lg);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xm);
+  padding-bottom: var(--space-xl);
+  border-bottom: var(--space-thin);
+  margin-bottom: var(--space-xl);
+}
+.sidebar-brand .brand-icon {
+  font-size: var(--text-2xl);
+  color: var(--color-accent);
+}
+.sidebar-brand .brand-text {
+  font-family: var(--font-accent);
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  flex: 1;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  font-family: var(--font-body);
+  color: var(--color-text-muted);
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+.sidebar-link:hover {
+  background: rgba(201, 168, 76, 0.1);
+  color: var(--color-text-primary);
+}
+.sidebar-link.active {
+  background: rgba(201, 168, 76, 0.15);
+  color: var(--color-accent);
+  border-left: 2px solid var(--color-accent);
+}
+.sidebar-link .sidebar-icon {
+  font-size: var(--text-lg);
+}
+
+.sidebar-footer {
+  padding-top: var(--space-xl);
+  border-top: var(--border-thin);
+}
+
+.save-status {
+  text-align: center;
+  margin-top: var(--space-sm);
+  font-size: var(--text-xs);
+  min-height: 1.2em;
+}
+.save-status.save-success {
+  color: #4caf50;
+}
+.save-status.save-error {
+  color: #f44336;
+}
+.save-status.save-info {
+  color: var(--color-accent);
+}
+
+.admin-main {
+  padding: var(--space-2xl);
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.admin-section {
+  display: none;
+}
+.admin-section.active {
+  display: block;
+}
+.admin-section h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.editor-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+}
+
+.editor-card {
+  background: var(--color-surface);
+  border: var(--border-thin);
+  padding: var(--space-xl);
+}
+.editor-card h3 {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: var(--border-thin);
+}
+
+.editor-subcard {
+  background: var(--color-background);
+  border: var(--border-thin);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.form-group {
+  margin-bottom: var(--space-lg);
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-background);
+  border: var(--border-thin);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  transition: border-color var(--transition-fast);
+}
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.form-textarea {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-background);
+  border: var(--border-thin);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  resize: vertical;
+  min-height: 100px;
+}
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.form-error {
+  background: rgba(139, 0, 0, 0.2);
+  border: 1px solid var(--color-blood);
+  color: #f44336;
+  padding: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-md);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+.form-error.hidden {
+  display: none;
+}
+
+.form-range {
+  width: 100%;
+  accent-color: var(--color-accent);
+}
+
+.range-value {
+  display: inline-block;
+  margin-left: var(--space-sm);
+  font-size: var(--text-sm);
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-md);
+}
+
+.color-item .color-input-group {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+.color-item .color-picker {
+  width: 40px;
+  height: 40px;
+  border: var(--border-thin);
+  cursor: pointer;
+  padding: 0;
+  background: none;
+}
+.color-item .color-hex {
+  flex: 1;
+}
+
+.image-preview-row {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+.image-preview-row input {
+  flex: 1;
+}
+
+.image-thumb {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: var(--border-thin);
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@-webkit-keyframes candleAppear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes candleAppear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@-webkit-keyframes typewriterFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+@keyframes typewriterFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+@-webkit-keyframes bloodSurge {
+  0% {
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-clip-path: circle(150% at 50% 50%);
+            clip-path: circle(150% at 50% 50%);
+    opacity: 0;
+  }
+}
+@keyframes bloodSurge {
+  0% {
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-clip-path: circle(150% at 50% 50%);
+            clip-path: circle(150% at 50% 50%);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes zipperReveal {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes zipperReveal {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.fade-enter {
+  -webkit-animation: fadeIn 0.5s ease forwards;
+          animation: fadeIn 0.5s ease forwards;
+}
+
+.slide-up-enter {
+  -webkit-animation: slideUp 0.6s ease forwards;
+          animation: slideUp 0.6s ease forwards;
+}
+
+.stagger-children > * {
+  opacity: 0;
+  -webkit-animation: slideUp 0.5s ease forwards;
+          animation: slideUp 0.5s ease forwards;
+}
+.stagger-children > *:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.stagger-children > *:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.stagger-children > *:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.stagger-children > *:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.stagger-children > *:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.stagger-children > *:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.stagger-children > *:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+.stagger-children > *:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.stagger-children > *:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.stagger-children > *:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.ambient-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: calc(var(--z-base) - 1);
+  opacity: var(--canvas-opacity);
+  pointer-events: none;
+}
+
+@supports not (--color-primary: #1a2e1a) {
+  :root {
+    --color-primary: #1a2e1a;
+    --color-primary-light: #2a452a;
+    --color-secondary: #1c1c1c;
+    --color-accent: #c9a84c;
+    --color-accent-dim: #8a7030;
+    --color-blood: #6b0f0f;
+    --color-text-primary: #e8dcc8;
+    --color-text-secondary: #c4b99a;
+    --color-text-muted: #8a8060;
+    --color-background: #0d0d0d;
+    --color-surface: #141414;
+    --color-parchment: #efe3c3;
+    --color-parchment-dark: #d4c5a0;
+  }
+}
+.theme-fallback {
+  background: #0d0d0d;
+  color: #e8dcc8;
+  font-family: "Cardo", "Georgia", serif;
+}
+.theme-fallback a {
+  color: #c9a84c;
+}/*# sourceMappingURL=main.css.map */
+```
+
+
+────────────────────────────────────────────────────────────────────────────────
+FILE 88/121: src\scss\abstracts\_functions.scss
 Language: scss | Size: 308 bytes
 Lines: 13 total | 10 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8825,7 +10926,7 @@ Lines: 13 total | 10 code | 0 comments | 3 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 89/122: src\scss\abstracts\_mixins.scss
+FILE 89/121: src\scss\abstracts\_mixins.scss
 Language: scss | Size: 878 bytes
 Lines: 44 total | 39 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8878,7 +10979,7 @@ Lines: 44 total | 39 code | 0 comments | 5 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 90/122: src\scss\abstracts\_placeholders.scss
+FILE 90/121: src\scss\abstracts\_placeholders.scss
 Language: scss | Size: 444 bytes
 Lines: 30 total | 26 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8917,7 +11018,7 @@ Lines: 30 total | 26 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 91/122: src\scss\abstracts\_variables.scss
+FILE 91/121: src\scss\abstracts\_variables.scss
 Language: scss | Size: 2,687 bytes
 Lines: 95 total | 80 code | 0 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9022,7 +11123,7 @@ Lines: 95 total | 80 code | 0 comments | 15 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 92/122: src\scss\animations\_keyframes.scss
+FILE 92/121: src\scss\animations\_keyframes.scss
 Language: scss | Size: 1,206 bytes
 Lines: 95 total | 86 code | 0 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9126,7 +11227,7 @@ Lines: 95 total | 86 code | 0 comments | 9 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 93/122: src\scss\animations\_three-canvas.scss
+FILE 93/121: src\scss\animations\_three-canvas.scss
 Language: scss | Size: 302 bytes
 Lines: 15 total | 13 code | 0 comments | 2 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9150,7 +11251,7 @@ Lines: 15 total | 13 code | 0 comments | 2 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 94/122: src\scss\animations\_transitions.scss
+FILE 94/121: src\scss\animations\_transitions.scss
 Language: scss | Size: 414 bytes
 Lines: 23 total | 18 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9182,7 +11283,7 @@ Lines: 23 total | 18 code | 0 comments | 5 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 95/122: src\scss\base\_accessibility.scss
+FILE 95/121: src\scss\base\_accessibility.scss
 Language: scss | Size: 674 bytes
 Lines: 33 total | 29 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9224,7 +11325,7 @@ Lines: 33 total | 29 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 96/122: src\scss\base\_base.scss
+FILE 96/121: src\scss\base\_base.scss
 Language: scss | Size: 1,227 bytes
 Lines: 66 total | 55 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9299,7 +11400,7 @@ body {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 97/122: src\scss\base\_reset.scss
+FILE 97/121: src\scss\base\_reset.scss
 Language: scss | Size: 1,165 bytes
 Lines: 83 total | 72 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9391,7 +11492,7 @@ h6 {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 98/122: src\scss\base\_typography.scss
+FILE 98/121: src\scss\base\_typography.scss
 Language: scss | Size: 2,887 bytes
 Lines: 138 total | 119 code | 0 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9538,7 +11639,7 @@ Lines: 138 total | 119 code | 0 comments | 19 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 99/122: src\scss\components\_buttons.scss
+FILE 99/121: src\scss\components\_buttons.scss
 Language: scss | Size: 1,246 bytes
 Lines: 59 total | 50 code | 0 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9606,7 +11707,7 @@ Lines: 59 total | 50 code | 0 comments | 9 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 100/122: src\scss\components\_cards.scss
+FILE 100/121: src\scss\components\_cards.scss
 Language: scss | Size: 1,049 bytes
 Lines: 54 total | 43 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9669,7 +11770,7 @@ Lines: 54 total | 43 code | 0 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 101/122: src\scss\components\_cursor.scss
+FILE 101/121: src\scss\components\_cursor.scss
 Language: scss | Size: 905 bytes
 Lines: 44 total | 38 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9722,7 +11823,7 @@ body.custom-cursor-active {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 102/122: src\scss\components\_easter-eggs.scss
+FILE 102/121: src\scss\components\_easter-eggs.scss
 Language: scss | Size: 773 bytes
 Lines: 37 total | 34 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9768,7 +11869,7 @@ Lines: 37 total | 34 code | 0 comments | 3 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 103/122: src\scss\components\_loader.scss
+FILE 103/121: src\scss\components\_loader.scss
 Language: scss | Size: 802 bytes
 Lines: 51 total | 44 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9828,7 +11929,7 @@ Lines: 51 total | 44 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 104/122: src\scss\components\_modal.scss
+FILE 104/121: src\scss\components\_modal.scss
 Language: scss | Size: 965 bytes
 Lines: 55 total | 48 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9892,7 +11993,7 @@ Lines: 55 total | 48 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 105/122: src\scss\components\_tooltip.scss
+FILE 105/121: src\scss\components\_tooltip.scss
 Language: scss | Size: 664 bytes
 Lines: 30 total | 26 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9931,7 +12032,7 @@ Lines: 30 total | 26 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 106/122: src\scss\layout\_containers.scss
+FILE 106/121: src\scss\layout\_containers.scss
 Language: scss | Size: 990 bytes
 Lines: 48 total | 40 code | 0 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9988,7 +12089,7 @@ Lines: 48 total | 40 code | 0 comments | 8 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 107/122: src\scss\layout\_footer.scss
+FILE 107/121: src\scss\layout\_footer.scss
 Language: scss | Size: 405 bytes
 Lines: 21 total | 17 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10018,7 +12119,7 @@ Lines: 21 total | 17 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 108/122: src\scss\layout\_grid.scss
+FILE 108/121: src\scss\layout\_grid.scss
 Language: scss | Size: 791 bytes
 Lines: 38 total | 32 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10065,7 +12166,7 @@ Lines: 38 total | 32 code | 0 comments | 6 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 109/122: src\scss\layout\_navigation.scss
+FILE 109/121: src\scss\layout\_navigation.scss
 Language: scss | Size: 1,579 bytes
 Lines: 74 total | 63 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10148,7 +12249,7 @@ Lines: 74 total | 63 code | 0 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 110/122: src\scss\main.scss
+FILE 110/121: src\scss\main.scss
 Language: scss | Size: 956 bytes
 Lines: 45 total | 38 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10202,7 +12303,7 @@ Lines: 45 total | 38 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 111/122: src\scss\pages\_about.scss
+FILE 111/121: src\scss\pages\_about.scss
 Language: scss | Size: 2,132 bytes
 Lines: 112 total | 93 code | 0 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10323,7 +12424,7 @@ Lines: 112 total | 93 code | 0 comments | 19 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 112/122: src\scss\pages\_admin.scss
+FILE 112/121: src\scss\pages\_admin.scss
 Language: scss | Size: 5,191 bytes
 Lines: 293 total | 250 code | 0 comments | 43 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10625,7 +12726,7 @@ Lines: 293 total | 250 code | 0 comments | 43 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 113/122: src\scss\pages\_artifacts.scss
+FILE 113/121: src\scss\pages\_artifacts.scss
 Language: scss | Size: 1,714 bytes
 Lines: 93 total | 78 code | 0 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10727,7 +12828,7 @@ Lines: 93 total | 78 code | 0 comments | 15 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 114/122: src\scss\pages\_home.scss
+FILE 114/121: src\scss\pages\_home.scss
 Language: scss | Size: 1,464 bytes
 Lines: 76 total | 65 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10812,7 +12913,7 @@ Lines: 76 total | 65 code | 0 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 115/122: src\scss\pages\_journal.scss
+FILE 115/121: src\scss\pages\_journal.scss
 Language: scss | Size: 1,204 bytes
 Lines: 61 total | 51 code | 0 comments | 10 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10882,7 +12983,7 @@ Lines: 61 total | 51 code | 0 comments | 10 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 116/122: src\scss\pages\_sister.scss
+FILE 116/121: src\scss\pages\_sister.scss
 Language: scss | Size: 3,007 bytes
 Lines: 164 total | 140 code | 0 comments | 24 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11055,7 +13156,7 @@ Lines: 164 total | 140 code | 0 comments | 24 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 117/122: src\scss\pages\_splash.scss
+FILE 117/121: src\scss\pages\_splash.scss
 Language: scss | Size: 3,458 bytes
 Lines: 197 total | 174 code | 0 comments | 23 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11261,7 +13362,7 @@ Lines: 197 total | 174 code | 0 comments | 23 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 118/122: src\scss\themes\_dark-academia.scss
+FILE 118/121: src\scss\themes\_dark-academia.scss
 Language: scss | Size: 752 bytes
 Lines: 25 total | 23 code | 0 comments | 2 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11295,7 +13396,7 @@ Lines: 25 total | 23 code | 0 comments | 2 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 119/122: src\scss\themes\_theme-fallback.scss
+FILE 119/121: src\scss\themes\_theme-fallback.scss
 Language: scss | Size: 288 bytes
 Lines: 15 total | 12 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11319,214 +13420,7 @@ Lines: 15 total | 12 code | 0 comments | 3 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 120/122: structure.txt
-Language: plaintext | Size: 8,997 bytes
-Lines: 197 total | 197 code | 0 comments | 0 blank
-────────────────────────────────────────────────────────────────────────────────
-
-```plaintext
-korekiyo-shinguji/
-│
-├── package.json
-├── .gitignore
-├── .env.example
-├── README.md
-├── LICENSE
-│
-├── public/                              # Static files served directly
-│   ├── favicon.ico
-│   ├── robots.txt
-│   ├── manifest.json
-│   │
-│   ├── fonts/
-│   │   ├── garamond-rough-pro-regular.woff2
-│   │   ├── garamond-rough-pro-bold.woff2
-│   │   ├── cardo-regular.woff2
-│   │   ├── cardo-italic.woff2
-│   │   ├── cardo-bold.woff2
-│   │   ├── cinzel-regular.woff2
-│   │   ├── cinzel-black.woff2
-│   │   └── aldridgescript-regular.woff2
-│   │
-│   ├── images/
-│   │   └── korekiyo/
-│   │       ├── portrait-main.webp       # Front-facing, mask on, scholarly pose
-│   │       ├── portrait-profile.webp    # Side angle, looking at artifact
-│   │       ├── artifact-katana.webp     # A beautiful blade on dark silk
-│   │       ├── artifact-mask.webp       # A ritual mask (not his, something ancient)
-│   │       ├── artifact-rope.webp       # Coiled hemp rope, museum lighting
-│   │       ├── artifact-incense.webp    # Burning incense in traditional holder
-│   │       ├── sister-portrait.webp     # Miyadera, soft focus, vintage feel
-│   │       ├── sister-hairpin.webp      # Her hairpin on silk, pristine
-│   │       ├── study-desk.webp          # His workspace with artifacts
-│   │       └── background-parchment.webp # Textured background
-│   │
-│   └── audio/
-│       ├── whisper-soft.mp3             # Very faint, almost imperceptible
-│       └── zipper-sound.mp3             # Brief, for cursor interaction
-│
-├── src/                                 # Application source
-│   ├── index.html                       # Entry point - splash page
-│   ├── app.html                         # Main application shell
-│   ├── admin.html                       # CMS login & panel
-│   │
-│   ├── scss/
-│   │   ├── main.scss                    # Master import file
-│   │   ├── abstracts/
-│   │   │   ├── _variables.scss          # CSS custom properties
-│   │   │   ├── _functions.scss          # SCSS functions
-│   │   │   ├── _mixins.scss             # SCSS mixins
-│   │   │   └── _placeholders.scss       # SCSS placeholders
-│   │   ├── base/
-│   │   │   ├── _reset.scss              # Modern CSS reset
-│   │   │   ├── _typography.scss         # @font-face, type scale
-│   │   │   ├── _accessibility.scss      # Focus states, screen reader
-│   │   │   └── _base.scss               # HTML/body defaults
-│   │   ├── layout/
-│   │   │   ├── _grid.scss               # CSS Grid system
-│   │   │   ├── _navigation.scss         # Main navigation
-│   │   │   ├── _footer.scss             # Site footer
-│   │   │   └── _containers.scss         # Content containers
-│   │   ├── components/
-│   │   │   ├── _buttons.scss            # All button styles
-│   │   │   ├── _cards.scss              # Content cards
-│   │   │   ├── _modal.scss              # Lightbox/modals
-│   │   │   ├── _loader.scss             # Loading states
-│   │   │   ├── _cursor.scss             # Custom cursor
-│   │   │   └── _tooltip.scss            # Tooltips
-│   │   ├── pages/
-│   │   │   ├── _splash.scss             # Splash/warning page
-│   │   │   ├── _home.scss               # Main home page
-│   │   │   ├── _about.scss              # About page
-│   │   │   ├── _journal.scss            # Field journal
-│   │   │   ├── _artifacts.scss          # Artifact gallery
-│   │   │   ├── _sister.scss             # Sister's corner
-│   │   │   └── _admin.scss              # CMS panel
-│   │   ├── animations/
-│   │   │   ├── _keyframes.scss          # All @keyframes
-│   │   │   ├── _transitions.scss        # Transition presets
-│   │   │   └── _three-canvas.scss       # Three.js canvas styles
-│   │   └── themes/
-│   │       ├── _dark-academia.scss      # Korekiyo's theme
-│   │       └── _theme-fallback.scss     # Default if JSON fails
-│   │
-│   ├── js/
-│   │   ├── index.js                     # Splash page entry
-│   │   ├── app.js                       # Main app entry
-│   │   ├── admin.js                     # Admin panel entry
-│   │   │
-│   │   ├── core/
-│   │   │   ├── Engine.js                # Application engine/bootstrapper
-│   │   │   ├── Router.js                # Client-side routing
-│   │   │   ├── StateManager.js          # Central state management
-│   │   │   ├── DataLoader.js            # JSON fetching & caching
-│   │   │   ├── ThemeEngine.js           # Dynamic theme application
-│   │   │   └── EventBus.js              # Pub/sub event system
-│   │   │
-│   │   ├── pages/
-│   │   │   ├── SplashPage.js            # Splash controller
-│   │   │   ├── HomePage.js              # Home page controller
-│   │   │   ├── AboutPage.js             # About page controller
-│   │   │   ├── JournalPage.js           # Journal controller
-│   │   │   ├── ArtifactsPage.js         # Artifacts controller
-│   │   │   ├── SisterPage.js            # Sister page controller
-│   │   │   └── AdminPage.js             # Admin panel controller
-│   │   │
-│   │   ├── components/
-│   │   │   ├── Navigation.js            # Nav component
-│   │   │   ├── ContentCard.js           # Reusable card
-│   │   │   ├── Modal.js                 # Modal/lightbox
-│   │   │   ├── Loader.js                # Loading indicator
-│   │   │   └── AudioPlayer.js           # Audio handler
-│   │   │
-│   │   ├── features/
-│   │   │   ├── SplashBlood.js           # Canvas blood animation
-│   │   │   ├── CursorEffect.js          # Custom cursor
-│   │   │   ├── ParallaxController.js    # Subtle parallax
-│   │   │   ├── Typewriter.js            # Typewriter text effect
-│   │   │   ├── EasterEggs.js            # Hidden interactions
-│   │   │   └── WhisperController.js     # Audio whisper system
-│   │   │
-│   │   ├── three/
-│   │   │   ├── ThreeEngine.js           # Custom WebGL engine (no deps)
-│   │   │   ├── SceneManager.js          # Scene management
-│   │   │   ├── CameraController.js      # Camera movement
-│   │   │   ├── Lighting.js              # Dynamic lighting
-│   │   │   ├── geometries/
-│   │   │   │   ├── MaskGeometry.js      # Kiyo's mask 3D model
-│   │   │   │   ├── KatanaGeometry.js    # Blade geometry
-│   │   │   │   ├── RopeGeometry.js      # Coiled rope
-│   │   │   │   └── CandleGeometry.js    # Splash page candle
-│   │   │   ├── materials/
-│   │   │   │   ├── Shaders.js           # Custom GLSL shaders
-│   │   │   │   └── MaterialFactory.js   # Material creation
-│   │   │   └── effects/
-│   │   │       ├── FogEffect.js         # Atmospheric fog
-│   │   │       ├── ParticleSystem.js    # Dust/embers
-│   │   │       └── PostProcess.js       # Simple post effects
-│   │   │
-│   │   ├── admin/
-│   │   │   ├── AuthManager.js           # Login/auth logic
-│   │   │   ├── ContentEditor.js         # JSON content editing
-│   │   │   ├── ImageManager.js          # Image reference management
-│   │   │   ├── ThemeCustomizer.js       # Color/font customization
-│   │   │   └── SaveManager.js           # API save operations
-│   │   │
-│   │   └── utils/
-│   │       ├── DomHelper.js             # DOM utilities
-│   │       ├── Sanitizer.js             # Input sanitization
-│   │       ├── Validator.js             # Data validation
-│   │       ├── Logger.js                # Console logging wrapper
-│   │       └── Constants.js             # App constants
-│   │
-│   └── data/
-│       ├── characters/
-│       │   ├── korekiyo.json            # Korekiyo's complete data
-│       │   ├── template.json            # Template for new characters
-│       │   └── index.json               # Character registry
-│       └── site-config.json             # Global configuration
-│
-├── server/
-│   ├── index.js                         # Server entry point
-│   ├── config.js                        # Server configuration
-│   │
-│   ├── middleware/
-│   │   ├── staticFiles.js               # Static file serving
-│   │   ├── apiAuth.js                   # API authentication
-│   │   ├── bodyParser.js                # Request body parsing
-│   │   └── logger.js                    # Request logging
-│   │
-│   ├── routes/
-│   │   ├── pageRouter.js                # HTML page serving
-│   │   ├── apiRouter.js                 # REST API routes
-│   │   └── adminRouter.js               # Admin-specific routes
-│   │
-│   ├── controllers/
-│   │   ├── characterController.js       # Character data CRUD
-│   │   ├── configController.js          # Site config CRUD
-│   │   └── authController.js            # Authentication logic
-│   │
-│   ├── models/
-│   │   ├── FileStore.js                 # JSON file read/write
-│   │   └── Validator.js                 # Server-side validation
-│   │
-│   └── utils/
-│       ├── fileSystem.js                # File operations
-│       ├── responseHelper.js            # Standardized responses
-│       └── errorHandler.js              # Error handling
-│
-├── scripts/
-│   ├── setup.js                         # Initial project setup
-│   └── new-character.js                 # Generate new character data
-│
-└── tests/                               # (Optional but professional)
-    ├── server.test.js
-    └── data-validation.test.js
-```
-
-
-────────────────────────────────────────────────────────────────────────────────
-FILE 121/122: tests\data-validation.test.js
+FILE 120/121: tests\data-validation.test.js
 Language: javascript | Size: 954 bytes
 Lines: 34 total | 28 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11569,15 +13463,15 @@ validate();
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 122/122: tests\server.test.js
-Language: javascript | Size: 1,394 bytes
+FILE 121/121: tests\server.test.js
+Language: javascript | Size: 1,387 bytes
 Lines: 54 total | 44 code | 2 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 import http from "http";
 
-const BASE = "http://localhost:3000";
+const BASE = process.env.PORT;
 
 function get(path) {
   return new Promise((resolve, reject) => {
@@ -11636,24 +13530,25 @@ runTests();
 
 GENERAL STATISTICS
 ----------------------------------------
-Total files exported: 122
-Total size: 287,002 bytes (280.28 KB, 0.27 MB)
-Average file size: 2,352 bytes
+Total files exported: 121
+Total size: 319,655 bytes (312.16 KB, 0.30 MB)
+Average file size: 2,642 bytes
 
 LANGUAGE DISTRIBUTION
 ----------------------------------------
-javascript        73 files ( 59.8%) █████████████████████████████
-scss              32 files ( 26.2%) █████████████
-plaintext          6 files (  4.9%) ██
-json               6 files (  4.9%) ██
+javascript        73 files ( 60.3%) ██████████████████████████████
+scss              32 files ( 26.4%) █████████████
+json               6 files (  5.0%) ██
+plaintext          4 files (  3.3%) █
 html               3 files (  2.5%) █
 python             1 files (  0.8%) 
 markdown           1 files (  0.8%) 
+css                1 files (  0.8%) 
 
 EXPORT METADATA
 ----------------------------------------
 Export tool: Advanced Project Code Exporter v2.0
-Export date: 2026-06-07 09:59:38
+Export date: 2026-06-10 15:10:17
 Python version: 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)]
 Platform: win32
 

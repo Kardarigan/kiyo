@@ -3,7 +3,7 @@
  * of course handwritten. vertex and fragment shaders for the dark academia aesthetic
  */
 
-export class Shaders {
+class Shaders {
   // standard lit shader with fog support
   static getLitShader() {
     return {
@@ -191,3 +191,5 @@ export class Shaders {
     return shader;
   }
 }
+
+module.exports = { Shaders };

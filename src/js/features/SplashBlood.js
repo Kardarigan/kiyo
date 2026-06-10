@@ -4,7 +4,7 @@
  * No images required — pure canvas rendering
  */
 
-export class SplashBlood {
+class SplashBlood {
   constructor(canvas) {
     this.canvas = canvas;
     this.ctx = canvas.getContext("2d");
@@ -114,3 +114,5 @@ export class SplashBlood {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
   }
 }
+
+module.exports = { SplashBlood };

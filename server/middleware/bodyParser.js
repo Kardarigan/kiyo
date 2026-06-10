@@ -1,9 +1,9 @@
 /*
  * Body parser middleware
- * Parses JSON and URL-encoded request bodies
+ * parses JSON and URL-encoded request bodies
  */
 
-export async function bodyParser(req) {
+async function bodyParser(req) {
   return new Promise((resolve, reject) => {
     const chunks = [];
 
@@ -40,3 +40,5 @@ export async function bodyParser(req) {
     req.on("error", reject);
   });
 }
+
+module.exports = { bodyParser };

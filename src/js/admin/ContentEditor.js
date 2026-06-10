@@ -5,7 +5,7 @@ import { DomHelper } from "../utils/DomHelper.js";
  * editable fields for all page content sections
  */
 
-export class ContentEditor {
+class ContentEditor {
   constructor(container, characterData, controller) {
     this.container = container;
     this.data = characterData;
@@ -197,3 +197,5 @@ export class ContentEditor {
     return this.changes;
   }
 }
+
+module.exports = { ContentEditor };

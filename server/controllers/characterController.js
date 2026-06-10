@@ -10,7 +10,7 @@ const config = require("../config.js");
 const characterController = {
   async getCharacter(req, res) {
     const activeCharacter = await readJSON(config.siteConfigPath);
-    if (!activeCharacter?.activeCharacter) {
+    if (!activeCharacter || !activeCharacter.activeCharacter) {
       sendError(res, "No active character configured", 404);
       return;
     }

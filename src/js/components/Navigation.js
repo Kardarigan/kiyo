@@ -1,6 +1,6 @@
 import { Logger } from "../utils/Logger.js";
 
-export class Navigation {
+class Navigation {
   constructor(container, router, stateManager, eventBus) {
     this.container = container;
     this.router = router;
@@ -77,3 +77,5 @@ export class Navigation {
     });
   }
 }
+
+module.exports = { Navigation };

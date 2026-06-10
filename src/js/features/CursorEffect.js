@@ -4,7 +4,7 @@
  * plays a subtle zipper sound on click btw
  */
 
-export class CursorEffect {
+class CursorEffect {
   constructor() {
     this.cursorElement = null;
     this.isVisible = false;
@@ -132,3 +132,5 @@ export class CursorEffect {
     if (this.cursorElement) this.cursorElement.remove();
   }
 }
+
+module.exports = { CursorEffect };

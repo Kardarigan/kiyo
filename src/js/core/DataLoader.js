@@ -1,4 +1,4 @@
-export class DataLoader {
+class DataLoader {
   constructor(baseUrl = "/api/v1") {
     this.baseUrl = baseUrl;
     this.cache = new Map();
@@ -55,3 +55,5 @@ export class DataLoader {
     }
   }
 }
+
+module.exports = { DataLoader };

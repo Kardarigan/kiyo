@@ -3,7 +3,7 @@
  * sends updated data to the server API for persistence
  */
 
-export class SaveManager {
+class SaveManager {
   constructor() {
     this.baseUrl = "/api/v1";
   }
@@ -60,3 +60,5 @@ export class SaveManager {
     }
   }
 }
+
+module.exports = { SaveManager };

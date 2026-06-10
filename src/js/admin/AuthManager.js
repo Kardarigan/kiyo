@@ -4,7 +4,7 @@
  * stores auth token in sessionStorage for the session
  */
 
-export class AuthManager {
+class AuthManager {
   constructor() {
     this.storageKey = "kiyo_cms_auth";
   }
@@ -52,3 +52,5 @@ export class AuthManager {
     };
   }
 }
+
+module.exports = { AuthManager };

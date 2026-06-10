@@ -1,7 +1,7 @@
 import { Logger } from "../utils/Logger.js";
 import { DomHelper } from "../utils/DomHelper.js";
 
-export class HomePage {
+class HomePage {
   constructor(container, stateManager, eventBus) {
     this.container = container;
     this.stateManager = stateManager;
@@ -90,3 +90,5 @@ export class HomePage {
     this.pages = null;
   }
 }
+
+module.exports = { HomePage };

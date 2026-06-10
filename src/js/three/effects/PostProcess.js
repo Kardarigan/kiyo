@@ -3,7 +3,7 @@
  * applies a simple vignette via CSS
  */
 
-export class PostProcess {
+class PostProcess {
   constructor() {
     this.vignetteElement = null;
     this.init();
@@ -32,3 +32,5 @@ export class PostProcess {
     }
   }
 }
+
+module.exports = { PostProcess };

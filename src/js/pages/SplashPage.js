@@ -9,7 +9,7 @@ import { Logger } from "../utils/Logger.js";
  * and blood transition. can be used as a standalone page or entry point.
  */
 
-export class SplashPage {
+class SplashPage {
   constructor(container) {
     this.container = container;
     this.logger = new Logger("SplashPage");
@@ -214,3 +214,5 @@ class CandleScene {
     cancelAnimationFrame(this.animationId);
   }
 }
+
+module.exports = { SplashPage, candleScene };

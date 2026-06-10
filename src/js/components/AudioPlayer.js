@@ -3,7 +3,7 @@
  * handles playing one shot sounds (zipper, whispers)
  */
 
-export class AudioPlayer {
+class AudioPlayer {
   constructor() {
     this.sounds = {};
     this.enabled = true;
@@ -44,3 +44,5 @@ export class AudioPlayer {
     this.enabled = state;
   }
 }
+
+module.exports = { AudioPlayer };

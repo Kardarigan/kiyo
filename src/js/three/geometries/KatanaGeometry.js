@@ -3,7 +3,7 @@
  * procedurally generates a simplified curved blade with handle
  */
 
-export class KatanaGeometry {
+class KatanaGeometry {
   static generate() {
     const positions = [];
     const normals = [];
@@ -91,3 +91,5 @@ export class KatanaGeometry {
     }
   }
 }
+
+module.exports = { KatanaGeometry };

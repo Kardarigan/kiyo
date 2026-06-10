@@ -3,7 +3,7 @@
  * live color picker and font selector for the dark academia theme.
  */
 
-export class ThemeCustomizer {
+class ThemeCustomizer {
   constructor(container, characterData, controller) {
     this.container = container;
     this.data = characterData;
@@ -198,3 +198,5 @@ export class ThemeCustomizer {
     return this.changes;
   }
 }
+
+module.exports = { ThemeCustomizer };

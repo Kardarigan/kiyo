@@ -3,7 +3,7 @@
  * controls the loading overlay visibility
  */
 
-export class Loader {
+class Loader {
   constructor() {
     this.element = document.getElementById("app-loader");
   }
@@ -25,3 +25,5 @@ export class Loader {
     else this.hide();
   }
 }
+
+module.exports = { Loader };

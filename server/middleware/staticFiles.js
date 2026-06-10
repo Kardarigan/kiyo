@@ -1,6 +1,8 @@
 const { join } = require("path");
-const { readFile, access } = require("fs/promises");
-const { createReadStream } = require("fs");
+const { promisify } = require("util");
+const fs = require("fs");
+const readFile = promisify(fs.readFile);
+const access = promisify(fs.access);
 const config = require("../config.js");
 
 /*
