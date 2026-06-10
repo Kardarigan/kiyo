@@ -1,10 +1,15 @@
-import { fileURLTopath } from "url";
+import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
-const __filename = fileURLTopath(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const rootDir = join(__dirname, "..");
+
+if (!process.env.ADMIN_USER || !process.env.ADMIN_PASS) {
+  console.error("[FATAL] ADMIN_USER and ADMIN_PASS must be set in .env");
+  process.exit(1);
+}
 
 export default {
   port: process.env.PORT || 3000,
@@ -17,8 +22,8 @@ export default {
   siteConfigPath: join(rootDir, "src", "data", "site-config.json"),
 
   // CMS credentials (change in production)
-  adminUser: process.env.ADMIN_USER || "kiyo",
-  adminPass: process.env.ADMIN_PASS || "anthropology1933",
+  adminUser: process.env.ADMIN_USER,
+  adminPass: process.env.ADMIN_PASS,
 
   // API settings
   apiBase: "/api/v1",

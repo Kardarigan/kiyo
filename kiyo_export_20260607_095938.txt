@@ -59,7 +59,7 @@ kiyo/
 │   ├── admin.html (5.3 KB)
 │   ├── app.html (2.4 KB)
 │   ├── data/
-│   │   ├── characaters/
+│   │   ├── characters/
 │   │   │   ├── index.json (206.0 B)
 │   │   │   ├── korekiyo.json (8.2 KB)
 │   │   │   └── template.json (3.1 KB)
@@ -722,7 +722,7 @@ kiyo/
 │   ├── admin.html (5.3 KB)
 │   ├── app.html (2.4 KB)
 │   ├── data/
-│   │   ├── characaters/
+│   │   ├── characters/
 │   │   │   ├── index.json (206.0 B)
 │   │   │   ├── korekiyo.json (8.2 KB)
 │   │   │   └── template.json (3.1 KB)
@@ -2731,7 +2731,7 @@ Lines: 81 total | 60 code | 10 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 31/122: src\data\characaters\index.json
+FILE 31/122: src\data\characters\index.json
 Language: json | Size: 195 bytes
 Lines: 12 total | 11 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2752,7 +2752,7 @@ Lines: 12 total | 11 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 32/122: src\data\characaters\korekiyo.json
+FILE 32/122: src\data\characters\korekiyo.json
 Language: json | Size: 8,182 bytes
 Lines: 201 total | 194 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2962,7 +2962,7 @@ Lines: 201 total | 194 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 33/122: src\data\characaters\template.json
+FILE 33/122: src\data\characters\template.json
 Language: json | Size: 3,033 bytes
 Lines: 130 total | 129 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────

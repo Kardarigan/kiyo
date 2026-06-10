@@ -12,11 +12,11 @@ export const configController = {
     const { data } = req.body;
 
     if (!data) {
-      sendError(res, "Config data is reuired", 400);
+      sendError(res, "Config data is required", 400);
       return;
     }
 
-    const existing = await readJSON(config.siteConfigPath || {});
+    const existing = (await readJSON(config.siteConfigPath)) || {};
     const updated = { ...existing, ...data };
 
     await writeJSON(config.siteConfigPath, updated);

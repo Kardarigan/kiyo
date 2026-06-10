@@ -3,7 +3,7 @@
  */
 
 export class Validator {
-  static validateCharacterUpdaet(data) {
+  static validateCharacterUpdate(data) {
     const errors = [];
     if (!data) {
       errors.push("No data provided.");

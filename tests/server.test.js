@@ -1,6 +1,6 @@
 import http from "http";
 
-const BASE = "http://localhost:3000";
+const BASE = process.env.PORT;
 
 function get(path) {
   return new Promise((resolve, reject) => {

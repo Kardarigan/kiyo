@@ -12,7 +12,7 @@ export async function adminRouter(req, res, url) {
   // Serve admin.html
   if (pathname === "/admin" || pathname === "/admin/") {
     try {
-      const html = await readFile(json(config.srcDir, "admin.html"), "utf-8");
+      const html = await readFile(join(config.srcDir, "admin.html"), "utf-8");
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
       res.end(html);
     } catch (error) {

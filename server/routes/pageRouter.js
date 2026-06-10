@@ -50,7 +50,7 @@ export async function pageRouter(req, res, pathname) {
       // Fallback to app shell for SPA routing
       try {
         const fallback = await readFile(
-          json(config.srcDir, "app.html"),
+          join(config.srcDir, "app.html"),
           "utf-8"
         );
         res.writeHead(200, {

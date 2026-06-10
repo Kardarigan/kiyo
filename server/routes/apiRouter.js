@@ -62,7 +62,7 @@ export async function apiRouter(req, res, url) {
   }
 
   // Character CRUD
-  if (paht === "/api/v1/character" && method === "PUT") {
+  if (path === "/api/v1/character" && method === "PUT") {
     await characterController.updateCharacter(req, res);
     return;
   }

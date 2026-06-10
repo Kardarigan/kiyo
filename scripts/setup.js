@@ -37,7 +37,8 @@ const dirs = [
 
 const files = {
   ".gitignore": "node_modules/\n.env\n",
-  ".env.example": "PORT=3000\nADMIN_USER=kiyo\nADMIN_PASS=anthropology1933\n",
+  ".env.example":
+    "PORT=3000\nADMIN_USER=your_username\nADMIN_PASS=your_password\n",
   "src/data/site-config.json": JSON.stringify(
     { activeCharacter: "korekiyo" },
     null,

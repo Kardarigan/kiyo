@@ -12,7 +12,7 @@ import { errorHandler } from "./utils/errorHandler.js";
 const server = http.createServer(async (req, res) => {
   try {
     // Log request
-    logger(req);
+    logger(req, res);
 
     // Parse URL
     const url = new URL(req.url, `http://${req.headers.host}`);

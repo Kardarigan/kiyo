@@ -1,5 +1,0 @@
-korekiyo-shinguji
-│
-└── tests/                               # (Optional but professional)
-    ├── server.test.js
-    └── data-validation.test.js

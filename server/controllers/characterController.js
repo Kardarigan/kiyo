@@ -12,7 +12,7 @@ export const characterController = {
     }
 
     const charPath = join(
-      config.charactersDir,
+      config.characterDir,
       `${activeCharacter.activeCharacter}.json`
     );
     const data = await readJSON(charPath);
@@ -26,7 +26,7 @@ export const characterController = {
   },
 
   async getCharacterById(req, res, id) {
-    const charPath = join(config.charactersDir, `${id}.json`);
+    const charPath = join(config.characterDir, `${id}.json`);
     const data = await readJSON(charPath);
 
     if (!data) {
@@ -38,7 +38,7 @@ export const characterController = {
   },
 
   async listCharacters(req, res) {
-    const indexData = await readJSON(join(config.charactersDir, "index.json"));
+    const indexData = await readJSON(join(config.characterDir, "index.json"));
     sendJSON(res, indexData || { characters: [] });
   },
 
@@ -50,7 +50,7 @@ export const characterController = {
       return;
     }
 
-    const charPath = join(config.charactersDir, `${characterId}.json`);
+    const charPath = join(config.characterDir, `${characterId}.json`);
     const existing = await readJSON(charPath);
 
     if (!existing) {
