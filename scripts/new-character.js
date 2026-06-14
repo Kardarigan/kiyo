@@ -1,10 +1,10 @@
-import { readFile, writeFile, copyFile } from "fs/promises";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
-import readline from "readline";
+const { readFile, writeFile } = require("fs/promises");
+const { join, dirname } = require("path");
+const { fileURLToPath } = require("url");
+const readline = require("readline");
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const root = join(__dirname, "..");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 const templatePath = join(root, "src", "data", "characters", "template.json");
 
 function ask(question) {

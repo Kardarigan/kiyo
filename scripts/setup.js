@@ -1,6 +1,6 @@
-import { mkdir, writeFile } from "fs/promises";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
+const { mkdir, writeFile } = require("fs/promises");
+const { join, dirname } = require("path");
+const { fileURLToPath } = require("url");
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
