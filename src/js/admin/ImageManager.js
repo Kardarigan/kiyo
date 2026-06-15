@@ -69,7 +69,7 @@ class ImageManager {
                   class="form-input" 
                   data-key="${field.key}"
                   value="${DomHelper.escapeHtml(field.current || "")}"
-                  placeholder="filename.webp"
+                  placeholder="filename.jpg"
                 >
                 ${
                   field.current

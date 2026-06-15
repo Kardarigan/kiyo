@@ -47,13 +47,13 @@
       "title": "Character Name",
       "subtitle": "Subtitle",
       "heroQuote": "A memorable quote.",
-      "featuredImage": "portrait-main.webp",
+      "featuredImage": "portrait-main.jpg",
       "sections": []
     },
     "about": {
       "title": "About",
       "content": "About content.",
-      "image": "portrait-profile.webp"
+      "image": "portrait-profile.jpg"
     },
     "journal": {
       "title": "Journal",
@@ -70,8 +70,8 @@
       "subtitle": "Subtitle",
       "poem": "Poem text.",
       "content": "Content.",
-      "image": "sister-portrait.webp",
-      "hairpinImage": "sister-hairpin.webp"
+      "image": "sister-portrait.jpg",
+      "hairpinImage": "sister-hairpin.jpg"
     }
   },
   "easterEggs": {

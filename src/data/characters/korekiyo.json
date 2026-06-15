@@ -53,7 +53,7 @@
       "title": "Korekiyo Shinguji",
       "subtitle": "Folklorist & Observer of Humanity",
       "heroQuote": "Kehehe... Beauty is everywhere, if one simply knows where to look.",
-      "featuredImage": "portrait-main.webp",
+      "featuredImage": "portrait-main.jpg",
       "sections": [
         {
           "type": "quote",
@@ -64,7 +64,7 @@
     "about": {
       "title": "On the Nature of My Research",
       "content": "Humanity's beauty is not limited to its art or its music. It is in the way we mourn, the way we celebrate, the way we face the unknown. My work takes me to the edges of human experience, where customs become ritual, and ritual becomes the language of the soul.",
-      "image": "portrait-profile.webp"
+      "image": "portrait-profile.jpg"
     },
     "journal": {
       "title": "Field Observations",
@@ -99,7 +99,7 @@
           "name": "Shin-Gunto Replica",
           "origin": "Japan, Early 20th Century",
           "description": "A blade that carries the weight of tradition and the sharpness of finality. Crafted with the same techniques used for centuries.",
-          "image": "artifact-katana.webp",
+          "image": "artifact-katana.jpg",
           "threed": true
         },
         {
@@ -107,7 +107,7 @@
           "name": "Noh Mask Fragment",
           "origin": "Japan, Edo Period",
           "description": "A fragment of a Noh theatre mask, weathered by time. Even broken, it retains its unsettling expression — frozen between emotions.",
-          "image": "artifact-mask.webp",
+          "image": "artifact-mask.jpg",
           "threed": true
         },
         {
@@ -115,7 +115,7 @@
           "name": "Ceremonial Binding Rope",
           "origin": "Unknown",
           "description": "Hemp rope prepared in the traditional manner. The coil is perfect — a testament to the craftsman's devotion to form.",
-          "image": "artifact-rope.webp",
+          "image": "artifact-rope.jpg",
           "threed": false
         },
         {
@@ -123,7 +123,7 @@
           "name": "Temple Incense Burner",
           "origin": "Kyoto, Japan",
           "description": "Used in purification rituals, the smoke carries prayers to realms beyond our own. The scent lingers long after the ember dies.",
-          "image": "artifact-incense.webp",
+          "image": "artifact-incense.jpg",
           "threed": false
         }
       ]
@@ -133,8 +133,8 @@
       "subtitle": "In Loving Memory of Miyadera Shinguji",
       "poem": "She was the moonlight that guided my study, the gentle hand that turned the pages of my curiosity. Without her, I would be a scholar without a soul.",
       "content": "My sister Miyadera was the most beautiful soul I have ever known. Frail in body but immense in spirit, she taught me to see the beauty in everything — even in suffering. She remains my inspiration, my companion in every discovery. This page is dedicated to her memory, for she is present in every word I write and every artifact I preserve.",
-      "image": "sister-portrait.webp",
-      "hairpinImage": "sister-hairpin.webp"
+      "image": "sister-portrait.jpg",
+      "hairpinImage": "sister-hairpin.jpg"
     }
   },
 

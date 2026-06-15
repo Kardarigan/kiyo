@@ -1,6 +1,6 @@
 ================================================================================
 ADVANCED PROJECT CODE EXPORT
-Generated: 2026-06-15 06:07:48
+Generated: 2026-06-15 15:25:27
 Project: kiyo
 Path: C:\Users\D\Desktop\D\kiyo
 ================================================================================
@@ -16,9 +16,9 @@ TABLE OF CONTENTS
 
 kiyo/
 ├── .gitignore (30.0 B)
-├── export_project.py.py (17.7 KB)
-├── kiyo_export_20260615_060748.txt (0.0 B)
-├── package.json (600.0 B)
+├── export_project.py (17.7 KB)
+├── kiyo_export_20260615_152527.txt (0.0 B)
+├── package.json (599.0 B)
 ├── public/
 │   ├── audio/
 │   │   └── korekiyo/
@@ -26,30 +26,31 @@ kiyo/
 │   ├── images/
 │   │   └── korekiyo/
 │   ├── manifest.json (410.0 B)
-│   └── robots.txt (80.0 B)
+│   ├── robots.txt (80.0 B)
+│   └── test.html (194.0 B)
 ├── README.md (1.3 KB)
 ├── scripts/
 │   ├── new-character.js (1.5 KB)
 │   └── setup.js (1.7 KB)
 ├── server/
-│   ├── config.js (1.5 KB)
+│   ├── config.js (1.9 KB)
 │   ├── controllers/
 │   │   ├── authController.js (387.0 B)
 │   │   ├── characterController.js (2.0 KB)
 │   │   └── configController.js (856.0 B)
-│   ├── index.js (2.0 KB)
+│   ├── index.js (2.3 KB)
 │   ├── middleware/
 │   │   ├── apiAuth.js (944.0 B)
 │   │   ├── bodyParser.js (1.0 KB)
 │   │   ├── logger.js (694.0 B)
-│   │   └── staticFiles.js (2.2 KB)
+│   │   └── staticFiles.js (2.9 KB)
 │   ├── models/
 │   │   ├── FileStore.js (981.0 B)
 │   │   └── Validator.js (655.0 B)
 │   ├── routes/
 │   │   ├── adminRouter.js (920.0 B)
-│   │   ├── apiRouter.js (2.1 KB)
-│   │   └── pageRouter.js (1.7 KB)
+│   │   ├── apiRouter.js (2.2 KB)
+│   │   └── pageRouter.js (1.6 KB)
 │   └── utils/
 │       ├── errorHandler.js (498.0 B)
 │       ├── fileSystem.js (1.0 KB)
@@ -58,7 +59,7 @@ kiyo/
 │   ├── admin.html (5.0 KB)
 │   ├── app.html (2.4 KB)
 │   ├── css/
-│   │   └── main.css (38.6 KB)
+│   │   └── main.css (38.4 KB)
 │   ├── data/
 │   │   ├── characters/
 │   │   │   ├── index.json (206.0 B)
@@ -74,7 +75,7 @@ kiyo/
 │   │   │   ├── SaveManager.js (1.6 KB)
 │   │   │   └── ThemeCustomizer.js (6.7 KB)
 │   │   ├── admin.js (6.6 KB)
-│   │   ├── app.js (2.6 KB)
+│   │   ├── app.js (15.0 KB)
 │   │   ├── components/
 │   │   │   ├── AudioPlayer.js (1.0 KB)
 │   │   │   ├── ContentCard.js (1.2 KB)
@@ -86,7 +87,7 @@ kiyo/
 │   │   │   ├── Engine.js (2.4 KB)
 │   │   │   ├── EventBus.js (1.0 KB)
 │   │   │   ├── Router.js (3.0 KB)
-│   │   │   ├── StateManager.js (655.0 B)
+│   │   │   ├── StateManager.js (654.0 B)
 │   │   │   └── ThemeEngine.js (1.2 KB)
 │   │   ├── features/
 │   │   │   ├── CursorEffect.js (4.0 KB)
@@ -95,7 +96,7 @@ kiyo/
 │   │   │   ├── SplashBlood.js (3.0 KB)
 │   │   │   ├── Typewriter.js (1.7 KB)
 │   │   │   └── WhisperController.js (1.3 KB)
-│   │   ├── index.js (2.4 KB)
+│   │   ├── index.js (12.2 KB)
 │   │   ├── pages/
 │   │   │   ├── AboutPage.js (4.4 KB)
 │   │   │   ├── AdminPage.js (5.8 KB)
@@ -180,7 +181,7 @@ kiyo/
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 1/121: .env
+FILE 1/122: .env
 Language: plaintext | Size: 68 bytes
 Lines: 4 total | 4 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -194,7 +195,7 @@ ADMIN_PASS=anthropology1933
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 2/121: .gitignore
+FILE 2/122: .gitignore
 Language: plaintext | Size: 28 bytes
 Lines: 3 total | 3 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -207,7 +208,7 @@ Lines: 3 total | 3 code | 0 comments | 0 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 3/121: export_project.py.py
+FILE 3/122: export_project.py
 Language: python | Size: 17,637 bytes
 Lines: 440 total | 346 code | 19 comments | 75 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -656,15 +657,15 @@ if __name__ == "__main__":
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 4/121: kiyo_export_20260615_060748.txt
-Language: plaintext | Size: 24,596 bytes
-Lines: 655 total | 547 code | 19 comments | 89 blank
+FILE 4/122: kiyo_export_20260615_152527.txt
+Language: plaintext | Size: 24,620 bytes
+Lines: 656 total | 548 code | 19 comments | 89 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```plaintext
 ================================================================================
 ADVANCED PROJECT CODE EXPORT
-Generated: 2026-06-15 06:07:48
+Generated: 2026-06-15 15:25:27
 Project: kiyo
 Path: C:\Users\D\Desktop\D\kiyo
 ================================================================================
@@ -680,9 +681,9 @@ TABLE OF CONTENTS
 
 kiyo/
 ├── .gitignore (30.0 B)
-├── export_project.py.py (17.7 KB)
-├── kiyo_export_20260615_060748.txt (0.0 B)
-├── package.json (600.0 B)
+├── export_project.py (17.7 KB)
+├── kiyo_export_20260615_152527.txt (0.0 B)
+├── package.json (599.0 B)
 ├── public/
 │   ├── audio/
 │   │   └── korekiyo/
@@ -690,30 +691,31 @@ kiyo/
 │   ├── images/
 │   │   └── korekiyo/
 │   ├── manifest.json (410.0 B)
-│   └── robots.txt (80.0 B)
+│   ├── robots.txt (80.0 B)
+│   └── test.html (194.0 B)
 ├── README.md (1.3 KB)
 ├── scripts/
 │   ├── new-character.js (1.5 KB)
 │   └── setup.js (1.7 KB)
 ├── server/
-│   ├── config.js (1.5 KB)
+│   ├── config.js (1.9 KB)
 │   ├── controllers/
 │   │   ├── authController.js (387.0 B)
 │   │   ├── characterController.js (2.0 KB)
 │   │   └── configController.js (856.0 B)
-│   ├── index.js (2.0 KB)
+│   ├── index.js (2.3 KB)
 │   ├── middleware/
 │   │   ├── apiAuth.js (944.0 B)
 │   │   ├── bodyParser.js (1.0 KB)
 │   │   ├── logger.js (694.0 B)
-│   │   └── staticFiles.js (2.2 KB)
+│   │   └── staticFiles.js (2.9 KB)
 │   ├── models/
 │   │   ├── FileStore.js (981.0 B)
 │   │   └── Validator.js (655.0 B)
 │   ├── routes/
 │   │   ├── adminRouter.js (920.0 B)
-│   │   ├── apiRouter.js (2.1 KB)
-│   │   └── pageRouter.js (1.7 KB)
+│   │   ├── apiRouter.js (2.2 KB)
+│   │   └── pageRouter.js (1.6 KB)
 │   └── utils/
 │       ├── errorHandler.js (498.0 B)
 │       ├── fileSystem.js (1.0 KB)
@@ -722,7 +724,7 @@ kiyo/
 │   ├── admin.html (5.0 KB)
 │   ├── app.html (2.4 KB)
 │   ├── css/
-│   │   └── main.css (38.6 KB)
+│   │   └── main.css (38.4 KB)
 │   ├── data/
 │   │   ├── characters/
 │   │   │   ├── index.json (206.0 B)
@@ -738,7 +740,7 @@ kiyo/
 │   │   │   ├── SaveManager.js (1.6 KB)
 │   │   │   └── ThemeCustomizer.js (6.7 KB)
 │   │   ├── admin.js (6.6 KB)
-│   │   ├── app.js (2.6 KB)
+│   │   ├── app.js (15.0 KB)
 │   │   ├── components/
 │   │   │   ├── AudioPlayer.js (1.0 KB)
 │   │   │   ├── ContentCard.js (1.2 KB)
@@ -750,7 +752,7 @@ kiyo/
 │   │   │   ├── Engine.js (2.4 KB)
 │   │   │   ├── EventBus.js (1.0 KB)
 │   │   │   ├── Router.js (3.0 KB)
-│   │   │   ├── StateManager.js (655.0 B)
+│   │   │   ├── StateManager.js (654.0 B)
 │   │   │   └── ThemeEngine.js (1.2 KB)
 │   │   ├── features/
 │   │   │   ├── CursorEffect.js (4.0 KB)
@@ -759,7 +761,7 @@ kiyo/
 │   │   │   ├── SplashBlood.js (3.0 KB)
 │   │   │   ├── Typewriter.js (1.7 KB)
 │   │   │   └── WhisperController.js (1.3 KB)
-│   │   ├── index.js (2.4 KB)
+│   │   ├── index.js (12.2 KB)
 │   │   ├── pages/
 │   │   │   ├── AboutPage.js (4.4 KB)
 │   │   │   ├── AdminPage.js (5.8 KB)
@@ -844,7 +846,7 @@ kiyo/
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 1/121: .env
+FILE 1/122: .env
 Language: plaintext | Size: 68 bytes
 Lines: 4 total | 4 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -858,7 +860,7 @@ ADMIN_PASS=anthropology1933
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 2/121: .gitignore
+FILE 2/122: .gitignore
 Language: plaintext | Size: 28 bytes
 Lines: 3 total | 3 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -871,7 +873,7 @@ Lines: 3 total | 3 code | 0 comments | 0 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 3/121: export_project.py.py
+FILE 3/122: export_project.py
 Language: python | Size: 17,637 bytes
 Lines: 440 total | 346 code | 19 comments | 75 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1320,8 +1322,8 @@ if __name__ == "__main__":
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 5/121: package.json
-Language: json | Size: 576 bytes
+FILE 5/122: package.json
+Language: json | Size: 575 bytes
 Lines: 25 total | 24 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
 
@@ -1329,7 +1331,7 @@ Lines: 25 total | 24 code | 0 comments | 1 blank
 {
   "name": "korekiyo-shinguji",
   "version": "1.0.0",
-  "describetion": "A shrine to Korekiyo Shinguji - reusable character showcase engine",
+  "description": "A shrine to Korekiyo Shinguji - reusable character showcase engine",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
@@ -1354,7 +1356,7 @@ Lines: 25 total | 24 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 6/121: public\manifest.json
+FILE 6/122: public\manifest.json
 Language: json | Size: 394 bytes
 Lines: 17 total | 16 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1380,7 +1382,7 @@ Lines: 17 total | 16 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 7/121: public\robots.txt
+FILE 7/122: public\robots.txt
 Language: plaintext | Size: 76 bytes
 Lines: 5 total | 5 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1395,7 +1397,27 @@ Sitemap: /sitemap.xml
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 8/121: README.md
+FILE 8/122: public\test.html
+Language: html | Size: 184 bytes
+Lines: 11 total | 10 code | 0 comments | 1 blank
+────────────────────────────────────────────────────────────────────────────────
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <h1>Static file test works!</h1>
+    <p>If you see this, static files are working.</p>
+  </body>
+</html>
+```
+
+
+────────────────────────────────────────────────────────────────────────────────
+FILE 9/122: README.md
 Language: markdown | Size: 1,289 bytes
 Lines: 41 total | 20 code | 7 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1445,7 +1467,7 @@ MIT
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 9/121: scripts\new-character.js
+FILE 10/122: scripts\new-character.js
 Language: javascript | Size: 1,528 bytes
 Lines: 47 total | 37 code | 1 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1501,7 +1523,7 @@ main().catch(console.error);
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 10/121: scripts\setup.js
+FILE 11/122: scripts\setup.js
 Language: javascript | Size: 1,654 bytes
 Lines: 74 total | 68 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1584,24 +1606,34 @@ setup().catch(console.error);
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 11/121: server\config.js
-Language: javascript | Size: 1,521 bytes
-Lines: 56 total | 46 code | 3 comments | 7 blank
+FILE 12/122: server\config.js
+Language: javascript | Size: 1,898 bytes
+Lines: 66 total | 55 code | 3 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 const { join } = require("path");
-require("fs")
-  .readFileSync(".env", "utf-8")
-  .split("\n")
-  .forEach((line) => {
-    const [key, ...rest] = line.trim().split("=");
-    if (key && !key.startsWith("#"))
-      process.env[key.trim()] = rest
-        .join("=")
-        .trim()
-        .replace(/^['"]|['"]$/g, "");
+const fs = require("fs");
+
+const envPath = join(__dirname, "..", ".env");
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, "utf-8");
+  envContent.split("\n").forEach((line) => {
+    line = line.trim();
+    if (!line || line.startsWith("#")) return;
+    const equalIndex = line.indexOf("=");
+    if (equalIndex === -1) return;
+    const key = line.substring(0, equalIndex).trim();
+    let value = line.substring(equalIndex + 1).trim();
+    if (
+      (value.startsWith('"') && value.endsWith('"')) ||
+      (value.startsWith("'") && value.endsWith("'"))
+    ) {
+      value = value.slice(1, -1);
+    }
+    process.env[key] = value;
   });
+}
 
 const rootDir = join(__dirname, "..");
 
@@ -1649,7 +1681,7 @@ module.exports = {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 12/121: server\controllers\authController.js
+FILE 13/122: server\controllers\authController.js
 Language: javascript | Size: 373 bytes
 Lines: 15 total | 11 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1673,7 +1705,7 @@ module.exports = { authController };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 13/121: server\controllers\characterController.js
+FILE 14/122: server\controllers\characterController.js
 Language: javascript | Size: 1,975 bytes
 Lines: 78 total | 61 code | 1 comments | 16 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1760,7 +1792,7 @@ module.exports = { characterController };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 14/121: server\controllers\configController.js
+FILE 15/122: server\controllers\configController.js
 Language: javascript | Size: 825 bytes
 Lines: 32 total | 25 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1801,13 +1833,14 @@ module.exports = { configController };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 15/121: server\index.js
-Language: javascript | Size: 1,777 bytes
-Lines: 64 total | 48 code | 7 comments | 9 blank
+FILE 16/122: server\index.js
+Language: javascript | Size: 2,098 bytes
+Lines: 84 total | 67 code | 6 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
 const http = require("http");
+const url = require("url");
 const config = require("./config.js");
 const { pageRouter } = require("./routes/pageRouter.js");
 const { apiRouter } = require("./routes/apiRouter.js");
@@ -1822,51 +1855,70 @@ const server = http.createServer(async (req, res) => {
     logger(req, res);
 
     // Parse URL
-    const url = new URL(req.url, `http://${req.headers.host}`);
-    const pathname = url.pathname;
+    const parsedUrl = url.parse(req.url, true);
+    const pathname = parsedUrl.pathname;
+
+    console.log(`[DEBUG] Request: ${req.method} ${pathname}`);
 
     // API routes
     if (pathname.startsWith(config.apiBase)) {
-      await apiRouter(req, res, url);
+      await apiRouter(req, res, parsedUrl);
       return;
     }
 
     // Admin routes
-    if (pathname.startsWith("/admin")) {
-      await adminRouter(req, res, url);
+    if (pathname === "/admin" || pathname === "/admin/") {
+      await adminRouter(req, res, parsedUrl);
       return;
     }
 
-    // Static files from public directory
-    if (
-      pathname.startsWith("/public/") ||
-      pathname.startsWith("/fonts/") ||
-      pathname.startsWith("/images/") ||
-      pathname.startsWith("/audio/")
-    ) {
+    // Static files - check extensions
+    const staticExtensions = [
+      ".css",
+      ".js",
+      ".json",
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".gif",
+      ".svg",
+      ".ico",
+      ".ttf",
+      ".otf",
+      ".woff",
+      ".woff2",
+      ".mp3",
+      ".webp",
+      ".txt",
+    ];
+    const hasExtension = staticExtensions.some((ext) =>
+      pathname.toLowerCase().endsWith(ext)
+    );
+
+    if (hasExtension) {
       await staticFiles(req, res, pathname);
       return;
     }
 
-    // Page routes (SPA shell or direct HTML)
+    // Page routes (HTML)
     await pageRouter(req, res, pathname);
   } catch (error) {
+    console.error("[ERROR]", error);
     errorHandler(res, error);
   }
 });
 
 server.listen(config.port, config.host, () => {
-  console.log(`    
+  console.log(`
   ╔═════════════════════════════════════════╗
   ║   Korekiyo Shinguji — Dark Shrine       ║
   ║   Server running at:                    ║
   ║   http://${config.host}:${config.port}  ║
   ║   CMS: /admin                           ║
   ╚═════════════════════════════════════════╝    
-    `);
+  `);
 });
 
-// Graceful shutdown
 process.on("SIGTERM", () => {
   server.close(() => process.exit(0));
 });
@@ -1874,7 +1926,7 @@ process.on("SIGTERM", () => {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 16/121: server\middleware\apiAuth.js
+FILE 17/122: server\middleware\apiAuth.js
 Language: javascript | Size: 911 bytes
 Lines: 34 total | 26 code | 0 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1917,7 +1969,7 @@ module.exports = { apiAuth };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 17/121: server\middleware\bodyParser.js
+FILE 18/122: server\middleware\bodyParser.js
 Language: javascript | Size: 1,005 bytes
 Lines: 45 total | 35 code | 1 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1971,7 +2023,7 @@ module.exports = { bodyParser };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 18/121: server\middleware\logger.js
+FILE 19/122: server\middleware\logger.js
 Language: javascript | Size: 667 bytes
 Lines: 24 total | 20 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2004,83 +2056,100 @@ module.exports = { logger };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 19/121: server\middleware\staticFiles.js
-Language: javascript | Size: 2,126 bytes
-Lines: 77 total | 58 code | 7 comments | 12 blank
+FILE 20/122: server\middleware\staticFiles.js
+Language: javascript | Size: 2,910 bytes
+Lines: 94 total | 70 code | 9 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-const { join } = require("path");
-const { promisify } = require("util");
-const fs = require("fs");
-const readFile = promisify(fs.readFile);
-const access = promisify(fs.access);
+const { join, resolve } = require("path");
+const { promises: fs } = require("fs");
 const config = require("../config.js");
 
-/*
- * Static file serving middleware
- * Serves files from both /public/ and /src/ directories
- */
-
 async function staticFiles(req, res, pathname) {
-  // Determine which directory the file lives in
   let filePath;
 
-  if (
-    pathname.startsWith("/fonts/") ||
-    pathname.startsWith("/images/") ||
-    pathname.startsWith("/audio/")
-  ) {
-    filePath = join(config.publicDir, pathname);
-  } else if (pathname.startsWith("/css/")) {
-    // Compiled CSS lives in src/css
+  if (pathname.startsWith("/css/")) {
     filePath = join(config.srcDir, pathname);
   } else if (pathname.startsWith("/js/")) {
     filePath = join(config.srcDir, pathname);
   } else if (pathname.startsWith("/data/")) {
     filePath = join(config.srcDir, pathname);
+  } else if (pathname.startsWith("/fonts/")) {
+    filePath = join(config.publicDir, pathname);
+  } else if (pathname.startsWith("/images/")) {
+    filePath = join(config.publicDir, pathname);
+  } else if (pathname.startsWith("/audio/")) {
+    filePath = join(config.publicDir, pathname);
   } else {
+    // Default to public directory
     filePath = join(config.publicDir, pathname);
   }
 
-  // Security: prevent directory traversal
-  const normalizedPath = filePath.replace(/\\/g, "/");
-  const normalizedRoot = config.rootDir.replace(/\\/g, "/");
-  if (!normalizedPath.startsWith(normalizedRoot)) {
+  // Security: Prevent directory traversal
+  const resolvedPath = resolve(filePath);
+  const normalizedRoot = resolve(config.rootDir);
+
+  if (!resolvedPath.startsWith(normalizedRoot)) {
+    console.warn(`Security: Attempted to access ${resolvedPath}`);
     res.writeHead(403);
     res.end("Forbidden");
     return;
   }
 
   try {
-    // Check if file exists
-    await access(filePath);
+    // Check if file exists and is readable
+    await fs.access(resolvedPath);
 
-    // Get MIME type
+    // Get file stats
+    const stats = await fs.stat(resolvedPath);
+
+    // Don't serve directories
+    if (stats.isDirectory()) {
+      res.writeHead(404);
+      res.end("Not found");
+      return;
+    }
+
+    // Determine MIME type
     const ext = pathname.substring(pathname.lastIndexOf(".")).toLowerCase();
-    const contentType = config.mimeTypes[ext] || "application/octet-stream";
+    let contentType = config.mimeTypes[ext] || "application/octet-stream";
 
-    // Cache control for static assets
-    const cacheControl = ext.match(/\.(ttf|otf|jpg|jpeg|png|mp3|ico)$/)
+    // Special handling for font files
+    if (ext === ".ttf") contentType = "font/ttf";
+    if (ext === ".otf") contentType = "font/otf";
+    if (ext === ".woff") contentType = "font/woff";
+    if (ext === ".woff2") contentType = "font/woff2";
+    if (ext === ".css") contentType = "text/css; charset=utf-8";
+    if (ext === ".js") contentType = "application/javascript; charset=utf-8";
+
+    // Read and serve file
+    const fileContent = await fs.readFile(resolvedPath);
+
+    // Set caching headers
+    const cacheControl = ext.match(
+      /\.(ttf|otf|woff|woff2|jpg|jpeg|png|gif|webp|svg|ico|mp3)$/i
+    )
       ? "public, max-age=31536000, immutable"
-      : "no-cache";
-
-    // Read and server file
-    const fileContent = await readFile(filePath);
+      : "no-cache, must-revalidate";
 
     res.writeHead(200, {
       "Content-Type": contentType,
       "Cache-Control": cacheControl,
-      "Content-Length": fileContent.length,
+      "Content-Length": stats.size,
+      "Access-Control-Allow-Origin": "*",
     });
 
     res.end(fileContent);
   } catch (error) {
     if (error.code === "ENOENT") {
+      console.log(`404: ${pathname} not found at ${resolvedPath}`);
       res.writeHead(404);
       res.end("File not found");
     } else {
-      throw error;
+      console.error(`Error serving ${pathname}:`, error);
+      res.writeHead(500);
+      res.end("Internal server error");
     }
   }
 }
@@ -2090,7 +2159,7 @@ module.exports = { staticFiles };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 20/121: server\models\FileStore.js
+FILE 21/122: server\models\FileStore.js
 Language: javascript | Size: 939 bytes
 Lines: 43 total | 34 code | 0 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2142,7 +2211,7 @@ module.exports = { FileStore };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 21/121: server\models\Validator.js
+FILE 22/122: server\models\Validator.js
 Language: javascript | Size: 630 bytes
 Lines: 26 total | 21 code | 1 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2177,7 +2246,7 @@ module.exports = { Validator };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 22/121: server\routes\adminRouter.js
+FILE 23/122: server\routes\adminRouter.js
 Language: javascript | Size: 886 bytes
 Lines: 35 total | 26 code | 3 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2221,9 +2290,9 @@ module.exports = { adminRouter };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 23/121: server\routes\apiRouter.js
-Language: javascript | Size: 2,064 bytes
-Lines: 83 total | 59 code | 11 comments | 13 blank
+FILE 24/122: server\routes\apiRouter.js
+Language: javascript | Size: 2,130 bytes
+Lines: 84 total | 60 code | 11 comments | 13 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -2274,6 +2343,7 @@ async function apiRouter(req, res, url) {
   // Auth verification
   if (path === "/api/v1/auth/verify") {
     if (apiAuth(req, res)) {
+      const { sendJSON } = require("../utils/responseHelper.js");
       sendJSON(res, { authenticated: true });
     }
     return;
@@ -2313,9 +2383,9 @@ module.exports = { apiRouter };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 24/121: server\routes\pageRouter.js
-Language: javascript | Size: 1,712 bytes
-Lines: 74 total | 60 code | 5 comments | 9 blank
+FILE 25/122: server\routes\pageRouter.js
+Language: javascript | Size: 1,572 bytes
+Lines: 59 total | 52 code | 2 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -2325,52 +2395,35 @@ const fs = require("fs");
 const readFile = promisify(fs.readFile);
 const config = require("../config.js");
 
-/*
- * Page router
- * Serves HTML pages. The main app uses app.html as shell.
- */
 async function pageRouter(req, res, pathname) {
   let pagePath;
 
-  // Route to correct HTML file
-  switch (pathname) {
-    case "/":
-    case "/index":
-      pagePath = join(config.srcDir, "index.html");
-      break;
-
-    case "/app":
-    case "/home":
-    case "/about":
-    case "/journal":
-    case "/artifacts":
-    case "/sister":
-    case "/gallery":
-      // All app pages use the shell
-      pagePath = join(config.srcDir, "app.html");
-      break;
-
-    default:
-      // Try exact match
-      pagePath = join(config.srcDir, pathname);
-
-      // If no extension, try . html
-      if (!pathname.includes(".")) {
-        pagePath = join(config.srcDir, `${pathname}.html`);
-      }
+  if (pathname === "/" || pathname === "/index") {
+    pagePath = join(config.srcDir, "index.html");
+  } else if (
+    pathname === "/app" ||
+    pathname === "/app/" ||
+    pathname.startsWith("/app/")
+  ) {
+    // all app routes go to app.html (SPA shell)
+    pagePath = join(config.srcDir, "app.html");
+  } else {
+    pagePath = join(config.srcDir, pathname);
+    if (!pathname.includes(".")) {
+      pagePath = join(config.srcDir, `${pathname}.html`);
+    }
   }
 
   try {
     const html = await readFile(pagePath, "utf-8");
-
     res.writeHead(200, {
       "Content-Type": "text/html; charset=utf-8",
       "Cache-Control": "no-cache",
     });
     res.end(html);
   } catch (error) {
-    if (error.code == "ENOENT") {
-      // Fallback to app shell for SPA routing
+    if (error.code === "ENOENT") {
+      // SPA fallback -> serve app.html for unknown routes
       try {
         const fallback = await readFile(
           join(config.srcDir, "app.html"),
@@ -2381,12 +2434,14 @@ async function pageRouter(req, res, pathname) {
           "Cache-Control": "no-cache",
         });
         res.end(fallback);
-      } catch (error) {
+      } catch {
         res.writeHead(404);
         res.end("Page not found");
       }
     } else {
-      throw error;
+      console.error("Page router error:", error);
+      res.writeHead(500);
+      res.end("Internal server error");
     }
   }
 }
@@ -2396,7 +2451,7 @@ module.exports = { pageRouter };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 25/121: server\utils\errorHandler.js
+FILE 26/122: server\utils\errorHandler.js
 Language: javascript | Size: 475 bytes
 Lines: 24 total | 19 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2429,7 +2484,7 @@ module.exports = { errorHandler };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 26/121: server\utils\fileSystem.js
+FILE 27/122: server\utils\fileSystem.js
 Language: javascript | Size: 987 bytes
 Lines: 45 total | 39 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2483,7 +2538,7 @@ module.exports = { readJSON, writeJSON, fileExists };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 27/121: server\utils\responseHelper.js
+FILE 28/122: server\utils\responseHelper.js
 Language: javascript | Size: 514 bytes
 Lines: 21 total | 16 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2513,7 +2568,7 @@ module.exports = { sendJSON, sendError, sendSuccess };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 28/121: src\admin.html
+FILE 29/122: src\admin.html
 Language: html | Size: 4,927 bytes
 Lines: 157 total | 138 code | 8 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2679,8 +2734,8 @@ Lines: 157 total | 138 code | 8 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 29/121: src\app.html
-Language: html | Size: 2,397 bytes
+FILE 30/122: src\app.html
+Language: html | Size: 2,383 bytes
 Lines: 82 total | 61 code | 10 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
 
@@ -2703,14 +2758,14 @@ Lines: 82 total | 61 code | 10 comments | 11 blank
     <!-- Preload critical fonts -->
     <link
       rel="preload"
-      href="/fonts/public/garamond-rough-pro-bold.ttf"
+      href="/fonts/garamond-rough-pro-bold.ttf"
       as="font"
       type="font/ttf"
       crossorigin
     />
     <link
       rel="preload"
-      href="/fonts/public/garamond-rough-pro-regular.ttf"
+      href="/fonts/garamond-rough-pro-regular.ttf"
       as="font"
       type="font/ttf"
       crossorigin
@@ -2770,9 +2825,9 @@ Lines: 82 total | 61 code | 10 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 30/121: src\css\main.css
-Language: css | Size: 39,479 bytes
-Lines: 1957 total | 1807 code | 0 comments | 150 blank
+FILE 31/122: src\css\main.css
+Language: css | Size: 39,311 bytes
+Lines: 1985 total | 1834 code | 0 comments | 151 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```css
@@ -2822,9 +2877,9 @@ Lines: 1957 total | 1807 code | 0 comments | 150 blank
   --radius-sm: 2px;
   --radius-md: 4px;
   --radius-lg: 8px;
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.5);
-  --shadow-md: 0 4px 8px rgba(0,0,0,0.6);
-  --shadow-lg: 0 8px 24px rgba(0,0,0,0.8);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.8);
   --shadow-glow: 0 0 15px rgba(201, 168, 76, 0.3);
   --transition-fast: 150ms ease;
   --transition-normal: 300ms ease;
@@ -2910,12 +2965,12 @@ h6 {
 
 @media (prefers-reduced-motion: reduce) {
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -3058,8 +3113,8 @@ h6 {
 
 @media (forced-colors: active) {
   .btn,
-.card,
-.artifact-item {
+  .card,
+  .artifact-item {
     border: 1px solid ButtonText;
   }
 }
@@ -3170,7 +3225,7 @@ body {
   padding: 0 var(--space-xl);
   background: rgba(13, 13, 13, 0.85);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-bottom: var(--border-thin);
   z-index: var(--z-nav);
 }
@@ -3204,7 +3259,8 @@ body {
   text-transform: uppercase;
   color: var(--color-text-muted);
   padding: var(--space-xs) var(--space-sm);
-  transition: color var(--transition-normal), border-color var(--transition-normal);
+  transition: color var(--transition-normal),
+    border-color var(--transition-normal);
   border-bottom: 2px solid transparent;
 }
 .main-nav .nav-link:hover {
@@ -3214,7 +3270,7 @@ body {
   color: var(--color-accent);
   border-bottom-color: var(--color-accent);
 }
-.main-nav .nav-link[aria-current=page] {
+.main-nav .nav-link[aria-current="page"] {
   color: var(--color-accent);
   border-bottom-color: var(--color-accent);
 }
@@ -3239,7 +3295,8 @@ body {
   border: var(--border-thin);
   padding: var(--space-xl);
   box-shadow: var(--shadow-sm);
-  transition: box-shadow var(--transition-normal), border-color var(--transition-normal);
+  transition: box-shadow var(--transition-normal),
+    border-color var(--transition-normal);
 }
 .card:hover {
   border-color: var(--color-accent-dim);
@@ -3330,7 +3387,8 @@ body {
   background: var(--color-surface);
   border: var(--border-thin);
   padding: var(--space-xl);
-  transition: border-color var(--transition-normal), box-shadow var(--transition-normal), transform var(--transition-normal);
+  transition: border-color var(--transition-normal),
+    box-shadow var(--transition-normal), transform var(--transition-normal);
 }
 .card:hover {
   border-color: var(--color-accent-dim);
@@ -3392,7 +3450,7 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.85);
   -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .modal-content {
@@ -3405,7 +3463,7 @@ body {
   overflow-y: auto;
   box-shadow: var(--shadow-lg);
   -webkit-animation: slideUp 0.3s ease;
-          animation: slideUp 0.3s ease;
+  animation: slideUp 0.3s ease;
 }
 .modal-content.modal-artifact {
   max-width: 900px;
@@ -3447,7 +3505,7 @@ body {
   font-size: 3rem;
   color: var(--color-accent);
   -webkit-animation: pulse 2s infinite;
-          animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
   margin-bottom: var(--space-md);
 }
 
@@ -3458,7 +3516,8 @@ body {
 }
 
 @-webkit-keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.4;
   }
   50% {
@@ -3467,7 +3526,8 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.4;
   }
   50% {
@@ -3504,7 +3564,7 @@ body.custom-cursor-active a,
 body.custom-cursor-active button,
 body.custom-cursor-active input,
 body.custom-cursor-active textarea,
-body.custom-cursor-active [role=button] {
+body.custom-cursor-active [role="button"] {
   cursor: none;
 }
 
@@ -3558,7 +3618,11 @@ body.custom-cursor-active [role=button] {
   height: 100%;
   pointer-events: none;
   z-index: 2;
-  background: radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.35) 100%);
+  background: radial-gradient(
+    ellipse at center,
+    transparent 60%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
 }
 
 .splash-body {
@@ -3588,7 +3652,7 @@ body.custom-cursor-active [role=button] {
   z-index: var(--z-base);
   opacity: 0;
   -webkit-animation: candle-appear 2s ease forwards;
-          animation: candle-appear 2s ease forwards;
+  animation: candle-appear 2s ease forwards;
 }
 
 .splash-typewriter {
@@ -3612,21 +3676,21 @@ body.custom-cursor-active [role=button] {
 }
 .splash-line.line-1 {
   -webkit-animation: typewriter-fade 1.5s ease forwards;
-          animation: typewriter-fade 1.5s ease forwards;
+  animation: typewriter-fade 1.5s ease forwards;
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 .splash-line.line-2 {
   -webkit-animation: typewriter-fade 1.5s ease forwards;
-          animation: typewriter-fade 1.5s ease forwards;
+  animation: typewriter-fade 1.5s ease forwards;
   -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
 }
 .splash-line.line-3 {
   -webkit-animation: typewriter-fade 1.5s ease forwards;
-          animation: typewriter-fade 1.5s ease forwards;
+  animation: typewriter-fade 1.5s ease forwards;
   -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-delay: 5s;
   color: var(--color-accent);
 }
 
@@ -3686,7 +3750,7 @@ body.custom-cursor-active [role=button] {
 }
 .splash-blood-canvas.active {
   -webkit-animation: blood-surge 2s ease-in forwards;
-          animation: blood-surge 2s ease-in forwards;
+  animation: blood-surge 2s ease-in forwards;
 }
 
 .splash-transition {
@@ -3764,7 +3828,7 @@ body.custom-cursor-active [role=button] {
 @-webkit-keyframes blood-surge {
   0% {
     -webkit-clip-path: circle(0% at 50% 50%);
-            clip-path: circle(0% at 50% 50%);
+    clip-path: circle(0% at 50% 50%);
     opacity: 0;
   }
   30% {
@@ -3772,14 +3836,14 @@ body.custom-cursor-active [role=button] {
   }
   100% {
     -webkit-clip-path: circle(150% at 50% 50%);
-            clip-path: circle(150% at 50% 50%);
+    clip-path: circle(150% at 50% 50%);
     opacity: 0;
   }
 }
 @keyframes blood-surge {
   0% {
     -webkit-clip-path: circle(0% at 50% 50%);
-            clip-path: circle(0% at 50% 50%);
+    clip-path: circle(0% at 50% 50%);
     opacity: 0;
   }
   30% {
@@ -3787,7 +3851,7 @@ body.custom-cursor-active [role=button] {
   }
   100% {
     -webkit-clip-path: circle(150% at 50% 50%);
-            clip-path: circle(150% at 50% 50%);
+    clip-path: circle(150% at 50% 50%);
     opacity: 0;
   }
 }
@@ -3818,13 +3882,17 @@ body.custom-cursor-active [role=button] {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent 60%, var(--color-background) 100%);
+  background: linear-gradient(
+    to bottom,
+    transparent 60%,
+    var(--color-background) 100%
+  );
 }
 .hero-image .portrait-main {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: saturate(0.8) brightness(0.9);
   transition: filter 0.5s ease;
 }
@@ -3955,7 +4023,8 @@ body.custom-cursor-active [role=button] {
 
 .journal-entry {
   cursor: pointer;
-  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+  transition: border-color var(--transition-normal),
+    box-shadow var(--transition-normal);
 }
 .journal-entry:hover {
   border-color: var(--color-accent-dim);
@@ -4000,7 +4069,8 @@ body.custom-cursor-active [role=button] {
 .artifact-card {
   cursor: pointer;
   overflow: hidden;
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  transition: transform var(--transition-normal),
+    box-shadow var(--transition-normal);
 }
 .artifact-card:hover {
   transform: translateY(-4px);
@@ -4021,7 +4091,7 @@ body.custom-cursor-active [role=button] {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: brightness(0.8) sepia(0.2);
   transition: filter var(--transition-normal);
 }
@@ -4092,7 +4162,12 @@ body.custom-cursor-active [role=button] {
   width: 40px;
   height: 2px;
   margin: var(--space-lg) auto;
-  background: linear-gradient(to right, transparent, var(--color-accent), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-accent),
+    transparent
+  );
 }
 
 .sister-layout {
@@ -4130,7 +4205,11 @@ body.custom-cursor-active [role=button] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(ellipse at center, transparent 50%, rgba(0, 0, 0, 0.5) 100%);
+  background: radial-gradient(
+    ellipse at center,
+    transparent 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
   pointer-events: none;
 }
 
@@ -4229,7 +4308,7 @@ body.custom-cursor-active [role=button] {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: var(--space-x1);
+  padding: var(--space-xl);
 }
 
 .login-form {
@@ -4478,7 +4557,7 @@ body.custom-cursor-active [role=button] {
   width: 48px;
   height: 48px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: var(--border-thin);
 }
 
@@ -4520,7 +4599,8 @@ body.custom-cursor-active [role=button] {
   }
 }
 @-webkit-keyframes subtleFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -4528,7 +4608,8 @@ body.custom-cursor-active [role=button] {
   }
 }
 @keyframes subtleFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -4590,7 +4671,7 @@ body.custom-cursor-active [role=button] {
 @-webkit-keyframes bloodSurge {
   0% {
     -webkit-clip-path: circle(0% at 50% 50%);
-            clip-path: circle(0% at 50% 50%);
+    clip-path: circle(0% at 50% 50%);
     opacity: 0;
   }
   30% {
@@ -4598,14 +4679,14 @@ body.custom-cursor-active [role=button] {
   }
   100% {
     -webkit-clip-path: circle(150% at 50% 50%);
-            clip-path: circle(150% at 50% 50%);
+    clip-path: circle(150% at 50% 50%);
     opacity: 0;
   }
 }
 @keyframes bloodSurge {
   0% {
     -webkit-clip-path: circle(0% at 50% 50%);
-            clip-path: circle(0% at 50% 50%);
+    clip-path: circle(0% at 50% 50%);
     opacity: 0;
   }
   30% {
@@ -4613,12 +4694,13 @@ body.custom-cursor-active [role=button] {
   }
   100% {
     -webkit-clip-path: circle(150% at 50% 50%);
-            clip-path: circle(150% at 50% 50%);
+    clip-path: circle(150% at 50% 50%);
     opacity: 0;
   }
 }
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.4;
   }
   50% {
@@ -4643,58 +4725,58 @@ body.custom-cursor-active [role=button] {
 }
 .fade-enter {
   -webkit-animation: fadeIn 0.5s ease forwards;
-          animation: fadeIn 0.5s ease forwards;
+  animation: fadeIn 0.5s ease forwards;
 }
 
 .slide-up-enter {
   -webkit-animation: slideUp 0.6s ease forwards;
-          animation: slideUp 0.6s ease forwards;
+  animation: slideUp 0.6s ease forwards;
 }
 
 .stagger-children > * {
   opacity: 0;
   -webkit-animation: slideUp 0.5s ease forwards;
-          animation: slideUp 0.5s ease forwards;
+  animation: slideUp 0.5s ease forwards;
 }
 .stagger-children > *:nth-child(1) {
   -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 .stagger-children > *:nth-child(2) {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 .stagger-children > *:nth-child(3) {
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 .stagger-children > *:nth-child(4) {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .stagger-children > *:nth-child(5) {
   -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .stagger-children > *:nth-child(6) {
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 .stagger-children > *:nth-child(7) {
   -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 .stagger-children > *:nth-child(8) {
   -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 .stagger-children > *:nth-child(9) {
   -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 .stagger-children > *:nth-child(10) {
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .ambient-canvas {
@@ -4732,12 +4814,12 @@ body.custom-cursor-active [role=button] {
 }
 .theme-fallback a {
   color: #c9a84c;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 31/121: src\data\characters\index.json
+FILE 32/122: src\data\characters\index.json
 Language: json | Size: 195 bytes
 Lines: 12 total | 11 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -4758,8 +4840,8 @@ Lines: 12 total | 11 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 32/121: src\data\characters\korekiyo.json
-Language: json | Size: 8,182 bytes
+FILE 33/122: src\data\characters\korekiyo.json
+Language: json | Size: 8,174 bytes
 Lines: 201 total | 194 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
 
@@ -4819,7 +4901,7 @@ Lines: 201 total | 194 code | 0 comments | 7 blank
       "title": "Korekiyo Shinguji",
       "subtitle": "Folklorist & Observer of Humanity",
       "heroQuote": "Kehehe... Beauty is everywhere, if one simply knows where to look.",
-      "featuredImage": "portrait-main.webp",
+      "featuredImage": "portrait-main.jpg",
       "sections": [
         {
           "type": "quote",
@@ -4830,7 +4912,7 @@ Lines: 201 total | 194 code | 0 comments | 7 blank
     "about": {
       "title": "On the Nature of My Research",
       "content": "Humanity's beauty is not limited to its art or its music. It is in the way we mourn, the way we celebrate, the way we face the unknown. My work takes me to the edges of human experience, where customs become ritual, and ritual becomes the language of the soul.",
-      "image": "portrait-profile.webp"
+      "image": "portrait-profile.jpg"
     },
     "journal": {
       "title": "Field Observations",
@@ -4865,7 +4947,7 @@ Lines: 201 total | 194 code | 0 comments | 7 blank
           "name": "Shin-Gunto Replica",
           "origin": "Japan, Early 20th Century",
           "description": "A blade that carries the weight of tradition and the sharpness of finality. Crafted with the same techniques used for centuries.",
-          "image": "artifact-katana.webp",
+          "image": "artifact-katana.jpg",
           "threed": true
         },
         {
@@ -4873,7 +4955,7 @@ Lines: 201 total | 194 code | 0 comments | 7 blank
           "name": "Noh Mask Fragment",
           "origin": "Japan, Edo Period",
           "description": "A fragment of a Noh theatre mask, weathered by time. Even broken, it retains its unsettling expression — frozen between emotions.",
-          "image": "artifact-mask.webp",
+          "image": "artifact-mask.jpg",
           "threed": true
         },
         {
@@ -4881,7 +4963,7 @@ Lines: 201 total | 194 code | 0 comments | 7 blank
           "name": "Ceremonial Binding Rope",
           "origin": "Unknown",
           "description": "Hemp rope prepared in the traditional manner. The coil is perfect — a testament to the craftsman's devotion to form.",
-          "image": "artifact-rope.webp",
+          "image": "artifact-rope.jpg",
           "threed": false
         },
         {
@@ -4889,7 +4971,7 @@ Lines: 201 total | 194 code | 0 comments | 7 blank
           "name": "Temple Incense Burner",
           "origin": "Kyoto, Japan",
           "description": "Used in purification rituals, the smoke carries prayers to realms beyond our own. The scent lingers long after the ember dies.",
-          "image": "artifact-incense.webp",
+          "image": "artifact-incense.jpg",
           "threed": false
         }
       ]
@@ -4899,8 +4981,8 @@ Lines: 201 total | 194 code | 0 comments | 7 blank
       "subtitle": "In Loving Memory of Miyadera Shinguji",
       "poem": "She was the moonlight that guided my study, the gentle hand that turned the pages of my curiosity. Without her, I would be a scholar without a soul.",
       "content": "My sister Miyadera was the most beautiful soul I have ever known. Frail in body but immense in spirit, she taught me to see the beauty in everything — even in suffering. She remains my inspiration, my companion in every discovery. This page is dedicated to her memory, for she is present in every word I write and every artifact I preserve.",
-      "image": "sister-portrait.webp",
-      "hairpinImage": "sister-hairpin.webp"
+      "image": "sister-portrait.jpg",
+      "hairpinImage": "sister-hairpin.jpg"
     }
   },
 
@@ -4968,8 +5050,8 @@ Lines: 201 total | 194 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 33/121: src\data\characters\template.json
-Language: json | Size: 3,033 bytes
+FILE 34/122: src\data\characters\template.json
+Language: json | Size: 3,029 bytes
 Lines: 130 total | 129 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
 
@@ -5023,13 +5105,13 @@ Lines: 130 total | 129 code | 0 comments | 1 blank
       "title": "Character Name",
       "subtitle": "Subtitle",
       "heroQuote": "A memorable quote.",
-      "featuredImage": "portrait-main.webp",
+      "featuredImage": "portrait-main.jpg",
       "sections": []
     },
     "about": {
       "title": "About",
       "content": "About content.",
-      "image": "portrait-profile.webp"
+      "image": "portrait-profile.jpg"
     },
     "journal": {
       "title": "Journal",
@@ -5046,8 +5128,8 @@ Lines: 130 total | 129 code | 0 comments | 1 blank
       "subtitle": "Subtitle",
       "poem": "Poem text.",
       "content": "Content.",
-      "image": "sister-portrait.webp",
-      "hairpinImage": "sister-hairpin.webp"
+      "image": "sister-portrait.jpg",
+      "hairpinImage": "sister-hairpin.jpg"
     }
   },
   "easterEggs": {
@@ -5107,7 +5189,7 @@ Lines: 130 total | 129 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 34/121: src\data\site-config.json
+FILE 35/122: src\data\site-config.json
 Language: json | Size: 266 bytes
 Lines: 13 total | 12 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5129,7 +5211,7 @@ Lines: 13 total | 12 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 35/121: src\index.html
+FILE 36/122: src\index.html
 Language: html | Size: 2,859 bytes
 Lines: 94 total | 76 code | 9 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5232,7 +5314,7 @@ Lines: 94 total | 76 code | 9 comments | 9 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 36/121: src\js\admin\AuthManager.js
+FILE 37/122: src\js\admin\AuthManager.js
 Language: javascript | Size: 1,164 bytes
 Lines: 57 total | 44 code | 2 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5298,7 +5380,7 @@ module.exports = { AuthManager };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 37/121: src\js\admin\ContentEditor.js
+FILE 38/122: src\js\admin\ContentEditor.js
 Language: javascript | Size: 6,578 bytes
 Lines: 202 total | 186 code | 1 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5509,8 +5591,8 @@ module.exports = { ContentEditor };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 38/121: src\js\admin\ImageManager.js
-Language: javascript | Size: 2,951 bytes
+FILE 39/122: src\js\admin\ImageManager.js
+Language: javascript | Size: 2,950 bytes
 Lines: 114 total | 99 code | 3 comments | 12 blank
 ────────────────────────────────────────────────────────────────────────────────
 
@@ -5586,7 +5668,7 @@ class ImageManager {
                   class="form-input" 
                   data-key="${field.key}"
                   value="${DomHelper.escapeHtml(field.current || "")}"
-                  placeholder="filename.webp"
+                  placeholder="filename.jpg"
                 >
                 ${
                   field.current
@@ -5632,7 +5714,7 @@ module.exports = { ImageManager };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 39/121: src\js\admin\SaveManager.js
+FILE 40/122: src\js\admin\SaveManager.js
 Language: javascript | Size: 1,563 bytes
 Lines: 65 total | 55 code | 1 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5706,7 +5788,7 @@ module.exports = { SaveManager };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 40/121: src\js\admin\ThemeCustomizer.js
+FILE 41/122: src\js\admin\ThemeCustomizer.js
 Language: javascript | Size: 6,625 bytes
 Lines: 203 total | 180 code | 4 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5918,7 +6000,7 @@ module.exports = { ThemeCustomizer };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 41/121: src\js\admin.js
+FILE 42/122: src\js\admin.js
 Language: javascript | Size: 6,486 bytes
 Lines: 225 total | 173 code | 16 comments | 36 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6152,94 +6234,439 @@ class AdminController {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 42/121: src\js\app.js
-Language: javascript | Size: 2,606 bytes
-Lines: 78 total | 58 code | 6 comments | 14 blank
+FILE 43/122: src\js\app.js
+Language: javascript | Size: 14,884 bytes
+Lines: 423 total | 383 code | 5 comments | 35 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { Engine } from "./core/Engine.js";
-import { ThreeEngine } from "./three/ThreeEngine.js";
-import { AmbientScene } from "./three/AmbientScene.js";
-import { CursorEffect } from "./features/CursorEffect.js";
-import { ParallaxController } from "./features/ParallaxController.js";
-import { EasterEggs } from "./features/EasterEggs.js";
-import { Logger } from "./utils/Logger.js";
+(function () {
+  const Logger = {
+    log: function (module, ...args) {
+      console.log(`[${module}]`, ...args);
+    },
+    error: function (module, ...args) {
+      console.error(`[${module}]`, ...args);
+    },
+    warn: function (module, ...args) {
+      console.warn(`[${module}]`, ...args);
+    },
+  };
 
-const logger = new Logger("App");
-
-document.addEventListener("DOMContentLoaded", async () => {
-  logger.log("Initializing application...");
-
-  const engine = new Engine();
-
-  try {
-    await engine.boot();
-
-    // 3D Background
-    const ambientCanvas = document.getElementById("ambient-canvas");
-    if (ambientCanvas) {
-      const threeEngine = new ThreeEngine(ambientCanvas);
-      await threeEngine.init();
-
-      const characterData = engine.stateManager.getState("threeD");
-      const ambientScene = new AmbientScene(ambientCanvas, {
-        threeD: characterData,
-      });
-      const scene = await ambientScene.init(threeEngine);
-
-      threeEngine.addScene("ambient", scene);
-      threeEngine.setActiveScene("ambient");
-      threeEngine.start();
-
-      engine.stateManager.setState("threeEngine", threeEngine);
-      engine.stateManager.setState("ambientScene", ambientScene);
-    }
-
-    // Custom Cursor
-    const cursor = new CursorEffect();
-    engine.stateManager.setState("cursor", cursor);
-
-    // Parallax
-    const parallax = new ParallaxController();
-    engine.stateManager.setState("parallax", parallax);
-
-    // Easter Eggs
-    const easterEggs = new EasterEggs(engine.stateManager);
-    engine.stateManager.setState("easterEggs", easterEggs);
-
-    // Listen for CMS updates
-    if (typeof BroadcastChannel !== "undefined") {
-      const cmsChannel = new BroadcastChannel("kiyo-cms");
-      cmsChannel.onmessage = (event) => {
-        if (event.data?.type === "data-updated") {
-          logger.log("CMS data updated, reloading...");
-          // Reload character data without full page refresh
-          engine.dataLoader.clearCache();
-          engine.boot().catch((err) => logger.error("Reload failed", err));
-        }
+  // simple Router
+  class Router {
+    constructor() {
+      this.routes = {
+        home: this.renderHome,
+        about: this.renderAbout,
+        journal: this.renderJournal,
+        artifacts: this.renderArtifacts,
+        sister: this.renderSister,
       };
-      engine.stateManager.setState("cmsChannel", cmsChannel);
+      this.currentPage = null;
+      this.container = document.getElementById("page-container");
+
+      window.addEventListener("popstate", () =>
+        this.handleRoute(window.location.pathname)
+      );
     }
 
-    logger.log("Application ready");
-  } catch (error) {
-    logger.error("Failed to boot application", error);
-    const container = document.getElementById("page-container");
-    if (container) {
+    async navigate(path) {
+      window.history.pushState({}, "", path);
+      await this.handleRoute(path);
+    }
+
+    async handleRoute(path) {
+      const pageName = this.getPageName(path);
+      Logger.log("Router", `Routing to: ${pageName}`);
+
+      if (this.container) {
+        this.container.style.opacity = "0";
+        await new Promise((r) => setTimeout(r, 200));
+      }
+
+      const renderer = this.routes[pageName];
+      if (renderer && this.container) {
+        await renderer.call(this, this.container);
+      } else if (this.container) {
+        this.container.innerHTML =
+          '<div class="error-state"><h2>Page Not Found</h2></div>';
+      }
+
+      if (this.container) {
+        this.container.style.opacity = "1";
+        window.scrollTo({ top: 0 });
+      }
+    }
+
+    getPageName(path) {
+      const clean = path.replace(/^\/+|\/+$/g, "");
+      if (clean === "" || clean === "app" || clean === "home") return "home";
+      return clean.split("/")[0] || "home";
+    }
+
+    async renderHome(container) {
+      const response = await fetch("/api/v1/character");
+      const data = await response.json();
+      const char = data.character;
+      const home = data.pages.home;
+
       container.innerHTML = `
-        <div class="error-state">
-          <h2>Something went wrong</h2>
-          <p>Failed to initialize. Please try again later.</p>
-        </div>`;
+        <section class="home-hero">
+          <div class="hero-content">
+            <h1 class="hero-name heading-1">${this.escapeHtml(char.name)}</h1>
+            <p class="hero-subtitle heading-4 text-accent">${this.escapeHtml(
+              char.title
+            )}</p>
+            <blockquote class="hero-quote body-large text-muted">"${this.escapeHtml(
+              home.heroQuote
+            )}"</blockquote>
+          </div>
+          <div class="hero-image">
+            <div class="image-frame">
+              <img src="/images/korekiyo/${this.escapeHtml(
+                home.featuredImage
+              )}" alt="${this.escapeHtml(char.name)}" class="portrait-main">
+            </div>
+          </div>
+        </section>
+        <section class="home-intro">
+          <div class="intro-card card">
+            <p class="body-large">${this.escapeHtml(char.bio.short)}</p>
+          </div>
+        </section>
+      `;
+    }
+
+    async renderAbout(container) {
+      const response = await fetch("/api/v1/character");
+      const data = await response.json();
+      const char = data.character;
+      const about = data.pages.about;
+
+      let appearanceHtml = "";
+      for (const [key, value] of Object.entries(char.appearance || {})) {
+        appearanceHtml += `
+          <div class="appearance-item">
+            <span class="appearance-key text-accent">${this.escapeHtml(
+              key
+            )}</span>
+            <span class="appearance-desc">${this.escapeHtml(value)}</span>
+          </div>
+        `;
+      }
+
+      container.innerHTML = `
+        <section class="about-section page-section">
+          <header class="page-header">
+            <h1 class="heading-1">${this.escapeHtml(about.title)}</h1>
+            <div class="header-ornament"></div>
+          </header>
+          <div class="about-layout">
+            <div class="about-content">
+              <div class="about-text body-large">
+                <p>${this.escapeHtml(char.bio.full)}</p>
+              </div>
+              <div class="about-details">
+                <div class="detail-item">
+                  <span class="detail-label text-accent">Affiliation</span>
+                  <span class="detail-value">${this.escapeHtml(
+                    char.affiliation
+                  )}</span>
+                </div>
+              </div>
+            </div>
+            <aside class="about-image">
+              <div class="image-frame portrait-frame">
+                <img src="/images/korekiyo/${this.escapeHtml(
+                  about.image
+                )}" alt="${this.escapeHtml(char.name)}" class="portrait-side">
+              </div>
+            </aside>
+          </div>
+          <div class="about-appearance">
+            <h3 class="heading-3">Physical Description</h3>
+            <div class="appearance-grid">${appearanceHtml}</div>
+          </div>
+        </section>
+      `;
+    }
+
+    async renderJournal(container) {
+      const response = await fetch("/api/v1/character");
+      const data = await response.json();
+      const journal = data.pages.journal;
+
+      let entriesHtml = "";
+      for (const entry of journal.entries || []) {
+        entriesHtml += `
+          <article class="journal-entry card" onclick="window.showJournalEntry('${this.escapeHtml(
+            entry.date
+          )}', '${this.escapeHtml(entry.title)}', '${this.escapeHtml(
+          entry.content
+        )}')">
+            <div class="entry-meta">
+              <span class="entry-date text-accent">${this.escapeHtml(
+                entry.date
+              )}</span>
+              <span class="entry-location text-muted">${this.escapeHtml(
+                entry.location || ""
+              )}</span>
+            </div>
+            <h2 class="entry-title heading-3">${this.escapeHtml(
+              entry.title
+            )}</h2>
+            <div class="entry-preview body-text">
+              <p>${this.escapeHtml(entry.content.substring(0, 200))}...</p>
+            </div>
+            <button class="btn btn-ghost">Read Full Entry</button>
+          </article>
+        `;
+      }
+
+      container.innerHTML = `
+        <section class="journal-section page-section">
+          <header class="page-header">
+            <h1 class="heading-1">${this.escapeHtml(journal.title)}</h1>
+            <p class="body-large text-muted">${this.escapeHtml(
+              journal.description
+            )}</p>
+            <div class="header-ornament"></div>
+          </header>
+          <div class="journal-entries">${entriesHtml}</div>
+        </section>
+        <div id="journal-modal" class="modal hidden">
+          <div class="modal-overlay"></div>
+          <div class="modal-content">
+            <button class="modal-close btn btn-ghost" onclick="document.getElementById('journal-modal').classList.add('hidden')">✕</button>
+            <div id="modal-body"></div>
+          </div>
+        </div>
+      `;
+    }
+
+    async renderArtifacts(container) {
+      const response = await fetch("/api/v1/character");
+      const data = await response.json();
+      const artifacts = data.pages.artifacts;
+
+      let itemsHtml = "";
+      for (let i = 0; i < (artifacts.items || []).length; i++) {
+        const item = artifacts.items[i];
+        itemsHtml += `
+          <article class="artifact-card card" onclick="window.showArtifactDetail(${i})">
+            <div class="artifact-image-container">
+              <img src="/images/korekiyo/${this.escapeHtml(
+                item.image
+              )}" alt="${this.escapeHtml(item.name)}" class="artifact-image">
+              ${
+                item.threed
+                  ? '<span class="artifact-badge text-accent">3D View</span>'
+                  : ""
+              }
+            </div>
+            <div class="artifact-info">
+              <h3 class="artifact-name heading-3">${this.escapeHtml(
+                item.name
+              )}</h3>
+              <p class="artifact-origin text-muted">${this.escapeHtml(
+                item.origin
+              )}</p>
+              <p class="artifact-desc body-text">${this.escapeHtml(
+                item.description.substring(0, 120)
+              )}...</p>
+            </div>
+          </article>
+        `;
+      }
+
+      window.artifactItems = artifacts.items || [];
+
+      container.innerHTML = `
+        <section class="artifacts-section page-section">
+          <header class="page-header">
+            <h1 class="heading-1">${this.escapeHtml(artifacts.title)}</h1>
+            <p class="body-large text-muted">${this.escapeHtml(
+              artifacts.description
+            )}</p>
+            <div class="header-ornament"></div>
+          </header>
+          <div class="artifacts-grid">${itemsHtml}</div>
+        </section>
+        <div id="artifact-modal" class="modal hidden">
+          <div class="modal-overlay"></div>
+          <div class="modal-content modal-artifact">
+            <button class="modal-close btn btn-ghost" onclick="document.getElementById('artifact-modal').classList.add('hidden')">✕</button>
+            <div id="artifact-modal-body"></div>
+          </div>
+        </div>
+      `;
+    }
+
+    async renderSister(container) {
+      const response = await fetch("/api/v1/character");
+      const data = await response.json();
+      const sister = data.pages.sister;
+
+      container.innerHTML = `
+        <section class="sister-section page-section">
+          <header class="page-header sister-header">
+            <h1 class="heading-1">${this.escapeHtml(sister.title)}</h1>
+            <p class="heading-4 text-accent">${this.escapeHtml(
+              sister.subtitle
+            )}</p>
+            <div class="header-ornament sister-ornament"></div>
+          </header>
+          <div class="sister-layout">
+            <div class="sister-portrait">
+              <div class="portrait-vignette">
+                <img src="/images/korekiyo/${this.escapeHtml(
+                  sister.image
+                )}" alt="Miyadera Shinguji" class="sister-image">
+                <div class="vignette-overlay"></div>
+              </div>
+            </div>
+            <div class="sister-poem">
+              <div class="poem-container">
+                <p class="poem-text body-large">${this.escapeHtml(
+                  sister.poem
+                )}</p>
+                <div class="poem-signature handwritten">— K.S.</div>
+              </div>
+            </div>
+            <div class="sister-content">
+              <p class="body-text">${this.escapeHtml(sister.content)}</p>
+            </div>
+            <div class="sister-hairpin">
+              <div class="hairpin-container">
+                <img src="/images/korekiyo/${this.escapeHtml(
+                  sister.hairpinImage
+                )}" alt="Her hairpin" class="hairpin-image">
+                <div class="hairpin-caption handwritten">Her favorite. I keep it close.</div>
+              </div>
+              <p class="hairpin-note text-muted">It has not gathered a single speck of dust.</p>
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    escapeHtml(str) {
+      if (!str) return "";
+      const div = document.createElement("div");
+      div.textContent = str;
+      return div.innerHTML;
     }
   }
-});
+
+  // global functions for modals
+  window.showJournalEntry = function (date, title, content) {
+    const modal = document.getElementById("journal-modal");
+    const body = document.getElementById("modal-body");
+    if (modal && body) {
+      body.innerHTML = `
+        <div class="modal-entry-header">
+          <span class="entry-date text-accent">${date}</span>
+        </div>
+        <h2 class="heading-2">${title}</h2>
+        <div class="header-ornament"></div>
+        <div class="entry-full body-large"><p>${content}</p></div>
+        <div class="modal-entry-footer handwritten">— K.S.</div>
+      `;
+      modal.classList.remove("hidden");
+    }
+  };
+
+  window.showArtifactDetail = function (index) {
+    const item = window.artifactItems[index];
+    if (!item) return;
+    const modal = document.getElementById("artifact-modal");
+    const body = document.getElementById("artifact-modal-body");
+    if (modal && body) {
+      body.innerHTML = `
+        <div class="modal-artifact-layout">
+          <div class="modal-artifact-image">
+            <img src="/images/korekiyo/${item.image}" alt="${item.name}">
+          </div>
+          <div class="modal-artifact-info">
+            <span class="text-accent">${item.origin}</span>
+            <h2 class="heading-2">${item.name}</h2>
+            <div class="header-ornament"></div>
+            <p class="body-large">${item.description}</p>
+          </div>
+        </div>
+      `;
+      modal.classList.remove("hidden");
+    }
+  };
+
+  // navigation component
+  class Navigation {
+    constructor(router) {
+      this.router = router;
+      this.container = document.getElementById("site-navigation");
+      this.activeRoute = "home";
+      this.render();
+    }
+
+    async render() {
+      const response = await fetch("/api/v1/character");
+      const data = await response.json();
+      const char = data.character;
+
+      this.container.innerHTML = `
+        <nav class="main-nav">
+          <div class="nav-brand">
+            <span class="brand-name">${char.name.split(" ")[0]}</span>
+            <span class="brand-divider">|</span>
+            <span class="brand-title text-muted">${char.title}</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="/app" class="nav-link" data-route="home">Home</a></li>
+            <li><a href="/app/about" class="nav-link" data-route="about">About</a></li>
+            <li><a href="/app/journal" class="nav-link" data-route="journal">Field Journal</a></li>
+            <li><a href="/app/artifacts" class="nav-link" data-route="artifacts">Artifacts</a></li>
+            <li><a href="/app/sister" class="nav-link" data-route="sister">My Muse</a></li>
+          </ul>
+        </nav>
+      `;
+
+      this.container.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const path = link.getAttribute("href");
+          this.router.navigate(path);
+        });
+      });
+    }
+  }
+
+  // initialize app
+  document.addEventListener("DOMContentLoaded", async () => {
+    const router = new Router();
+    const nav = new Navigation(router);
+
+    // apply theme colors from data
+    const response = await fetch("/api/v1/character");
+    const data = await response.json();
+    const theme = data.theme;
+
+    if (theme && theme.colors) {
+      for (const [key, value] of Object.entries(theme.colors)) {
+        document.documentElement.style.setProperty(`--color-${key}`, value);
+      }
+    }
+
+    document.title = `${data.character.name} - ${data.character.title}`;
+
+    await router.handleRoute(window.location.pathname);
+  });
+})();
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 43/121: src\js\components\AudioPlayer.js
+FILE 44/122: src\js\components\AudioPlayer.js
 Language: javascript | Size: 1,023 bytes
 Lines: 49 total | 39 code | 1 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6297,7 +6724,7 @@ module.exports = { AudioPlayer };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 44/121: src\js\components\ContentCard.js
+FILE 45/122: src\js\components\ContentCard.js
 Language: javascript | Size: 1,197 bytes
 Lines: 49 total | 45 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6355,7 +6782,7 @@ module.exports = { ContentCard };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 45/121: src\js\components\Loader.js
+FILE 46/122: src\js\components\Loader.js
 Language: javascript | Size: 462 bytes
 Lines: 30 total | 24 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6394,7 +6821,7 @@ module.exports = { Loader };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 46/121: src\js\components\Modal.js
+FILE 47/122: src\js\components\Modal.js
 Language: javascript | Size: 1,716 bytes
 Lines: 69 total | 53 code | 2 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6472,7 +6899,7 @@ module.exports = { Modal };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 47/121: src\js\components\Navigation.js
+FILE 48/122: src\js\components\Navigation.js
 Language: javascript | Size: 2,551 bytes
 Lines: 82 total | 69 code | 3 comments | 10 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6563,7 +6990,7 @@ module.exports = { Navigation };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 48/121: src\js\core\DataLoader.js
+FILE 49/122: src\js\core\DataLoader.js
 Language: javascript | Size: 1,503 bytes
 Lines: 60 total | 49 code | 2 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6590,7 +7017,7 @@ class DataLoader {
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
-      const date = await response.json();
+      const data = await response.json();
 
       // Cache the result
       this.cache.set(url, data);
@@ -6632,8 +7059,8 @@ module.exports = { DataLoader };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 49/121: src\js\core\Engine.js
-Language: javascript | Size: 2,333 bytes
+FILE 50/122: src\js\core\Engine.js
+Language: javascript | Size: 2,334 bytes
 Lines: 77 total | 53 code | 10 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
 
@@ -6696,10 +7123,10 @@ class Engine {
     this.eventBus.on("page:loading", () => this.showLoader(false));
 
     // 6. Handle initial route
-    await this.router.handlRoute(windwo.location.pathame);
+    await this.router.handlRoute(window.location.pathame);
 
     // 7. Hide loader
-    this.showLoader(true);
+    this.showLoader(false);
 
     // 8. Emit ready event
     this.eventBus.emit("app:ready");
@@ -6718,7 +7145,7 @@ module.exports = { Engine };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 50/121: src\js\core\EventBus.js
+FILE 51/122: src\js\core\EventBus.js
 Language: javascript | Size: 985 bytes
 Lines: 48 total | 39 code | 2 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6775,7 +7202,7 @@ module.exports = { EventBus };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 51/121: src\js\core\Router.js
+FILE 52/122: src\js\core\Router.js
 Language: javascript | Size: 3,005 bytes
 Lines: 104 total | 83 code | 3 comments | 18 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6888,18 +7315,16 @@ module.exports = { Router };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 52/121: src\js\core\StateManager.js
-Language: javascript | Size: 629 bytes
-Lines: 27 total | 20 code | 1 comments | 6 blank
+FILE 53/122: src\js\core\StateManager.js
+Language: javascript | Size: 626 bytes
+Lines: 29 total | 24 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { EventBus } from "./EventBus";
-
-class StateManger {
+class StateManager {
   constructor(eventBus) {
     this.state = {};
-    this.eventBus = this.eventBus;
+    this.eventBus = eventBus;
   }
 
   getState(key) {
@@ -6909,23 +7334,27 @@ class StateManger {
   setState(key, value) {
     const oldValue = this.state[key];
     this.state[key] = value;
-    this.eventBus.emit(`state:${key}`, { oldValue, newValue: value });
-    this.eventBus.emit(`state:changed`, { key, oldValue, newValue: value });
+    if (this.eventBus) {
+      this.eventBus.emit(`state:${key}`, { oldValue, newValue: value });
+      this.eventBus.emit(`state:changed`, { key, oldValue, newValue: value });
+    }
   }
 
-  // Subscribe to a specific state key
   watch(key, callback) {
-    return this.eventBus.on(`state:${key}`, callback);
+    if (this.eventBus) {
+      return this.eventBus.on(`state:${key}`, callback);
+    }
+    return () => {};
   }
 }
 
-module.exports = { StateManger };
+export { StateManager };
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 53/121: src\js\core\ThemeEngine.js
-Language: javascript | Size: 1,154 bytes
+FILE 54/122: src\js\core\ThemeEngine.js
+Language: javascript | Size: 1,156 bytes
 Lines: 49 total | 34 code | 6 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
 
@@ -6955,7 +7384,7 @@ class ThemeEngine {
     // Apply ambient settings
     if (theme.ambient) {
       if (theme.ambient.fogColor) {
-        this.root.style.setProperty("--ambient-fog", the.ambient.fogColor);
+        this.root.style.setProperty("--ambient-fog", theme.ambient.fogColor);
       }
     }
 
@@ -6982,7 +7411,7 @@ module.exports = { ThemeEngine };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 54/121: src\js\features\CursorEffect.js
+FILE 55/122: src\js\features\CursorEffect.js
 Language: javascript | Size: 3,969 bytes
 Lines: 137 total | 109 code | 8 comments | 20 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -7128,7 +7557,7 @@ module.exports = { CursorEffect };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 55/121: src\js\features\EasterEggs.js
+FILE 56/122: src\js\features\EasterEggs.js
 Language: javascript | Size: 4,203 bytes
 Lines: 153 total | 122 code | 10 comments | 21 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -7290,7 +7719,7 @@ module.exports = { EasterEggs };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 56/121: src\js\features\ParallaxController.js
+FILE 57/122: src\js\features\ParallaxController.js
 Language: javascript | Size: 1,895 bytes
 Lines: 73 total | 57 code | 4 comments | 12 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -7372,7 +7801,7 @@ module.exports = { ParallaxController };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 57/121: src\js\features\SplashBlood.js
+FILE 58/122: src\js\features\SplashBlood.js
 Language: javascript | Size: 2,978 bytes
 Lines: 119 total | 95 code | 3 comments | 21 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -7500,7 +7929,7 @@ module.exports = { SplashBlood };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 58/121: src\js\features\Typewriter.js
+FILE 59/122: src\js\features\Typewriter.js
 Language: javascript | Size: 1,630 bytes
 Lines: 69 total | 54 code | 2 comments | 13 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -7578,7 +8007,7 @@ module.exports = { Typewriter };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 59/121: src\js\features\WhisperController.js
+FILE 60/122: src\js\features\WhisperController.js
 Language: javascript | Size: 1,261 bytes
 Lines: 55 total | 44 code | 1 comments | 10 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -7642,103 +8071,434 @@ module.exports = { WhisperController };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 60/121: src\js\index.js
-Language: javascript | Size: 2,397 bytes
-Lines: 87 total | 52 code | 14 comments | 21 blank
+FILE 61/122: src\js\index.js
+Language: javascript | Size: 12,045 bytes
+Lines: 418 total | 332 code | 18 comments | 68 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
-import { SplashBlood } from "./features/SplashBlood.js";
-import { Typewriter } from "./features/Typewriter.js";
-import { CandleScene } from "./three/CandleScene.js";
+(function () {
+  class SplashBlood {
+    constructor(canvas) {
+      this.canvas = canvas;
+      this.ctx = canvas.getContext("2d");
+      this.particles = [];
+      this.isPlaying = false;
+      this.radius = 0;
+      this.opacity = 0;
+      this.onComplete = null;
 
-class SplashController {
-  constructor() {
-    this.typewriter = document.getElementById("typewriter");
-    this.warningBox = document.getElementById("warning-box");
-    this.understandBtn = document.getElementById("understand-btn");
-    this.bloodCanvas = document.getElementById("blood-canvas");
-    this.transitionOverlay = document.getElementById("transition-overlay");
-    this.candleCanvas = document.getElementById("candle-canvas");
+      this.resize();
+      window.addEventListener("resize", () => this.resize());
+    }
 
-    this.candleScene = null;
-    this.bloodEffect = null;
-    this.typewriterEffect = null;
+    resize() {
+      this.canvas.width = window.innerWidth;
+      this.canvas.height = window.innerHeight;
+      if (this.ctx) {
+        this.ctx.fillStyle = "#000000";
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+      }
+    }
 
-    this.init();
+    async play() {
+      this.isPlaying = true;
+      this.radius = 0;
+      this.opacity = 0;
+      this.particles = [];
+
+      const centerX = this.canvas.width / 2;
+      const centerY = this.canvas.height / 2;
+
+      for (let i = 0; i < 200; i++) {
+        this.particles.push({
+          x: centerX,
+          y: centerY,
+          angle: Math.random() * Math.PI * 2,
+          speed: 2 + Math.random() * 8,
+          size: 1 + Math.random() * 4,
+          life: 1,
+          decay: 0.005 + Math.random() * 0.02,
+        });
+      }
+
+      return new Promise((resolve) => {
+        this.onComplete = resolve;
+        this.animate();
+      });
+    }
+
+    animate() {
+      if (!this.isPlaying || !this.ctx) return;
+
+      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+      const centerX = this.canvas.width / 2;
+      const centerY = this.canvas.height / 2;
+      const maxRadius = Math.max(this.canvas.width, this.canvas.height) * 0.8;
+
+      if (this.radius < maxRadius) {
+        this.radius += 15;
+        this.opacity = Math.min(this.opacity + 0.03, 0.9);
+
+        const gradient = this.ctx.createRadialGradient(
+          centerX,
+          centerY,
+          0,
+          centerX,
+          centerY,
+          this.radius
+        );
+        gradient.addColorStop(0, "#6b0f0f");
+        gradient.addColorStop(0.6, "#4a0808");
+        gradient.addColorStop(1, "transparent");
+
+        this.ctx.fillStyle = gradient;
+        this.ctx.beginPath();
+        this.ctx.arc(centerX, centerY, this.radius, 0, Math.PI * 2);
+        this.ctx.fill();
+      }
+
+      let aliveParticles = false;
+      this.particles.forEach((p) => {
+        if (p.life <= 0) return;
+        aliveParticles = true;
+
+        p.x += Math.cos(p.angle) * p.speed;
+        p.y += Math.sin(p.angle) * p.speed;
+        p.life -= p.decay;
+        p.speed *= 0.98;
+
+        this.ctx.fillStyle = `rgba(139, 0, 0, ${Math.max(0, p.life)})`;
+        this.ctx.beginPath();
+        this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        this.ctx.fill();
+      });
+
+      if (this.radius < maxRadius || aliveParticles) {
+        requestAnimationFrame(() => this.animate());
+      } else {
+        this.isPlaying = false;
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        if (this.onComplete) this.onComplete();
+      }
+    }
+
+    destroy() {
+      this.isPlaying = false;
+      if (this.ctx)
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
   }
 
-  async init() {
-    // Initialize candle 3D scene
-    this.candleScene = new CandleScene(this.candleCanvas);
-    await this.candleScene.init();
-    this.candleScene.startAnimation();
+  class CandleScene {
+    constructor(canvas) {
+      this.canvas = canvas;
+      this.gl = null;
+      this.program = null;
+      this.buffer = null;
+      this.time = 0;
+      this.intensity = 1;
+      this.animationId = null;
+      this.isActive = false;
+    }
+
+    async init() {
+      // Try to get WebGL context with fallbacks
+      this.gl =
+        this.canvas.getContext("webgl") ||
+        this.canvas.getContext("experimental-webgl") ||
+        null;
+
+      // If WebGL is not available, gracefully skip 3D effects
+      if (!this.gl) {
+        console.warn("WebGL not supported - candle effect disabled");
+        this.isActive = false;
+        return false;
+      }
+
+      this.isActive = true;
+
+      // Vertex shader - simpler version for better compatibility
+      const vsSource = `
+        attribute vec2 a_position;
+        attribute float a_offset;
+        uniform float u_time;
+        uniform float u_intensity;
+        varying float v_brightness;
+        void main() {
+          vec2 pos = a_position;
+          float wave = sin(u_time * 3.0 + a_offset) * 0.02 * u_intensity;
+          float flicker = sin(u_time * 7.0 + a_offset * 2.0) * 0.01 * u_intensity;
+          pos.x += wave + flicker;
+          pos.y += abs(wave) * 0.5;
+          v_brightness = 1.0 - (a_position.y + 0.8) * 0.7;
+          gl_PointSize = 3.0 * u_intensity;
+          gl_Position = vec4(pos, 0.0, 1.0);
+        }
+      `;
+
+      // Fragment shader
+      const fsSource = `
+        precision mediump float;
+        varying float v_brightness;
+        uniform float u_intensity;
+        void main() {
+          vec3 flameColor = mix(vec3(0.85,0.35,0.05), vec3(0.95,0.65,0.15), v_brightness);
+          float alpha = v_brightness * u_intensity * 0.9;
+          gl_FragColor = vec4(flameColor, alpha);
+        }
+      `;
+
+      // Compile shaders
+      const vs = this.compileShader(this.gl.VERTEX_SHADER, vsSource);
+      const fs = this.compileShader(this.gl.FRAGMENT_SHADER, fsSource);
+
+      if (!vs || !fs) {
+        console.warn("Shader compilation failed - candle effect disabled");
+        this.isActive = false;
+        return false;
+      }
+
+      this.program = this.createProgram(this.gl, vs, fs);
+
+      if (!this.program) {
+        console.warn("Program creation failed - candle effect disabled");
+        this.isActive = false;
+        return false;
+      }
+
+      // Generate candle geometry (particle positions)
+      const vertices = [];
+      for (let i = 0; i < 200; i++) {
+        const t = i / 200;
+        const y = (t - 0.5) * 1.6;
+        let width = 0.15;
+        if (y < 0) {
+          width = 0.15 * (1 - Math.abs(y) * 1.5);
+        } else {
+          width = 0.15 * (1 - y) * 0.3;
+        }
+        const x = (Math.random() - 0.5) * width * 2;
+        vertices.push(x, y, Math.random() * Math.PI * 2);
+      }
+
+      this.buffer = this.gl.createBuffer();
+      this.gl.bindBuffer(this.gl.ARRAY_BUFFER, this.buffer);
+      this.gl.bufferData(
+        this.gl.ARRAY_BUFFER,
+        new Float32Array(vertices),
+        this.gl.STATIC_DRAW
+      );
+
+      const posLoc = this.gl.getAttribLocation(this.program, "a_position");
+      const offsetLoc = this.gl.getAttribLocation(this.program, "a_offset");
+
+      this.gl.enableVertexAttribArray(posLoc);
+      this.gl.vertexAttribPointer(posLoc, 2, this.gl.FLOAT, false, 12, 0);
+      this.gl.enableVertexAttribArray(offsetLoc);
+      this.gl.vertexAttribPointer(offsetLoc, 1, this.gl.FLOAT, false, 12, 8);
+
+      this.gl.enable(this.gl.BLEND);
+      this.gl.blendFunc(this.gl.SRC_ALPHA, this.gl.ONE_MINUS_SRC_ALPHA);
+
+      this.resize();
+      window.addEventListener("resize", () => this.resize());
+
+      return true;
+    }
+
+    compileShader(type, source) {
+      try {
+        const shader = this.gl.createShader(type);
+        if (!shader) return null;
+
+        this.gl.shaderSource(shader, source);
+        this.gl.compileShader(shader);
+
+        if (!this.gl.getShaderParameter(shader, this.gl.COMPILE_STATUS)) {
+          const info = this.gl.getShaderInfoLog(shader);
+          console.warn("Shader compile error:", info);
+          this.gl.deleteShader(shader);
+          return null;
+        }
+
+        return shader;
+      } catch (e) {
+        console.warn("Shader creation failed:", e);
+        return null;
+      }
+    }
+
+    createProgram(gl, vs, fs) {
+      try {
+        const prog = gl.createProgram();
+        if (!prog) return null;
+
+        gl.attachShader(prog, vs);
+        gl.attachShader(prog, fs);
+        gl.linkProgram(prog);
+
+        if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) {
+          console.warn("Program link error:", gl.getProgramInfoLog(prog));
+          gl.deleteProgram(prog);
+          return null;
+        }
+
+        return prog;
+      } catch (e) {
+        console.warn("Program creation failed:", e);
+        return null;
+      }
+    }
+
+    resize() {
+      if (!this.gl || !this.canvas) return;
+
+      const dpr = window.devicePixelRatio || 1;
+      const width = this.canvas.clientWidth;
+      const height = this.canvas.clientHeight;
+
+      if (width > 0 && height > 0) {
+        this.canvas.width = width * dpr;
+        this.canvas.height = height * dpr;
+        this.gl.viewport(0, 0, this.canvas.width, this.canvas.height);
+      }
+    }
+
+    startAnimation() {
+      if (!this.isActive || !this.gl) return;
+      this.animate();
+    }
+
+    animate() {
+      if (!this.isActive || !this.gl || !this.program) return;
+
+      this.time += 0.016;
+
+      this.gl.useProgram(this.program);
+
+      const timeLoc = this.gl.getUniformLocation(this.program, "u_time");
+      const intensityLoc = this.gl.getUniformLocation(
+        this.program,
+        "u_intensity"
+      );
+
+      if (timeLoc) this.gl.uniform1f(timeLoc, this.time);
+      if (intensityLoc) this.gl.uniform1f(intensityLoc, this.intensity);
+
+      this.gl.drawArrays(this.gl.POINTS, 0, 200);
+
+      this.animationId = requestAnimationFrame(() => this.animate());
+    }
+
+    extinguish() {
+      if (!this.isActive) return;
+
+      const fade = () => {
+        this.intensity -= 0.05;
+        if (this.intensity > 0) {
+          setTimeout(fade, 50);
+        } else {
+          this.intensity = 0;
+          if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+            this.animationId = null;
+          }
+        }
+      };
+      fade();
+    }
+
+    destroy() {
+      this.isActive = false;
+      if (this.animationId) {
+        cancelAnimationFrame(this.animationId);
+        this.animationId = null;
+      }
+      if (this.gl && this.buffer) {
+        this.gl.deleteBuffer(this.buffer);
+      }
+    }
+  }
+
+  // Main controller
+  document.addEventListener("DOMContentLoaded", async () => {
+    const candleCanvas = document.getElementById("candle-canvas");
+    const warningBox = document.getElementById("warning-box");
+    const understandBtn = document.getElementById("understand-btn");
+    const bloodCanvas = document.getElementById("blood-canvas");
+    const transitionOverlay = document.getElementById("transition-overlay");
+
+    let candleScene = null;
+    let bloodEffect = null;
+
+    // Initialize candle scene if canvas exists
+    if (candleCanvas) {
+      candleScene = new CandleScene(candleCanvas);
+      const success = await candleScene.init();
+      if (success) {
+        candleScene.startAnimation();
+      } else {
+        // Hide candle canvas if WebGL failed
+        candleCanvas.style.display = "none";
+      }
+    }
 
     // Initialize blood effect
-    this.bloodEffect = new SplashBlood(this.bloodCanvas);
+    if (bloodCanvas) {
+      bloodEffect = new SplashBlood(bloodCanvas);
+    }
 
-    // Start typewriter sequence
-    this.startSequence();
-
-    // Bind events
-    this.understandBtn.addEventListener("click", () => this.onUnderstand());
-  }
-
-  startSequence() {
-    // Lines fade in automatically via CSS animations
-    // After animations complete, show warning
-
-    const totalAnimationTime = 7000; // 7 seconds for all lines
-
+    // Auto-show warning after typewriter animations
+    const totalAnimationTime = 7000;
     setTimeout(() => {
-      this.typewriter.style.display = "none";
-      this.warningBox.classList.remove("hidden");
-
-      // Trigger reflow
-      void this.warningBox.offsetWidth;
-      this.warningBox.classList.add("visible");
+      const typewriterEl = document.getElementById("typewriter");
+      if (typewriterEl) typewriterEl.style.display = "none";
+      if (warningBox) {
+        warningBox.classList.remove("hidden");
+        // Force reflow then add visible class
+        void warningBox.offsetWidth;
+        warningBox.classList.add("visible");
+      }
     }, totalAnimationTime);
-  }
 
-  async onUnderstand() {
-    // Disable button
-    this.understandBtn.disabled = true;
+    // Handle understand button click
+    if (understandBtn) {
+      understandBtn.addEventListener("click", async () => {
+        understandBtn.disabled = true;
 
-    // Extinguish candle
-    this.candleScene.extinguish();
+        // Extinguish candle (fade out)
+        if (candleScene) candleScene.extinguish();
 
-    // Wait for darkness
-    await this.delay(800);
+        // Wait for darkness
+        await new Promise((r) => setTimeout(r, 800));
 
-    // Trigger blood effect
-    this.bloodCanvas.classList.remove("hidden");
-    this.bloodCanvas.classList.add("active");
+        // Show blood effect
+        if (bloodCanvas) {
+          bloodCanvas.classList.remove("hidden");
+          bloodCanvas.classList.add("active");
+          if (bloodEffect) await bloodEffect.play();
+        }
 
-    await this.bloodEffect.play();
+        // Fade to black transition
+        if (transitionOverlay) {
+          transitionOverlay.classList.remove("hidden");
+          transitionOverlay.classList.add("active");
+        }
 
-    // Fade to black
-    this.transitionOverlay.classList.remove("hidden");
-    this.transitionOverlay.classList.add("active");
-
-    // Navigate to main site
-    await this.delay(1500);
-    window.location.href = "/app";
-  }
-
-  delay(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
-}
-
-// Bootstrap when DOM is ready
-document.addEventListener("DOMContentLoaded", () => {
-  new SplashController();
-});
+        // Navigate to main site
+        await new Promise((r) => setTimeout(r, 1500));
+        window.location.href = "/app";
+      });
+    }
+  });
+})();
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 61/121: src\js\pages\AboutPage.js
+FILE 62/122: src\js\pages\AboutPage.js
 Language: javascript | Size: 4,397 bytes
 Lines: 135 total | 118 code | 1 comments | 16 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -7882,7 +8642,7 @@ module.exports = { AboutPage };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 62/121: src\js\pages\AdminPage.js
+FILE 63/122: src\js\pages\AdminPage.js
 Language: javascript | Size: 5,738 bytes
 Lines: 178 total | 163 code | 1 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8069,7 +8829,7 @@ module.exports = { AdminPage };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 63/121: src\js\pages\ArtifactsPage.js
+FILE 64/122: src\js\pages\ArtifactsPage.js
 Language: javascript | Size: 5,528 bytes
 Lines: 178 total | 154 code | 2 comments | 22 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8256,7 +9016,7 @@ module.exports = { ArtifactsPage };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 64/121: src\js\pages\HomePage.js
+FILE 65/122: src\js\pages\HomePage.js
 Language: javascript | Size: 2,706 bytes
 Lines: 95 total | 82 code | 2 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8360,7 +9120,7 @@ module.exports = { HomePage };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 65/121: src\js\pages\JournalPage.js
+FILE 66/122: src\js\pages\JournalPage.js
 Language: javascript | Size: 5,486 bytes
 Lines: 177 total | 152 code | 4 comments | 21 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8546,7 +9306,7 @@ module.exports = { JournalPage };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 66/121: src\js\pages\SisterPage.js
+FILE 67/122: src\js\pages\SisterPage.js
 Language: javascript | Size: 5,366 bytes
 Lines: 186 total | 149 code | 6 comments | 31 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8741,7 +9501,7 @@ module.exports = { SisterPage };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 67/121: src\js\pages\SplashPage.js
+FILE 68/122: src\js\pages\SplashPage.js
 Language: javascript | Size: 6,499 bytes
 Lines: 219 total | 190 code | 3 comments | 26 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8969,7 +9729,7 @@ module.exports = { SplashPage, candleScene };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 68/121: src\js\three\AmbientScene.js
+FILE 69/122: src\js\three\AmbientScene.js
 Language: javascript | Size: 3,149 bytes
 Lines: 109 total | 81 code | 9 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9087,7 +9847,7 @@ module.exports = { AmbientScene };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 69/121: src\js\three\CameraController.js
+FILE 70/122: src\js\three\CameraController.js
 Language: javascript | Size: 3,131 bytes
 Lines: 147 total | 108 code | 9 comments | 30 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9243,7 +10003,7 @@ module.exports = { CameraController };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 70/121: src\js\three\effects\FogEffect.js
+FILE 71/122: src\js\three\effects\FogEffect.js
 Language: javascript | Size: 1,251 bytes
 Lines: 55 total | 42 code | 3 comments | 10 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9307,7 +10067,7 @@ module.exports = { FogEffect };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 71/121: src\js\three\effects\ParticleSystem.js
+FILE 72/122: src\js\three\effects\ParticleSystem.js
 Language: javascript | Size: 3,261 bytes
 Lines: 116 total | 88 code | 6 comments | 22 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9432,7 +10192,7 @@ module.exports = { ParticleSystem };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 72/121: src\js\three\effects\PostProcess.js
+FILE 73/122: src\js\three\effects\PostProcess.js
 Language: javascript | Size: 827 bytes
 Lines: 37 total | 31 code | 1 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9478,7 +10238,7 @@ module.exports = { PostProcess };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 73/121: src\js\three\geometries\CandleGeometry.js
+FILE 74/122: src\js\three\geometries\CandleGeometry.js
 Language: javascript | Size: 650 bytes
 Lines: 27 total | 24 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9514,7 +10274,7 @@ module.exports = { CandleGeometry };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 74/121: src\js\three\geometries\KatanaGeometry.js
+FILE 75/122: src\js\three\geometries\KatanaGeometry.js
 Language: javascript | Size: 2,509 bytes
 Lines: 96 total | 75 code | 9 comments | 12 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9619,7 +10379,7 @@ module.exports = { KatanaGeometry };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 75/121: src\js\three\geometries\MaskGeometry.js
+FILE 76/122: src\js\three\geometries\MaskGeometry.js
 Language: javascript | Size: 3,983 bytes
 Lines: 137 total | 93 code | 20 comments | 24 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9765,7 +10525,7 @@ module.exports = { MaskGeometry };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 76/121: src\js\three\geometries\MeshObject.js
+FILE 77/122: src\js\three\geometries\MeshObject.js
 Language: javascript | Size: 6,659 bytes
 Lines: 219 total | 158 code | 23 comments | 38 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9993,7 +10753,7 @@ module.exports = { MeshObject };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 77/121: src\js\three\geometries\RopeGeometry.js
+FILE 78/122: src\js\three\geometries\RopeGeometry.js
 Language: javascript | Size: 1,079 bytes
 Lines: 43 total | 38 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10045,7 +10805,7 @@ module.exports = { RopeGeometry };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 78/121: src\js\three\Lighting.js
+FILE 79/122: src\js\three\Lighting.js
 Language: javascript | Size: 1,566 bytes
 Lines: 59 total | 50 code | 1 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10113,7 +10873,7 @@ module.exports = { Lighting };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 79/121: src\js\three\materials\MaterialFactory.js
+FILE 80/122: src\js\three\materials\MaterialFactory.js
 Language: javascript | Size: 3,693 bytes
 Lines: 115 total | 100 code | 0 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10237,7 +10997,7 @@ module.exports = { MaterialFactory };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 80/121: src\js\three\materials\Shaders.js
+FILE 81/122: src\js\three\materials\Shaders.js
 Language: javascript | Size: 6,326 bytes
 Lines: 196 total | 148 code | 12 comments | 36 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10442,7 +11202,7 @@ module.exports = { Shaders };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 81/121: src\js\three\SceneManager.js
+FILE 82/122: src\js\three\SceneManager.js
 Language: javascript | Size: 2,350 bytes
 Lines: 92 total | 63 code | 10 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10543,7 +11303,7 @@ module.exports = { SceneManager };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 82/121: src\js\three\ThreeEngine.js
+FILE 83/122: src\js\three\ThreeEngine.js
 Language: javascript | Size: 3,341 bytes
 Lines: 138 total | 109 code | 6 comments | 23 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10690,7 +11450,7 @@ module.exports = { ThreeEngine };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 83/121: src\js\utils\Constants.js
+FILE 84/122: src\js\utils\Constants.js
 Language: javascript | Size: 336 bytes
 Lines: 17 total | 15 code | 0 comments | 2 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10716,7 +11476,7 @@ export const PAGE_NAMES = {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 84/121: src\js\utils\DomHelper.js
+FILE 85/122: src\js\utils\DomHelper.js
 Language: javascript | Size: 1,336 bytes
 Lines: 56 total | 44 code | 3 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10781,7 +11541,7 @@ module.exports = { DomHelper };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 85/121: src\js\utils\Logger.js
+FILE 86/122: src\js\utils\Logger.js
 Language: javascript | Size: 448 bytes
 Lines: 26 total | 20 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10816,7 +11576,7 @@ module.exports = { Logger };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 86/121: src\js\utils\Sanitizer.js
+FILE 87/122: src\js\utils\Sanitizer.js
 Language: javascript | Size: 883 bytes
 Lines: 40 total | 35 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10865,7 +11625,7 @@ module.exports = { Sanitizer };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 87/121: src\js\utils\Validator.js
+FILE 88/122: src\js\utils\Validator.js
 Language: javascript | Size: 849 bytes
 Lines: 32 total | 27 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10906,7 +11666,7 @@ module.exports = { Validator };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 88/121: src\scss\abstracts\_functions.scss
+FILE 89/122: src\scss\abstracts\_functions.scss
 Language: scss | Size: 308 bytes
 Lines: 13 total | 10 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10928,7 +11688,7 @@ Lines: 13 total | 10 code | 0 comments | 3 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 89/121: src\scss\abstracts\_mixins.scss
+FILE 90/122: src\scss\abstracts\_mixins.scss
 Language: scss | Size: 878 bytes
 Lines: 44 total | 39 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10981,7 +11741,7 @@ Lines: 44 total | 39 code | 0 comments | 5 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 90/121: src\scss\abstracts\_placeholders.scss
+FILE 91/122: src\scss\abstracts\_placeholders.scss
 Language: scss | Size: 444 bytes
 Lines: 30 total | 26 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11020,7 +11780,7 @@ Lines: 30 total | 26 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 91/121: src\scss\abstracts\_variables.scss
+FILE 92/122: src\scss\abstracts\_variables.scss
 Language: scss | Size: 2,687 bytes
 Lines: 95 total | 80 code | 0 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11125,7 +11885,7 @@ Lines: 95 total | 80 code | 0 comments | 15 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 92/121: src\scss\animations\_keyframes.scss
+FILE 93/122: src\scss\animations\_keyframes.scss
 Language: scss | Size: 1,206 bytes
 Lines: 95 total | 86 code | 0 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11229,7 +11989,7 @@ Lines: 95 total | 86 code | 0 comments | 9 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 93/121: src\scss\animations\_three-canvas.scss
+FILE 94/122: src\scss\animations\_three-canvas.scss
 Language: scss | Size: 302 bytes
 Lines: 15 total | 13 code | 0 comments | 2 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11253,7 +12013,7 @@ Lines: 15 total | 13 code | 0 comments | 2 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 94/121: src\scss\animations\_transitions.scss
+FILE 95/122: src\scss\animations\_transitions.scss
 Language: scss | Size: 414 bytes
 Lines: 23 total | 18 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11285,7 +12045,7 @@ Lines: 23 total | 18 code | 0 comments | 5 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 95/121: src\scss\base\_accessibility.scss
+FILE 96/122: src\scss\base\_accessibility.scss
 Language: scss | Size: 674 bytes
 Lines: 33 total | 29 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11327,7 +12087,7 @@ Lines: 33 total | 29 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 96/121: src\scss\base\_base.scss
+FILE 97/122: src\scss\base\_base.scss
 Language: scss | Size: 1,227 bytes
 Lines: 66 total | 55 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11402,7 +12162,7 @@ body {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 97/121: src\scss\base\_reset.scss
+FILE 98/122: src\scss\base\_reset.scss
 Language: scss | Size: 1,165 bytes
 Lines: 83 total | 72 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11494,7 +12254,7 @@ h6 {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 98/121: src\scss\base\_typography.scss
+FILE 99/122: src\scss\base\_typography.scss
 Language: scss | Size: 2,887 bytes
 Lines: 138 total | 119 code | 0 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11641,7 +12401,7 @@ Lines: 138 total | 119 code | 0 comments | 19 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 99/121: src\scss\components\_buttons.scss
+FILE 100/122: src\scss\components\_buttons.scss
 Language: scss | Size: 1,246 bytes
 Lines: 59 total | 50 code | 0 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11709,7 +12469,7 @@ Lines: 59 total | 50 code | 0 comments | 9 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 100/121: src\scss\components\_cards.scss
+FILE 101/122: src\scss\components\_cards.scss
 Language: scss | Size: 1,049 bytes
 Lines: 54 total | 43 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11772,7 +12532,7 @@ Lines: 54 total | 43 code | 0 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 101/121: src\scss\components\_cursor.scss
+FILE 102/122: src\scss\components\_cursor.scss
 Language: scss | Size: 905 bytes
 Lines: 44 total | 38 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11825,7 +12585,7 @@ body.custom-cursor-active {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 102/121: src\scss\components\_easter-eggs.scss
+FILE 103/122: src\scss\components\_easter-eggs.scss
 Language: scss | Size: 773 bytes
 Lines: 37 total | 34 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11871,7 +12631,7 @@ Lines: 37 total | 34 code | 0 comments | 3 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 103/121: src\scss\components\_loader.scss
+FILE 104/122: src\scss\components\_loader.scss
 Language: scss | Size: 802 bytes
 Lines: 51 total | 44 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11931,7 +12691,7 @@ Lines: 51 total | 44 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 104/121: src\scss\components\_modal.scss
+FILE 105/122: src\scss\components\_modal.scss
 Language: scss | Size: 965 bytes
 Lines: 55 total | 48 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11995,7 +12755,7 @@ Lines: 55 total | 48 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 105/121: src\scss\components\_tooltip.scss
+FILE 106/122: src\scss\components\_tooltip.scss
 Language: scss | Size: 664 bytes
 Lines: 30 total | 26 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12034,7 +12794,7 @@ Lines: 30 total | 26 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 106/121: src\scss\layout\_containers.scss
+FILE 107/122: src\scss\layout\_containers.scss
 Language: scss | Size: 990 bytes
 Lines: 48 total | 40 code | 0 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12091,7 +12851,7 @@ Lines: 48 total | 40 code | 0 comments | 8 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 107/121: src\scss\layout\_footer.scss
+FILE 108/122: src\scss\layout\_footer.scss
 Language: scss | Size: 405 bytes
 Lines: 21 total | 17 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12121,7 +12881,7 @@ Lines: 21 total | 17 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 108/121: src\scss\layout\_grid.scss
+FILE 109/122: src\scss\layout\_grid.scss
 Language: scss | Size: 791 bytes
 Lines: 38 total | 32 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12168,7 +12928,7 @@ Lines: 38 total | 32 code | 0 comments | 6 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 109/121: src\scss\layout\_navigation.scss
+FILE 110/122: src\scss\layout\_navigation.scss
 Language: scss | Size: 1,579 bytes
 Lines: 74 total | 63 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12251,7 +13011,7 @@ Lines: 74 total | 63 code | 0 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 110/121: src\scss\main.scss
+FILE 111/122: src\scss\main.scss
 Language: scss | Size: 956 bytes
 Lines: 45 total | 38 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12305,7 +13065,7 @@ Lines: 45 total | 38 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 111/121: src\scss\pages\_about.scss
+FILE 112/122: src\scss\pages\_about.scss
 Language: scss | Size: 2,132 bytes
 Lines: 112 total | 93 code | 0 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12426,7 +13186,7 @@ Lines: 112 total | 93 code | 0 comments | 19 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 112/121: src\scss\pages\_admin.scss
+FILE 113/122: src\scss\pages\_admin.scss
 Language: scss | Size: 5,191 bytes
 Lines: 293 total | 250 code | 0 comments | 43 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12449,7 +13209,7 @@ Lines: 293 total | 250 code | 0 comments | 43 blank
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: var(--space-x1);
+  padding: var(--space-xl);
 }
 
 .login-form {
@@ -12728,7 +13488,7 @@ Lines: 293 total | 250 code | 0 comments | 43 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 113/121: src\scss\pages\_artifacts.scss
+FILE 114/122: src\scss\pages\_artifacts.scss
 Language: scss | Size: 1,714 bytes
 Lines: 93 total | 78 code | 0 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12830,7 +13590,7 @@ Lines: 93 total | 78 code | 0 comments | 15 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 114/121: src\scss\pages\_home.scss
+FILE 115/122: src\scss\pages\_home.scss
 Language: scss | Size: 1,464 bytes
 Lines: 76 total | 65 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12915,7 +13675,7 @@ Lines: 76 total | 65 code | 0 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 115/121: src\scss\pages\_journal.scss
+FILE 116/122: src\scss\pages\_journal.scss
 Language: scss | Size: 1,204 bytes
 Lines: 61 total | 51 code | 0 comments | 10 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12985,7 +13745,7 @@ Lines: 61 total | 51 code | 0 comments | 10 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 116/121: src\scss\pages\_sister.scss
+FILE 117/122: src\scss\pages\_sister.scss
 Language: scss | Size: 3,007 bytes
 Lines: 164 total | 140 code | 0 comments | 24 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13158,7 +13918,7 @@ Lines: 164 total | 140 code | 0 comments | 24 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 117/121: src\scss\pages\_splash.scss
+FILE 118/122: src\scss\pages\_splash.scss
 Language: scss | Size: 3,458 bytes
 Lines: 197 total | 174 code | 0 comments | 23 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13364,7 +14124,7 @@ Lines: 197 total | 174 code | 0 comments | 23 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 118/121: src\scss\themes\_dark-academia.scss
+FILE 119/122: src\scss\themes\_dark-academia.scss
 Language: scss | Size: 752 bytes
 Lines: 25 total | 23 code | 0 comments | 2 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13398,7 +14158,7 @@ Lines: 25 total | 23 code | 0 comments | 2 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 119/121: src\scss\themes\_theme-fallback.scss
+FILE 120/122: src\scss\themes\_theme-fallback.scss
 Language: scss | Size: 288 bytes
 Lines: 15 total | 12 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13422,7 +14182,7 @@ Lines: 15 total | 12 code | 0 comments | 3 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 120/121: tests\data-validation.test.js
+FILE 121/122: tests\data-validation.test.js
 Language: javascript | Size: 969 bytes
 Lines: 34 total | 28 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13465,7 +14225,7 @@ validate();
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 121/121: tests\server.test.js
+FILE 122/122: tests\server.test.js
 Language: javascript | Size: 1,396 bytes
 Lines: 54 total | 44 code | 2 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13532,17 +14292,17 @@ runTests();
 
 GENERAL STATISTICS
 ----------------------------------------
-Total files exported: 121
-Total size: 319,674 bytes (312.18 KB, 0.30 MB)
-Average file size: 2,642 bytes
+Total files exported: 122
+Total size: 343,020 bytes (334.98 KB, 0.33 MB)
+Average file size: 2,812 bytes
 
 LANGUAGE DISTRIBUTION
 ----------------------------------------
-javascript        73 files ( 60.3%) ██████████████████████████████
-scss              32 files ( 26.4%) █████████████
-json               6 files (  5.0%) ██
+javascript        73 files ( 59.8%) █████████████████████████████
+scss              32 files ( 26.2%) █████████████
+json               6 files (  4.9%) ██
 plaintext          4 files (  3.3%) █
-html               3 files (  2.5%) █
+html               4 files (  3.3%) █
 python             1 files (  0.8%) 
 markdown           1 files (  0.8%) 
 css                1 files (  0.8%) 
@@ -13550,7 +14310,7 @@ css                1 files (  0.8%)
 EXPORT METADATA
 ----------------------------------------
 Export tool: Advanced Project Code Exporter v2.0
-Export date: 2026-06-15 06:07:48
+Export date: 2026-06-15 15:25:28
 Python version: 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)]
 Platform: win32
 
