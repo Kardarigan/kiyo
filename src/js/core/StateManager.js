@@ -1,9 +1,7 @@
-import { EventBus } from "./EventBus";
-
-class StateManger {
+class StateManager {
   constructor(eventBus) {
     this.state = {};
-    this.eventBus = this.eventBus;
+    this.eventBus = eventBus;
   }
 
   getState(key) {
@@ -13,14 +11,18 @@ class StateManger {
   setState(key, value) {
     const oldValue = this.state[key];
     this.state[key] = value;
-    this.eventBus.emit(`state:${key}`, { oldValue, newValue: value });
-    this.eventBus.emit(`state:changed`, { key, oldValue, newValue: value });
+    if (this.eventBus) {
+      this.eventBus.emit(`state:${key}`, { oldValue, newValue: value });
+      this.eventBus.emit(`state:changed`, { key, oldValue, newValue: value });
+    }
   }
 
-  // Subscribe to a specific state key
   watch(key, callback) {
-    return this.eventBus.on(`state:${key}`, callback);
+    if (this.eventBus) {
+      return this.eventBus.on(`state:${key}`, callback);
+    }
+    return () => {};
   }
 }
 
-module.exports = { StateManger };
+export { StateManager };

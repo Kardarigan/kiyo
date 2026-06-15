@@ -1,15 +1,25 @@
 const { join } = require("path");
-require("fs")
-  .readFileSync(".env", "utf-8")
-  .split("\n")
-  .forEach((line) => {
-    const [key, ...rest] = line.trim().split("=");
-    if (key && !key.startsWith("#"))
-      process.env[key.trim()] = rest
-        .join("=")
-        .trim()
-        .replace(/^['"]|['"]$/g, "");
+const fs = require("fs");
+
+const envPath = join(__dirname, "..", ".env");
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, "utf-8");
+  envContent.split("\n").forEach((line) => {
+    line = line.trim();
+    if (!line || line.startsWith("#")) return;
+    const equalIndex = line.indexOf("=");
+    if (equalIndex === -1) return;
+    const key = line.substring(0, equalIndex).trim();
+    let value = line.substring(equalIndex + 1).trim();
+    if (
+      (value.startsWith('"') && value.endsWith('"')) ||
+      (value.startsWith("'") && value.endsWith("'"))
+    ) {
+      value = value.slice(1, -1);
+    }
+    process.env[key] = value;
   });
+}
 
 const rootDir = join(__dirname, "..");
 

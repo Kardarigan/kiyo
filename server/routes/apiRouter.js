@@ -45,6 +45,7 @@ async function apiRouter(req, res, url) {
   // Auth verification
   if (path === "/api/v1/auth/verify") {
     if (apiAuth(req, res)) {
+      const { sendJSON } = require("../utils/responseHelper.js");
       sendJSON(res, { authenticated: true });
     }
     return;

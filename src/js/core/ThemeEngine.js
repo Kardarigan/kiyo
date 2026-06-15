@@ -23,7 +23,7 @@ class ThemeEngine {
     // Apply ambient settings
     if (theme.ambient) {
       if (theme.ambient.fogColor) {
-        this.root.style.setProperty("--ambient-fog", the.ambient.fogColor);
+        this.root.style.setProperty("--ambient-fog", theme.ambient.fogColor);
       }
     }
 

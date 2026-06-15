@@ -19,7 +19,7 @@ class DataLoader {
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
-      const date = await response.json();
+      const data = await response.json();
 
       // Cache the result
       this.cache.set(url, data);

@@ -56,10 +56,10 @@ class Engine {
     this.eventBus.on("page:loading", () => this.showLoader(false));
 
     // 6. Handle initial route
-    await this.router.handlRoute(windwo.location.pathame);
+    await this.router.handlRoute(window.location.pathame);
 
     // 7. Hide loader
-    this.showLoader(true);
+    this.showLoader(false);
 
     // 8. Emit ready event
     this.eventBus.emit("app:ready");

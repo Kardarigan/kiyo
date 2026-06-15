@@ -1,4 +1,4 @@
-const { join } = require("path");
+const { join, normalize, resolve } = require("path");
 const { promisify } = require("util");
 const fs = require("fs");
 const readFile = promisify(fs.readFile);
@@ -31,10 +31,11 @@ async function staticFiles(req, res, pathname) {
     filePath = join(config.publicDir, pathname);
   }
 
-  // Security: prevent directory traversal
-  const normalizedPath = filePath.replace(/\\/g, "/");
-  const normalizedRoot = config.rootDir.replace(/\\/g, "/");
-  if (!normalizedPath.startsWith(normalizedRoot)) {
+  // Security: resolve and check against root
+  const resolvedPath = resolve(filePath);
+  const normalizedRoot = resolve(config.rootDir);
+
+  if (!resolvedPath.startsWith(normalizedRoot)) {
     res.writeHead(403);
     res.end("Forbidden");
     return;
@@ -61,14 +62,15 @@ async function staticFiles(req, res, pathname) {
       "Cache-Control": cacheControl,
       "Content-Length": fileContent.length,
     });
-
     res.end(fileContent);
   } catch (error) {
     if (error.code === "ENOENT") {
       res.writeHead(404);
       res.end("File not found");
     } else {
-      throw error;
+      console.error("Static file error:", error);
+      res.writeHead(500);
+      res.end("Internal server error");
     }
   }
 }

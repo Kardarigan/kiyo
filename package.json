@@ -1,7 +1,7 @@
 {
   "name": "korekiyo-shinguji",
   "version": "1.0.0",
-  "describetion": "A shrine to Korekiyo Shinguji - reusable character showcase engine",
+  "description": "A shrine to Korekiyo Shinguji - reusable character showcase engine",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
