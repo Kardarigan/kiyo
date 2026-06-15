@@ -11,7 +11,34 @@
     },
   };
 
-  // simple Router
+  // Simple custom cursor implementation
+  class SimpleCursor {
+    constructor() {
+      this.cursor = document.getElementById("custom-cursor");
+      if (!this.cursor) return;
+
+      this.cursor.style.opacity = "1";
+      document.body.classList.add("custom-cursor-active");
+
+      document.addEventListener("mousemove", (e) => {
+        this.cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+      });
+
+      // Interactive elements
+      document
+        .querySelectorAll("a, button, .journal-entry, .artifact-card")
+        .forEach((el) => {
+          el.addEventListener("mouseenter", () => {
+            this.cursor.classList.add("cursor-interactive");
+          });
+          el.addEventListener("mouseleave", () => {
+            this.cursor.classList.remove("cursor-interactive");
+          });
+        });
+    }
+  }
+
+  // just the Router
   class Router {
     constructor() {
       this.routes = {
@@ -417,6 +444,26 @@
 
     document.title = `${data.character.name} - ${data.character.title}`;
 
+    // Initialize cursor
+    const cursor = new SimpleCursor();
+
+    // Hide loader after everything is loaded
+    const loader = document.getElementById("app-loader");
+    if (loader) {
+      loader.classList.add("hidden");
+    }
+
     await router.handleRoute(window.location.pathname);
   });
+
+  // hide loader after everything loads
+  function hideLoader() {
+    const loader = document.getElementById("app-loader");
+    if (loader) {
+      loader.classList.add("hidden");
+    }
+  }
+
+  // call hideLoader after navigation renders
+  setTimeout(hideLoader, 500);
 })();

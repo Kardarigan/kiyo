@@ -6,7 +6,7 @@
     "splashScreen": true,
     "ambientAudio": true,
     "threeBackground": true,
-    "customCursor": false,
+    "customCursor": true,
     "easterEggs": true
   }
 }
