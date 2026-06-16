@@ -12,12 +12,13 @@
   will-change: transform;
 
   .cursor-zipper {
-    font-size: 1.8rem;
-    color: var(--color-accent);
+    background-image: url("/images/cursor-zipper.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
     display: block;
-    text-shadow: 0 0 6px var(--color-accent-dim);
-    line-height: 1;
-    transition: transform 0.2s ease, color 0.2s ease;
+    font-size: 0;
   }
 
   &.cursor-interactive {
