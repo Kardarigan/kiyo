@@ -9,7 +9,7 @@ class MaskGeometry {
   static generate(resolution = 40) {
     const positions = [];
     const normals = [];
-    const texcoords = [];
+    const textcoords = [];
     const indices = [];
 
     const width = 0.8;
@@ -79,7 +79,7 @@ class MaskGeometry {
     return {
       positions: new Float32Array(positions),
       normals: new Float32Array(normals),
-      texcoords: new Float32Array(texcoords),
+      textcoords: new Float32Array(textcoords),
       indices: new Uint16Array(indices),
       vertexCount: indices.length,
     };

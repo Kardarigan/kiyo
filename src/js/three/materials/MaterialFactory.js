@@ -16,7 +16,7 @@ class MaterialFactory {
 
     const shader = Shaders.getLitShader();
     const program = Shaders.compileProgram(
-      thi.gl,
+      this.gl,
       shader.vertex,
       shader.fragment
     );

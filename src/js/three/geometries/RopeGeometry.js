@@ -12,7 +12,7 @@ class RopeGeometry {
   ) {
     const positions = [];
     const normals = [];
-    const texcoords = [];
+    const textcoords = [];
     const indices = [];
     const totalPoints = coils * segmentsPerCoil;
 
@@ -25,13 +25,13 @@ class RopeGeometry {
       const z = Math.sin(angle) * r;
       positions.push(x, y, z);
       normals.push(0, 1, 0);
-      texcoords.push(t, i / totalPoints);
+      textcoords.push(t, i / totalPoints);
     }
 
     return {
       positions: new Float32Array(positions),
       normals: new Float32Array(normals),
-      texcoords: new Float32Array(texcoords),
+      textcoords: new Float32Array(textcoords),
       indices: null, // line strip
       vertexCount: totalPoints + 1,
       drawMode: "LINE_STRIP",

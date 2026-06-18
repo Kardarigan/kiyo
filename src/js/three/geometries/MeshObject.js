@@ -32,7 +32,7 @@ class MeshObject {
     // Create VAO-like structure (manual attribute binding)
     this.buffers.position = this.createBuffer(gl, this.geometry.positions);
     this.buffers.normal = this.createBuffer(gl, this.geometry.normals);
-    this.buffers.texcoord = this.createBuffer(gl, this.geometry.texcoords);
+    this.buffers.texcoord = this.createBuffer(gl, this.geometry.textcoords);
     this.buffers.index = this.createIndexBuffer(gl, this.geometry.indices);
   }
 

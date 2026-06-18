@@ -7,7 +7,7 @@ class KatanaGeometry {
   static generate() {
     const positions = [];
     const normals = [];
-    const texcoords = [];
+    const textcoords = [];
     const indices = [];
 
     const bladeLength = 2.0;
@@ -27,8 +27,8 @@ class KatanaGeometry {
       // top edge (x = w, y = 0)
       positions.push(w, yCurve, z);
       positions.push(-w, yCurve, z);
-      texcoords.push(1, t);
-      texcoords.push(0, t);
+      textcoords.push(1, t);
+      textcoords.push(0, t);
       // normals (just placeholders)
       normals.push(0, 1, 0);
       normals.push(0, 1, 0);
@@ -42,8 +42,8 @@ class KatanaGeometry {
       const w = 0.06;
       positions.push(w, 0, z);
       positions.push(-w, 0, z);
-      texcoords.push(1, 1);
-      texcoords.push(0, 1);
+      textcoords.push(1, 1);
+      textcoords.push(0, 1);
       normals.push(0, 1, 0);
       normals.push(0, 1, 0);
     }
@@ -76,7 +76,7 @@ class KatanaGeometry {
     return {
       positions: new Float32Array(positions),
       normals: new Float32Array(normals),
-      texcoords: new Float32Array(texcoords),
+      textcoords: new Float32Array(textcoords),
       indices: new Uint16Array(indices),
       vertexCount: indices.length,
     };

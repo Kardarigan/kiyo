@@ -80,18 +80,18 @@ class JournalPage {
     // Bind entry click handlers
     this.container.querySelectorAll(".read-more-btn").forEach((btn) => {
       btn.addEventListener("click", (e) => {
-        const index = parseInt(btn.dateset.entry);
+        const index = parseInt(btn.dataset.entry);
         this.openEntry(index, journalData.entries[index]);
       });
     });
 
     // Bind modal close
-    const modal = this.container.querySelectorAll("#entry-modal");
+    const modal = this.container.querySelector("#entry-modal");
     if (modal) {
       modal
         .querySelector(".modal-overlay")
         .addEventListener("click", () => this.closeEntry());
-      model
+      modal
         .querySelector(".modal-close")
         .addEventListener("click", () => this.closeEntry());
     }
@@ -114,22 +114,22 @@ class JournalPage {
     const body = modal.querySelector(".modal-body");
 
     body.innerHTML = `
-    <div class="modal-entry-header">
-        <span class="entry-date text-accent">${DomHelper.escapeHtml(
-          entry.date
-        )}</span>
-        <span class="entry-location text-muted">${DomHelper.escapeHtml(
-          entry.location || ""
-        )}</span>
-    </div>
-    <h2 class="heading-2">${DomHelper.escapeHtml(entry.title)}</h2>
-    <div class="header-ornament"></div>
-    <div class="entry-full body-large">
-        <p>${DomHelper.escapeHtml(entry.content)}</p>
-    </div>
-    <div class="modal-entry-footer handwritten">
-        — K.S.
-    </div>
+      <div class="modal-entry-header">
+          <span class="entry-date text-accent">${DomHelper.escapeHtml(
+            entry.date
+          )}</span>
+          <span class="entry-location text-muted">${DomHelper.escapeHtml(
+            entry.location || ""
+          )}</span>
+      </div>
+      <h2 class="heading-2">${DomHelper.escapeHtml(entry.title)}</h2>
+      <div class="header-ornament"></div>
+      <div class="entry-full body-large">
+          <p>${DomHelper.escapeHtml(entry.content)}</p>
+      </div>
+      <div class="modal-entry-footer handwritten">
+          - K.S.
+      </div>
     `;
 
     modal.classList.remove("hidden");

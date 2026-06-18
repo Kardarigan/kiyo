@@ -25,47 +25,21 @@ class Navigation {
     });
   }
 
-  render() {
-    const character = this.stateManager.getState("character");
-
-    this.container.innerHTML = `
-        <nav class="main-nav" aria-label="Main navigation">
-            <div class="nav-brand">
-                <span class="brand-name">${character.name.split(" ")[0]}</span>
-                <span class="brand-divider">|</span>
-                <span class="brand-title text-muted">${character.title}</span>
-            </div>
-            <ul class="nav-links">
-                ${this.navItems
-                  .map(
-                    (item) => `
-                <li>
-                    <a 
-                    href="${item.path}" 
-                    class="nav-link" 
-                    data-route="${item.id}"
-                    aria-current="${
-                      this.activeRoute === item.id ? "page" : "false"
-                    }"
-                    >
-                    ${item.label}
-                    </a>
-                </li>
-                `
-                  )
-                  .join("")}
-            </ul>
-        </nav>
-    `;
-
-    // Add click handlers
-    this.container.querySelectorAll(".nav-link").forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const path = link.getAttribute("href");
-        this.router.navigate(path);
-      });
-    });
+  static render(container) {
+    container.innerHTML = `
+    <nav class="main-nav">
+      <div class="nav-brand">
+        <span class="brand-name">Korekiyo Shinguji</span>
+      </div>
+      <div class="nav-links">
+        <a href="/app" class="nav-link">Home</a>
+        <a href="/app/about" class="nav-link">About</a>
+        <a href="/app/journal" class="nav-link">Journal</a>
+        <a href="/app/artifacts" class="nav-link">Artifacts</a>
+        <a href="/app/sister" class="nav-link">Sister</a>
+      </div>
+    </nav>
+  `;
   }
 
   setActive(routeId) {

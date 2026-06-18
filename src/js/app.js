@@ -1,6 +1,5 @@
 (function () {
   window.App = {
-    cursor: null,
     easterEggs: null,
     whisper: null,
     parallax: null,
@@ -19,54 +18,6 @@
       console.warn(`[${module}]`, ...args);
     },
   };
-
-  // === CURSOR ===
-  class SimpleCursor {
-    constructor() {
-      this.cursor = document.getElementById("custom-cursor");
-      if (!this.cursor) {
-        console.warn("Cursor element not found!");
-        return;
-      }
-      this.cursor.style.opacity = "1";
-      document.body.classList.add("custom-cursor-active");
-
-      document.addEventListener("mousemove", (e) => {
-        this.cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-      });
-
-      document
-        .querySelectorAll(
-          "a, button, .journal-entry, .artifact-card, .nav-link, .btn"
-        )
-        .forEach((el) => {
-          el.addEventListener("mouseenter", () =>
-            this.cursor?.classList.add("cursor-interactive")
-          );
-          el.addEventListener("mouseleave", () =>
-            this.cursor?.classList.remove("cursor-interactive")
-          );
-        });
-    }
-
-    // Re-apply cursor effects to dynamically added elements
-    refresh() {
-      document
-        .querySelectorAll(
-          "a, button, .journal-entry, .artifact-card, .nav-link, .btn"
-        )
-        .forEach((el) => {
-          if (el._cursorAttached) return;
-          el._cursorAttached = true;
-          el.addEventListener("mouseenter", () =>
-            this.cursor?.classList.add("cursor-interactive")
-          );
-          el.addEventListener("mouseleave", () =>
-            this.cursor?.classList.remove("cursor-interactive")
-          );
-        });
-    }
-  }
 
   // === EASTER EGGS ===
   class EasterEggManager {
@@ -495,39 +446,15 @@
   };
 
   // === NAVIGATION ===
-  class Navigation {
-    constructor(router) {
-      this.router = router;
-      this.container = document.getElementById("site-navigation");
-      this.render();
-    }
-    async render() {
-      const r = await fetch("/api/v1/character"),
-        d = await r.json();
-      this.container.innerHTML = `
-        <nav class="main-nav">
-          <div class="nav-brand"><span class="brand-name">${
-            d.character.name.split(" ")[0]
-          }</span><span class="brand-divider">|</span><span class="brand-title text-muted">${
-        d.character.title
-      }</span></div>
-          <ul class="nav-links">
-            <li><a href="/app" class="nav-link" data-route="home">Home</a></li>
-            <li><a href="/app/about" class="nav-link" data-route="about">About</a></li>
-            <li><a href="/app/journal" class="nav-link" data-route="journal">Field Journal</a></li>
-            <li><a href="/app/artifacts" class="nav-link" data-route="artifacts">Artifacts</a></li>
-            <!-- Sister is hidden! -->
-          </ul>
-        </nav>
-      `;
-      this.container.querySelectorAll(".nav-link").forEach((link) => {
-        link.addEventListener("click", (e) => {
-          e.preventDefault();
-          this.router.navigate(link.getAttribute("href"));
-        });
-      });
-    }
-  }
+  const navContainer = document.querySelector(".site-navigation");
+
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const target = link.getAttribute("href");
+      Router.navigate(target);
+    });
+  });
 
   // === INIT ===
   document.addEventListener("DOMContentLoaded", async () => {
@@ -544,7 +471,6 @@
     document.title = `${data.character.name} - ${data.character.title}`;
 
     // Initialize features
-    window.App.cursor = new SimpleCursor();
     window.App.easterEggs = new EasterEggManager();
     window.App.whisper = new WhisperController();
     window.App.parallax = new ParallaxController();
@@ -561,11 +487,6 @@
     router.onPageChange = (pageName) => {
       console.log("📄 Page changed to:", pageName);
 
-      // Refresh cursor for new dynamic elements
-      if (window.App.cursor) {
-        window.App.cursor.refresh();
-      }
-
       // Re-collect parallax elements
       if (window.App.parallax) {
         setTimeout(() => window.App.parallax.collectElements(), 100);
@@ -581,5 +502,6 @@
         setTimeout(() => window.App.whisper.playRandom(), 1500);
       }
     };
+    w;
   });
 })();

@@ -134,7 +134,6 @@ class EasterEggs {
         width: 30px;
         height: 30px;
         z-index: 9998;
-        cursor: default;
         opacity: 0;
     `;
     corner.addEventListener("click", () => {

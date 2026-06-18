@@ -73,7 +73,9 @@ server.listen(config.port, config.host, () => {
   ║   Korekiyo Shinguji — Dark Shrine       ║
   ║   Server running at:                    ║
   ║   http://${config.host}:${config.port}  ║
-  ║   CMS: /admin                           ║
+  ║   Splash: /                             ║
+  ║   App:    /app                          ║
+  ║   CMS:    /admin   (kiyo / anthropology1933) ║
   ╚═════════════════════════════════════════╝    
   `);
 });
