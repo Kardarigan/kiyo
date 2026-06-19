@@ -1,7 +1,7 @@
 import { Logger } from "../utils/Logger.js";
 import { DomHelper } from "../utils/DomHelper.js";
 
-class ArtifactsPage {
+export class ArtifactsPage {
   constructor(container, stateManager, eventBus) {
     this.container = container;
     this.stateManager = stateManager;
@@ -173,5 +173,3 @@ class ArtifactsPage {
     document.body.style.overflow = "";
   }
 }
-
-module.exports = { ArtifactsPage };

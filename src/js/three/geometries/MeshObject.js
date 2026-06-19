@@ -3,7 +3,7 @@
  * Holds geometry buffers, material reference, and renders itself.
  */
 
-class MeshObject {
+export class MeshObject {
   constructor(geometry, materialKey, options = {}) {
     this.geometry = geometry;
     this.materialKey = materialKey;
@@ -84,54 +84,75 @@ class MeshObject {
 
     // Lighting uniforms
     const lightData = lighting.getUniformData();
-    gl.uniform3fv(material.uniforms.ambientColor, lightData.ambientColor);
-    gl.uniform1f(
-      material.uniforms.ambientIntensity,
-      lightData.ambientIntensity
-    );
-    gl.uniform3fv(material.uniforms.keyColor, lightData.keyColor);
-    gl.uniform1f(material.uniforms.keyIntensity, lightData.keyIntensity);
-    gl.uniform3fv(material.uniforms.keyPosition, lightData.keyPosition);
-    gl.uniform3fv(material.uniforms.rimColor, lightData.rimColor);
-    gl.uniform1f(material.uniforms.rimIntensity, lightData.rimIntensity);
-    gl.uniform3fv(material.uniforms.rimPosition, lightData.rimPosition);
+    if (material.uniforms.ambientColor) {
+      gl.uniform3fv(material.uniforms.ambientColor, lightData.ambientColor);
+      gl.uniform1f(
+        material.uniforms.ambientIntensity,
+        lightData.ambientIntensity
+      );
+      gl.uniform3fv(material.uniforms.keyColor, lightData.keyColor);
+      gl.uniform1f(material.uniforms.keyIntensity, lightData.keyIntensity);
+      gl.uniform3fv(material.uniforms.keyPosition, lightData.keyPosition);
+      gl.uniform3fv(material.uniforms.rimColor, lightData.rimColor);
+      gl.uniform1f(material.uniforms.rimIntensity, lightData.rimIntensity);
+      gl.uniform3fv(material.uniforms.rimPosition, lightData.rimPosition);
+    }
 
     // Object properties
-    gl.uniform3fv(material.uniforms.objectColor, this.objectColor);
-    gl.uniform1f(material.uniforms.metalness, this.metalness);
-    gl.uniform1f(material.uniforms.roughness, this.roughness);
+    if (material.uniforms.objectColor) {
+      gl.uniform3fv(material.uniforms.objectColor, this.objectColor);
+      gl.uniform1f(material.uniforms.metalness, this.metalness);
+      gl.uniform1f(material.uniforms.roughness, this.roughness);
+    }
 
     // Fog
     const fogColor = this._fogColor || [0.04, 0.06, 0.04];
     const fogDensity = this._fogDensity || 0.03;
-    gl.uniform3fv(material.uniforms.fogColor, fogColor);
-    gl.uniform1f(material.uniforms.fogDensity, fogDensity);
+    if (material.uniforms.fogColor) {
+      gl.uniform3fv(material.uniforms.fogColor, fogColor);
+      gl.uniform1f(material.uniforms.fogDensity, fogDensity);
+    }
 
     // Bind attributes
-    this.bindAttribute(
-      gl,
-      material.attributes.position,
-      this.buffers.position,
-      3
-    );
-    this.bindAttribute(gl, material.attributes.normal, this.buffers.normal, 3);
-    this.bindAttribute(
-      gl,
-      material.attributes.texcoord,
-      this.buffers.texcoord,
-      2
-    );
+    if (this.buffers.position && material.attributes.position !== undefined) {
+      this.bindAttribute(
+        gl,
+        material.attributes.position,
+        this.buffers.position,
+        3
+      );
+    }
+    if (this.buffers.normal && material.attributes.normal !== undefined) {
+      this.bindAttribute(
+        gl,
+        material.attributes.normal,
+        this.buffers.normal,
+        3
+      );
+    }
+    if (this.buffers.texcoord && material.attributes.texcoord !== undefined) {
+      this.bindAttribute(
+        gl,
+        material.attributes.texcoord,
+        this.buffers.texcoord,
+        2
+      );
+    }
 
-    // Bind index buffer
-    gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, this.buffers.index);
+    // Bind index buffer and draw
+    if (this.buffers.index && this.geometry.vertexCount > 0) {
+      gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, this.buffers.index);
 
-    // Draw
-    gl.drawElements(
-      gl.TRIANGLES,
-      this.geometry.vertexCount,
-      gl.UNSIGNED_SHORT,
-      0
-    );
+      // Check draw mode
+      const drawMode =
+        this.geometry.drawMode === "LINES" ? gl.LINES : gl.TRIANGLES;
+      gl.drawElements(
+        drawMode,
+        this.geometry.vertexCount,
+        gl.UNSIGNED_SHORT,
+        0
+      );
+    }
   }
 
   bindAttribute(gl, location, buffer, size) {
@@ -214,5 +235,3 @@ class MeshObject {
     if (this.buffers.index) gl.deleteBuffer(this.buffers.index);
   }
 }
-
-module.exports = { MeshObject };

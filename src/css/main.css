@@ -1704,6 +1704,26 @@ button:hover {
     opacity: 1;
   }
 }
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @-webkit-keyframes slideUp {
   from {
     opacity: 0;
@@ -1846,6 +1866,54 @@ button:hover {
     width: 100%;
   }
 }
+@-webkit-keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+@-webkit-keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(201, 168, 76, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(201, 168, 76, 0.5);
+  }
+}
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(201, 168, 76, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(201, 168, 76, 0.5);
+  }
+}
 .fade-enter {
   -webkit-animation: fadeIn 0.5s ease forwards;
           animation: fadeIn 0.5s ease forwards;
@@ -1908,9 +1976,19 @@ button:hover {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: calc(var(--z-base) - 1);
-  opacity: var(--canvas-opacity);
+  z-index: 0;
+  opacity: 0.2;
   pointer-events: none;
+  display: block;
+  background: transparent;
+}
+
+.ambient-canvas.active {
+  opacity: 0.25;
+}
+
+.ambient-canvas.hidden {
+  display: none;
 }
 
 @supports not (--color-primary: #1a2e1a) {

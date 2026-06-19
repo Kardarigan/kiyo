@@ -1,6 +1,5 @@
 /*
  * Request logger middleware
- * logs timestamp, method, URL, status, and response time
  */
 function logger(req, res) {
   const start = Date.now();

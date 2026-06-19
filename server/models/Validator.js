@@ -1,5 +1,5 @@
 /*
- * Server side validation for character data
+ * server side validation for character data
  */
 
 class Validator {
@@ -10,7 +10,6 @@ class Validator {
       return { valid: false, errors };
     }
 
-    // required top level keys
     const required = ["character", "theme", "pages"];
     for (const key of required) {
       if (!(key in data)) errors.push(`Missing required key: ${key}`);

@@ -1,5 +1,5 @@
 /*
- * Centralized error handler
+ * centralized error handler
  */
 
 function errorHandler(res, error) {

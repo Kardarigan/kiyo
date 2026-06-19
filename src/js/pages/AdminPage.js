@@ -10,7 +10,7 @@ import { Logger } from "../utils/Logger.js";
  * Admin Page Controller
  */
 
-class AdminPage {
+export class AdminPage {
   constructor(container) {
     this.container = container;
     this.logger = new Logger("AdminPage");
@@ -80,7 +80,7 @@ class AdminPage {
       this.characterData,
       this
     );
-    this.ThemeCustomizer.render();
+    this.themeCustomizer.render();
     this.imageManager = new ImageManager(
       document.getElementById("image-manager-container"),
       this.characterData,
@@ -106,7 +106,7 @@ class AdminPage {
     this.currentPanel = panelName;
   }
 
-  markDirty(kay) {
+  markDirty(key) {
     this.dirtyFields.add(key);
     const btn = document.getElementById("save-all-btn");
     if (btn) btn.textContent = `Save All Changes (${this.dirtyFields.size})`;
@@ -173,5 +173,3 @@ class AdminPage {
 
   destroy() {}
 }
-
-module.exports = { AdminPage };

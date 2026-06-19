@@ -9,7 +9,6 @@
     />
     <title>Korekiyo Shinguji — Proceed with Understanding</title>
 
-    <!-- Preload critical fonts -->
     <link
       rel="preload"
       href="/fonts/Cinzel-Black.otf"
@@ -24,16 +23,12 @@
       type="font/ttf"
       crossorigin
     />
-
-    <!-- Styles -->
     <link rel="stylesheet" href="/css/main.css" />
-
-    <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
   <body class="splash-body">
     <main class="splash-container" aria-label="Content Warning">
-      <!-- Candle flame canvas (3D) -->
+      <!-- Candle flame canvas -->
       <canvas
         id="candle-canvas"
         class="splash-canvas"
@@ -42,11 +37,21 @@
 
       <!-- Typewriter text container -->
       <div id="typewriter" class="splash-typewriter" aria-live="polite">
-        <p class="splash-line line-1">Humanity is beautiful...</p>
-        <p class="splash-line line-2">
+        <p class="splash-line line-1" data-text="Humanity is beautiful...">
+          Humanity is beautiful...
+        </p>
+        <p
+          class="splash-line line-2"
+          data-text="Its customs... its rituals... its shadows..."
+        >
           Its customs... its rituals... its shadows...
         </p>
-        <p class="splash-line line-3">But beauty requires understanding.</p>
+        <p
+          class="splash-line line-3"
+          data-text="But beauty requires understanding."
+        >
+          But beauty requires understanding.
+        </p>
       </div>
 
       <!-- Warning box -->
@@ -76,18 +81,15 @@
         </div>
       </div>
 
-      <!-- Blood splash canvas (overlay) -->
+      <!-- Blood splash canvas -->
       <canvas
         id="blood-canvas"
         class="splash-blood-canvas hidden"
         aria-hidden="true"
       ></canvas>
-
-      <!-- Transition overlay -->
       <div id="transition-overlay" class="splash-transition hidden"></div>
     </main>
 
-    <!-- Scripts -->
-    <script src="/js/index.js"></script>
+    <script type="module" src="/js/index.js"></script>
   </body>
 </html>

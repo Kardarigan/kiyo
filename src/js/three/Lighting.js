@@ -3,7 +3,7 @@
  * provides ambient, key, and rim light data to shaders
  */
 
-class Lighting {
+export class Lighting {
   constructor(gl, config = {}) {
     this.gl = gl;
 
@@ -54,5 +54,3 @@ class Lighting {
     };
   }
 }
-
-module.exports = { Lighting };

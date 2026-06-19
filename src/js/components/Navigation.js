@@ -1,55 +1,56 @@
 import { Logger } from "../utils/Logger.js";
 
-class Navigation {
+export class Navigation {
   constructor(container, router, stateManager, eventBus) {
     this.container = container;
     this.router = router;
     this.stateManager = stateManager;
     this.eventBus = eventBus;
     this.logger = new Logger("Navigation");
-
     this.activeRoute = "home";
-
-    // navigation items defined by the character's pages
     this.navItems = [
-      { id: "home", label: "Home", path: "/app" },
-      { id: "about", label: "About", path: "/app/about" },
-      { id: "journal", label: "Field Journal", path: "/app/journal" },
-      { id: "artifacts", label: "Artifacts", path: "/app/artifacts" },
-      { id: "sister", label: "My Muse", path: "/app/sister" },
+      { id: "home", label: "Home", path: "/" },
+      { id: "about", label: "About", path: "/about" },
+      { id: "journal", label: "Field Journal", path: "/journal" },
+      { id: "artifacts", label: "Artifacts", path: "/artifacts" },
+      { id: "sister", label: "My Muse", path: "/sister" },
     ];
-
-    // Listen for route changes
-    this.eventBus.on("route:changed", (pageName) => {
-      this.setActive(pageName);
-    });
   }
 
-  static render(container) {
-    container.innerHTML = `
-    <nav class="main-nav">
-      <div class="nav-brand">
-        <span class="brand-name">Korekiyo Shinguji</span>
-      </div>
-      <div class="nav-links">
-        <a href="/app" class="nav-link">Home</a>
-        <a href="/app/about" class="nav-link">About</a>
-        <a href="/app/journal" class="nav-link">Journal</a>
-        <a href="/app/artifacts" class="nav-link">Artifacts</a>
-        <a href="/app/sister" class="nav-link">Sister</a>
-      </div>
-    </nav>
-  `;
+  render() {
+    this.container.innerHTML = `
+      <nav class="main-nav">
+        <div class="nav-brand">
+          <span class="brand-name">Korekiyo Shinguji</span>
+        </div>
+        <div class="nav-links">
+          ${this.navItems
+            .map(
+              (item) => `
+            <a href="${item.path}" class="nav-link" data-route="${item.id}">${item.label}</a>
+          `
+            )
+            .join("")}
+        </div>
+      </nav>
+    `;
+    this.container.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const path = link.getAttribute("href");
+        this.router.navigate(path);
+      });
+    });
+
+    this.eventBus.on("route:changed", (pageName) => this.setActive(pageName));
   }
 
   setActive(routeId) {
     this.activeRoute = routeId;
     this.container.querySelectorAll(".nav-link").forEach((link) => {
       const isActive = link.dataset.route === routeId;
-      link.setAttribute("aria-content", isActive ? "page" : "false");
       link.classList.toggle("active", isActive);
+      link.setAttribute("aria-current", isActive ? "page" : "false");
     });
   }
 }
-
-module.exports = { Navigation };

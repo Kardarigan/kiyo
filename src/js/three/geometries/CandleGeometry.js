@@ -3,7 +3,7 @@
  * returns an array of points for a particle-based flame (teardrop shape)
  */
 
-class CandleGeometry {
+export class CandleGeometry {
   static generate(count = 200) {
     const vertices = [];
     for (let i = 0; i < count; i++) {
@@ -22,5 +22,3 @@ class CandleGeometry {
     return { vertices };
   }
 }
-
-module.exports = { CandleGeometry };

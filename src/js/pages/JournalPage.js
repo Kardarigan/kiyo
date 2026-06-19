@@ -1,7 +1,7 @@
 import { Logger } from "../utils/Logger.js";
 import { DomHelper } from "../utils/DomHelper.js";
 
-class JournalPage {
+export class JournalPage {
   constructor(container, stateManager, eventBus) {
     this.container = container;
     this.stateManager = stateManager;
@@ -172,5 +172,3 @@ class JournalPage {
     document.body.style.overflow = "";
   }
 }
-
-module.exports = { JournalPage };

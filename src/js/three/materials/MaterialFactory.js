@@ -4,7 +4,7 @@ import { Shaders } from "./Shaders.js";
  * creates and manages WebGL shader programs with uniform locations
  */
 
-class MaterialFactory {
+export class MaterialFactory {
   constructor(gl) {
     this.gl = gl;
     this.programs = new Map();
@@ -69,7 +69,7 @@ class MaterialFactory {
     if (this.programs.has(key)) return this.programs.get(key);
 
     const shader = Shaders.getParticleShader();
-    const program = Shader.compileProgram(
+    const program = Shaders.compileProgram(
       this.gl,
       shader.vertex,
       shader.fragment
@@ -110,5 +110,3 @@ class MaterialFactory {
     this.programs.clear();
   }
 }
-
-module.exports = { MaterialFactory };

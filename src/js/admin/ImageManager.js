@@ -5,7 +5,7 @@ import { DomHelper } from "../utils/DomHelper.js";
  * update image references for all character assets.
  */
 
-class ImageManager {
+export class ImageManager {
   constructor(container, characterData, controller) {
     this.container = container;
     this.data = characterData;
@@ -109,5 +109,3 @@ class ImageManager {
     return this.changes;
   }
 }
-
-module.exports = { ImageManager };

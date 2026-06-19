@@ -3,7 +3,7 @@
  * Used on splash page and somewhere else
  */
 
-class Typewriter {
+export class Typewriter {
   constructor(element, options = {}) {
     this.element = element;
     this.text = options.text || element.textContent;
@@ -34,23 +34,29 @@ class Typewriter {
     if (!this.isTyping) return;
 
     if (this.currentIndex < this.text.length) {
+      // Remove cursor if present
+      if (this.cursor && this.element.textContent.endsWith(this.cursorChar)) {
+        this.element.textContent = this.element.textContent.slice(0, -1);
+      }
+
+      // Add next character
       this.element.textContent += this.text.charAt(this.currentIndex);
       this.currentIndex++;
 
-      // Add cursor blink
+      // Add cursor back
       if (this.cursor) {
         this.element.textContent += this.cursorChar;
       }
 
       setTimeout(() => {
-        // Remove cursor for next char
-        if (this.cursor && this.element.textContent.endsWith(this.cursorChar)) {
-          this.element.textContent = this.element.textContent.slice(0, -1);
-        }
         this.type();
       }, this.speed + Math.random() * 40);
     } else {
       this.isTyping = false;
+      // Remove final cursor
+      if (this.cursor && this.element.textContent.endsWith(this.cursorChar)) {
+        this.element.textContent = this.element.textContent.slice(0, -1);
+      }
       if (this.onComplete) this.onComplete();
       if (this.resolve) this.resolve();
     }
@@ -64,5 +70,3 @@ class Typewriter {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }
-
-module.exports = { Typewriter };

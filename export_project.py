@@ -47,9 +47,8 @@ class AdvancedProjectExporter:
         self.file_hashes = {}
         
     def _generate_output_name(self) -> Path:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         project_name = self.project_root.name.replace(' ', '_').lower()
-        return Path(f"{project_name}_export_{timestamp}.txt")
+        return Path(f"{project_name}_export.txt")
     
     def should_include_file(self, file_path: Path) -> bool:
         if not file_path.is_file():
@@ -68,7 +67,7 @@ class AdvancedProjectExporter:
         if file_path.suffix.lower() in self.CODE_EXTENSIONS:
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
-                    f.read(1024)  # Try reading first 1024 bytes
+                    f.read(1024)
                 return True
             except (UnicodeDecodeError, IOError):
                 return False
@@ -130,7 +129,6 @@ class AdvancedProjectExporter:
         total_lines = len(lines)
         blank_lines = len([l for l in lines if not l.strip()])
         
-        # Simple comment detection
         comment_patterns = {
             'python': '#',
             'javascript': '//',
@@ -161,7 +159,6 @@ class AdvancedProjectExporter:
             try:
                 with open(file_path, 'r', encoding=encoding) as f:
                     content = f.read()
-                # Store hash for duplicate detection
                 file_hash = self._calculate_hash(content)
                 self.file_hashes[str(file_path.relative_to(self.project_root))] = file_hash
                 return content
@@ -245,7 +242,6 @@ class AdvancedProjectExporter:
         
         try:
             with open(self.output_file, 'w', encoding='utf-8') as outfile:
-                # Write header
                 outfile.write("=" * 80 + "\n")
                 outfile.write("ADVANCED PROJECT CODE EXPORT\n")
                 outfile.write(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
@@ -253,7 +249,6 @@ class AdvancedProjectExporter:
                 outfile.write(f"Path: {self.project_root}\n")
                 outfile.write("=" * 80 + "\n\n")
                 
-                # Write table of contents
                 outfile.write("TABLE OF CONTENTS\n")
                 outfile.write("=" * 80 + "\n")
                 outfile.write("1. Project Structure\n")
@@ -262,7 +257,6 @@ class AdvancedProjectExporter:
                     outfile.write("3. Statistics & Analysis\n")
                 outfile.write("\n")
                 
-                # Section 1: Project Structure
                 outfile.write("1. PROJECT STRUCTURE\n")
                 outfile.write("=" * 80 + "\n\n")
                 outfile.write(f"{self.project_root.name}/\n")
@@ -277,7 +271,6 @@ class AdvancedProjectExporter:
                     print(f"✅ Structure exported to: {self.output_file}")
                     return True
                 
-                # Section 2: File Contents
                 outfile.write("2. FILE CONTENTS\n")
                 outfile.write("=" * 80 + "\n\n")
                 
@@ -311,11 +304,9 @@ class AdvancedProjectExporter:
                     self.total_size += file_size
                     self.stats[language] += 1
                     
-                    # Progress indicator
                     progress = (i / total_files) * 100
                     print(f"\r  Exporting: {progress:.0f}% [{i}/{total_files}]", end='', flush=True)
                     
-                    # Write file header with metadata
                     outfile.write(f"\n{'─' * 80}\n")
                     outfile.write(f"FILE {i}/{total_files}: {relative_path}\n")
                     outfile.write(f"Language: {language} | Size: {file_size:,} bytes\n")
@@ -325,21 +316,18 @@ class AdvancedProjectExporter:
                     outfile.write(f"{loc_stats['blank']} blank\n")
                     outfile.write(f"{'─' * 80}\n\n")
                     
-                    # Write file content
                     outfile.write(f"```{language}\n")
                     outfile.write(content)
                     if not content.endswith('\n'):
                         outfile.write('\n')
                     outfile.write("```\n\n")
                 
-                print()  # New line after progress indicator
+                print()
                 
-                # Section 3: Statistics & Analysis
                 if include_stats:
                     outfile.write("\n3. STATISTICS & ANALYSIS\n")
                     outfile.write("=" * 80 + "\n\n")
                     
-                    # General statistics
                     outfile.write("GENERAL STATISTICS\n")
                     outfile.write("-" * 40 + "\n")
                     outfile.write(f"Total files exported: {self.file_count}\n")
@@ -348,7 +336,6 @@ class AdvancedProjectExporter:
                     outfile.write(f"{self.total_size / 1024 / 1024:.2f} MB)\n")
                     outfile.write(f"Average file size: {self.total_size / max(1, self.file_count):,.0f} bytes\n\n")
                     
-                    # Language distribution
                     outfile.write("LANGUAGE DISTRIBUTION\n")
                     outfile.write("-" * 40 + "\n")
                     for lang, count in sorted(self.stats.items(), key=lambda x: x[1], reverse=True):
@@ -356,7 +343,6 @@ class AdvancedProjectExporter:
                         bar = '█' * int(percentage / 2)
                         outfile.write(f"{lang:15} {count:4} files ({percentage:5.1f}%) {bar}\n")
                     
-                    # Duplicate detection
                     duplicates = self._find_duplicates()
                     if duplicates:
                         outfile.write("\nDUPLICATE FILES DETECTED\n")
@@ -367,7 +353,6 @@ class AdvancedProjectExporter:
                                 outfile.write(f"  • {file}\n")
                         outfile.write(f"\nTotal duplicate groups: {len(duplicates)}\n")
                     
-                    # Export metadata
                     outfile.write("\nEXPORT METADATA\n")
                     outfile.write("-" * 40 + "\n")
                     outfile.write(f"Export tool: Advanced Project Code Exporter v2.0\n")
@@ -375,7 +360,6 @@ class AdvancedProjectExporter:
                     outfile.write(f"Python version: {sys.version}\n")
                     outfile.write(f"Platform: {sys.platform}\n")
                 
-                # Final footer
                 outfile.write("\n" + "=" * 80 + "\n")
                 outfile.write("END OF EXPORT\n")
                 outfile.write("=" * 80 + "\n")
@@ -383,7 +367,6 @@ class AdvancedProjectExporter:
             print(f"\n✅ Successfully exported {self.file_count} files to: {self.output_file}")
             print(f"📊 Total size: {self.total_size:,} bytes ({self.total_size / 1024:.2f} KB)")
             
-            # Show statistics summary
             print("\n📈 Language Distribution:")
             for lang, count in sorted(self.stats.items(), key=lambda x: x[1], reverse=True)[:5]:
                 print(f"  • {lang}: {count} files")
@@ -418,15 +401,12 @@ def main():
     
     args = parser.parse_args()
     
-    # Create exporter
     exporter = AdvancedProjectExporter(args.project, args.output)
     
-    # Add custom exclusions
     if args.exclude:
         custom_excludes = {d.strip() for d in args.exclude.split(',') if d.strip()}
         exporter.EXCLUDE_DIRS.update(custom_excludes)
     
-    # Run export
     success = exporter.export(
         include_structure_only=args.structure_only,
         include_stats=not args.no_stats

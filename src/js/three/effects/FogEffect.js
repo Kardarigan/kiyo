@@ -2,7 +2,7 @@
  * Atmospheric Fog Controller
  * provides fog color and density to all shaders in the scene
  */
-class FogEffect {
+export class FogEffect {
   constructor(gl, config = {}) {
     this.gl = gl;
 
@@ -50,5 +50,3 @@ class FogEffect {
     this.gl.clearColor(this.color[0], this.color[1], this.color[2], 1.0);
   }
 }
-
-module.exports = { FogEffect };

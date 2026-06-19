@@ -29,5 +29,3 @@ function apiAuth(req, res) {
 
   return true;
 }
-
-module.exports = { apiAuth };

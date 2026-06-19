@@ -62,7 +62,6 @@ const characterController = {
       return;
     }
 
-    // Merge data
     const updated = { ...existing, ...data };
     updated.meta = {
       ...existing.meta,

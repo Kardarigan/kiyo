@@ -7,7 +7,7 @@ const mkdir = promisify(fs.mkdir);
 const { dirname } = require("path");
 
 /*
- * Safe file read with JSON parsing
+ * safe file read with JSON parsing
  */
 
 async function readJSON(filePath) {
@@ -21,7 +21,7 @@ async function readJSON(filePath) {
 }
 
 /*
- * Safe file write with directory creation and formatting
+ * safe file write with directory creation and formatting
  */
 async function writeJSON(filePath, data) {
   await mkdir(dirname(filePath), { recursive: true });
@@ -30,7 +30,7 @@ async function writeJSON(filePath, data) {
 }
 
 /*
- * Check if file exists
+ * check if file exists
  */
 async function fileExists(filePath) {
   try {

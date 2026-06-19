@@ -14,7 +14,6 @@ async function bodyParser(req) {
     req.on("end", () => {
       const raw = Buffer.concat(chunks).toString();
 
-      // Only parse if there's content
       if (!raw) {
         req.body = {};
         resolve();

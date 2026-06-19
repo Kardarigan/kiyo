@@ -1,5 +1,5 @@
 const config = require("../config.js");
-const { sendJSON, sendError } = require("../utils/responseHelper.js");
+const { sendJSON } = require("../utils/responseHelper.js");
 
 const authController = {
   verify(req, res) {

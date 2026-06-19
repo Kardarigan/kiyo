@@ -14,7 +14,6 @@ async function pageRouter(req, res, pathname) {
     pathname === "/app/" ||
     pathname.startsWith("/app/")
   ) {
-    // all app routes go to app.html (SPA shell)
     pagePath = join(config.srcDir, "app.html");
   } else {
     pagePath = join(config.srcDir, pathname);
@@ -32,7 +31,6 @@ async function pageRouter(req, res, pathname) {
     res.end(html);
   } catch (error) {
     if (error.code === "ENOENT") {
-      // SPA fallback -> serve app.html for unknown routes
       try {
         const fallback = await readFile(
           join(config.srcDir, "app.html"),

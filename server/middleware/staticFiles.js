@@ -18,11 +18,9 @@ async function staticFiles(req, res, pathname) {
   } else if (pathname.startsWith("/audio/")) {
     filePath = join(config.publicDir, pathname);
   } else {
-    // Default to public directory
     filePath = join(config.publicDir, pathname);
   }
 
-  // Security: Prevent directory traversal
   const resolvedPath = resolve(filePath);
   const normalizedRoot = resolve(config.rootDir);
 
@@ -34,24 +32,18 @@ async function staticFiles(req, res, pathname) {
   }
 
   try {
-    // Check if file exists and is readable
     await fs.access(resolvedPath);
-
-    // Get file stats
     const stats = await fs.stat(resolvedPath);
 
-    // Don't serve directories
     if (stats.isDirectory()) {
       res.writeHead(404);
       res.end("Not found");
       return;
     }
 
-    // Determine MIME type
     const ext = pathname.substring(pathname.lastIndexOf(".")).toLowerCase();
     let contentType = config.mimeTypes[ext] || "application/octet-stream";
 
-    // Special handling for font files
     if (ext === ".ttf") contentType = "font/ttf";
     if (ext === ".otf") contentType = "font/otf";
     if (ext === ".woff") contentType = "font/woff";
@@ -59,10 +51,8 @@ async function staticFiles(req, res, pathname) {
     if (ext === ".css") contentType = "text/css; charset=utf-8";
     if (ext === ".js") contentType = "application/javascript; charset=utf-8";
 
-    // Read and serve file
     const fileContent = await fs.readFile(resolvedPath);
 
-    // Set caching headers
     const cacheControl = ext.match(
       /\.(ttf|otf|woff|woff2|jpg|jpeg|png|gif|webp|svg|ico|mp3)$/i
     )

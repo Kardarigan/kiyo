@@ -12,7 +12,6 @@ const config = require("../config.js");
 async function adminRouter(req, res, url) {
   const pathname = url.pathname;
 
-  // Serve admin.html
   if (pathname === "/admin" || pathname === "/admin/") {
     try {
       const html = await readFile(join(config.srcDir, "admin.html"), "utf-8");
@@ -25,8 +24,6 @@ async function adminRouter(req, res, url) {
     return;
   }
 
-  // Admin API callsare handled by apiRouter
-  // This is for page serving only
   res.writeHead(404);
   res.end("Admin route not found");
 }

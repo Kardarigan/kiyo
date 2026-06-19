@@ -3,7 +3,7 @@ import { DomHelper } from "../utils/DomHelper.js";
 import { Typewriter } from "../features/Typewriter.js";
 import { WhisperController } from "../features/WhisperController.js";
 
-class SisterPage {
+export class SisterPage {
   constructor(container, stateManager, eventBus) {
     this.container = container;
     this.stateManager = stateManager;
@@ -110,19 +110,81 @@ class SisterPage {
 
     // Scroll reveal
     this.initScrollReveal();
+
+    // Add blood trigger on hairpin hover
+    const hairpin = this.container.querySelector(".hairpin-container");
+    if (hairpin) {
+      hairpin.addEventListener("mouseenter", () => {
+        // Subtle blood effect on hover
+        import("../features/SplashBloodReusable.js").then(
+          ({ SplashBloodReusable }) => {
+            const blood = new SplashBloodReusable({ duration: 1000 });
+            const rect = hairpin.getBoundingClientRect();
+            blood.trigger(
+              rect.left + rect.width / 2,
+              rect.top + rect.height / 2
+            );
+          }
+        );
+      });
+    }
   }
 
   initPoemTypewriter(poemText) {
     const poemEl = this.container.querySelector("#sister-poem");
-    if (poemEl) return;
+    if (!poemEl) return;
 
-    const typewriter = new Typewriter(poemEl, {
-      text: poemText,
-      speed: 40,
-      delay: 500,
-    });
+    // Store original text and clear
+    const fullText = poemText || poemEl.textContent || "";
+    poemEl.textContent = "";
 
-    typewriter.start();
+    // Create typewriter that auto-starts on visibility
+    let typewriter = null;
+    let hasStarted = false;
+
+    const startTyping = () => {
+      if (hasStarted) return;
+      hasStarted = true;
+
+      typewriter = new Typewriter(poemEl, {
+        text: fullText,
+        speed: 35,
+        delay: 300,
+        cursor: true,
+        cursorChar: "|",
+        onComplete: () => {
+          // Remove cursor after completion
+          if (poemEl.textContent.endsWith("|")) {
+            poemEl.textContent = poemEl.textContent.slice(0, -1);
+          }
+        },
+      });
+      typewriter.start();
+    };
+
+    // Start when element is visible
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasStarted) {
+            startTyping();
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(poemEl);
+
+    // Also start if already visible
+    const rect = poemEl.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0 && !hasStarted) {
+      startTyping();
+    }
+
+    // Store cleanup
+    this._poemObserver = observer;
+    this._typewriter = typewriter;
   }
 
   initWhispers() {
@@ -138,7 +200,7 @@ class SisterPage {
           this.whisperController?.play();
         }, 2000);
       });
-      whisperZone.addEventListener("mouseenter", () => {
+      whisperZone.addEventListener("mouseleave", () => {
         clearTimeout(hoverTimer);
         this.whisperController?.stop();
       });
@@ -181,5 +243,3 @@ class SisterPage {
     this.whisperController?.stop();
   }
 }
-
-module.exports = { SisterPage };

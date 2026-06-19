@@ -9,7 +9,7 @@ import { Shaders } from "./materials/Shaders.js";
  * Manages a single 3D scene: objects, camera, lights, effects.
  */
 
-class SceneManager {
+export class SceneManager {
   constructor(config = {}) {
     this.config = config;
     this.objects = [];
@@ -77,7 +77,9 @@ class SceneManager {
 
     // render particles
     gl.depthMask(false);
-    this.particles.render(gl, viewMatrix, projectionMatrix, time);
+    if (this.particles) {
+      this.particles.render(gl, viewMatrix, projectionMatrix, time);
+    }
     gl.depthMask(true);
   }
 
@@ -87,5 +89,3 @@ class SceneManager {
     if (this.particles) this.particles.destroy(this.gl);
   }
 }
-
-module.exports = { SceneManager };

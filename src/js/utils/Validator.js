@@ -2,19 +2,17 @@
  * Client side Validator
  * checks data integrity before saving
  */
-class Validator {
+
+export class Validator {
   static isNonEmptyString(value) {
     return typeof value === "string" && value.trim().length > 0;
   }
-
   static isValidHexColor(value) {
     return /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/.test(value);
   }
-
   static isValidImageFilename(value) {
     return /^[a-zA-Z0-9_\-\.]+\.(webp|jpg|jpeg|png|svg)$/.test(value);
   }
-
   static validateCharacterData(data) {
     const errors = [];
     if (!data?.character?.name) errors.push("Character name is required.");
@@ -27,5 +25,3 @@ class Validator {
     return { valid: errors.length === 0, errors };
   }
 }
-
-module.exports = { Validator };

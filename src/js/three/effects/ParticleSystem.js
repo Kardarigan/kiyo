@@ -5,7 +5,7 @@ import { MaterialFactory } from "../materials/MaterialFactory.js";
  * renders atmospheric dust motes drifting through the scene.
  */
 
-class ParticleSystem {
+export class ParticleSystem {
   constructor(gl, count = 100) {
     this.gl = gl;
     this.count = count;
@@ -111,5 +111,3 @@ class ParticleSystem {
     }
   }
 }
-
-module.exports = { ParticleSystem };

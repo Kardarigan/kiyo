@@ -1,5 +1,5 @@
 /*
- * Standardized API response helpers
+ * standardized API response helpers
  */
 
 function sendJSON(res, data, statusCode = 200) {

@@ -1,21 +1,25 @@
 import { SceneManager } from "./SceneManager.js";
 import { MaterialFactory } from "./materials/MaterialFactory.js";
 import { MaskGeometry } from "./geometries/MaskGeometry.js";
+import { KatanaGeometry } from "./geometries/KatanaGeometry.js";
+import { RopeGeometry } from "./geometries/RopeGeometry.js";
 import { MeshObject } from "./geometries/MeshObject.js";
-import { FogEffect } from "./effects/FogEffect.js";
 
 /*
  * Pre-built Ambient Scene
  * sets up the floating mask scene with lighting, fog, and particles.
  * designed to be dropped into the app as the background.
  */
-class AmbientScene {
+
+export class AmbientScene {
   constructor(canvas, characterData) {
     this.canvas = canvas;
     this.characterData = characterData;
     this.sceneManager = null;
     this.materialFactory = null;
     this.maskObject = null;
+    this.katanaObject = null;
+    this.ropeObject = null;
   }
 
   async init(engine) {
@@ -35,10 +39,8 @@ class AmbientScene {
       throw new Error("Failed to create lit material");
     }
 
-    // generate mask geometry
+    // ===== MASK =====
     const maskGeom = MaskGeometry.generate(50);
-
-    // create mask mesh
     const maskConfig = threeDConfig.objects?.[0] || {};
     this.maskObject = new MeshObject(maskGeom, "lit", {
       position: [
@@ -62,9 +64,38 @@ class AmbientScene {
       floatAmplitude: 0.03,
       floatSpeed: 0.5,
     });
-
     this.maskObject._materialFactory = this.materialFactory;
     this.sceneManager.addObject(this.maskObject);
+
+    // ===== KATANA =====
+    const katanaGeom = KatanaGeometry.generate();
+    this.katanaObject = new MeshObject(katanaGeom, "lit", {
+      position: [1.5, -0.3, -0.5],
+      rotation: [0.2, 0.3, 0.1],
+      scale: [0.5, 0.5, 0.5],
+      color: [0.7, 0.7, 0.7],
+      metalness: 0.8,
+      roughness: 0.3,
+      floatAmplitude: 0.01,
+      floatSpeed: 0.3,
+    });
+    this.katanaObject._materialFactory = this.materialFactory;
+    this.sceneManager.addObject(this.katanaObject);
+
+    // ===== ROPE (Ceremonial Binding) =====
+    const ropeGeom = RopeGeometry.generate(5, 60, 0.3);
+    this.ropeObject = new MeshObject(ropeGeom, "lit", {
+      position: [-1.2, -0.1, -0.3],
+      rotation: [0.5, 0.8, 0.2],
+      scale: [0.6, 0.6, 0.6],
+      color: [0.5, 0.35, 0.2],
+      metalness: 0.1,
+      roughness: 0.9,
+      floatAmplitude: 0.015,
+      floatSpeed: 0.4,
+    });
+    this.ropeObject._materialFactory = this.materialFactory;
+    this.sceneManager.addObject(this.ropeObject);
 
     // set up fog
     const fogColor = threeDConfig.ambient?.fogColor || "#0a1a0a";
@@ -73,8 +104,10 @@ class AmbientScene {
     this.sceneManager.fog.setDensity(fogDensity);
     this.sceneManager.fog.applyToObjects(this.sceneManager.objects);
 
-    // initialize particles
-    this.sceneManager.particles.init(gl, this.materialFactory);
+    // Initialize particles - FIX: Check if particles exist and init them
+    if (this.sceneManager.particles) {
+      this.sceneManager.particles.init(gl, this.materialFactory);
+    }
 
     // add mouse interaction
     this.initMouseInteraction();
@@ -92,6 +125,11 @@ class AmbientScene {
       // subtle rotation toward mouse
       this.maskObject.rotation[1] = 0.5 + x;
       this.maskObject.rotation[0] = y * 0.5;
+
+      // katana follows slightly
+      if (this.katanaObject) {
+        this.katanaObject.rotation[1] = 0.3 + x * 0.5;
+      }
     });
   }
 
@@ -104,5 +142,3 @@ class AmbientScene {
     if (this.materialFactory) this.materialFactory.destroy();
   }
 }
-
-module.exports = { AmbientScene };
