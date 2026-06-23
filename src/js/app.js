@@ -33,13 +33,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   const logger = new Logger("App");
   logger.log("Starting application...");
 
-  // ----- 1. Core instances -----
+  // ----- Core instances -----
   const eventBus = new EventBus();
   const stateManager = new StateManager(eventBus);
   const dataLoader = new DataLoader();
   const themeEngine = new ThemeEngine();
 
-  // ----- 2. Load character data -----
+  // ----- Load character data -----
   const characterData = await dataLoader.fetchCharacter();
   if (!characterData) {
     document.getElementById("app-loader").classList.add("hidden");
@@ -49,7 +49,47 @@ document.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
-  // ----- 3. Populate state -----
+  // ----- Zipper Sound on Clicks -----
+  document.addEventListener("click", (e) => {
+    const zipper = document.getElementById("zipper-sound");
+    if (zipper) {
+      zipper.currentTime = 0;
+      zipper.play().catch(() => {});
+    }
+  });
+
+  // ----- Unlock audio on first user interaction -----
+  const unlockAudio = () => {
+    const audioElements = document.querySelectorAll("audio");
+    audioElements.forEach((audio) => {
+      audio
+        .play()
+        .then(() => audio.pause())
+        .catch(() => {});
+    });
+    document.removeEventListener("click", unlockAudio);
+    document.removeEventListener("touchstart", unlockAudio);
+  };
+  document.addEventListener("click", unlockAudio, { once: true });
+  document.addEventListener("touchstart", unlockAudio, { once: true });
+
+  // ----- Loop and Opening Song -----
+  const opening = document.getElementById("opening-music");
+  const loop = document.getElementById("bg-music");
+  if (opening && loop) {
+    opening.volume = 0.3;
+    loop.volume = 0.15;
+    opening
+      .play()
+      .then(() => {
+        opening.onended = () => {
+          loop.play();
+        };
+      })
+      .catch(() => loop.play());
+  }
+
+  // ----- Populate state -----
   stateManager.setState("character", characterData.character);
   stateManager.setState("theme", characterData.theme);
   stateManager.setState("pages", characterData.pages);
@@ -58,14 +98,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   stateManager.setState("audio", characterData.audio || {});
   stateManager.setState("meta", characterData.meta || {});
 
-  // ----- 4. Apply theme (colors, fonts) -----
+  // ----- Apply theme (colors, fonts) -----
   themeEngine.apply(characterData.theme, characterData.character);
 
-  // ----- 5. Setup router -----
+  // ----- Setup router -----
   const router = new Router(stateManager, eventBus);
   // Router will handle page rendering and navigation
 
-  // ----- 6. Render navigation -----
+  // ----- Render navigation -----
   const navContainer = document.querySelector(".site-navigation");
   if (navContainer) {
     const navigation = new Navigation(
@@ -79,62 +119,53 @@ document.addEventListener("DOMContentLoaded", async () => {
     logger.warn("Navigation container not found.");
   }
 
-  // ----- 7. Initialise features (Easter eggs, whispers, parallax) -----
+  // ----- Initialise features (easter eggs, whispers, parallax) -----
   const easterEggs = new EasterEggs(stateManager);
 
   window.App = window.App || {};
-  window.App.whisper = easterEggs.whisperController; // exposed for SisterPage
+  window.App.whisper = easterEggs.whisperController;
 
-  // Auto-play whisper audio using the existing controller
+  // Autoplay whisper audio using the existing controller
   easterEggs.whisperController.autoPlay();
   // Parallax
   const parallax = new ParallaxController();
 
-  // ----- 8. Initialize 3D background -----
+  // ----- Initialize 3D background -----
   const canvas = document.getElementById("ambient-canvas");
   if (canvas && characterData.threeD) {
     try {
-      // Make canvas visible and positioned
       canvas.style.display = "block";
-      canvas.style.opacity = "0.25";
-
+      canvas.style.opacity = "0.3"; // increase opacity
       const engine = new ThreeEngine(canvas);
       await engine.init();
-
-      // Pass the character data to ambient scene
       const ambientScene = new AmbientScene(canvas, characterData);
       const sceneManager = await ambientScene.init(engine);
-
       if (sceneManager) {
         engine.addScene("ambient", sceneManager);
         engine.setActiveScene("ambient");
         engine.start();
         logger.log("3D ambient scene started.");
-      } else {
-        throw new Error("Scene manager creation failed");
       }
     } catch (error) {
-      logger.warn("3D scene failed to initialize:", error);
+      logger.warn("3D scene failed:", error);
       canvas.style.display = "none";
     }
   } else {
-    // Hide canvas if no 3D config
     if (canvas) canvas.style.display = "none";
   }
 
-  // ----- 9. Handle initial route -----
+  // ----- Handle initial route -----
   const initialPath = window.location.pathname;
   await router.handleRoute(initialPath);
 
-  // ----- 10. Hide loader -----
+  // -----  Hide loader -----
   const loader = document.getElementById("app-loader");
   if (loader) loader.classList.add("hidden");
 
-  // ----- 11. Broadcast ready event -----
+  // -----  Broadcast ready event -----
   eventBus.emit("app:ready");
-
   logger.log("Application ready.");
 
-  // (Optional) Re‑collect parallax elements after initial render
+  // recollect parallax elements after initial render
   setTimeout(() => parallax.collectElements(), 300);
 });

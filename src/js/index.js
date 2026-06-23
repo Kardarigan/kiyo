@@ -394,12 +394,19 @@
       await tw3.start();
     }
 
-    // Show warning after typewriter
+    // show warning after typewriter
     setTimeout(() => {
       if (warningBox) {
         warningBox.classList.remove("hidden");
         void warningBox.offsetWidth;
         warningBox.classList.add("visible");
+        // fade out typewriter lines after 1s
+        setTimeout(() => {
+          document.querySelectorAll(".splash-line").forEach((line) => {
+            line.style.transition = "opacity 1s ease";
+            line.style.opacity = "0";
+          });
+        }, 1000);
       }
     }, 2000);
 
@@ -418,6 +425,7 @@
           bloodCanvas.classList.remove("hidden");
           bloodCanvas.classList.add("active");
           if (bloodEffect) await bloodEffect.play();
+          bloodCanvas.classList.add("hidden");
         }
 
         // Fade to black

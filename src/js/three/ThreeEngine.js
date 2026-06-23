@@ -44,6 +44,7 @@ export class ThreeEngine {
       gl.cullFace(gl.BACK);
 
       this.resize();
+      this.gl.viewport(0, 0, this.canvas.width, this.canvas.height);
       window.addEventListener("resize", () => this.resize());
 
       return this.gl;

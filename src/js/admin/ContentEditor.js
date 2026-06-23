@@ -13,7 +13,7 @@ export class ContentEditor {
     this.changes = {};
   }
 
-  redner() {
+  render() {
     const pages = this.data.pages || {};
 
     this.container.innerHTML = `

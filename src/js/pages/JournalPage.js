@@ -167,7 +167,7 @@ export class JournalPage {
     });
   }
 
-  destory() {
+  destroy() {
     document.removeEventListener("keydown", this.handleKeydown);
     document.body.style.overflow = "";
   }

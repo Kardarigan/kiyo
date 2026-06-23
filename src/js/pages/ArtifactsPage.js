@@ -168,7 +168,7 @@ export class ArtifactsPage {
     });
   }
 
-  destory() {
+  destroy() {
     document.removeEventListener("keydown", this.handleKeydown);
     document.body.style.overflow = "";
   }

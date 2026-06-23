@@ -58,10 +58,24 @@
       aria-hidden="true"
     ></canvas>
 
-    <!-- Audio element (hidden, contorlled by JS) -->
+    <!-- Audio elements (hidden contorlled by JS) -->
+    <audio id="bg-music" loop preload="auto">
+      <source src="/audio/theme-loop.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="opening-music" preload="auto">
+      <source src="/audio/opening.mp3" type="audio/mpeg" />
+    </audio>
+
     <audio id="ambient-audio" preload="none" loop>
       <source src="/audio/korekiyo/whisper-soft.mp3" type="audio/mpeg" />
     </audio>
+
+    <audio
+      id="zipper-sound"
+      preload="auto"
+      src="/audio/korekiyo/zipper-sound.mp3"
+    ></audio>
 
     <!-- Loading overlay -->
     <div id="app-loader" class="app-loader">

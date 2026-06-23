@@ -17,6 +17,7 @@
 }
 
 .page-container {
+  padding-top: calc(var(--nav-height) + var(--space-xl));
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 

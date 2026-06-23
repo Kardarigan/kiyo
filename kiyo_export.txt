@@ -1,6 +1,6 @@
 ================================================================================
 ADVANCED PROJECT CODE EXPORT
-Generated: 2026-06-19 14:07:52
+Generated: 2026-06-21 08:27:22
 Project: kiyo
 Path: C:\Users\D\Desktop\D\kiyo
 ================================================================================
@@ -27,8 +27,7 @@ kiyo/
 │   │   ├── cursor-zipper.svg (1.6 KB)
 │   │   └── korekiyo/
 │   ├── manifest.json (410.0 B)
-│   ├── robots.txt (80.0 B)
-│   └── test.html (194.0 B)
+│   └── robots.txt (80.0 B)
 ├── README.md (1.3 KB)
 ├── scripts/
 │   ├── new-character.js (1.5 KB)
@@ -58,9 +57,9 @@ kiyo/
 │       └── responseHelper.js (534.0 B)
 ├── src/
 │   ├── admin.html (5.0 KB)
-│   ├── app.html (2.3 KB)
+│   ├── app.html (2.6 KB)
 │   ├── css/
-│   │   └── main.css (40.5 KB)
+│   │   └── main.css (41.2 KB)
 │   ├── data/
 │   │   ├── characters/
 │   │   │   ├── index.json (206.0 B)
@@ -76,9 +75,9 @@ kiyo/
 │   │   │   ├── SaveManager.js (1.6 KB)
 │   │   │   └── ThemeCustomizer.js (6.6 KB)
 │   │   ├── admin.js (6.6 KB)
-│   │   ├── app.js (5.0 KB)
+│   │   ├── app.js (5.9 KB)
 │   │   ├── components/
-│   │   │   └── Navigation.js (1.8 KB)
+│   │   │   └── Navigation.js (2.4 KB)
 │   │   ├── core/
 │   │   │   ├── DataLoader.js (1.3 KB)
 │   │   │   ├── EventBus.js (880.0 B)
@@ -89,17 +88,15 @@ kiyo/
 │   │   │   ├── EasterEggs.js (2.9 KB)
 │   │   │   ├── ParallaxController.js (2.7 KB)
 │   │   │   ├── SplashBlood.js (3.0 KB)
-│   │   │   ├── SplashBloodReusable.js (3.8 KB)
 │   │   │   ├── Typewriter.js (1.8 KB)
 │   │   │   └── WhisperController.js (2.7 KB)
-│   │   ├── index.js (11.7 KB)
+│   │   ├── index.js (12.0 KB)
 │   │   ├── pages/
 │   │   │   ├── AboutPage.js (4.6 KB)
-│   │   │   ├── AdminPage.js (5.7 KB)
 │   │   │   ├── ArtifactsPage.js (5.5 KB)
 │   │   │   ├── HomePage.js (2.4 KB)
 │   │   │   ├── JournalPage.js (5.5 KB)
-│   │   │   └── SisterPage.js (7.2 KB)
+│   │   │   └── SisterPage.js (7.4 KB)
 │   │   ├── three/
 │   │   │   ├── AmbientScene.js (4.5 KB)
 │   │   │   ├── CameraController.js (3.2 KB)
@@ -107,7 +104,6 @@ kiyo/
 │   │   │   │   ├── FogEffect.js (1.2 KB)
 │   │   │   │   └── ParticleSystem.js (3.3 KB)
 │   │   │   ├── geometries/
-│   │   │   │   ├── CandleGeometry.js (643.0 B)
 │   │   │   │   ├── KatanaGeometry.js (2.5 KB)
 │   │   │   │   ├── MaskGeometry.js (4.0 KB)
 │   │   │   │   ├── MeshObject.js (7.4 KB)
@@ -117,12 +113,10 @@ kiyo/
 │   │   │   │   ├── MaterialFactory.js (3.7 KB)
 │   │   │   │   └── Shaders.js (6.2 KB)
 │   │   │   ├── SceneManager.js (2.4 KB)
-│   │   │   └── ThreeEngine.js (3.1 KB)
+│   │   │   └── ThreeEngine.js (3.2 KB)
 │   │   └── utils/
 │   │       ├── DomHelper.js (1.1 KB)
-│   │       ├── Logger.js (448.0 B)
-│   │       ├── Sanitizer.js (879.0 B)
-│   │       └── Validator.js (848.0 B)
+│   │       └── Logger.js (448.0 B)
 │   └── scss/
 │       ├── abstracts/
 │       │   ├── _functions.scss (320.0 B)
@@ -144,13 +138,13 @@ kiyo/
 │       │   ├── _cursor.scss (1.7 KB)
 │       │   ├── _easter-eggs.scss (809.0 B)
 │       │   ├── _loader.scss (852.0 B)
-│       │   ├── _modal.scss (1019.0 B)
+│       │   ├── _modal.scss (1.0 KB)
 │       │   └── _tooltip.scss (693.0 B)
 │       ├── layout/
-│       │   ├── _containers.scss (1.0 KB)
+│       │   ├── _containers.scss (1.1 KB)
 │       │   ├── _footer.scss (425.0 B)
 │       │   ├── _grid.scss (828.0 B)
-│       │   └── _navigation.scss (1.6 KB)
+│       │   └── _navigation.scss (2.3 KB)
 │       ├── main.scss (1000.0 B)
 │       ├── pages/
 │       │   ├── _about.scss (2.2 KB)
@@ -174,7 +168,7 @@ kiyo/
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 1/115: .env
+FILE 1/109: .env
 Language: plaintext | Size: 68 bytes
 Lines: 4 total | 4 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -188,7 +182,7 @@ ADMIN_PASS=anthropology1933
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 2/115: .gitignore
+FILE 2/109: .gitignore
 Language: plaintext | Size: 28 bytes
 Lines: 3 total | 3 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -201,7 +195,7 @@ Lines: 3 total | 3 code | 0 comments | 0 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 3/115: export_project.py
+FILE 3/109: export_project.py
 Language: python | Size: 16,755 bytes
 Lines: 419 total | 345 code | 0 comments | 74 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -630,15 +624,15 @@ if __name__ == "__main__":
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 4/115: kiyo_export.txt
-Language: plaintext | Size: 23,461 bytes
-Lines: 628 total | 540 code | 0 comments | 88 blank
+FILE 4/109: kiyo_export.txt
+Language: plaintext | Size: 23,219 bytes
+Lines: 622 total | 534 code | 0 comments | 88 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```plaintext
 ================================================================================
 ADVANCED PROJECT CODE EXPORT
-Generated: 2026-06-19 14:07:52
+Generated: 2026-06-21 08:27:22
 Project: kiyo
 Path: C:\Users\D\Desktop\D\kiyo
 ================================================================================
@@ -665,8 +659,7 @@ kiyo/
 │   │   ├── cursor-zipper.svg (1.6 KB)
 │   │   └── korekiyo/
 │   ├── manifest.json (410.0 B)
-│   ├── robots.txt (80.0 B)
-│   └── test.html (194.0 B)
+│   └── robots.txt (80.0 B)
 ├── README.md (1.3 KB)
 ├── scripts/
 │   ├── new-character.js (1.5 KB)
@@ -696,9 +689,9 @@ kiyo/
 │       └── responseHelper.js (534.0 B)
 ├── src/
 │   ├── admin.html (5.0 KB)
-│   ├── app.html (2.3 KB)
+│   ├── app.html (2.6 KB)
 │   ├── css/
-│   │   └── main.css (40.5 KB)
+│   │   └── main.css (41.2 KB)
 │   ├── data/
 │   │   ├── characters/
 │   │   │   ├── index.json (206.0 B)
@@ -714,9 +707,9 @@ kiyo/
 │   │   │   ├── SaveManager.js (1.6 KB)
 │   │   │   └── ThemeCustomizer.js (6.6 KB)
 │   │   ├── admin.js (6.6 KB)
-│   │   ├── app.js (5.0 KB)
+│   │   ├── app.js (5.9 KB)
 │   │   ├── components/
-│   │   │   └── Navigation.js (1.8 KB)
+│   │   │   └── Navigation.js (2.4 KB)
 │   │   ├── core/
 │   │   │   ├── DataLoader.js (1.3 KB)
 │   │   │   ├── EventBus.js (880.0 B)
@@ -727,17 +720,15 @@ kiyo/
 │   │   │   ├── EasterEggs.js (2.9 KB)
 │   │   │   ├── ParallaxController.js (2.7 KB)
 │   │   │   ├── SplashBlood.js (3.0 KB)
-│   │   │   ├── SplashBloodReusable.js (3.8 KB)
 │   │   │   ├── Typewriter.js (1.8 KB)
 │   │   │   └── WhisperController.js (2.7 KB)
-│   │   ├── index.js (11.7 KB)
+│   │   ├── index.js (12.0 KB)
 │   │   ├── pages/
 │   │   │   ├── AboutPage.js (4.6 KB)
-│   │   │   ├── AdminPage.js (5.7 KB)
 │   │   │   ├── ArtifactsPage.js (5.5 KB)
 │   │   │   ├── HomePage.js (2.4 KB)
 │   │   │   ├── JournalPage.js (5.5 KB)
-│   │   │   └── SisterPage.js (7.2 KB)
+│   │   │   └── SisterPage.js (7.4 KB)
 │   │   ├── three/
 │   │   │   ├── AmbientScene.js (4.5 KB)
 │   │   │   ├── CameraController.js (3.2 KB)
@@ -745,7 +736,6 @@ kiyo/
 │   │   │   │   ├── FogEffect.js (1.2 KB)
 │   │   │   │   └── ParticleSystem.js (3.3 KB)
 │   │   │   ├── geometries/
-│   │   │   │   ├── CandleGeometry.js (643.0 B)
 │   │   │   │   ├── KatanaGeometry.js (2.5 KB)
 │   │   │   │   ├── MaskGeometry.js (4.0 KB)
 │   │   │   │   ├── MeshObject.js (7.4 KB)
@@ -755,12 +745,10 @@ kiyo/
 │   │   │   │   ├── MaterialFactory.js (3.7 KB)
 │   │   │   │   └── Shaders.js (6.2 KB)
 │   │   │   ├── SceneManager.js (2.4 KB)
-│   │   │   └── ThreeEngine.js (3.1 KB)
+│   │   │   └── ThreeEngine.js (3.2 KB)
 │   │   └── utils/
 │   │       ├── DomHelper.js (1.1 KB)
-│   │       ├── Logger.js (448.0 B)
-│   │       ├── Sanitizer.js (879.0 B)
-│   │       └── Validator.js (848.0 B)
+│   │       └── Logger.js (448.0 B)
 │   └── scss/
 │       ├── abstracts/
 │       │   ├── _functions.scss (320.0 B)
@@ -782,13 +770,13 @@ kiyo/
 │       │   ├── _cursor.scss (1.7 KB)
 │       │   ├── _easter-eggs.scss (809.0 B)
 │       │   ├── _loader.scss (852.0 B)
-│       │   ├── _modal.scss (1019.0 B)
+│       │   ├── _modal.scss (1.0 KB)
 │       │   └── _tooltip.scss (693.0 B)
 │       ├── layout/
-│       │   ├── _containers.scss (1.0 KB)
+│       │   ├── _containers.scss (1.1 KB)
 │       │   ├── _footer.scss (425.0 B)
 │       │   ├── _grid.scss (828.0 B)
-│       │   └── _navigation.scss (1.6 KB)
+│       │   └── _navigation.scss (2.3 KB)
 │       ├── main.scss (1000.0 B)
 │       ├── pages/
 │       │   ├── _about.scss (2.2 KB)
@@ -812,7 +800,7 @@ kiyo/
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 1/115: .env
+FILE 1/109: .env
 Language: plaintext | Size: 68 bytes
 Lines: 4 total | 4 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -826,7 +814,7 @@ ADMIN_PASS=anthropology1933
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 2/115: .gitignore
+FILE 2/109: .gitignore
 Language: plaintext | Size: 28 bytes
 Lines: 3 total | 3 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -839,7 +827,7 @@ Lines: 3 total | 3 code | 0 comments | 0 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 3/115: export_project.py
+FILE 3/109: export_project.py
 Language: python | Size: 16,755 bytes
 Lines: 419 total | 345 code | 0 comments | 74 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1268,7 +1256,7 @@ if __name__ == "__main__":
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 5/115: package.json
+FILE 5/109: package.json
 Language: json | Size: 575 bytes
 Lines: 25 total | 24 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1302,7 +1290,7 @@ Lines: 25 total | 24 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 6/115: public\images\cursor-zipper.svg
+FILE 6/109: public\images\cursor-zipper.svg
 Language: plaintext | Size: 1,651 bytes
 Lines: 42 total | 23 code | 0 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1353,7 +1341,7 @@ Lines: 42 total | 23 code | 0 comments | 19 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 7/115: public\manifest.json
+FILE 7/109: public\manifest.json
 Language: json | Size: 394 bytes
 Lines: 17 total | 16 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1379,7 +1367,7 @@ Lines: 17 total | 16 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 8/115: public\robots.txt
+FILE 8/109: public\robots.txt
 Language: plaintext | Size: 76 bytes
 Lines: 5 total | 5 code | 0 comments | 0 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1394,27 +1382,7 @@ Sitemap: /sitemap.xml
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 9/115: public\test.html
-Language: html | Size: 184 bytes
-Lines: 11 total | 10 code | 0 comments | 1 blank
-────────────────────────────────────────────────────────────────────────────────
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Test</title>
-  </head>
-  <body>
-    <h1>Static file test works!</h1>
-    <p>If you see this, static files are working.</p>
-  </body>
-</html>
-```
-
-
-────────────────────────────────────────────────────────────────────────────────
-FILE 10/115: README.md
+FILE 9/109: README.md
 Language: markdown | Size: 1,289 bytes
 Lines: 41 total | 20 code | 7 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1464,7 +1432,7 @@ MIT
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 11/115: scripts\new-character.js
+FILE 10/109: scripts\new-character.js
 Language: javascript | Size: 1,528 bytes
 Lines: 47 total | 37 code | 1 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1520,7 +1488,7 @@ main().catch(console.error);
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 12/115: scripts\setup.js
+FILE 11/109: scripts\setup.js
 Language: javascript | Size: 1,654 bytes
 Lines: 74 total | 68 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1603,7 +1571,7 @@ setup().catch(console.error);
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 13/115: server\config.js
+FILE 12/109: server\config.js
 Language: javascript | Size: 1,898 bytes
 Lines: 66 total | 55 code | 3 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1678,7 +1646,7 @@ module.exports = {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 14/115: server\controllers\authController.js
+FILE 13/109: server\controllers\authController.js
 Language: javascript | Size: 362 bytes
 Lines: 15 total | 11 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1702,7 +1670,7 @@ module.exports = { authController };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 15/115: server\controllers\characterController.js
+FILE 14/109: server\controllers\characterController.js
 Language: javascript | Size: 1,957 bytes
 Lines: 77 total | 61 code | 0 comments | 16 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1788,7 +1756,7 @@ module.exports = { characterController };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 16/115: server\controllers\configController.js
+FILE 15/109: server\controllers\configController.js
 Language: javascript | Size: 825 bytes
 Lines: 32 total | 25 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1829,7 +1797,7 @@ module.exports = { configController };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 17/115: server\index.js
+FILE 16/109: server\index.js
 Language: javascript | Size: 2,195 bytes
 Lines: 86 total | 69 code | 6 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1924,7 +1892,7 @@ process.on("SIGTERM", () => {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 18/115: server\middleware\apiAuth.js
+FILE 17/109: server\middleware\apiAuth.js
 Language: javascript | Size: 880 bytes
 Lines: 32 total | 25 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -1965,7 +1933,7 @@ function apiAuth(req, res) {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 19/115: server\middleware\bodyParser.js
+FILE 18/109: server\middleware\bodyParser.js
 Language: javascript | Size: 966 bytes
 Lines: 44 total | 35 code | 0 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2018,7 +1986,7 @@ module.exports = { bodyParser };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 20/115: server\middleware\logger.js
+FILE 19/109: server\middleware\logger.js
 Language: javascript | Size: 609 bytes
 Lines: 23 total | 19 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2050,7 +2018,7 @@ module.exports = { logger };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 21/115: server\middleware\staticFiles.js
+FILE 20/109: server\middleware\staticFiles.js
 Language: javascript | Size: 2,614 bytes
 Lines: 84 total | 70 code | 0 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2143,7 +2111,7 @@ module.exports = { staticFiles };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 22/115: server\models\FileStore.js
+FILE 21/109: server\models\FileStore.js
 Language: javascript | Size: 939 bytes
 Lines: 43 total | 34 code | 0 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2195,7 +2163,7 @@ module.exports = { FileStore };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 23/115: server\models\Validator.js
+FILE 22/109: server\models\Validator.js
 Language: javascript | Size: 599 bytes
 Lines: 25 total | 21 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2229,7 +2197,7 @@ module.exports = { Validator };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 24/115: server\routes\adminRouter.js
+FILE 23/109: server\routes\adminRouter.js
 Language: javascript | Size: 784 bytes
 Lines: 32 total | 26 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2270,7 +2238,7 @@ module.exports = { adminRouter };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 25/115: server\routes\apiRouter.js
+FILE 24/109: server\routes\apiRouter.js
 Language: javascript | Size: 1,926 bytes
 Lines: 76 total | 60 code | 3 comments | 13 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2355,7 +2323,7 @@ module.exports = { apiRouter };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 26/115: server\routes\pageRouter.js
+FILE 25/109: server\routes\pageRouter.js
 Language: javascript | Size: 1,464 bytes
 Lines: 57 total | 52 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2421,7 +2389,7 @@ module.exports = { pageRouter };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 27/115: server\utils\errorHandler.js
+FILE 26/109: server\utils\errorHandler.js
 Language: javascript | Size: 475 bytes
 Lines: 24 total | 19 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2454,7 +2422,7 @@ module.exports = { errorHandler };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 28/115: server\utils\fileSystem.js
+FILE 27/109: server\utils\fileSystem.js
 Language: javascript | Size: 987 bytes
 Lines: 45 total | 39 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2508,7 +2476,7 @@ module.exports = { readJSON, writeJSON, fileExists };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 29/115: server\utils\responseHelper.js
+FILE 28/109: server\utils\responseHelper.js
 Language: javascript | Size: 514 bytes
 Lines: 21 total | 16 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2538,7 +2506,7 @@ module.exports = { sendJSON, sendError, sendSuccess };
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 30/115: src\admin.html
+FILE 29/109: src\admin.html
 Language: html | Size: 4,941 bytes
 Lines: 157 total | 138 code | 8 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -2704,9 +2672,9 @@ Lines: 157 total | 138 code | 8 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 31/115: src\app.html
-Language: html | Size: 2,236 bytes
-Lines: 76 total | 58 code | 9 comments | 9 blank
+FILE 30/109: src\app.html
+Language: html | Size: 2,595 bytes
+Lines: 90 total | 69 code | 9 comments | 12 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```html
@@ -2770,10 +2738,24 @@ Lines: 76 total | 58 code | 9 comments | 9 blank
       aria-hidden="true"
     ></canvas>
 
-    <!-- Audio element (hidden, contorlled by JS) -->
+    <!-- Audio elements (hidden contorlled by JS) -->
+    <audio id="bg-music" loop preload="auto">
+      <source src="/audio/theme-loop.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="opening-music" preload="auto">
+      <source src="/audio/opening.mp3" type="audio/mpeg" />
+    </audio>
+
     <audio id="ambient-audio" preload="none" loop>
       <source src="/audio/korekiyo/whisper-soft.mp3" type="audio/mpeg" />
     </audio>
+
+    <audio
+      id="zipper-sound"
+      preload="auto"
+      src="/audio/korekiyo/zipper-sound.mp3"
+    ></audio>
 
     <!-- Loading overlay -->
     <div id="app-loader" class="app-loader">
@@ -2789,9 +2771,9 @@ Lines: 76 total | 58 code | 9 comments | 9 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 32/115: src\css\main.css
-Language: css | Size: 41,436 bytes
-Lines: 2018 total | 1865 code | 0 comments | 153 blank
+FILE 31/109: src\css\main.css
+Language: css | Size: 42,197 bytes
+Lines: 2056 total | 1903 code | 0 comments | 153 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```css
@@ -3237,6 +3219,41 @@ body {
   color: var(--color-accent);
   border-bottom-color: var(--color-accent);
 }
+.main-nav .hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.main-nav .hamburger span {
+  width: 25px;
+  height: 2px;
+  background: var(--color-text-primary);
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .main-nav .hamburger {
+    display: flex;
+  }
+  .main-nav .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    width: 100%;
+    background: rgba(13, 13, 13, 0.95);
+    padding: var(--space-md);
+  }
+  .main-nav .nav-links.open {
+    display: flex;
+  }
+  .main-nav .nav-link {
+    padding: var(--space-sm) 0;
+  }
+}
 
 .site-footer {
   text-align: center;
@@ -3266,6 +3283,7 @@ body {
 }
 
 .page-container {
+  padding-top: calc(var(--nav-height) + var(--space-xl));
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -3392,12 +3410,13 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
   z-index: var(--z-modal);
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 }
 .modal.hidden {
   display: none;
@@ -3422,6 +3441,7 @@ body {
   max-width: 800px;
   max-height: 85vh;
   overflow-y: auto;
+  margin: auto;
   box-shadow: var(--shadow-lg);
   -webkit-animation: slideUp 0.3s ease;
           animation: slideUp 0.3s ease;
@@ -4774,7 +4794,7 @@ button:hover {
   width: 100vw;
   height: 100vh;
   z-index: 0;
-  opacity: 0.2;
+  opacity: 0.4;
   pointer-events: none;
   display: block;
   background: transparent;
@@ -4817,7 +4837,7 @@ button:hover {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 33/115: src\data\characters\index.json
+FILE 32/109: src\data\characters\index.json
 Language: json | Size: 195 bytes
 Lines: 12 total | 11 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -4838,7 +4858,7 @@ Lines: 12 total | 11 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 34/115: src\data\characters\korekiyo.json
+FILE 33/109: src\data\characters\korekiyo.json
 Language: json | Size: 8,174 bytes
 Lines: 201 total | 194 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5048,7 +5068,7 @@ Lines: 201 total | 194 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 35/115: src\data\characters\template.json
+FILE 34/109: src\data\characters\template.json
 Language: json | Size: 3,029 bytes
 Lines: 130 total | 129 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5187,7 +5207,7 @@ Lines: 130 total | 129 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 36/115: src\data\site-config.json
+FILE 35/109: src\data\site-config.json
 Language: json | Size: 265 bytes
 Lines: 13 total | 12 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5209,7 +5229,7 @@ Lines: 13 total | 12 code | 0 comments | 1 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 37/115: src\index.html
+FILE 36/109: src\index.html
 Language: html | Size: 2,962 bytes
 Lines: 96 total | 86 code | 4 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5314,7 +5334,7 @@ Lines: 96 total | 86 code | 4 comments | 6 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 38/115: src\js\admin\AuthManager.js
+FILE 37/109: src\js\admin\AuthManager.js
 Language: javascript | Size: 1,136 bytes
 Lines: 55 total | 43 code | 2 comments | 10 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5378,7 +5398,7 @@ export class AuthManager {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 39/115: src\js\admin\ContentEditor.js
+FILE 38/109: src\js\admin\ContentEditor.js
 Language: javascript | Size: 6,548 bytes
 Lines: 200 total | 185 code | 1 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5399,7 +5419,7 @@ export class ContentEditor {
     this.changes = {};
   }
 
-  redner() {
+  render() {
     const pages = this.data.pages || {};
 
     this.container.innerHTML = `
@@ -5587,7 +5607,7 @@ export class ContentEditor {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 40/115: src\js\admin\ImageManager.js
+FILE 39/109: src\js\admin\ImageManager.js
 Language: javascript | Size: 2,921 bytes
 Lines: 112 total | 98 code | 3 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5708,7 +5728,7 @@ export class ImageManager {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 41/115: src\js\admin\SaveManager.js
+FILE 40/109: src\js\admin\SaveManager.js
 Language: javascript | Size: 1,535 bytes
 Lines: 63 total | 54 code | 1 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5780,7 +5800,7 @@ export class SaveManager {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 42/115: src\js\admin\ThemeCustomizer.js
+FILE 41/109: src\js\admin\ThemeCustomizer.js
 Language: javascript | Size: 6,593 bytes
 Lines: 201 total | 179 code | 4 comments | 18 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -5990,7 +6010,7 @@ export class ThemeCustomizer {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 43/115: src\js\admin.js
+FILE 42/109: src\js\admin.js
 Language: javascript | Size: 6,486 bytes
 Lines: 225 total | 173 code | 16 comments | 36 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6224,9 +6244,9 @@ class AdminController {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 44/115: src\js\app.js
-Language: javascript | Size: 4,929 bytes
-Lines: 141 total | 85 code | 30 comments | 26 blank
+FILE 43/109: src\js\app.js
+Language: javascript | Size: 5,833 bytes
+Lines: 172 total | 117 code | 30 comments | 25 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -6265,13 +6285,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   const logger = new Logger("App");
   logger.log("Starting application...");
 
-  // ----- 1. Core instances -----
+  // ----- Core instances -----
   const eventBus = new EventBus();
   const stateManager = new StateManager(eventBus);
   const dataLoader = new DataLoader();
   const themeEngine = new ThemeEngine();
 
-  // ----- 2. Load character data -----
+  // ----- Load character data -----
   const characterData = await dataLoader.fetchCharacter();
   if (!characterData) {
     document.getElementById("app-loader").classList.add("hidden");
@@ -6281,7 +6301,47 @@ document.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
-  // ----- 3. Populate state -----
+  // ----- Zipper Sound on Clicks -----
+  document.addEventListener("click", (e) => {
+    const zipper = document.getElementById("zipper-sound");
+    if (zipper) {
+      zipper.currentTime = 0;
+      zipper.play().catch(() => {});
+    }
+  });
+
+  // ----- Unlock audio on first user interaction -----
+  const unlockAudio = () => {
+    const audioElements = document.querySelectorAll("audio");
+    audioElements.forEach((audio) => {
+      audio
+        .play()
+        .then(() => audio.pause())
+        .catch(() => {});
+    });
+    document.removeEventListener("click", unlockAudio);
+    document.removeEventListener("touchstart", unlockAudio);
+  };
+  document.addEventListener("click", unlockAudio, { once: true });
+  document.addEventListener("touchstart", unlockAudio, { once: true });
+
+  // ----- Loop and Opening Song -----
+  const opening = document.getElementById("opening-music");
+  const loop = document.getElementById("bg-music");
+  if (opening && loop) {
+    opening.volume = 0.3;
+    loop.volume = 0.15;
+    opening
+      .play()
+      .then(() => {
+        opening.onended = () => {
+          loop.play();
+        };
+      })
+      .catch(() => loop.play());
+  }
+
+  // ----- Populate state -----
   stateManager.setState("character", characterData.character);
   stateManager.setState("theme", characterData.theme);
   stateManager.setState("pages", characterData.pages);
@@ -6290,14 +6350,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   stateManager.setState("audio", characterData.audio || {});
   stateManager.setState("meta", characterData.meta || {});
 
-  // ----- 4. Apply theme (colors, fonts) -----
+  // ----- Apply theme (colors, fonts) -----
   themeEngine.apply(characterData.theme, characterData.character);
 
-  // ----- 5. Setup router -----
+  // ----- Setup router -----
   const router = new Router(stateManager, eventBus);
   // Router will handle page rendering and navigation
 
-  // ----- 6. Render navigation -----
+  // ----- Render navigation -----
   const navContainer = document.querySelector(".site-navigation");
   if (navContainer) {
     const navigation = new Navigation(
@@ -6311,72 +6371,63 @@ document.addEventListener("DOMContentLoaded", async () => {
     logger.warn("Navigation container not found.");
   }
 
-  // ----- 7. Initialise features (Easter eggs, whispers, parallax) -----
+  // ----- Initialise features (easter eggs, whispers, parallax) -----
   const easterEggs = new EasterEggs(stateManager);
 
   window.App = window.App || {};
-  window.App.whisper = easterEggs.whisperController; // exposed for SisterPage
+  window.App.whisper = easterEggs.whisperController;
 
-  // Auto-play whisper audio using the existing controller
+  // Autoplay whisper audio using the existing controller
   easterEggs.whisperController.autoPlay();
   // Parallax
   const parallax = new ParallaxController();
 
-  // ----- 8. Initialize 3D background -----
+  // ----- Initialize 3D background -----
   const canvas = document.getElementById("ambient-canvas");
   if (canvas && characterData.threeD) {
     try {
-      // Make canvas visible and positioned
       canvas.style.display = "block";
-      canvas.style.opacity = "0.25";
-
+      canvas.style.opacity = "0.3"; // increase opacity
       const engine = new ThreeEngine(canvas);
       await engine.init();
-
-      // Pass the character data to ambient scene
       const ambientScene = new AmbientScene(canvas, characterData);
       const sceneManager = await ambientScene.init(engine);
-
       if (sceneManager) {
         engine.addScene("ambient", sceneManager);
         engine.setActiveScene("ambient");
         engine.start();
         logger.log("3D ambient scene started.");
-      } else {
-        throw new Error("Scene manager creation failed");
       }
     } catch (error) {
-      logger.warn("3D scene failed to initialize:", error);
+      logger.warn("3D scene failed:", error);
       canvas.style.display = "none";
     }
   } else {
-    // Hide canvas if no 3D config
     if (canvas) canvas.style.display = "none";
   }
 
-  // ----- 9. Handle initial route -----
+  // ----- Handle initial route -----
   const initialPath = window.location.pathname;
   await router.handleRoute(initialPath);
 
-  // ----- 10. Hide loader -----
+  // -----  Hide loader -----
   const loader = document.getElementById("app-loader");
   if (loader) loader.classList.add("hidden");
 
-  // ----- 11. Broadcast ready event -----
+  // -----  Broadcast ready event -----
   eventBus.emit("app:ready");
-
   logger.log("Application ready.");
 
-  // (Optional) Re‑collect parallax elements after initial render
+  // recollect parallax elements after initial render
   setTimeout(() => parallax.collectElements(), 300);
 });
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 45/115: src\js\components\Navigation.js
-Language: javascript | Size: 1,766 bytes
-Lines: 57 total | 52 code | 0 comments | 5 blank
+FILE 44/109: src\js\components\Navigation.js
+Language: javascript | Size: 2,364 bytes
+Lines: 72 total | 65 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -6404,6 +6455,9 @@ export class Navigation {
       <nav class="main-nav">
         <div class="nav-brand">
           <span class="brand-name">Korekiyo Shinguji</span>
+          <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
         </div>
         <div class="nav-links">
           ${this.navItems
@@ -6416,6 +6470,18 @@ export class Navigation {
         </div>
       </nav>
     `;
+
+    const hamburger = this.container.querySelector(".hamburger");
+    const navLinks = this.container.querySelector(".nav-links");
+    if (hamburger && navLinks) {
+      hamburger.addEventListener("click", () => {
+        const expanded =
+          hamburger.getAttribute("aria-expanded") === "true" ? false : true;
+        hamburger.setAttribute("aria-expanded", expanded);
+        navLinks.classList.toggle("open");
+      });
+    }
+
     this.container.querySelectorAll(".nav-link").forEach((link) => {
       link.addEventListener("click", (e) => {
         e.preventDefault();
@@ -6440,7 +6506,7 @@ export class Navigation {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 46/115: src\js\core\DataLoader.js
+FILE 45/109: src\js\core\DataLoader.js
 Language: javascript | Size: 1,326 bytes
 Lines: 43 total | 42 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6492,7 +6558,7 @@ export class DataLoader {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 47/115: src\js\core\EventBus.js
+FILE 46/109: src\js\core\EventBus.js
 Language: javascript | Size: 845 bytes
 Lines: 36 total | 35 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6537,7 +6603,7 @@ export class EventBus {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 48/115: src\js\core\Router.js
+FILE 47/109: src\js\core\Router.js
 Language: javascript | Size: 2,916 bytes
 Lines: 90 total | 80 code | 0 comments | 10 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6636,7 +6702,7 @@ export class Router {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 49/115: src\js\core\StateManager.js
+FILE 48/109: src\js\core\StateManager.js
 Language: javascript | Size: 590 bytes
 Lines: 22 total | 21 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6667,7 +6733,7 @@ export class StateManager {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 50/115: src\js\core\ThemeEngine.js
+FILE 49/109: src\js\core\ThemeEngine.js
 Language: javascript | Size: 933 bytes
 Lines: 32 total | 31 code | 0 comments | 1 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6708,8 +6774,8 @@ export class ThemeEngine {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 51/115: src\js\features\EasterEggs.js
-Language: javascript | Size: 2,893 bytes
+FILE 50/109: src\js\features\EasterEggs.js
+Language: javascript | Size: 2,892 bytes
 Lines: 94 total | 85 code | 0 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
 
@@ -6765,7 +6831,7 @@ export class EasterEggs {
   }
 
   showSecretMessage(text) {
-    const msg = dsocument.createElement("div");
+    const msg = document.createElement("div");
     msg.className = "secret-message";
     msg.textContent = text;
     document.body.appendChild(msg);
@@ -6811,7 +6877,7 @@ export class EasterEggs {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 52/115: src\js\features\ParallaxController.js
+FILE 51/109: src\js\features\ParallaxController.js
 Language: javascript | Size: 2,628 bytes
 Lines: 102 total | 84 code | 7 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -6922,7 +6988,7 @@ export class ParallaxController {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 53/115: src\js\features\SplashBlood.js
+FILE 52/109: src\js\features\SplashBlood.js
 Language: javascript | Size: 2,950 bytes
 Lines: 117 total | 94 code | 3 comments | 20 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -7048,154 +7114,7 @@ export class SplashBlood {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 54/115: src\js\features\SplashBloodReusable.js
-Language: javascript | Size: 3,730 bytes
-Lines: 138 total | 116 code | 3 comments | 19 blank
-────────────────────────────────────────────────────────────────────────────────
-
-```javascript
-/*
- * Reusable Blood Splash Effect
- * Can be triggered anywhere in the app
- */
-
-export class SplashBloodReusable {
-  constructor(options = {}) {
-    this.container = options.container || document.body;
-    this.duration = options.duration || 2000;
-    this.color = options.color || "#6b0f0f";
-    this.onComplete = options.onComplete || null;
-
-    this.canvas = null;
-    this.ctx = null;
-    this.isPlaying = false;
-  }
-
-  createCanvas() {
-    this.canvas = document.createElement("canvas");
-    this.canvas.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        pointer-events: none;
-        z-index: 9999;
-      `;
-    this.container.appendChild(this.canvas);
-    this.ctx = this.canvas.getContext("2d");
-    this.resize();
-    window.addEventListener("resize", () => this.resize());
-  }
-
-  resize() {
-    if (!this.canvas) return;
-    this.canvas.width = window.innerWidth;
-    this.canvas.height = window.innerHeight;
-  }
-
-  async trigger(x, y) {
-    if (this.isPlaying) return;
-    this.isPlaying = true;
-
-    if (!this.canvas) this.createCanvas();
-
-    const centerX = x || this.canvas.width / 2;
-    const centerY = y || this.canvas.height / 2;
-    const particles = [];
-    const radius = 0;
-    const maxRadius = Math.max(this.canvas.width, this.canvas.height) * 0.6;
-
-    // Generate particles
-    for (let i = 0; i < 150; i++) {
-      particles.push({
-        x: centerX,
-        y: centerY,
-        angle: Math.random() * Math.PI * 2,
-        speed: 1 + Math.random() * 6,
-        size: 1 + Math.random() * 5,
-        life: 1,
-        decay: 0.005 + Math.random() * 0.025,
-      });
-    }
-
-    return new Promise((resolve) => {
-      let currentRadius = 0;
-      let opacity = 0;
-      let animationId = null;
-
-      const animate = () => {
-        if (!this.ctx) {
-          this.isPlaying = false;
-          resolve();
-          return;
-        }
-
-        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-
-        // Radial spread
-        if (currentRadius < maxRadius) {
-          currentRadius += 12;
-          opacity = Math.min(opacity + 0.025, 0.8);
-
-          const gradient = this.ctx.createRadialGradient(
-            centerX,
-            centerY,
-            0,
-            centerX,
-            centerY,
-            currentRadius
-          );
-          gradient.addColorStop(0, this.color);
-          gradient.addColorStop(0.5, this.color + "88");
-          gradient.addColorStop(1, "transparent");
-
-          this.ctx.fillStyle = gradient;
-          this.ctx.beginPath();
-          this.ctx.arc(centerX, centerY, currentRadius, 0, Math.PI * 2);
-          this.ctx.fill();
-        }
-
-        // Particles
-        let alive = false;
-        particles.forEach((p) => {
-          if (p.life <= 0) return;
-          alive = true;
-          p.x += Math.cos(p.angle) * p.speed;
-          p.y += Math.sin(p.angle) * p.speed;
-          p.life -= p.decay;
-          p.speed *= 0.97;
-
-          this.ctx.fillStyle = `rgba(139, 0, 0, ${Math.max(0, p.life)})`;
-          this.ctx.beginPath();
-          this.ctx.arc(p.x, p.y, p.size * p.life, 0, Math.PI * 2);
-          this.ctx.fill();
-        });
-
-        if (currentRadius < maxRadius || alive) {
-          animationId = requestAnimationFrame(animate);
-        } else {
-          this.isPlaying = false;
-          this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-          if (this.canvas.parentNode) {
-            this.canvas.parentNode.removeChild(this.canvas);
-            this.canvas = null;
-            this.ctx = null;
-          }
-          if (this.onComplete) this.onComplete();
-          resolve();
-        }
-      };
-
-      animate();
-    });
-  }
-}
-```
-
-
-────────────────────────────────────────────────────────────────────────────────
-FILE 55/115: src\js\features\Typewriter.js
+FILE 53/109: src\js\features\Typewriter.js
 Language: javascript | Size: 1,810 bytes
 Lines: 73 total | 56 code | 4 comments | 13 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -7277,7 +7196,7 @@ export class Typewriter {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 56/115: src\js\features\WhisperController.js
+FILE 54/109: src\js\features\WhisperController.js
 Language: javascript | Size: 2,700 bytes
 Lines: 99 total | 79 code | 6 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -7385,9 +7304,9 @@ export class WhisperController {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 57/115: src\js\index.js
-Language: javascript | Size: 11,569 bytes
-Lines: 435 total | 351 code | 23 comments | 61 blank
+FILE 55/109: src\js\index.js
+Language: javascript | Size: 11,886 bytes
+Lines: 443 total | 358 code | 24 comments | 61 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -7787,12 +7706,19 @@ Lines: 435 total | 351 code | 23 comments | 61 blank
       await tw3.start();
     }
 
-    // Show warning after typewriter
+    // show warning after typewriter
     setTimeout(() => {
       if (warningBox) {
         warningBox.classList.remove("hidden");
         void warningBox.offsetWidth;
         warningBox.classList.add("visible");
+        // fade out typewriter lines after 1s
+        setTimeout(() => {
+          document.querySelectorAll(".splash-line").forEach((line) => {
+            line.style.transition = "opacity 1s ease";
+            line.style.opacity = "0";
+          });
+        }, 1000);
       }
     }, 2000);
 
@@ -7811,6 +7737,7 @@ Lines: 435 total | 351 code | 23 comments | 61 blank
           bloodCanvas.classList.remove("hidden");
           bloodCanvas.classList.add("active");
           if (bloodEffect) await bloodEffect.play();
+          bloodCanvas.classList.add("hidden");
         }
 
         // Fade to black
@@ -7829,7 +7756,7 @@ Lines: 435 total | 351 code | 23 comments | 61 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 58/115: src\js\pages\AboutPage.js
+FILE 56/109: src\js\pages\AboutPage.js
 Language: javascript | Size: 4,559 bytes
 Lines: 134 total | 119 code | 0 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -7972,192 +7899,7 @@ export class AboutPage {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 59/115: src\js\pages\AdminPage.js
-Language: javascript | Size: 5,712 bytes
-Lines: 176 total | 162 code | 1 comments | 13 blank
-────────────────────────────────────────────────────────────────────────────────
-
-```javascript
-import { AuthManager } from "../admin/AuthManager.js";
-import { ContentEditor } from "../admin/ContentEditor.js";
-import { ThemeCustomizer } from "../admin/ThemeCustomizer.js";
-import { ImageManager } from "../admin/ImageManager.js";
-import { SaveManager } from "../admin/SaveManager.js";
-import { DataLoader } from "../core/DataLoader.js";
-import { Logger } from "../utils/Logger.js";
-
-/*
- * Admin Page Controller
- */
-
-export class AdminPage {
-  constructor(container) {
-    this.container = container;
-    this.logger = new Logger("AdminPage");
-    this.auth = new AuthManager();
-    this.dataLoader = new DataLoader();
-    this.saveManager = new SaveManager();
-    this.characterData = null;
-    this.dirtyFields = new Set();
-    this.currentPanel = "content";
-  }
-
-  async render() {
-    // bind events and initialize sub components
-    const loginForm = document.getElementById("login-form");
-    if (loginForm) {
-      loginForm.addEventListener("submit", (e) => this.handleLogin(e));
-    }
-    document
-      .getElementById("logout-btn")
-      ?.addEventListener("click", () => this.handleLogin());
-    document
-      .getElementById("save-all-btn")
-      ?.addEventListener("click", () => this.handleSaveAll());
-    document.querySelectorAll(".sidebar-link").forEach((link) => {
-      link.addEventListener("click", () =>
-        this.switchPanel(link.dataset.panel)
-      );
-    });
-    if (this.auth.isAuthenticated()) {
-      await this.loadAndShowPanel();
-    } else {
-      document.getElementById("admin-login").style.display = "flex";
-      document.getElementById("admin-panel").classList.remove("active");
-    }
-  }
-
-  async handleLogin(e) {
-    e.preventDefault();
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-    const ok = await this.auth.login(username, password);
-
-    if (ok) {
-      document.getElementById("login-error").classList.add("hidden");
-      await this.loadAndShowPanel();
-    } else {
-      document.getElementById("login-error").classList.remove("hidden");
-    }
-  }
-
-  async loadAndShowPanel() {
-    document.getElementById("admin-login").style.display = "none";
-    document.getElementById("admin-panel").classList.add("active");
-    this.characterData = await this.dataLoader.fetchCharacter();
-    if (!this.characterData) {
-      this.setStatus("Failed to load character data", "error");
-      return;
-    }
-    this.contentEditor = new ContentEditor(
-      document.getElementById("content-editor-container"),
-      this.characterData,
-      this
-    );
-    this.contentEditor.render();
-    this.themCustomizer = new ThemeCustomizer(
-      document.getElementById("theme-customizer-container"),
-      this.characterData,
-      this
-    );
-    this.themeCustomizer.render();
-    this.imageManager = new ImageManager(
-      document.getElementById("image-manager-container"),
-      this.characterData,
-      this
-    );
-    this.imageManager.render();
-    this.switchPanel("content");
-  }
-
-  switchPanel(panelName) {
-    document.querySelectorAll(".admin-section").forEach((s) => {
-      s.style.display = "none";
-      s.classList.remove("active");
-    });
-    const panel = document.getElementById(`panel-${panelName}`);
-    if (panel) {
-      panel.style.display = "block";
-      panel.classList.add("active");
-    }
-    document.querySelectorAll(".sidebar-link").forEach((link) => {
-      link.classList.toggle("active", link.dataset.panel === panelName);
-    });
-    this.currentPanel = panelName;
-  }
-
-  markDirty(key) {
-    this.dirtyFields.add(key);
-    const btn = document.getElementById("save-all-btn");
-    if (btn) btn.textContent = `Save All Changes (${this.dirtyFields.size})`;
-  }
-
-  async handleSaveAll() {
-    if (this.dirtyFields.size === 0) return;
-    const btn = document.getElementById("save-all-btn");
-    btn.disabled = true;
-    this.setStatus("Saving...", "info");
-    try {
-      const updates = {
-        content: this.contentEditor?.getChanges(),
-        theme: this.themCustomizer?.getChanges(),
-        images: this.imageManager?.getChanges(),
-      };
-      const updated = { ...this.characterData };
-      if (updates.theme) updated.theme = { ...updated.theme, ...updates.theme };
-      if (updates.content) {
-        Object.entries(updates.content).forEach(([key, val]) => {
-          const [section, field] = key.split(".");
-          if (updated.pages[section]) updated.pages[section][field] = val;
-        });
-      }
-      if (updates.images) {
-        Object.entries(updates.images).forEach(([key, val]) => {
-          const [section, field] = key.split(".");
-          if (updated.pages[section]) updated.pages[section][field] = val;
-        });
-      }
-      const result = await this.saveManager.saveCharacter(
-        updated.character.id,
-        updated
-      );
-      if (result.success) {
-        this.dirtyFields.clear();
-        btn.textContent = "Save All Changes";
-        this.setStatus("Save Successfully", "success");
-        this.saveManager.notifyMainSite();
-      } else {
-        throw new Error(result.error || "Save failed");
-      }
-    } catch (err) {
-      this.setStatus(`Error: ${err.message}`, "error");
-    } finally {
-      btn.disabled = false;
-    }
-  }
-
-  handleLogout() {
-    this.auth.logout();
-    document.getElementById("admin-login").style.display = "flex";
-    document.getElementById("admin-panel").classList.remove("active");
-  }
-
-  setStatus(msg, type) {
-    const el = document.getElementById("save-status");
-    if (el) {
-      el.textContent = msg;
-      el.className = `save-status save-${type}`;
-      if (type === "success") setTimeout(() => (el.textContent = ""), 3000);
-    }
-  }
-
-  destroy() {}
-}
-```
-
-
-────────────────────────────────────────────────────────────────────────────────
-FILE 60/115: src\js\pages\ArtifactsPage.js
+FILE 57/109: src\js\pages\ArtifactsPage.js
 Language: javascript | Size: 5,498 bytes
 Lines: 176 total | 153 code | 2 comments | 21 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8333,7 +8075,7 @@ export class ArtifactsPage {
     });
   }
 
-  destory() {
+  destroy() {
     document.removeEventListener("keydown", this.handleKeydown);
     document.body.style.overflow = "";
   }
@@ -8342,7 +8084,7 @@ export class ArtifactsPage {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 61/115: src\js\pages\HomePage.js
+FILE 58/109: src\js\pages\HomePage.js
 Language: javascript | Size: 2,374 bytes
 Lines: 75 total | 71 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8426,7 +8168,7 @@ export class HomePage {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 62/115: src\js\pages\JournalPage.js
+FILE 59/109: src\js\pages\JournalPage.js
 Language: javascript | Size: 5,487 bytes
 Lines: 175 total | 151 code | 4 comments | 20 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -8601,7 +8343,7 @@ export class JournalPage {
     });
   }
 
-  destory() {
+  destroy() {
     document.removeEventListener("keydown", this.handleKeydown);
     document.body.style.overflow = "";
   }
@@ -8610,9 +8352,9 @@ export class JournalPage {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 63/115: src\js\pages\SisterPage.js
-Language: javascript | Size: 7,156 bytes
-Lines: 246 total | 195 code | 14 comments | 37 blank
+FILE 60/109: src\js\pages\SisterPage.js
+Language: javascript | Size: 7,288 bytes
+Lines: 252 total | 202 code | 13 comments | 37 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -8733,17 +8475,23 @@ export class SisterPage {
     const hairpin = this.container.querySelector(".hairpin-container");
     if (hairpin) {
       hairpin.addEventListener("mouseenter", () => {
-        // Subtle blood effect on hover
-        import("../features/SplashBloodReusable.js").then(
-          ({ SplashBloodReusable }) => {
-            const blood = new SplashBloodReusable({ duration: 1000 });
-            const rect = hairpin.getBoundingClientRect();
-            blood.trigger(
-              rect.left + rect.width / 2,
-              rect.top + rect.height / 2
-            );
-          }
-        );
+        import("../features/SplashBlood.js").then(({ SplashBlood }) => {
+          const canvas = document.createElement("canvas");
+          canvas.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 9999;
+          `;
+          document.body.appendChild(canvas);
+          const blood = new SplashBlood(canvas);
+          blood.play().then(() => {
+            canvas.remove();
+          });
+        });
       });
     }
   }
@@ -8865,7 +8613,7 @@ export class SisterPage {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 64/115: src\js\three\AmbientScene.js
+FILE 61/109: src\js\three\AmbientScene.js
 Language: javascript | Size: 4,428 bytes
 Lines: 145 total | 114 code | 11 comments | 20 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9019,7 +8767,7 @@ export class AmbientScene {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 65/115: src\js\three\CameraController.js
+FILE 62/109: src\js\three\CameraController.js
 Language: javascript | Size: 3,098 bytes
 Lines: 145 total | 107 code | 9 comments | 29 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9173,7 +8921,7 @@ export class CameraController {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 66/115: src\js\three\effects\FogEffect.js
+FILE 63/109: src\js\three\effects\FogEffect.js
 Language: javascript | Size: 1,224 bytes
 Lines: 52 total | 41 code | 3 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9235,7 +8983,7 @@ export class FogEffect {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 67/115: src\js\three\effects\ParticleSystem.js
+FILE 64/109: src\js\three\effects\ParticleSystem.js
 Language: javascript | Size: 3,230 bytes
 Lines: 114 total | 87 code | 6 comments | 21 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9358,41 +9106,7 @@ export class ParticleSystem {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 68/115: src\js\three\geometries\CandleGeometry.js
-Language: javascript | Size: 619 bytes
-Lines: 25 total | 23 code | 0 comments | 2 blank
-────────────────────────────────────────────────────────────────────────────────
-
-```javascript
-/*
- * Candle Flame Geometry
- * returns an array of points for a particle-based flame (teardrop shape)
- */
-
-export class CandleGeometry {
-  static generate(count = 200) {
-    const vertices = [];
-    for (let i = 0; i < count; i++) {
-      const t = i / count;
-      const y = (t - 0.5) * 1.6;
-      const maxWidth = 0.15;
-      let width;
-      if (y < 0) {
-        width = maxWidth * (1 - Math.abs(y) * 1.5);
-      } else {
-        width = maxWidth * (1 - y) * 0.3;
-      }
-      const x = (Math.random() - 0.5) * width * 2;
-      vertices.push(x, y, Math.random() * Math.PI * 2);
-    }
-    return { vertices };
-  }
-}
-```
-
-
-────────────────────────────────────────────────────────────────────────────────
-FILE 69/115: src\js\three\geometries\KatanaGeometry.js
+FILE 65/109: src\js\three\geometries\KatanaGeometry.js
 Language: javascript | Size: 2,485 bytes
 Lines: 94 total | 74 code | 9 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9495,7 +9209,7 @@ export class KatanaGeometry {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 70/115: src\js\three\geometries\MaskGeometry.js
+FILE 66/109: src\js\three\geometries\MaskGeometry.js
 Language: javascript | Size: 3,957 bytes
 Lines: 135 total | 92 code | 20 comments | 23 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9639,7 +9353,7 @@ export class MaskGeometry {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 71/115: src\js\three\geometries\MeshObject.js
+FILE 67/109: src\js\three\geometries\MeshObject.js
 Language: javascript | Size: 7,315 bytes
 Lines: 238 total | 178 code | 23 comments | 37 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9886,7 +9600,7 @@ export class MeshObject {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 72/115: src\js\three\geometries\RopeGeometry.js
+FILE 68/109: src\js\three\geometries\RopeGeometry.js
 Language: javascript | Size: 1,143 bytes
 Lines: 42 total | 35 code | 2 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -9937,7 +9651,7 @@ export class RopeGeometry {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 73/115: src\js\three\Lighting.js
+FILE 69/109: src\js\three\Lighting.js
 Language: javascript | Size: 1,541 bytes
 Lines: 57 total | 49 code | 1 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10003,7 +9717,7 @@ export class Lighting {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 74/115: src\js\three\materials\MaterialFactory.js
+FILE 70/109: src\js\three\materials\MaterialFactory.js
 Language: javascript | Size: 3,663 bytes
 Lines: 113 total | 99 code | 0 comments | 14 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10125,7 +9839,7 @@ export class MaterialFactory {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 75/115: src\js\three\materials\Shaders.js
+FILE 71/109: src\js\three\materials\Shaders.js
 Language: javascript | Size: 6,116 bytes
 Lines: 196 total | 149 code | 12 comments | 35 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10330,7 +10044,7 @@ export class Shaders {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 76/115: src\js\three\SceneManager.js
+FILE 72/109: src\js\three\SceneManager.js
 Language: javascript | Size: 2,355 bytes
 Lines: 92 total | 64 code | 10 comments | 18 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10431,9 +10145,9 @@ export class SceneManager {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 77/115: src\js\three\ThreeEngine.js
-Language: javascript | Size: 3,047 bytes
-Lines: 119 total | 106 code | 0 comments | 13 blank
+FILE 73/109: src\js\three\ThreeEngine.js
+Language: javascript | Size: 3,116 bytes
+Lines: 120 total | 107 code | 0 comments | 13 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```javascript
@@ -10483,6 +10197,7 @@ export class ThreeEngine {
       gl.cullFace(gl.BACK);
 
       this.resize();
+      this.gl.viewport(0, 0, this.canvas.width, this.canvas.height);
       window.addEventListener("resize", () => this.resize());
 
       return this.gl;
@@ -10559,7 +10274,7 @@ export class ThreeEngine {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 78/115: src\js\utils\DomHelper.js
+FILE 74/109: src\js\utils\DomHelper.js
 Language: javascript | Size: 1,078 bytes
 Lines: 36 total | 33 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10604,7 +10319,7 @@ export class DomHelper {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 79/115: src\js\utils\Logger.js
+FILE 75/109: src\js\utils\Logger.js
 Language: javascript | Size: 425 bytes
 Lines: 24 total | 19 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10637,88 +10352,7 @@ export class Logger {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 80/115: src\js\utils\Sanitizer.js
-Language: javascript | Size: 845 bytes
-Lines: 35 total | 33 code | 0 comments | 2 blank
-────────────────────────────────────────────────────────────────────────────────
-
-```javascript
-/*
- * Input Sanitizer
- * escapes HTML and prevents XSS
- */
-
-export class Sanitizer {
-  static escapeHtml(str) {
-    if (!str) return "";
-    const map = {
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      '"': "&quot;",
-      "'": "&#x27;",
-      "/": "&#x2F;",
-    };
-    return str.replace(/[&<>"'/]/g, (char) => map[char]);
-  }
-  static sanitizeInput(str) {
-    return Sanitizer.escapeHtml(str.trim());
-  }
-  static sanitizeObject(obj) {
-    if (typeof obj === "string") return Sanitizer.sanitizeInput(obj);
-    if (Array.isArray(obj))
-      return obj.map((item) => Sanitizer.sanitizeObject(item));
-    if (obj && typeof obj === "object") {
-      const cleaned = {};
-      for (const [key, value] of Object.entries(obj))
-        cleaned[key] = Sanitizer.sanitizeObject(value);
-      return cleaned;
-    }
-    return obj;
-  }
-}
-```
-
-
-────────────────────────────────────────────────────────────────────────────────
-FILE 81/115: src\js\utils\Validator.js
-Language: javascript | Size: 821 bytes
-Lines: 28 total | 26 code | 0 comments | 2 blank
-────────────────────────────────────────────────────────────────────────────────
-
-```javascript
-/*
- * Client side Validator
- * checks data integrity before saving
- */
-
-export class Validator {
-  static isNonEmptyString(value) {
-    return typeof value === "string" && value.trim().length > 0;
-  }
-  static isValidHexColor(value) {
-    return /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/.test(value);
-  }
-  static isValidImageFilename(value) {
-    return /^[a-zA-Z0-9_\-\.]+\.(webp|jpg|jpeg|png|svg)$/.test(value);
-  }
-  static validateCharacterData(data) {
-    const errors = [];
-    if (!data?.character?.name) errors.push("Character name is required.");
-    if (data?.pages) {
-      for (const [page, content] of Object.entries(data.pages)) {
-        if (typeof content !== "object")
-          errors.push(`Page "${page}" content must be an object.`);
-      }
-    }
-    return { valid: errors.length === 0, errors };
-  }
-}
-```
-
-
-────────────────────────────────────────────────────────────────────────────────
-FILE 82/115: src\scss\abstracts\_functions.scss
+FILE 76/109: src\scss\abstracts\_functions.scss
 Language: scss | Size: 308 bytes
 Lines: 13 total | 10 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10740,7 +10374,7 @@ Lines: 13 total | 10 code | 0 comments | 3 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 83/115: src\scss\abstracts\_mixins.scss
+FILE 77/109: src\scss\abstracts\_mixins.scss
 Language: scss | Size: 878 bytes
 Lines: 44 total | 39 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10793,7 +10427,7 @@ Lines: 44 total | 39 code | 0 comments | 5 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 84/115: src\scss\abstracts\_placeholders.scss
+FILE 78/109: src\scss\abstracts\_placeholders.scss
 Language: scss | Size: 444 bytes
 Lines: 30 total | 26 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10832,7 +10466,7 @@ Lines: 30 total | 26 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 85/115: src\scss\abstracts\_variables.scss
+FILE 79/109: src\scss\abstracts\_variables.scss
 Language: scss | Size: 2,687 bytes
 Lines: 95 total | 80 code | 0 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -10937,7 +10571,7 @@ Lines: 95 total | 80 code | 0 comments | 15 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 86/115: src\scss\animations\_keyframes.scss
+FILE 80/109: src\scss\animations\_keyframes.scss
 Language: scss | Size: 1,755 bytes
 Lines: 135 total | 122 code | 0 comments | 13 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11081,7 +10715,7 @@ Lines: 135 total | 122 code | 0 comments | 13 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 87/115: src\scss\animations\_three-canvas.scss
+FILE 81/109: src\scss\animations\_three-canvas.scss
 Language: scss | Size: 451 bytes
 Lines: 27 total | 23 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11098,7 +10732,7 @@ Lines: 27 total | 23 code | 0 comments | 4 blank
   width: 100vw;
   height: 100vh;
   z-index: 0;
-  opacity: 0.2;
+  opacity: 0.4;
   pointer-events: none;
   display: block;
   background: transparent;
@@ -11117,7 +10751,7 @@ Lines: 27 total | 23 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 88/115: src\scss\animations\_transitions.scss
+FILE 82/109: src\scss\animations\_transitions.scss
 Language: scss | Size: 414 bytes
 Lines: 23 total | 18 code | 0 comments | 5 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11149,7 +10783,7 @@ Lines: 23 total | 18 code | 0 comments | 5 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 89/115: src\scss\base\_accessibility.scss
+FILE 83/109: src\scss\base\_accessibility.scss
 Language: scss | Size: 674 bytes
 Lines: 33 total | 29 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11191,7 +10825,7 @@ Lines: 33 total | 29 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 90/115: src\scss\base\_base.scss
+FILE 84/109: src\scss\base\_base.scss
 Language: scss | Size: 1,227 bytes
 Lines: 66 total | 55 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11266,7 +10900,7 @@ body {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 91/115: src\scss\base\_reset.scss
+FILE 85/109: src\scss\base\_reset.scss
 Language: scss | Size: 1,165 bytes
 Lines: 83 total | 72 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11358,7 +10992,7 @@ h6 {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 92/115: src\scss\base\_typography.scss
+FILE 86/109: src\scss\base\_typography.scss
 Language: scss | Size: 2,887 bytes
 Lines: 138 total | 119 code | 0 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11505,7 +11139,7 @@ Lines: 138 total | 119 code | 0 comments | 19 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 93/115: src\scss\components\_buttons.scss
+FILE 87/109: src\scss\components\_buttons.scss
 Language: scss | Size: 1,246 bytes
 Lines: 59 total | 50 code | 0 comments | 9 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11573,7 +11207,7 @@ Lines: 59 total | 50 code | 0 comments | 9 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 94/115: src\scss\components\_cards.scss
+FILE 88/109: src\scss\components\_cards.scss
 Language: scss | Size: 1,049 bytes
 Lines: 54 total | 43 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11636,7 +11270,7 @@ Lines: 54 total | 43 code | 0 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 95/115: src\scss\components\_cursor.scss
+FILE 89/109: src\scss\components\_cursor.scss
 Language: scss | Size: 1,741 bytes
 Lines: 26 total | 22 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11671,7 +11305,7 @@ button:hover {
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 96/115: src\scss\components\_easter-eggs.scss
+FILE 90/109: src\scss\components\_easter-eggs.scss
 Language: scss | Size: 773 bytes
 Lines: 37 total | 34 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11717,7 +11351,7 @@ Lines: 37 total | 34 code | 0 comments | 3 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 97/115: src\scss\components\_loader.scss
+FILE 91/109: src\scss\components\_loader.scss
 Language: scss | Size: 802 bytes
 Lines: 51 total | 44 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11777,9 +11411,9 @@ Lines: 51 total | 44 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 98/115: src\scss\components\_modal.scss
-Language: scss | Size: 965 bytes
-Lines: 55 total | 48 code | 0 comments | 7 blank
+FILE 92/109: src\scss\components\_modal.scss
+Language: scss | Size: 993 bytes
+Lines: 57 total | 50 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```scss
@@ -11791,12 +11425,13 @@ Lines: 55 total | 48 code | 0 comments | 7 blank
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
   z-index: var(--z-modal);
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 
   &.hidden {
     display: none;
@@ -11821,6 +11456,7 @@ Lines: 55 total | 48 code | 0 comments | 7 blank
   max-width: 800px;
   max-height: 85vh;
   overflow-y: auto;
+  margin: auto;
   box-shadow: var(--shadow-lg);
   animation: slideUp 0.3s ease;
 
@@ -11841,7 +11477,7 @@ Lines: 55 total | 48 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 99/115: src\scss\components\_tooltip.scss
+FILE 93/109: src\scss\components\_tooltip.scss
 Language: scss | Size: 664 bytes
 Lines: 30 total | 26 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11880,9 +11516,9 @@ Lines: 30 total | 26 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 100/115: src\scss\layout\_containers.scss
-Language: scss | Size: 990 bytes
-Lines: 48 total | 40 code | 0 comments | 8 blank
+FILE 94/109: src\scss\layout\_containers.scss
+Language: scss | Size: 1,048 bytes
+Lines: 49 total | 41 code | 0 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```scss
@@ -11905,6 +11541,7 @@ Lines: 48 total | 40 code | 0 comments | 8 blank
 }
 
 .page-container {
+  padding-top: calc(var(--nav-height) + var(--space-xl));
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -11937,7 +11574,7 @@ Lines: 48 total | 40 code | 0 comments | 8 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 101/115: src\scss\layout\_footer.scss
+FILE 95/109: src\scss\layout\_footer.scss
 Language: scss | Size: 405 bytes
 Lines: 21 total | 17 code | 0 comments | 4 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -11967,7 +11604,7 @@ Lines: 21 total | 17 code | 0 comments | 4 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 102/115: src\scss\layout\_grid.scss
+FILE 96/109: src\scss\layout\_grid.scss
 Language: scss | Size: 791 bytes
 Lines: 38 total | 32 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12014,9 +11651,9 @@ Lines: 38 total | 32 code | 0 comments | 6 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 103/115: src\scss\layout\_navigation.scss
-Language: scss | Size: 1,579 bytes
-Lines: 74 total | 63 code | 0 comments | 11 blank
+FILE 97/109: src\scss\layout\_navigation.scss
+Language: scss | Size: 2,264 bytes
+Lines: 111 total | 98 code | 0 comments | 13 blank
 ────────────────────────────────────────────────────────────────────────────────
 
 ```scss
@@ -12092,12 +11729,49 @@ Lines: 74 total | 63 code | 0 comments | 11 blank
       border-bottom-color: var(--color-accent);
     }
   }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    span {
+      width: 25px;
+      height: 2px;
+      background: var(--color-text-primary);
+      transition: 0.3s;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: var(--nav-height);
+      left: 0;
+      width: 100%;
+      background: rgba(13, 13, 13, 0.95);
+      padding: var(--space-md);
+      &.open {
+        display: flex;
+      }
+    }
+    .nav-link {
+      padding: var(--space-sm) 0;
+    }
+  }
 }
 ```
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 104/115: src\scss\main.scss
+FILE 98/109: src\scss\main.scss
 Language: scss | Size: 956 bytes
 Lines: 45 total | 38 code | 0 comments | 7 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12151,7 +11825,7 @@ Lines: 45 total | 38 code | 0 comments | 7 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 105/115: src\scss\pages\_about.scss
+FILE 99/109: src\scss\pages\_about.scss
 Language: scss | Size: 2,132 bytes
 Lines: 112 total | 93 code | 0 comments | 19 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12272,7 +11946,7 @@ Lines: 112 total | 93 code | 0 comments | 19 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 106/115: src\scss\pages\_admin.scss
+FILE 100/109: src\scss\pages\_admin.scss
 Language: scss | Size: 5,191 bytes
 Lines: 293 total | 250 code | 0 comments | 43 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12574,7 +12248,7 @@ Lines: 293 total | 250 code | 0 comments | 43 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 107/115: src\scss\pages\_artifacts.scss
+FILE 101/109: src\scss\pages\_artifacts.scss
 Language: scss | Size: 1,714 bytes
 Lines: 93 total | 78 code | 0 comments | 15 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12676,7 +12350,7 @@ Lines: 93 total | 78 code | 0 comments | 15 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 108/115: src\scss\pages\_home.scss
+FILE 102/109: src\scss\pages\_home.scss
 Language: scss | Size: 1,464 bytes
 Lines: 76 total | 65 code | 0 comments | 11 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12761,7 +12435,7 @@ Lines: 76 total | 65 code | 0 comments | 11 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 109/115: src\scss\pages\_journal.scss
+FILE 103/109: src\scss\pages\_journal.scss
 Language: scss | Size: 1,204 bytes
 Lines: 61 total | 51 code | 0 comments | 10 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -12831,7 +12505,7 @@ Lines: 61 total | 51 code | 0 comments | 10 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 110/115: src\scss\pages\_sister.scss
+FILE 104/109: src\scss\pages\_sister.scss
 Language: scss | Size: 3,007 bytes
 Lines: 164 total | 140 code | 0 comments | 24 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13004,7 +12678,7 @@ Lines: 164 total | 140 code | 0 comments | 24 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 111/115: src\scss\pages\_splash.scss
+FILE 105/109: src\scss\pages\_splash.scss
 Language: scss | Size: 3,442 bytes
 Lines: 196 total | 173 code | 0 comments | 23 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13209,7 +12883,7 @@ Lines: 196 total | 173 code | 0 comments | 23 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 112/115: src\scss\themes\_dark-academia.scss
+FILE 106/109: src\scss\themes\_dark-academia.scss
 Language: scss | Size: 752 bytes
 Lines: 25 total | 23 code | 0 comments | 2 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13243,7 +12917,7 @@ Lines: 25 total | 23 code | 0 comments | 2 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 113/115: src\scss\themes\_theme-fallback.scss
+FILE 107/109: src\scss\themes\_theme-fallback.scss
 Language: scss | Size: 288 bytes
 Lines: 15 total | 12 code | 0 comments | 3 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13267,7 +12941,7 @@ Lines: 15 total | 12 code | 0 comments | 3 blank
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 114/115: tests\data-validation.test.js
+FILE 108/109: tests\data-validation.test.js
 Language: javascript | Size: 969 bytes
 Lines: 34 total | 28 code | 0 comments | 6 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13310,7 +12984,7 @@ validate();
 
 
 ────────────────────────────────────────────────────────────────────────────────
-FILE 115/115: tests\server.test.js
+FILE 109/109: tests\server.test.js
 Language: javascript | Size: 1,396 bytes
 Lines: 54 total | 44 code | 2 comments | 8 blank
 ────────────────────────────────────────────────────────────────────────────────
@@ -13377,17 +13051,17 @@ runTests();
 
 GENERAL STATISTICS
 ----------------------------------------
-Total files exported: 115
-Total size: 322,285 bytes (314.73 KB, 0.31 MB)
-Average file size: 2,802 bytes
+Total files exported: 109
+Total size: 314,042 bytes (306.68 KB, 0.30 MB)
+Average file size: 2,881 bytes
 
 LANGUAGE DISTRIBUTION
 ----------------------------------------
-javascript        65 files ( 56.5%) ████████████████████████████
-scss              32 files ( 27.8%) █████████████
-json               6 files (  5.2%) ██
-plaintext          5 files (  4.3%) ██
-html               4 files (  3.5%) █
+javascript        60 files ( 55.0%) ███████████████████████████
+scss              32 files ( 29.4%) ██████████████
+json               6 files (  5.5%) ██
+plaintext          5 files (  4.6%) ██
+html               3 files (  2.8%) █
 python             1 files (  0.9%) 
 markdown           1 files (  0.9%) 
 css                1 files (  0.9%) 
@@ -13395,7 +13069,7 @@ css                1 files (  0.9%)
 EXPORT METADATA
 ----------------------------------------
 Export tool: Advanced Project Code Exporter v2.0
-Export date: 2026-06-19 14:07:52
+Export date: 2026-06-21 08:27:23
 Python version: 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)]
 Platform: win32
 

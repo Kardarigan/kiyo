@@ -22,6 +22,9 @@ export class Navigation {
       <nav class="main-nav">
         <div class="nav-brand">
           <span class="brand-name">Korekiyo Shinguji</span>
+          <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
         </div>
         <div class="nav-links">
           ${this.navItems
@@ -34,6 +37,18 @@ export class Navigation {
         </div>
       </nav>
     `;
+
+    const hamburger = this.container.querySelector(".hamburger");
+    const navLinks = this.container.querySelector(".nav-links");
+    if (hamburger && navLinks) {
+      hamburger.addEventListener("click", () => {
+        const expanded =
+          hamburger.getAttribute("aria-expanded") === "true" ? false : true;
+        hamburger.setAttribute("aria-expanded", expanded);
+        navLinks.classList.toggle("open");
+      });
+    }
+
     this.container.querySelectorAll(".nav-link").forEach((link) => {
       link.addEventListener("click", (e) => {
         e.preventDefault();

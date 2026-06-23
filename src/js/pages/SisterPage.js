@@ -115,17 +115,23 @@ export class SisterPage {
     const hairpin = this.container.querySelector(".hairpin-container");
     if (hairpin) {
       hairpin.addEventListener("mouseenter", () => {
-        // Subtle blood effect on hover
-        import("../features/SplashBloodReusable.js").then(
-          ({ SplashBloodReusable }) => {
-            const blood = new SplashBloodReusable({ duration: 1000 });
-            const rect = hairpin.getBoundingClientRect();
-            blood.trigger(
-              rect.left + rect.width / 2,
-              rect.top + rect.height / 2
-            );
-          }
-        );
+        import("../features/SplashBlood.js").then(({ SplashBlood }) => {
+          const canvas = document.createElement("canvas");
+          canvas.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 9999;
+          `;
+          document.body.appendChild(canvas);
+          const blood = new SplashBlood(canvas);
+          blood.play().then(() => {
+            canvas.remove();
+          });
+        });
       });
     }
   }

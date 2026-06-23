@@ -440,6 +440,41 @@ body {
   color: var(--color-accent);
   border-bottom-color: var(--color-accent);
 }
+.main-nav .hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.main-nav .hamburger span {
+  width: 25px;
+  height: 2px;
+  background: var(--color-text-primary);
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .main-nav .hamburger {
+    display: flex;
+  }
+  .main-nav .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    width: 100%;
+    background: rgba(13, 13, 13, 0.95);
+    padding: var(--space-md);
+  }
+  .main-nav .nav-links.open {
+    display: flex;
+  }
+  .main-nav .nav-link {
+    padding: var(--space-sm) 0;
+  }
+}
 
 .site-footer {
   text-align: center;
@@ -469,6 +504,7 @@ body {
 }
 
 .page-container {
+  padding-top: calc(var(--nav-height) + var(--space-xl));
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -595,19 +631,16 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
   z-index: var(--z-modal);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .modal.hidden {
   display: none;
 }
 
 .modal-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -615,6 +648,9 @@ body {
   background: rgba(0, 0, 0, 0.85);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-content {
@@ -623,8 +659,7 @@ body {
   border: var(--border-thin);
   padding: var(--space-2xl);
   max-width: 800px;
-  max-height: 85vh;
-  overflow-y: auto;
+  margin: auto;
   box-shadow: var(--shadow-lg);
   -webkit-animation: slideUp 0.3s ease;
           animation: slideUp 0.3s ease;
@@ -1977,7 +2012,7 @@ button:hover {
   width: 100vw;
   height: 100vh;
   z-index: 0;
-  opacity: 0.2;
+  opacity: 0.4;
   pointer-events: none;
   display: block;
   background: transparent;
